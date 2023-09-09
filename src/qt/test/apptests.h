@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_TEST_APPTESTS_H
-#define QOGECOIN_QT_TEST_APPTESTS_H
+#ifndef XOGECOIN_QT_TEST_APPTESTS_H
+#define XOGECOIN_QT_TEST_APPTESTS_H
 
 #include <QObject>
 #include <set>
@@ -47,4 +47,4 @@ private:
     std::multiset<std::string> m_callbacks;
 };
 
-#endif // QOGECOIN_QT_TEST_APPTESTS_H
+#endif // XOGECOIN_QT_TEST_APPTESTS_H

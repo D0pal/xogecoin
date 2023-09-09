@@ -4,8 +4,8 @@
 
 #include <qt/guiutil.h>
 
-#include <qt/qogecoinaddressvalidator.h>
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinaddressvalidator.h>
+#include <qt/xogecoinunits.h>
 #include <qt/platformstyle.h>
 #include <qt/qvalidatedlineedit.h>
 #include <qt/sendcoinsrecipient.h>
@@ -141,8 +141,8 @@ void AddButtonShortcut(QAbstractButton* button, const QKeySequence& shortcut)
 
 bool parseQogecoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    // return if URI is not valid or is no qogecoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("qogecoin"))
+    // return if URI is not valid or is no xogecoin: URI
+    if(!uri.isValid() || uri.scheme() != QString("xogecoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -205,7 +205,7 @@ QString formatQogecoinURI(const SendCoinsRecipient &info)
 {
     bool bech_32 = info.address.startsWith(QString::fromStdString(Params().Bech32HRP() + "1"));
 
-    QString ret = QString("qogecoin:%1").arg(bech_32 ? info.address.toUpper() : info.address);
+    QString ret = QString("xogecoin:%1").arg(bech_32 ? info.address.toUpper() : info.address);
     int paramCount = 0;
 
     if (info.amount)
@@ -431,7 +431,7 @@ void openDebugLogfile()
 
 bool openQogecoinConf()
 {
-    fs::path pathConfig = GetConfigFile(gArgs.GetArg("-conf", QOGECOIN_CONF_FILENAME));
+    fs::path pathConfig = GetConfigFile(gArgs.GetArg("-conf", XOGECOIN_CONF_FILENAME));
 
     /* Create the file */
     std::ofstream configFile{pathConfig, std::ios_base::app};
@@ -441,7 +441,7 @@ bool openQogecoinConf()
 
     configFile.close();
 
-    /* Open qogecoin.conf with the associated application */
+    /* Open xogecoin.conf with the associated application */
     bool res = QDesktopServices::openUrl(QUrl::fromLocalFile(PathToQString(pathConfig)));
 #ifdef Q_OS_MAC
     // Workaround for macOS-specific behavior; see #15409.
@@ -588,8 +588,8 @@ fs::path static GetAutostartFilePath()
 {
     std::string chain = gArgs.GetChainName();
     if (chain == CBaseChainParams::MAIN)
-        return GetAutostartDir() / "qogecoin.desktop";
-    return GetAutostartDir() / strprintf("qogecoin-%s.desktop", chain);
+        return GetAutostartDir() / "xogecoin.desktop";
+    return GetAutostartDir() / strprintf("xogecoin-%s.desktop", chain);
 }
 
 bool GetStartOnSystemStartup()
@@ -629,7 +629,7 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         if (!optionFile.good())
             return false;
         std::string chain = gArgs.GetChainName();
-        // Write a qogecoin.desktop file to the autostart directory:
+        // Write a xogecoin.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
         if (chain == CBaseChainParams::MAIN)

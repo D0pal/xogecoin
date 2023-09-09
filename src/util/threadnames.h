@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_THREADNAMES_H
-#define QOGECOIN_UTIL_THREADNAMES_H
+#ifndef XOGECOIN_UTIL_THREADNAMES_H
+#define XOGECOIN_UTIL_THREADNAMES_H
 
 #include <string>
 
@@ -23,4 +23,4 @@ const std::string& ThreadGetInternalName();
 
 } // namespace util
 
-#endif // QOGECOIN_UTIL_THREADNAMES_H
+#endif // XOGECOIN_UTIL_THREADNAMES_H

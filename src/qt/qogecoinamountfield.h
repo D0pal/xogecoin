@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_QOGECOINAMOUNTFIELD_H
-#define QOGECOIN_QT_QOGECOINAMOUNTFIELD_H
+#ifndef XOGECOIN_QT_XOGECOINAMOUNTFIELD_H
+#define XOGECOIN_QT_XOGECOINAMOUNTFIELD_H
 
 #include <consensus/amount.h>
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 
 #include <QWidget>
 
@@ -16,14 +16,14 @@ QT_BEGIN_NAMESPACE
 class QValueComboBox;
 QT_END_NAMESPACE
 
-/** Widget for entering qogecoin amounts.
+/** Widget for entering xogecoin amounts.
   */
 class QogecoinAmountField: public QWidget
 {
     Q_OBJECT
 
     // ugly hack: for some unknown reason CAmount (instead of qint64) does not work here as expected
-    // discussion: https://github.com/qogecoin/qogecoin/pull/5117
+    // discussion: https://github.com/xogecoin/xogecoin/pull/5117
     Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY valueChanged USER true)
 
 public:
@@ -82,4 +82,4 @@ private Q_SLOTS:
 
 };
 
-#endif // QOGECOIN_QT_QOGECOINAMOUNTFIELD_H
+#endif // XOGECOIN_QT_XOGECOINAMOUNTFIELD_H

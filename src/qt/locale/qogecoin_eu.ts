@@ -153,8 +153,8 @@
         <translation type="unfinished">Diruorroaren enkriptazioa berretsi</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Abisua: Diruzorroa enkriptatzen baduzu eta zure pasahitza galtzen baduzu, &lt;b&gt;QOGECOIN GUZTIAK GALDUKO DITUZU&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Abisua: Diruzorroa enkriptatzen baduzu eta zure pasahitza galtzen baduzu, &lt;b&gt;XOGECOIN GUZTIAK GALDUKO DITUZU&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -173,8 +173,8 @@
         <translation type="unfinished">Diruzorroaren pasahitz zahar zein berria sartu.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Gogoan izan diruzorroaren enkripzioak ezin dituela zure qogecoinak zure ordenagailuan izan dezakezun malware batengandik lapurtuak izatetik guztiz babestu .</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Gogoan izan diruzorroaren enkripzioak ezin dituela zure xogecoinak zure ordenagailuan izan dezakezun malware batengandik lapurtuak izatetik guztiz babestu .</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -290,7 +290,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Done loading</source>
         <translation type="unfinished">Zamaketa amaitua</translation>
@@ -475,8 +475,8 @@
         <translation type="unfinished">&amp;Helbideak jasotzen</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Ireki qogecoin bat: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Ireki xogecoin bat: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -898,8 +898,8 @@
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Ireki qogecoin URIa</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Ireki xogecoin URIa</translation>
     </message>
     <message>
         <source>URI:</source>

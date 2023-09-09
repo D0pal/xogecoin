@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_KEY_H
-#define QOGECOIN_KEY_H
+#ifndef XOGECOIN_KEY_H
+#define XOGECOIN_KEY_H
 
 #include <pubkey.h>
 #include <serialize.h>
@@ -190,4 +190,4 @@ void ECC_Stop();
 /** Check that required EC support is available at runtime. */
 bool ECC_InitSanityCheck();
 
-#endif // QOGECOIN_KEY_H
+#endif // XOGECOIN_KEY_H

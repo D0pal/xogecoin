@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_SERFLOAT_H
-#define QOGECOIN_UTIL_SERFLOAT_H
+#ifndef XOGECOIN_UTIL_SERFLOAT_H
+#define XOGECOIN_UTIL_SERFLOAT_H
 
 #include <stdint.h>
 
@@ -13,4 +13,4 @@ uint64_t EncodeDouble(double f) noexcept;
 /* Reverse operation of DecodeDouble. DecodeDouble(EncodeDouble(f))==f unless isnan(f). */
 double DecodeDouble(uint64_t v) noexcept;
 
-#endif // QOGECOIN_UTIL_SERFLOAT_H
+#endif // XOGECOIN_UTIL_SERFLOAT_H

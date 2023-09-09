@@ -11,7 +11,7 @@ import operator
 import os
 import sys
 
-OUT_CPP="qt/qogecoinstrings.cpp"
+OUT_CPP="qt/xogecoinstrings.cpp"
 EMPTY=['""']
 
 def parse_po(text):
@@ -75,11 +75,11 @@ f.write("""
 #define UNUSED
 #endif
 """)
-f.write('static const char UNUSED *qogecoin_strings[] = {\n')
-f.write('QT_TRANSLATE_NOOP("qogecoin-core", "%s"),\n' % (os.getenv('COPYRIGHT_HOLDERS'),))
+f.write('static const char UNUSED *xogecoin_strings[] = {\n')
+f.write('QT_TRANSLATE_NOOP("xogecoin-core", "%s"),\n' % (os.getenv('COPYRIGHT_HOLDERS'),))
 messages.sort(key=operator.itemgetter(0))
 for (msgid, msgstr) in messages:
     if msgid != EMPTY:
-        f.write('QT_TRANSLATE_NOOP("qogecoin-core", %s),\n' % ('\n'.join(msgid)))
+        f.write('QT_TRANSLATE_NOOP("xogecoin-core", %s),\n' % ('\n'.join(msgid)))
 f.write('};\n')
 f.close()

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
-#ifndef QOGECOIN_TEST_UTIL_CHAINSTATE_H
-#define QOGECOIN_TEST_UTIL_CHAINSTATE_H
+#ifndef XOGECOIN_TEST_UTIL_CHAINSTATE_H
+#define XOGECOIN_TEST_UTIL_CHAINSTATE_H
 
 #include <clientversion.h>
 #include <fs.h>
@@ -52,4 +52,4 @@ CreateAndActivateUTXOSnapshot(node::NodeContext& node, const fs::path root, F ma
 }
 
 
-#endif // QOGECOIN_TEST_UTIL_CHAINSTATE_H
+#endif // XOGECOIN_TEST_UTIL_CHAINSTATE_H

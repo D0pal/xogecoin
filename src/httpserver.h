@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_HTTPSERVER_H
-#define QOGECOIN_HTTPSERVER_H
+#ifndef XOGECOIN_HTTPSERVER_H
+#define XOGECOIN_HTTPSERVER_H
 
 #include <functional>
 #include <optional>
@@ -172,4 +172,4 @@ private:
     struct event* ev;
 };
 
-#endif // QOGECOIN_HTTPSERVER_H
+#endif // XOGECOIN_HTTPSERVER_H

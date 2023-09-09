@@ -2,9 +2,9 @@ dnl Copyright (c) 2013-2014 The Bitcoin and Qogecoin Core Authors
 dnl Distributed under the MIT software license, see the accompanying
 dnl file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-dnl QOGECOIN_SUBDIR_TO_INCLUDE([CPPFLAGS-VARIABLE-NAME],[SUBDIRECTORY-NAME],[HEADER-FILE])
+dnl XOGECOIN_SUBDIR_TO_INCLUDE([CPPFLAGS-VARIABLE-NAME],[SUBDIRECTORY-NAME],[HEADER-FILE])
 dnl SUBDIRECTORY-NAME must end with a path separator
-AC_DEFUN([QOGECOIN_SUBDIR_TO_INCLUDE],[
+AC_DEFUN([XOGECOIN_SUBDIR_TO_INCLUDE],[
   if test "$2" = ""; then
     AC_MSG_RESULT([default])
   else

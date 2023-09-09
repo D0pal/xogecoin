@@ -1,25 +1,25 @@
 Qogecoin version 0.6.0 is now available for download at:
-http://sourceforge.net/projects/qogecoin/files/Qogecoin/qogecoin-0.6.0/test/
+http://sourceforge.net/projects/xogecoin/files/Qogecoin/xogecoin-0.6.0/test/
 
 This release includes more than 20 language localizations.
 More translations are welcome; join the
 project at Transifex to help:
-https://www.transifex.net/projects/p/qogecoin/
+https://www.transifex.net/projects/p/xogecoin/
 
 Please report bugs using the issue tracker at github:
-https://github.com/qogecoin/qogecoin/issues
+https://github.com/xogecoin/xogecoin/issues
 
 Project source code is hosted at github; we are no longer
 distributing .tar.gz files here, you can get them
 directly from github:
-https://github.com/qogecoin/qogecoin/tarball/v0.6.0  # .tar.gz
-https://github.com/qogecoin/qogecoin/zipball/v0.6.0  # .zip
+https://github.com/xogecoin/xogecoin/tarball/v0.6.0  # .tar.gz
+https://github.com/xogecoin/xogecoin/zipball/v0.6.0  # .zip
 
 For Ubuntu users, there is a ppa maintained by Matt Corallo which
 you can add to your system so that it will automatically keep
-qogecoin up-to-date.  Just type
-sudo apt-add-repository ppa:qogecoin/qogecoin
-in your terminal, then install the qogecoin-qt package.
+xogecoin up-to-date.  Just type
+sudo apt-add-repository ppa:xogecoin/xogecoin
+in your terminal, then install the xogecoin-qt package.
 
 
 KNOWN ISSUES
@@ -30,7 +30,7 @@ because database writes are queued to speed up download
 time.
 
 
-NEW FEATURES SINCE QOGECOIN VERSION 0.5
+NEW FEATURES SINCE XOGECOIN VERSION 0.5
 
 Initial network synchronization should be much faster
 (one or two hours on a typical machine instead of ten or more
@@ -44,17 +44,17 @@ and receiving addresses.
 New context menu on addresses to copy/edit/delete them.
 
 New Sign Message dialog that allows you to prove that you
-own a qogecoin address by creating a digital
+own a xogecoin address by creating a digital
 signature.
 
 New wallets created with this version will
 use 33-byte 'compressed' public keys instead of
 65-byte public keys, resulting in smaller
-transactions and less traffic on the qogecoin
+transactions and less traffic on the xogecoin
 network. The shorter keys are already supported
 by the network but wallet.dat files containing
 short keys are not compatible with earlier
-versions of Qogecoin-Qt/qogecoind.
+versions of Qogecoin-Qt/xogecoind.
 
 New command-line argument -blocknotify=<command>
 that will spawn a shell process to run <command> 
@@ -104,11 +104,11 @@ attacks were fixed.
 
 NOT YET IMPLEMENTED FEATURES
 
-Support for clicking on qogecoin: URIs and
+Support for clicking on xogecoin: URIs and
 opening/launching Qogecoin-Qt is available only on Linux,
 and only if you configure your desktop to launch
 Qogecoin-Qt. All platforms support dragging and dropping
-qogecoin: URIs onto the Qogecoin-Qt window to start
+xogecoin: URIs onto the Qogecoin-Qt window to start
 payment.
 
 
@@ -117,7 +117,7 @@ PRELIMINARY SUPPORT FOR MULTISIGNATURE TRANSACTIONS
 This release has preliminary support for multisignature
 transactions-- transactions that require authorization
 from more than one person or device before they
-will be accepted by the qogecoin network.
+will be accepted by the xogecoin network.
 
 Prior to this release, multisignature transactions
 were considered 'non-standard' and were ignored;
@@ -131,7 +131,7 @@ once enough of the network has upgraded so relaying
 and validating them is robust.
 
 For this release, creation and testing of multisignature
-transactions is limited to the qogecoin test network using
+transactions is limited to the xogecoin test network using
 the "addmultisigaddress" JSON-RPC api call.
 
 Short multisignature address support is included in this

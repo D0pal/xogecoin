@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_OVERFLOW_H
-#define QOGECOIN_UTIL_OVERFLOW_H
+#ifndef XOGECOIN_UTIL_OVERFLOW_H
+#define XOGECOIN_UTIL_OVERFLOW_H
 
 #include <limits>
 #include <optional>
@@ -47,4 +47,4 @@ template <class T>
     return i + j;
 }
 
-#endif // QOGECOIN_UTIL_OVERFLOW_H
+#endif // XOGECOIN_UTIL_OVERFLOW_H

@@ -7,11 +7,11 @@
  * Server/client environment: argument handling, config file parsing,
  * thread wrappers, startup time
  */
-#ifndef QOGECOIN_UTIL_SYSTEM_H
-#define QOGECOIN_UTIL_SYSTEM_H
+#ifndef XOGECOIN_UTIL_SYSTEM_H
+#define XOGECOIN_UTIL_SYSTEM_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <attributes.h>
@@ -39,8 +39,8 @@ class UniValue;
 // Application startup time (used for uptime calculation)
 int64_t GetStartupTime();
 
-extern const char * const QOGECOIN_CONF_FILENAME;
-extern const char * const QOGECOIN_SETTINGS_FILENAME;
+extern const char * const XOGECOIN_CONF_FILENAME;
+extern const char * const XOGECOIN_SETTINGS_FILENAME;
 
 void SetupEnvironment();
 bool SetupNetworking();
@@ -562,4 +562,4 @@ private:
 
 } // namespace util
 
-#endif // QOGECOIN_UTIL_SYSTEM_H
+#endif // XOGECOIN_UTIL_SYSTEM_H

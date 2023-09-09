@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_QOGECOINGUI_H
-#define QOGECOIN_QT_QOGECOINGUI_H
+#ifndef XOGECOIN_QT_XOGECOINGUI_H
+#define XOGECOIN_QT_XOGECOINGUI_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 #include <qt/guiutil.h>
 #include <qt/optionsdialog.h>
 
@@ -87,7 +87,7 @@ public:
 
 #ifdef ENABLE_WALLET
     /** Set the wallet model.
-        The wallet model represents a qogecoin wallet, and offers access to the list of transactions, address book and sending
+        The wallet model represents a xogecoin wallet, and offers access to the list of transactions, address book and sending
         functionality.
     */
     void addWallet(WalletModel* walletModel);
@@ -347,4 +347,4 @@ private Q_SLOTS:
     void onMenuSelection(QAction* action);
 };
 
-#endif // QOGECOIN_QT_QOGECOINGUI_H
+#endif // XOGECOIN_QT_XOGECOINGUI_H

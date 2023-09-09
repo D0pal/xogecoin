@@ -5,7 +5,7 @@
 """Test logic for skipping signature validation on old blocks.
 
 Test logic for skipping signature validation on blocks which we've assumed
-valid (https://github.com/qogecoin/qogecoin/pull/9484)
+valid (https://github.com/xogecoin/xogecoin/pull/9484)
 
 We build a chain that includes and invalid signature for one of the
 transactions:

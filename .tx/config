@@ -1,6 +1,6 @@
 [main]
 host = https://www.transifex.com
 
-[qogecoin.qt-translation-024x]
-file_filter = src/qt/locale/qogecoin_<lang>.xlf
-source_file = src/qt/locale/qogecoin_en.xlf
+[xogecoin.qt-translation-024x]
+file_filter = src/qt/locale/xogecoin_<lang>.xlf
+source_file = src/qt/locale/xogecoin_en.xlf

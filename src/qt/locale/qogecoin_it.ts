@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation type="unfinished">Scegli l'indirizzo al quale inviare qogecoin</translation>
+        <translation type="unfinished">Scegli l'indirizzo al quale inviare xogecoin</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation type="unfinished">Scegli l'indirizzo al quale ricevere qogecoin.</translation>
+        <translation type="unfinished">Scegli l'indirizzo al quale ricevere xogecoin.</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Qogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Questi sono i tuoi indirizzi Qogecoin per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo del beneficiario prima di inviare qogecoin.</translation>
+        <translation type="unfinished">Questi sono i tuoi indirizzi Qogecoin per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo del beneficiario prima di inviare xogecoin.</translation>
     </message>
     <message>
         <source>These are your Qogecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
@@ -164,8 +164,8 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
         <translation type="unfinished">Conferma la cifratura del portafoglio</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Attenzione: Se si cifra il portafoglio e si perde la passphrase &lt;b&gt;TUTTI I PROPRI QOGECOIN ANDRANNO PERSI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Attenzione: Se si cifra il portafoglio e si perde la passphrase &lt;b&gt;TUTTI I PROPRI XOGECOIN ANDRANNO PERSI&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
         <translation type="unfinished">Inserisci la vecchia passphrase e la nuova passphrase per il portafoglio.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Ricorda che la cifratura del portafoglio non protegge del tutto i tuoi qogecoin dal furto da parte di malware che infettasse il tuo computer.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Ricorda che la cifratura del portafoglio non protegge del tutto i tuoi xogecoin dal furto da parte di malware che infettasse il tuo computer.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -392,7 +392,7 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">Impossibile leggere il file delle impostazioni</translation>
@@ -406,8 +406,8 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
         <translation type="unfinished">Sviluppatori di %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s corrotto. Prova a usare la funzione del portafoglio qogecoin-wallet per salvare o recuperare il backup.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s corrotto. Prova a usare la funzione del portafoglio xogecoin-wallet per salvare o recuperare il backup.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -446,8 +446,8 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
         <translation type="unfinished">Errore: l'identificativo rispetto la registrazione del dumpfile è incorretta.  ricevuto "%s", sarebbe dovuto essere "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Errore: la versione di questo dumpfile non è supportata. Questa versione del qogecoin-wallet supporta solo la versione 1 dei dumpfile. Ricevuto un dumpfile di versione%s</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Errore: la versione di questo dumpfile non è supportata. Questa versione del xogecoin-wallet supporta solo la versione 1 dei dumpfile. Ricevuto un dumpfile di versione%s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -1218,8 +1218,8 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
         <translation type="unfinished">Connessione ai nodi...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Richiedi pagamenti (genera codici QR e qogecoin: URI)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Richiedi pagamenti (genera codici QR e xogecoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1301,8 +1301,8 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
         <translation type="unfinished">Indirizzi di &amp;destinazione</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Apri un qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Apri un xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1805,7 +1805,7 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Qogecoin address.</source>
-        <translation type="unfinished">L'indirizzo inserito "%1" non è un indirizzo qogecoin valido.</translation>
+        <translation type="unfinished">L'indirizzo inserito "%1" non è un indirizzo xogecoin valido.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1963,12 +1963,12 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
         <translation type="unfinished">Modulo</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Transazioni recenti potrebbero non essere visibili ancora, perciò il saldo del tuo portafoglio potrebbe non essere corretto. Questa informazione risulterà corretta quando il tuo portafoglio avrà terminato la sincronizzazione con la rete qogecoin, come indicato in dettaglio più sotto.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Transazioni recenti potrebbero non essere visibili ancora, perciò il saldo del tuo portafoglio potrebbe non essere corretto. Questa informazione risulterà corretta quando il tuo portafoglio avrà terminato la sincronizzazione con la rete xogecoin, come indicato in dettaglio più sotto.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Il tentativo di spendere qogecoin legati a transazioni non ancora visualizzate non verrà accettato dalla rete.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Il tentativo di spendere xogecoin legati a transazioni non ancora visualizzate non verrà accettato dalla rete.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -2018,8 +2018,8 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Apri un URI qogecoin</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Apri un URI xogecoin</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2263,7 +2263,7 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation type="unfinished">Scegli l'unità di suddivisione predefinita da utilizzare per l'interfaccia e per l'invio di qogecoin.</translation>
+        <translation type="unfinished">Scegli l'unità di suddivisione predefinita da utilizzare per l'interfaccia e per l'invio di xogecoin.</translation>
     </message>
     <message>
         <source>Third-party URLs (e.g. a block explorer) that appear in the transactions tab as context menu items. %s in the URL is replaced by transaction hash. Multiple URLs are separated by vertical bar |.</source>
@@ -2579,16 +2579,16 @@ E' possibile firmare solo con indirizzi di tipo "legacy".</translation>
         <translation type="unfinished">Errore di richiesta di pagamento</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Impossibile avviare qogecoin: gestore click-to-pay</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Impossibile avviare xogecoin: gestore click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Gestione URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' non è un URI valido. Usa invece 'qogecoin:'.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' non è un URI valido. Usa invece 'xogecoin:'.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3388,8 +3388,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Nota: poiché la commissione è calcolata su base per byte, una commissione di "100 satoshi per kB" per una dimensione di transazione di 500 byte (metà di 1 kB) alla fine produrrà una commissione di soli 50 satoshi.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Quando il volume delle transazioni è minore dello spazio nei blocchi, i minatori e in nodi di relay potrebbero imporre una commissione minima. Va benissimo pagare solo questa commissione minima, ma tieni presente che questo potrebbe risultare in una transazione che, se la richiesta di transazioni qogecoin dovesse superare la velocità con cui la rete riesce ad elaborarle, non viene mai confermata.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Quando il volume delle transazioni è minore dello spazio nei blocchi, i minatori e in nodi di relay potrebbero imporre una commissione minima. Va benissimo pagare solo questa commissione minima, ma tieni presente che questo potrebbe risultare in una transazione che, se la richiesta di transazioni xogecoin dovesse superare la velocità con cui la rete riesce ad elaborarle, non viene mai confermata.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3667,8 +3667,8 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation type="unfinished">L'ammontare da inviare nell'unità selezionata</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">La commissione sarà sottratta dall'importo che si sta inviando. Il beneficiario riceverà un totale di qogecoin inferiore al valore digitato. Nel caso in cui siano stati selezionati più beneficiari la commissione sarà suddivisa in parti uguali.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">La commissione sarà sottratta dall'importo che si sta inviando. Il beneficiario riceverà un totale di xogecoin inferiore al valore digitato. Nel caso in cui siano stati selezionati più beneficiari la commissione sarà suddivisa in parti uguali.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3695,8 +3695,8 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation type="unfinished">Inserisci un'etichetta per questo indirizzo per aggiungerlo alla lista degli indirizzi utilizzati</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Messaggio incluso nel qogecoin URI e che sarà memorizzato con la transazione per tuo riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Messaggio incluso nel xogecoin URI e che sarà memorizzato con la transazione per tuo riferimento. Nota: Questo messaggio non sarà inviato attraverso la rete Qogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3725,8 +3725,8 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
         <translation type="unfinished">&amp;Firma Messaggio</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">È possibile firmare messaggi/accordi con i propri indirizzi in modo da dimostrare di poter ricevere qogecoin attraverso di essi. Presta attenzione a non firmare dichiarazioni vaghe o casuali, perché attacchi di phishing potrebbero cercare di indurti ad apporre la firma su di esse. Firma esclusivamente dichiarazioni completamente dettagliate e delle quali condividi in pieno il contenuto.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">È possibile firmare messaggi/accordi con i propri indirizzi in modo da dimostrare di poter ricevere xogecoin attraverso di essi. Presta attenzione a non firmare dichiarazioni vaghe o casuali, perché attacchi di phishing potrebbero cercare di indurti ad apporre la firma su di esse. Firma esclusivamente dichiarazioni completamente dettagliate e delle quali condividi in pieno il contenuto.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>
@@ -3814,7 +3814,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
     </message>
     <message>
         <source>The entered address does not refer to a key.</source>
-        <translation type="unfinished">L'indirizzo qogecoin inserito non è associato a nessuna chiave.</translation>
+        <translation type="unfinished">L'indirizzo xogecoin inserito non è associato a nessuna chiave.</translation>
     </message>
     <message>
         <source>Wallet unlock was cancelled.</source>
@@ -4007,7 +4007,7 @@ Nota: poiché la commissione è calcolata su base per byte, una commissione di "
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished">I qogecoin generati devono maturare %1 blocchi prima di poter essere spesi. Quando hai generato questo blocco, è stato trasmesso alla rete per essere aggiunto alla block chain. Se l'inserimento nella catena avrà esito negativo, il suo stato cambierà a "non accettato" e non sarà spendibile. Talvolta ciò può accadere anche nel caso in cui un altro nodo generi un blocco entro pochi secondi dal tuo.</translation>
+        <translation type="unfinished">I xogecoin generati devono maturare %1 blocchi prima di poter essere spesi. Quando hai generato questo blocco, è stato trasmesso alla rete per essere aggiunto alla block chain. Se l'inserimento nella catena avrà esito negativo, il suo stato cambierà a "non accettato" e non sarà spendibile. Talvolta ciò può accadere anche nel caso in cui un altro nodo generi un blocco entro pochi secondi dal tuo.</translation>
     </message>
     <message>
         <source>Debug information</source>

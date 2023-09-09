@@ -15,13 +15,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Qogecoin"
-            VALUE "FileDescription",    "qogecoind (Qogecoin node with a JSON-RPC server)"
+            VALUE "FileDescription",    "xogecoind (Qogecoin node with a JSON-RPC server)"
             VALUE "FileVersion",        PACKAGE_VERSION
-            VALUE "InternalName",       "qogecoind"
+            VALUE "InternalName",       "xogecoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "qogecoind.exe"
-            VALUE "ProductName",        "qogecoind"
+            VALUE "OriginalFilename",   "xogecoind.exe"
+            VALUE "ProductName",        "xogecoind"
             VALUE "ProductVersion",     PACKAGE_VERSION
         END
     END

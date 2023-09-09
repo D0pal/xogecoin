@@ -11,8 +11,8 @@
 //
 // For more information, see BIP 173 and BIP 350.
 
-#ifndef QOGECOIN_BECH32_H
-#define QOGECOIN_BECH32_H
+#ifndef XOGECOIN_BECH32_H
+#define XOGECOIN_BECH32_H
 
 #include <stdint.h>
 #include <string>
@@ -50,4 +50,4 @@ std::pair<std::string, std::vector<int>> LocateErrors(const std::string& str);
 
 } // namespace bech32
 
-#endif // QOGECOIN_BECH32_H
+#endif // XOGECOIN_BECH32_H

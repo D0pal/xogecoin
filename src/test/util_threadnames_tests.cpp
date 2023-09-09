@@ -12,7 +12,7 @@
 #include <vector>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <boost/test/unit_test.hpp>

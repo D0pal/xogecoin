@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_SPLASHSCREEN_H
-#define QOGECOIN_QT_SPLASHSCREEN_H
+#ifndef XOGECOIN_QT_SPLASHSCREEN_H
+#define XOGECOIN_QT_SPLASHSCREEN_H
 
 #include <QWidget>
 
@@ -72,4 +72,4 @@ private:
     std::list<std::unique_ptr<interfaces::Handler>> m_connected_wallet_handlers;
 };
 
-#endif // QOGECOIN_QT_SPLASHSCREEN_H
+#endif // XOGECOIN_QT_SPLASHSCREEN_H

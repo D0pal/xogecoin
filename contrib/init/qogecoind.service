@@ -1,37 +1,37 @@
 # It is not recommended to modify this file in-place, because it will
 # be overwritten during package upgrades. If you want to add further
 # options or overwrite existing ones then use
-# $ systemctl edit qogecoind.service
+# $ systemctl edit xogecoind.service
 # See "man systemd.service" for details.
 
 # Note that almost all daemon options could be specified in
-# /etc/qogecoin/qogecoin.conf, but keep in mind those explicitly
+# /etc/xogecoin/xogecoin.conf, but keep in mind those explicitly
 # specified as arguments in ExecStart= will override those in the
 # config file.
 
 [Unit]
 Description=Qogecoin daemon
-Documentation=https://github.com/qogecoin/qogecoin/blob/master/doc/init.md
+Documentation=https://github.com/xogecoin/xogecoin/blob/master/doc/init.md
 
 # https://www.freedesktop.org/wiki/Software/systemd/NetworkTarget/
 After=network-online.target
 Wants=network-online.target
 
 [Service]
-ExecStart=/usr/bin/qogecoind -daemonwait \
-                            -pid=/run/qogecoind/qogecoind.pid \
-                            -conf=/etc/qogecoin/qogecoin.conf \
-                            -datadir=/var/lib/qogecoind
+ExecStart=/usr/bin/xogecoind -daemonwait \
+                            -pid=/run/xogecoind/xogecoind.pid \
+                            -conf=/etc/xogecoin/xogecoin.conf \
+                            -datadir=/var/lib/xogecoind
 
 # Make sure the config directory is readable by the service user
 PermissionsStartOnly=true
-ExecStartPre=/bin/chgrp qogecoin /etc/qogecoin
+ExecStartPre=/bin/chgrp xogecoin /etc/xogecoin
 
 # Process management
 ####################
 
 Type=forking
-PIDFile=/run/qogecoind/qogecoind.pid
+PIDFile=/run/xogecoind/xogecoind.pid
 Restart=on-failure
 TimeoutStartSec=infinity
 TimeoutStopSec=600
@@ -39,20 +39,20 @@ TimeoutStopSec=600
 # Directory creation and permissions
 ####################################
 
-# Run as qogecoin:qogecoin
-User=qogecoin
-Group=qogecoin
+# Run as xogecoin:xogecoin
+User=xogecoin
+Group=xogecoin
 
-# /run/qogecoind
-RuntimeDirectory=qogecoind
+# /run/xogecoind
+RuntimeDirectory=xogecoind
 RuntimeDirectoryMode=0710
 
-# /etc/qogecoin
-ConfigurationDirectory=qogecoin
+# /etc/xogecoin
+ConfigurationDirectory=xogecoin
 ConfigurationDirectoryMode=0710
 
-# /var/lib/qogecoind
-StateDirectory=qogecoind
+# /var/lib/xogecoind
+StateDirectory=xogecoind
 StateDirectoryMode=0710
 
 # Hardening measures

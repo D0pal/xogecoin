@@ -2,14 +2,14 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 //
-// The qogecoin-chainstate executable serves to surface the dependencies required
+// The xogecoin-chainstate executable serves to surface the dependencies required
 // by a program wishing to use Qogecoin Core's consensus engine as it is right
 // now.
 //
 // DEVELOPER NOTE: Since this is a "demo-only", experimental, etc. executable,
 //                 it may diverge from Qogecoin Core's coding style.
 //
-// It is part of the libqogecoinkernel project.
+// It is part of the libxogecoinkernel project.
 
 #include <chainparams.h>
 #include <consensus/validation.h>

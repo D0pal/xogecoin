@@ -1,10 +1,10 @@
-# bash programmable completion for qogecoin-cli(1)
+# bash programmable completion for xogecoin-cli(1)
 # Copyright (c) 2012-2019 The Bitcoin and Qogecoin Core Authors
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-# call $qogecoin-cli for RPC
-_qogecoin_rpc() {
+# call $xogecoin-cli for RPC
+_xogecoin_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -14,16 +14,16 @@ _qogecoin_rpc() {
                 ;;
         esac
     done
-    $qogecoin_cli "${rpcargs[@]}" "$@"
+    $xogecoin_cli "${rpcargs[@]}" "$@"
 }
 
-_qogecoin_cli() {
+_xogecoin_cli() {
     local cur prev words=() cword
-    local qogecoin_cli
+    local xogecoin_cli
 
-    # save and use original argument to invoke qogecoin-cli for -help, help and RPC
-    # as qogecoin-cli might not be in $PATH
-    qogecoin_cli="$1"
+    # save and use original argument to invoke xogecoin-cli for -help, help and RPC
+    # as xogecoin-cli might not be in $PATH
+    xogecoin_cli="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -112,12 +112,12 @@ _qogecoin_cli() {
 
             # only parse -help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($qogecoin_cli -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($xogecoin_cli -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_qogecoin_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_xogecoin_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -130,7 +130,7 @@ _qogecoin_cli() {
             ;;
     esac
 } &&
-complete -F _qogecoin_cli qogecoin-cli
+complete -F _xogecoin_cli xogecoin-cli
 
 # Local variables:
 # mode: shell-script

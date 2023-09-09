@@ -159,8 +159,8 @@ Firmar solo es posible con direcciones del tipo Legacy.</translation>
         <translation type="unfinished">Confirma el cifrado de este monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Atención: Si cifras tu monedero y pierdes la contraseña, perderás ¡&lt;b&gt;TODOS TUS QOGECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Atención: Si cifras tu monedero y pierdes la contraseña, perderás ¡&lt;b&gt;TODOS TUS XOGECOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -179,8 +179,8 @@ Firmar solo es posible con direcciones del tipo Legacy.</translation>
         <translation type="unfinished">Introduce la contraseña antigua y la nueva para el monedero.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recuerda que cifrar tu monedero no garantiza la protección de tus qogecoins si tu ordenador es infectado con malware.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recuerda que cifrar tu monedero no garantiza la protección de tus xogecoins si tu ordenador es infectado con malware.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -369,7 +369,7 @@ Firmar solo es posible con direcciones del tipo Legacy.</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">El archivo de configuración no puede leerse</translation>
@@ -379,8 +379,8 @@ Firmar solo es posible con direcciones del tipo Legacy.</translation>
         <translation type="unfinished">El archivo de configuración no puede escribirse</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s corrupto. Intenta utilizar la herramienta del monedero qogecoin-monedero para salvar o restaurar una copia de seguridad.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s corrupto. Intenta utilizar la herramienta del monedero xogecoin-monedero para salvar o restaurar una copia de seguridad.</translation>
     </message>
     <message>
         <source>Cannot downgrade wallet from version %i to version %i. Wallet version unchanged.</source>
@@ -2347,8 +2347,8 @@ Nota: Dado que la tasa se calcula por cada byte, una tasa de "100 satoshis por k
         <translation type="unfinished">El monto a enviar en la unidad seleccionada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">La comisión será deducida de la cantidad enviada. El destinatario recibirá menos qogecoins que la cantidad introducida en el campo Cantidad. Si hay varios destinatarios seleccionados, la comisión será distribuida a partes iguales.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">La comisión será deducida de la cantidad enviada. El destinatario recibirá menos xogecoins que la cantidad introducida en el campo Cantidad. Si hay varios destinatarios seleccionados, la comisión será distribuida a partes iguales.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -2371,7 +2371,7 @@ Nota: Dado que la tasa se calcula por cada byte, una tasa de "100 satoshis por k
         <translation type="unfinished">Introduce una etiqueta para esta dirección para añadirla a la lista de direcciones utilizadas</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
         <translation type="unfinished">Mensaje que se agrgará al URI de Qogecoin, el cuál será almacenado con la transacción para su referencia. Nota: Este mensaje no será mandado a través de la red de Qogecoin.</translation>
     </message>
     <message>
@@ -2397,7 +2397,7 @@ Nota: Dado que la tasa se calcula por cada byte, una tasa de "100 satoshis por k
         <translation type="unfinished">&amp;Firmar Mensaje</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">Puedes firmar los mensajes con tus direcciones para demostrar que las posees. Ten cuidado de no firmar cualquier cosa vaga, ya que los ataques de phishing pueden tratar de engañarte firmando tu identidad a través de ellos. Firma solo declaraciones totalmente detalladas con las que estés de acuerdo.</translation>
     </message>
     <message>

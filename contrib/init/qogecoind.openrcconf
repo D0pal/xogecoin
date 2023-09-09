@@ -1,33 +1,33 @@
-# /etc/conf.d/qogecoind: config file for /etc/init.d/qogecoind
+# /etc/conf.d/xogecoind: config file for /etc/init.d/xogecoind
 
 # Config file location
-#QOGECOIND_CONFIGFILE="/etc/qogecoin/qogecoin.conf"
+#XOGECOIND_CONFIGFILE="/etc/xogecoin/xogecoin.conf"
 
-# What directory to write pidfile to?  (created and owned by $QOGECOIND_USER)
-#QOGECOIND_PIDDIR="/var/run/qogecoind"
+# What directory to write pidfile to?  (created and owned by $XOGECOIND_USER)
+#XOGECOIND_PIDDIR="/var/run/xogecoind"
 
 # What filename to give the pidfile
-#QOGECOIND_PIDFILE="${QOGECOIND_PIDDIR}/qogecoind.pid"
+#XOGECOIND_PIDFILE="${XOGECOIND_PIDDIR}/xogecoind.pid"
 
-# Where to write qogecoind data (be mindful that the blockchain is large)
-#QOGECOIND_DATADIR="/var/lib/qogecoind"
+# Where to write xogecoind data (be mindful that the blockchain is large)
+#XOGECOIND_DATADIR="/var/lib/xogecoind"
 
-# User and group to own qogecoind process
-#QOGECOIND_USER="qogecoin"
-#QOGECOIND_GROUP="qogecoin"
+# User and group to own xogecoind process
+#XOGECOIND_USER="xogecoin"
+#XOGECOIND_GROUP="xogecoin"
 
-# Path to qogecoind executable
-#QOGECOIND_BIN="/usr/bin/qogecoind"
+# Path to xogecoind executable
+#XOGECOIND_BIN="/usr/bin/xogecoind"
 
-# Nice value to run qogecoind under
-#QOGECOIND_NICE=0
+# Nice value to run xogecoind under
+#XOGECOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)
-#QOGECOIND_OPTS=""
+#XOGECOIND_OPTS=""
 
-# The timeout in seconds OpenRC will wait for qogecoind to terminate
+# The timeout in seconds OpenRC will wait for xogecoind to terminate
 # after a SIGTERM has been raised.
 # Note that this will be mapped as argument to start-stop-daemon's
 # '--retry' option, which means you can specify a retry schedule
 # here. For more information see man 8 start-stop-daemon.
-QOGECOIND_SIGTERM_TIMEOUT=600
+XOGECOIND_SIGTERM_TIMEOUT=600

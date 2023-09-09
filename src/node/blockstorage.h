@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NODE_BLOCKSTORAGE_H
-#define QOGECOIN_NODE_BLOCKSTORAGE_H
+#ifndef XOGECOIN_NODE_BLOCKSTORAGE_H
+#define XOGECOIN_NODE_BLOCKSTORAGE_H
 
 #include <chain.h>
 #include <fs.h>
@@ -213,4 +213,4 @@ bool UndoReadFromDisk(CBlockUndo& blockundo, const CBlockIndex* pindex);
 void ThreadImport(ChainstateManager& chainman, std::vector<fs::path> vImportFiles, const ArgsManager& args);
 } // namespace node
 
-#endif // QOGECOIN_NODE_BLOCKSTORAGE_H
+#endif // XOGECOIN_NODE_BLOCKSTORAGE_H

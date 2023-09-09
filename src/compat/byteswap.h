@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_COMPAT_BYTESWAP_H
-#define QOGECOIN_COMPAT_BYTESWAP_H
+#ifndef XOGECOIN_COMPAT_BYTESWAP_H
+#define XOGECOIN_COMPAT_BYTESWAP_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <cstdint>
@@ -56,4 +56,4 @@ inline uint64_t bswap_64(uint64_t x)
 
 #endif // defined(MAC_OSX)
 
-#endif // QOGECOIN_COMPAT_BYTESWAP_H
+#endif // XOGECOIN_COMPAT_BYTESWAP_H

@@ -3,12 +3,12 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <interfaces/init.h>
 #include <interfaces/node.h>
-#include <qt/qogecoin.h>
+#include <qt/xogecoin.h>
 #include <qt/test/apptests.h>
 #include <qt/test/optiontests.h>
 #include <qt/test/rpcnestedtests.h>

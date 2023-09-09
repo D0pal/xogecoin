@@ -4,21 +4,21 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test asmap config argument for ASN-based IP bucketing.
 
-Verify node behaviour and debug log when launching qogecoind in these cases:
+Verify node behaviour and debug log when launching xogecoind in these cases:
 
-1. `qogecoind` with no -asmap arg, using /16 prefix for IP bucketing
+1. `xogecoind` with no -asmap arg, using /16 prefix for IP bucketing
 
-2. `qogecoind -asmap=<absolute path>`, using the unit test skeleton asmap
+2. `xogecoind -asmap=<absolute path>`, using the unit test skeleton asmap
 
-3. `qogecoind -asmap=<relative path>`, using the unit test skeleton asmap
+3. `xogecoind -asmap=<relative path>`, using the unit test skeleton asmap
 
-4. `qogecoind -asmap/-asmap=` with no file specified, using the default asmap
+4. `xogecoind -asmap/-asmap=` with no file specified, using the default asmap
 
-5. `qogecoind -asmap` restart with an addrman containing new and tried entries
+5. `xogecoind -asmap` restart with an addrman containing new and tried entries
 
-6. `qogecoind -asmap` with no file specified and a missing default asmap file
+6. `xogecoind -asmap` with no file specified and a missing default asmap file
 
-7. `qogecoind -asmap` with an empty (unparsable) default asmap file
+7. `xogecoind -asmap` with an empty (unparsable) default asmap file
 
 The tests are order-independent.
 
@@ -47,13 +47,13 @@ class AsmapTest(QogecoinTestFramework):
             self.nodes[node_id].addpeeraddress(address=f"101.{addr}.0.0", tried=tried, port=8333)
 
     def test_without_asmap_arg(self):
-        self.log.info('Test qogecoind with no -asmap arg passed')
+        self.log.info('Test xogecoind with no -asmap arg passed')
         self.stop_node(0)
         with self.node.assert_debug_log(['Using /16 prefix for IP bucketing']):
             self.start_node(0)
 
     def test_asmap_with_absolute_path(self):
-        self.log.info('Test qogecoind -asmap=<absolute path>')
+        self.log.info('Test xogecoind -asmap=<absolute path>')
         self.stop_node(0)
         filename = os.path.join(self.datadir, 'my-map-file.map')
         shutil.copyfile(self.asmap_raw, filename)
@@ -62,7 +62,7 @@ class AsmapTest(QogecoinTestFramework):
         os.remove(filename)
 
     def test_asmap_with_relative_path(self):
-        self.log.info('Test qogecoind -asmap=<relative path>')
+        self.log.info('Test xogecoind -asmap=<relative path>')
         self.stop_node(0)
         name = 'ASN_map'
         filename = os.path.join(self.datadir, name)
@@ -74,14 +74,14 @@ class AsmapTest(QogecoinTestFramework):
     def test_default_asmap(self):
         shutil.copyfile(self.asmap_raw, self.default_asmap)
         for arg in ['-asmap', '-asmap=']:
-            self.log.info(f'Test qogecoind {arg} (using default map file)')
+            self.log.info(f'Test xogecoind {arg} (using default map file)')
             self.stop_node(0)
             with self.node.assert_debug_log(expected_messages(self.default_asmap)):
                 self.start_node(0, [arg])
         os.remove(self.default_asmap)
 
     def test_asmap_interaction_with_addrman_containing_entries(self):
-        self.log.info("Test qogecoind -asmap restart with addrman containing new and tried entries")
+        self.log.info("Test xogecoind -asmap restart with addrman containing new and tried entries")
         self.stop_node(0)
         shutil.copyfile(self.asmap_raw, self.default_asmap)
         self.start_node(0, ["-asmap", "-checkaddrman=1"])
@@ -97,13 +97,13 @@ class AsmapTest(QogecoinTestFramework):
         os.remove(self.default_asmap)
 
     def test_default_asmap_with_missing_file(self):
-        self.log.info('Test qogecoind -asmap with missing default map file')
+        self.log.info('Test xogecoind -asmap with missing default map file')
         self.stop_node(0)
         msg = f"Error: Could not find asmap file \"{self.default_asmap}\""
         self.node.assert_start_raises_init_error(extra_args=['-asmap'], expected_msg=msg)
 
     def test_empty_asmap(self):
-        self.log.info('Test qogecoind -asmap with empty map file')
+        self.log.info('Test xogecoind -asmap with empty map file')
         self.stop_node(0)
         with open(self.default_asmap, "w", encoding="utf-8") as f:
             f.write("")

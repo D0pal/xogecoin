@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SUPPORT_CLEANSE_H
-#define QOGECOIN_SUPPORT_CLEANSE_H
+#ifndef XOGECOIN_SUPPORT_CLEANSE_H
+#define XOGECOIN_SUPPORT_CLEANSE_H
 
 #include <stdlib.h>
 
@@ -12,4 +12,4 @@
  * operation will not be optimized out by the compiler. */
 void memory_cleanse(void *ptr, size_t len);
 
-#endif // QOGECOIN_SUPPORT_CLEANSE_H
+#endif // XOGECOIN_SUPPORT_CLEANSE_H

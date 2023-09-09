@@ -67,12 +67,12 @@
     </message>
     <message>
         <source>These are your Qogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">To so vaši qogecoin-naslovi za pošiljanje. Pred pošiljanjem vedno preverite količino in prejemnikov naslov.</translation>
+        <translation type="unfinished">To so vaši xogecoin-naslovi za pošiljanje. Pred pošiljanjem vedno preverite količino in prejemnikov naslov.</translation>
     </message>
     <message>
         <source>These are your Qogecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">To so vaši qogecoin-naslovi, ki jih uporabljate za prejemanje plačil. Za tvorbo novega naslova uporabite gumb "Ustvari nov prejemni naslov" v zavihku Prejmi.
+        <translation type="unfinished">To so vaši xogecoin-naslovi, ki jih uporabljate za prejemanje plačil. Za tvorbo novega naslova uporabite gumb "Ustvari nov prejemni naslov" v zavihku Prejmi.
 Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
@@ -164,8 +164,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation type="unfinished">Potrdi šifriranje denarnice</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Opozorilo: V primeru izgube gesla šifrirane denarnice, boste &lt;b&gt;IZGUBILI VSE SVOJE QOGECOINE&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Opozorilo: V primeru izgube gesla šifrirane denarnice, boste &lt;b&gt;IZGUBILI VSE SVOJE XOGECOINE&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation type="unfinished">Vnesite staro geslo in novo geslo za denarnico.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Pomnite, da šifriranje denarnice ne more preprečiti morebitnim virusom na vašem računalniku, da bi ukradli vaše qogecoine.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Pomnite, da šifriranje denarnice ne more preprečiti morebitnim virusom na vašem računalniku, da bi ukradli vaše xogecoine.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -293,7 +293,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
         <source>Enter a Qogecoin address (e.g. %1)</source>
-        <translation type="unfinished">Vnesite qogecoin-naslov (npr. %1)</translation>
+        <translation type="unfinished">Vnesite xogecoin-naslov (npr. %1)</translation>
     </message>
     <message>
         <source>Internal</source>
@@ -402,7 +402,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">Nastavitvene datoteke ni bilo moč prebrati</translation>
@@ -416,8 +416,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation type="unfinished">Razvijalci %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s je okvarjena. Lahko jo poskusite popraviti z orodjem qogecoin-wallet ali pa jo obnovite iz varnostne kopije.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s je okvarjena. Lahko jo poskusite popraviti z orodjem xogecoin-wallet ali pa jo obnovite iz varnostne kopije.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -456,8 +456,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation type="unfinished">Napaka: identifikator zapisa v izvozni (dump) datoteki je napačen. Vsebuje "%s", pričakovano "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Napaka: verzija izvozne (dump) datoteke ni podprta. Ta verzija ukaza qogecoin-wallet podpira le izvozne datoteke verzije 1, ta datoteka pa ima verzijo %s.</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Napaka: verzija izvozne (dump) datoteke ni podprta. Ta verzija ukaza xogecoin-wallet podpira le izvozne datoteke verzije 1, ta datoteka pa ima verzijo %s.</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -1129,7 +1129,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
         <source>Send coins to a Qogecoin address</source>
-        <translation type="unfinished">Pošljite novce na qogecoin-naslov</translation>
+        <translation type="unfinished">Pošljite novce na xogecoin-naslov</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1173,7 +1173,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
         <source>Sign messages with your Qogecoin addresses to prove you own them</source>
-        <translation type="unfinished">Podpišite poljubno sporočilo z enim svojih qogecoin-naslovov, da prejemniku sporočila dokažete, da je ta naslov v vaši lasti.</translation>
+        <translation type="unfinished">Podpišite poljubno sporočilo z enim svojih xogecoin-naslovov, da prejemniku sporočila dokažete, da je ta naslov v vaši lasti.</translation>
     </message>
     <message>
         <source>&amp;Verify message…</source>
@@ -1181,7 +1181,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
         <source>Verify messages to ensure they were signed with specified Qogecoin addresses</source>
-        <translation type="unfinished">Preverite, če je bilo prejeto sporočilo podpisano z določenim qogecoin-naslovom.</translation>
+        <translation type="unfinished">Preverite, če je bilo prejeto sporočilo podpisano z določenim xogecoin-naslovom.</translation>
     </message>
     <message>
         <source>&amp;Load PSBT from file…</source>
@@ -1202,7 +1202,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
         <source>Load Partially Signed Qogecoin Transaction from clipboard</source>
-        <translation type="unfinished">Naloži delno podpisano qogecoin-transakcijo z odložišča</translation>
+        <translation type="unfinished">Naloži delno podpisano xogecoin-transakcijo z odložišča</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -1221,8 +1221,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation type="unfinished">&amp;Naslovi za prejemanje</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Odpri URI tipa qogecoin:</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Odpri URI tipa xogecoin:</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1276,10 +1276,10 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <source>%n active connection(s) to Qogecoin network.</source>
         <extracomment>A substring of the tooltip.</extracomment>
         <translation type="unfinished">
-            <numerusform>%n aktivna povezava v omrežje qogecoin</numerusform>
-            <numerusform>%n aktivni povezavi v omrežje qogecoin</numerusform>
-            <numerusform>%n aktivne povezave v omrežje qogecoin</numerusform>
-            <numerusform>%n aktivnih povezav v omrežje qogecoin</numerusform>
+            <numerusform>%n aktivna povezava v omrežje xogecoin</numerusform>
+            <numerusform>%n aktivni povezavi v omrežje xogecoin</numerusform>
+            <numerusform>%n aktivne povezave v omrežje xogecoin</numerusform>
+            <numerusform>%n aktivnih povezav v omrežje xogecoin</numerusform>
         </translation>
     </message>
     <message>
@@ -1727,7 +1727,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
         <source>The entered address "%1" is not a valid Qogecoin address.</source>
-        <translation type="unfinished">Vnešeni naslov "%1" ni veljaven qogecoin-naslov.</translation>
+        <translation type="unfinished">Vnešeni naslov "%1" ni veljaven xogecoin-naslov.</translation>
     </message>
     <message>
         <source>Address "%1" already exists as a receiving address with label "%2" and so cannot be added as a sending address.</source>
@@ -1887,12 +1887,12 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation type="unfinished">Obrazec</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Zadnje transakcije morda še niso vidne, zato je prikazano dobroimetje v denarnici lahko napačno. Pravilni podatki bodo prikazani, ko bo vaša denarnica končala s sinhronizacijo z omrežjem qogecoin; glejte podrobnosti spodaj.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Zadnje transakcije morda še niso vidne, zato je prikazano dobroimetje v denarnici lahko napačno. Pravilni podatki bodo prikazani, ko bo vaša denarnica končala s sinhronizacijo z omrežjem xogecoin; glejte podrobnosti spodaj.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Poskusa pošiljanja qogecoinov, na katere vplivajo še ne prikazane transakcije, omrežje ne bo sprejelo.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Poskusa pošiljanja xogecoinov, na katere vplivajo še ne prikazane transakcije, omrežje ne bo sprejelo.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1938,8 +1938,8 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Odpri URI tipa qogecoin:</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Odpri URI tipa xogecoin:</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2095,7 +2095,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
         <source>Automatically open the Qogecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation type="unfinished">Samodejno odpiranje vrat za qogecoin-odjemalec na usmerjevalniku (routerju). To deluje le, če usmerjevalnik podpira UPnP in je ta funkcija na usmerjevalniku omogočena.</translation>
+        <translation type="unfinished">Samodejno odpiranje vrat za xogecoin-odjemalec na usmerjevalniku (routerju). To deluje le, če usmerjevalnik podpira UPnP in je ta funkcija na usmerjevalniku omogočena.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -2103,7 +2103,7 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
     </message>
     <message>
         <source>Automatically open the Qogecoin client port on the router. This only works when your router supports NAT-PMP and it is enabled. The external port could be random.</source>
-        <translation type="unfinished">Samodejno odpiranje vrat za qogecoin-odjemalec na usmerjevalniku. To deluje le, če usmerjevalnik podpira NAT-PMP in je ta funkcija na usmerjevalniku omogočena. Zunanja številka vrat je lahko naključna.</translation>
+        <translation type="unfinished">Samodejno odpiranje vrat za xogecoin-odjemalec na usmerjevalniku. To deluje le, če usmerjevalnik podpira NAT-PMP in je ta funkcija na usmerjevalniku omogočena. Zunanja številka vrat je lahko naključna.</translation>
     </message>
     <message>
         <source>Map port using NA&amp;T-PMP</source>
@@ -2507,16 +2507,16 @@ Podpisovanje je možno le s podedovanimi ("legacy") naslovi.</translation>
         <translation type="unfinished">Napaka pri zahtevku za plačilo</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Ni mogoče zagnati rokovalca plačilnih povezav tipa qogecoin:.</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Ni mogoče zagnati rokovalca plačilnih povezav tipa xogecoin:.</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Rokovanje z URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' ni veljaven URI. Namesto tega uporabite 'qogecoin:' .</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' ni veljaven URI. Namesto tega uporabite 'xogecoin:' .</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -2528,7 +2528,7 @@ Svetujemo, da prodajalca prosite, naj vam priskrbi URI na podlagi BIP21.</transl
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
-        <translation type="unfinished">URI je nerazumljiv. Možno je, da je qogecoin-naslov neveljaven ali pa so parametri URI-ja napačno oblikovani.</translation>
+        <translation type="unfinished">URI je nerazumljiv. Možno je, da je xogecoin-naslov neveljaven ali pa so parametri URI-ja napačno oblikovani.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -3065,7 +3065,7 @@ Svetujemo, da prodajalca prosite, naj vam priskrbi URI na podlagi BIP21.</transl
     </message>
     <message>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Qogecoin network.</source>
-        <translation type="unfinished">Neobvezno sporočilo kot priponka zahtevku za plačilo, ki bo prikazano, ko bo zahtevek odprt. Opomba: Opravljeno plačilo v omrežju qogecoin tega sporočila ne bo vsebovalo.</translation>
+        <translation type="unfinished">Neobvezno sporočilo kot priponka zahtevku za plačilo, ki bo prikazano, ko bo zahtevek odprt. Opomba: Opravljeno plačilo v omrežju xogecoin tega sporočila ne bo vsebovalo.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -3345,7 +3345,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB" za transakcijo velikosti 500 navideznih bajtov (polovica enega kvB) znašala le 50 satošijev.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished">Kadar je v blokih manj prostora, kot je zahtev po transakcijah, lahko rudarji in posredovalna vozlišča zahtevajo minimalno provizijo. V redu, če plačate samo to minimalno provizijo, vendar se zavedajte, da se potem transakcija lahko nikoli ne potrdi, če bo povpraševanje po transakcijah večje, kot ga omrežje lahko obdela.</translation>
     </message>
     <message>
@@ -3436,7 +3436,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
     </message>
     <message>
         <source>Creates a Partially Signed Qogecoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Ustvari delno podpisano qogecoin-transakcijo (DPBT, angl. PSBT), ki jo lahko kopirate in potem podpišete n.pr. z nepovezano (offline) %1 denarnico ali pa s hardversko denarnico, ki podpira DPBT.</translation>
+        <translation type="unfinished">Ustvari delno podpisano xogecoin-transakcijo (DPBT, angl. PSBT), ki jo lahko kopirate in potem podpišete n.pr. z nepovezano (offline) %1 denarnico ali pa s hardversko denarnico, ki podpira DPBT.</translation>
     </message>
     <message>
         <source> from wallet '%1'</source>
@@ -3496,7 +3496,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
     <message>
         <source>Please, review your transaction proposal. This will produce a Partially Signed Qogecoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">Prosimo, preglejte predlog za transakcijo. Ustvarjena bo delno podpisana qogecoin-transakcija (DPBT), ki jo lahko shranite ali kopirate in potem podpišete n.pr. z nepovezano (offline) %1 denarnico ali pa s hardversko denarnico, ki podpira DPBT.</translation>
+        <translation type="unfinished">Prosimo, preglejte predlog za transakcijo. Ustvarjena bo delno podpisana xogecoin-transakcija (DPBT), ki jo lahko shranite ali kopirate in potem podpišete n.pr. z nepovezano (offline) %1 denarnico ali pa s hardversko denarnico, ki podpira DPBT.</translation>
     </message>
     <message>
         <source>Do you want to create this transaction?</source>
@@ -3506,7 +3506,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
     <message>
         <source>Please, review your transaction. You can create and send this transaction or create a Partially Signed Qogecoin Transaction (PSBT), which you can save or copy and then sign with, e.g., an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can send their transaction or create a PSBT. This string is displayed when both private keys and PSBT controls are enabled.</extracomment>
-        <translation type="unfinished">Prosimo, preglejte podrobnosti transakcije. Transakcijo lahko ustvarite in pošljete, lahko pa tudi ustvarite delno podpisano qogecoin-transakcijo (DPBT, angl. PSBT), ki jo lahko shranite ali kopirate na odložišče in kasneje prodpišete n.pr. z nepovezano %1 denarnico ali z denarnico, ki podpiral DPBT.</translation>
+        <translation type="unfinished">Prosimo, preglejte podrobnosti transakcije. Transakcijo lahko ustvarite in pošljete, lahko pa tudi ustvarite delno podpisano xogecoin-transakcijo (DPBT, angl. PSBT), ki jo lahko shranite ali kopirate na odložišče in kasneje prodpišete n.pr. z nepovezano %1 denarnico ali z denarnico, ki podpiral DPBT.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -3576,7 +3576,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
     </message>
     <message>
         <source>Warning: Invalid Qogecoin address</source>
-        <translation type="unfinished">Opozorilo: Neveljaven qogecoin-naslov</translation>
+        <translation type="unfinished">Opozorilo: Neveljaven xogecoin-naslov</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -3630,7 +3630,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation type="unfinished">Znesek za pošiljanje v izbrani enoti</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">Znesek plačila bo zmanjšan za znesek provizije. Prejemnik bo prejel manjši znesek, kot je bil vnešen. Če je prejemnikov več, bo provizija med njih enakomerno porazdeljena.</translation>
     </message>
     <message>
@@ -3658,8 +3658,8 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation type="unfinished">Če vnesete oznako za zgornji naslov, se bo skupaj z naslovom shranila v imenik že uporabljenih naslovov</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Sporočilo, ki je bilo pripeto na URI tipa qogecoin: in bo shranjeno skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Sporočilo, ki je bilo pripeto na URI tipa xogecoin: in bo shranjeno skupaj s podatki o transakciji. Opomba: Sporočilo ne bo poslano preko omrežja Qogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3688,7 +3688,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
         <translation type="unfinished">&amp;Podpiši sporočilo</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">S svojimi naslovi lahko podpisujete sporočila ali dogovore in s tem dokazujete, da na teh naslovih lahko prejemate kovance. Bodite previdni in ne podpisujte ničesar nejasnega ali naključnega, ker vas zlikovci preko ribarjenja (phishing) lahko prelisičijo, da na njih prepišete svojo identiteto. Podpisujte samo podrobno opisane izjave, s katerimi se strinjate.</translation>
     </message>
     <message>
@@ -3753,7 +3753,7 @@ Opomba: Ker se provizija izračuna na bajt, bi provizija "100 satoshijev na kvB"
     </message>
     <message>
         <source>Verify the message to ensure it was signed with the specified Qogecoin address</source>
-        <translation type="unfinished">Preverite, ali je bilo sporočilo v resnici podpisano z navedenim qogecoin-naslovom.</translation>
+        <translation type="unfinished">Preverite, ali je bilo sporočilo v resnici podpisano z navedenim xogecoin-naslovom.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>

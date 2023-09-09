@@ -153,7 +153,7 @@
         <translation type="unfinished">వాలెట్ గుప్తీకరణను నిర్ధారించండి</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">హెచ్చరిక: మీ జోలెని సంకేతపరిచి మీ సంకేతపదము కోల్పోతే, &lt;b&gt;మీ బిట్‌కాయిన్లు అన్నీ కోల్పోతారు&lt;/b&gt;</translation>
     </message>
     <message>
@@ -169,7 +169,7 @@
         <translation type="unfinished">వాలెట్ కోసం క్రొత్త పాస్‌ఫ్రేజ్‌ని నమోదు చేయండి.&lt;br/&gt; దయచేసి &lt;b&gt;పది లేదా అంతకంటే ఎక్కువ యాదృచ్ఛిక అక్షరాల&lt;/b&gt; పాస్‌ఫ్రేజ్‌ని లేదా &lt;b&gt;ఎనిమిది లేదా అంతకంటే ఎక్కువ పదాలను ఉపయోగించండి.&lt;/b&gt;</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">మీ వాలెట్‌ను గుప్తీకరించడం వల్ల మీ కంప్యూటర్‌కు హాని కలిగించే మాల్వేర్ దొంగిలించకుండా మీ బిట్‌కాయిన్‌లను పూర్తిగా రక్షించలేమని గుర్తుంచుకోండి.</translation>
     </message>
     <message>

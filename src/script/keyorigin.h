@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SCRIPT_KEYORIGIN_H
-#define QOGECOIN_SCRIPT_KEYORIGIN_H
+#ifndef XOGECOIN_SCRIPT_KEYORIGIN_H
+#define XOGECOIN_SCRIPT_KEYORIGIN_H
 
 #include <serialize.h>
 #include <vector>
@@ -46,4 +46,4 @@ struct KeyOriginInfo
     }
 };
 
-#endif // QOGECOIN_SCRIPT_KEYORIGIN_H
+#endif // XOGECOIN_SCRIPT_KEYORIGIN_H

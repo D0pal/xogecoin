@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <clientversion.h>
@@ -99,14 +99,14 @@ static int AppInitRawTx(int argc, char* argv[])
 
     if (argc < 2 || HelpRequested(gArgs) || gArgs.IsArgSet("-version")) {
         // First part of help message is specific to this utility
-        std::string strUsage = PACKAGE_NAME " qogecoin-tx utility version " + FormatFullVersion() + "\n";
+        std::string strUsage = PACKAGE_NAME " xogecoin-tx utility version " + FormatFullVersion() + "\n";
 
         if (gArgs.IsArgSet("-version")) {
             strUsage += FormatParagraph(LicenseInfo());
         } else {
             strUsage += "\n"
-                "Usage:  qogecoin-tx [options] <hex-tx> [commands]  Update hex-encoded qogecoin transaction\n"
-                "or:     qogecoin-tx [options] -create [commands]   Create hex-encoded qogecoin transaction\n"
+                "Usage:  xogecoin-tx [options] <hex-tx> [commands]  Update hex-encoded xogecoin transaction\n"
+                "or:     xogecoin-tx [options] -create [commands]   Create hex-encoded xogecoin transaction\n"
                 "\n";
             strUsage += gArgs.GetHelpMessage();
         }
@@ -811,7 +811,7 @@ static int CommandLineRawTx(int argc, char* argv[])
             if (argc < 2)
                 throw std::runtime_error("too few parameters");
 
-            // param: hex-encoded qogecoin transaction
+            // param: hex-encoded xogecoin transaction
             std::string strHexTx(argv[1]);
             if (strHexTx == "-")                 // "-" implies standard input
                 strHexTx = readStdin();

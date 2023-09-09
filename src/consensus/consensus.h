@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CONSENSUS_CONSENSUS_H
-#define QOGECOIN_CONSENSUS_CONSENSUS_H
+#ifndef XOGECOIN_CONSENSUS_CONSENSUS_H
+#define XOGECOIN_CONSENSUS_CONSENSUS_H
 
 #include <stdlib.h>
 #include <stdint.h>
@@ -29,4 +29,4 @@ static constexpr unsigned int LOCKTIME_VERIFY_SEQUENCE = (1 << 0);
 /** Use GetMedianTimePast() instead of nTime for end point timestamp. */
 static constexpr unsigned int LOCKTIME_MEDIAN_TIME_PAST = (1 << 1);
 
-#endif // QOGECOIN_CONSENSUS_CONSENSUS_H
+#endif // XOGECOIN_CONSENSUS_CONSENSUS_H

@@ -35,7 +35,7 @@ class SignetMinerTest(QogecoinTestFramework):
     def skip_test_if_missing_module(self):
         self.skip_if_no_cli()
         self.skip_if_no_wallet()
-        self.skip_if_no_qogecoin_util()
+        self.skip_if_no_xogecoin_util()
 
     def run_test(self):
         node = self.nodes[0]
@@ -51,7 +51,7 @@ class SignetMinerTest(QogecoinTestFramework):
                 f'--cli={node.cli.binary} -datadir={node.cli.datadir}',
                 'generate',
                 f'--address={node.getnewaddress()}',
-                f'--grind-cmd={self.options.qogecoinutil} grind',
+                f'--grind-cmd={self.options.xogecoinutil} grind',
                 '--nbits=1d00ffff',
                 f'--set-block-time={int(time.time())}',
             ], check=True, stderr=subprocess.STDOUT)

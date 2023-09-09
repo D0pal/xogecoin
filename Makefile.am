@@ -16,20 +16,20 @@ endif
 
 export PYTHONPATH
 
-if BUILD_QOGECOIN_LIBS
+if BUILD_XOGECOIN_LIBS
 pkgconfigdir = $(libdir)/pkgconfig
-pkgconfig_DATA = libqogecoinconsensus.pc
+pkgconfig_DATA = libxogecoinconsensus.pc
 endif
 
-QOGECOIND_BIN=$(top_builddir)/src/$(QOGECOIN_DAEMON_NAME)$(EXEEXT)
-QOGECOIN_QT_BIN=$(top_builddir)/src/qt/$(QOGECOIN_GUI_NAME)$(EXEEXT)
-QOGECOIN_CLI_BIN=$(top_builddir)/src/$(QOGECOIN_CLI_NAME)$(EXEEXT)
-QOGECOIN_TX_BIN=$(top_builddir)/src/$(QOGECOIN_TX_NAME)$(EXEEXT)
-QOGECOIN_UTIL_BIN=$(top_builddir)/src/$(QOGECOIN_UTIL_NAME)$(EXEEXT)
-QOGECOIN_WALLET_BIN=$(top_builddir)/src/$(QOGECOIN_WALLET_TOOL_NAME)$(EXEEXT)
-QOGECOIN_NODE_BIN=$(top_builddir)/src/$(QOGECOIN_MP_NODE_NAME)$(EXEEXT)
-QOGECOIN_GUI_BIN=$(top_builddir)/src/$(QOGECOIN_MP_GUI_NAME)$(EXEEXT)
-QOGECOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win64-setup$(EXEEXT)
+XOGECOIND_BIN=$(top_builddir)/src/$(XOGECOIN_DAEMON_NAME)$(EXEEXT)
+XOGECOIN_QT_BIN=$(top_builddir)/src/qt/$(XOGECOIN_GUI_NAME)$(EXEEXT)
+XOGECOIN_CLI_BIN=$(top_builddir)/src/$(XOGECOIN_CLI_NAME)$(EXEEXT)
+XOGECOIN_TX_BIN=$(top_builddir)/src/$(XOGECOIN_TX_NAME)$(EXEEXT)
+XOGECOIN_UTIL_BIN=$(top_builddir)/src/$(XOGECOIN_UTIL_NAME)$(EXEEXT)
+XOGECOIN_WALLET_BIN=$(top_builddir)/src/$(XOGECOIN_WALLET_TOOL_NAME)$(EXEEXT)
+XOGECOIN_NODE_BIN=$(top_builddir)/src/$(XOGECOIN_MP_NODE_NAME)$(EXEEXT)
+XOGECOIN_GUI_BIN=$(top_builddir)/src/$(XOGECOIN_MP_GUI_NAME)$(EXEEXT)
+XOGECOIN_WIN_INSTALLER=$(PACKAGE)-$(PACKAGE_VERSION)-win64-setup$(EXEEXT)
 
 empty :=
 space := $(empty) $(empty)
@@ -38,7 +38,7 @@ OSX_APP=Qogecoin-Qt.app
 OSX_VOLNAME = $(subst $(space),-,$(PACKAGE_NAME))
 OSX_DMG = $(OSX_VOLNAME).dmg
 OSX_DEPLOY_SCRIPT=$(top_srcdir)/contrib/macdeploy/macdeployqtplus
-OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/qogecoin.icns
+OSX_INSTALLER_ICONS=$(top_srcdir)/src/qt/res/icons/xogecoin.icns
 OSX_PLIST=$(top_builddir)/share/qt/Info.plist #not installed
 
 DIST_CONTRIB = \
@@ -57,7 +57,7 @@ BIN_CHECKS=$(top_srcdir)/contrib/devtools/symbol-check.py \
            $(top_srcdir)/contrib/devtools/security-check.py \
            $(top_srcdir)/contrib/devtools/utils.py
 
-WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/qogecoin.ico \
+WINDOWS_PACKAGING = $(top_srcdir)/share/pixmaps/xogecoin.ico \
   $(top_srcdir)/share/pixmaps/nsis-header.bmp \
   $(top_srcdir)/share/pixmaps/nsis-wizard.bmp \
   $(top_srcdir)/doc/README_windows.txt
@@ -66,27 +66,27 @@ OSX_PACKAGING = $(OSX_DEPLOY_SCRIPT) $(OSX_INSTALLER_ICONS) \
   $(top_srcdir)/contrib/macdeploy/detached-sig-create.sh
 
 COVERAGE_INFO = $(COV_TOOL_WRAPPER) baseline.info \
-  test_qogecoin_filtered.info total_coverage.info \
+  test_xogecoin_filtered.info total_coverage.info \
   baseline_filtered.info functional_test.info functional_test_filtered.info \
-  test_qogecoin_coverage.info test_qogecoin.info fuzz.info fuzz_filtered.info fuzz_coverage.info
+  test_xogecoin_coverage.info test_xogecoin.info fuzz.info fuzz_filtered.info fuzz_coverage.info
 
 dist-hook:
 	-$(GIT) archive --format=tar HEAD -- src/clientversion.cpp | $(AMTAR) -C $(top_distdir) -xf -
 
 if TARGET_WINDOWS
-$(QOGECOIN_WIN_INSTALLER): all-recursive
+$(XOGECOIN_WIN_INSTALLER): all-recursive
 	$(MKDIR_P) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(QOGECOIND_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(QOGECOIN_QT_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(QOGECOIN_CLI_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(QOGECOIN_TX_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(QOGECOIN_WALLET_BIN) $(top_builddir)/release
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(QOGECOIN_UTIL_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(XOGECOIND_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(XOGECOIN_QT_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(XOGECOIN_CLI_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(XOGECOIN_TX_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(XOGECOIN_WALLET_BIN) $(top_builddir)/release
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM) $(XOGECOIN_UTIL_BIN) $(top_builddir)/release
 	@test -f $(MAKENSIS) && echo 'OutFile "$@"' | cat $(top_builddir)/share/setup.nsi - | $(MAKENSIS) -V2 - || \
 	  echo error: could not build $@
 	@echo built $@
 
-deploy: $(QOGECOIN_WIN_INSTALLER)
+deploy: $(XOGECOIN_WIN_INSTALLER)
 endif
 
 if TARGET_DARWIN
@@ -102,20 +102,20 @@ $(OSX_APP)/Contents/Info.plist: $(OSX_PLIST)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
-$(OSX_APP)/Contents/Resources/qogecoin.icns: $(OSX_INSTALLER_ICONS)
+$(OSX_APP)/Contents/Resources/xogecoin.icns: $(OSX_INSTALLER_ICONS)
 	$(MKDIR_P) $(@D)
 	$(INSTALL_DATA) $< $@
 
 $(OSX_APP)/Contents/MacOS/Qogecoin-Qt: all-recursive
 	$(MKDIR_P) $(@D)
-	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $(QOGECOIN_QT_BIN) $@
+	STRIPPROG="$(STRIP)" $(INSTALL_STRIP_PROGRAM)  $(XOGECOIN_QT_BIN) $@
 
 $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings:
 	$(MKDIR_P) $(@D)
 	echo '{	CFBundleDisplayName = "$(PACKAGE_NAME)"; CFBundleName = "$(PACKAGE_NAME)"; }' > $@
 
 OSX_APP_BUILT=$(OSX_APP)/Contents/PkgInfo $(OSX_APP)/Contents/Resources/empty.lproj \
-  $(OSX_APP)/Contents/Resources/qogecoin.icns $(OSX_APP)/Contents/Info.plist \
+  $(OSX_APP)/Contents/Resources/xogecoin.icns $(OSX_APP)/Contents/Info.plist \
   $(OSX_APP)/Contents/MacOS/Qogecoin-Qt $(OSX_APP)/Contents/Resources/Base.lproj/InfoPlist.strings
 
 osx_volname:
@@ -141,28 +141,28 @@ endif !BUILD_DARWIN
 deploy: $(OSX_DMG)
 endif
 
-$(QOGECOIN_QT_BIN): FORCE
+$(XOGECOIN_QT_BIN): FORCE
 	$(MAKE) -C src qt/$(@F)
 
-$(QOGECOIND_BIN): FORCE
+$(XOGECOIND_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-$(QOGECOIN_CLI_BIN): FORCE
+$(XOGECOIN_CLI_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-$(QOGECOIN_TX_BIN): FORCE
+$(XOGECOIN_TX_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-$(QOGECOIN_UTIL_BIN): FORCE
+$(XOGECOIN_UTIL_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-$(QOGECOIN_WALLET_BIN): FORCE
+$(XOGECOIN_WALLET_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-$(QOGECOIN_NODE_BIN): FORCE
+$(XOGECOIN_NODE_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
-$(QOGECOIN_GUI_BIN): FORCE
+$(XOGECOIN_GUI_BIN): FORCE
 	$(MAKE) -C src $(@F)
 
 if USE_LCOV
@@ -202,16 +202,16 @@ fuzz_filtered.info: fuzz.info
 	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
 	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-test_qogecoin.info: baseline_filtered.info
+test_xogecoin.info: baseline_filtered.info
 	$(MAKE) -C src/ check
-	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src -t test_qogecoin -o $@
+	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src -t test_xogecoin -o $@
 	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
 
-test_qogecoin_filtered.info: test_qogecoin.info
+test_xogecoin_filtered.info: test_xogecoin.info
 	$(abs_builddir)/contrib/filter-lcov.py $(LCOV_FILTER_PATTERN) $< $@
 	$(LCOV) -a $@ $(LCOV_OPTS) -o $@
 
-functional_test.info: test_qogecoin_filtered.info
+functional_test.info: test_xogecoin_filtered.info
 	@TIMEOUT=15 test/functional/test_runner.py $(EXTENDED_FUNCTIONAL_TESTS)
 	$(LCOV) -c $(LCOV_OPTS) -d $(abs_builddir)/src --t functional-tests -o $@
 	$(LCOV) -z $(LCOV_OPTS) -d $(abs_builddir)/src
@@ -223,17 +223,17 @@ functional_test_filtered.info: functional_test.info
 fuzz_coverage.info: fuzz_filtered.info
 	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a fuzz_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
-test_qogecoin_coverage.info: baseline_filtered.info test_qogecoin_filtered.info
-	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_qogecoin_filtered.info -o $@
+test_xogecoin_coverage.info: baseline_filtered.info test_xogecoin_filtered.info
+	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_xogecoin_filtered.info -o $@
 
-total_coverage.info: test_qogecoin_filtered.info functional_test_filtered.info
-	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_qogecoin_filtered.info -a functional_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
+total_coverage.info: test_xogecoin_filtered.info functional_test_filtered.info
+	$(LCOV) -a $(LCOV_OPTS) baseline_filtered.info -a test_xogecoin_filtered.info -a functional_test_filtered.info -o $@ | $(GREP) "\%" | $(AWK) '{ print substr($$3,2,50) "/" $$5 }' > coverage_percent.txt
 
 fuzz.coverage/.dirstamp: fuzz_coverage.info
 	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
 	@touch $@
 
-test_qogecoin.coverage/.dirstamp:  test_qogecoin_coverage.info
+test_xogecoin.coverage/.dirstamp:  test_xogecoin_coverage.info
 	$(GENHTML) -s $(LCOV_OPTS) $< -o $(@D)
 	@touch $@
 
@@ -243,7 +243,7 @@ total.coverage/.dirstamp: total_coverage.info
 
 cov_fuzz: fuzz.coverage/.dirstamp
 
-cov: test_qogecoin.coverage/.dirstamp total.coverage/.dirstamp
+cov: test_xogecoin.coverage/.dirstamp total.coverage/.dirstamp
 
 endif
 
@@ -257,7 +257,7 @@ EXTRA_DIST += \
 
 EXTRA_DIST += \
     test/util/test_runner.py \
-    test/util/data/qogecoin-util-test.json \
+    test/util/data/xogecoin-util-test.json \
     test/util/data/blanktxv1.hex \
     test/util/data/blanktxv1.json \
     test/util/data/blanktxv2.hex \
@@ -312,7 +312,7 @@ EXTRA_DIST += \
     test/util/data/txcreatesignv2.hex \
     test/util/rpcauth-test.py
 
-CLEANFILES = $(OSX_DMG) $(QOGECOIN_WIN_INSTALLER)
+CLEANFILES = $(OSX_DMG) $(XOGECOIN_WIN_INSTALLER)
 
 DISTCHECK_CONFIGURE_FLAGS = --enable-man
 
@@ -332,7 +332,7 @@ clean-docs:
 	rm -rf doc/doxygen
 
 clean-local: clean-docs
-	rm -rf coverage_percent.txt test_qogecoin.coverage/ total.coverage/ fuzz.coverage/ test/tmp/ cache/ $(OSX_APP)
+	rm -rf coverage_percent.txt test_xogecoin.coverage/ total.coverage/ fuzz.coverage/ test/tmp/ cache/ $(OSX_APP)
 	rm -rf test/functional/__pycache__ test/functional/test_framework/__pycache__ test/cache share/rpcauth/__pycache__
 	rm -rf osx_volname dist/
 

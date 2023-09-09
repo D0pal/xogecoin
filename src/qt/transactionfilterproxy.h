@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_TRANSACTIONFILTERPROXY_H
-#define QOGECOIN_QT_TRANSACTIONFILTERPROXY_H
+#ifndef XOGECOIN_QT_TRANSACTIONFILTERPROXY_H
+#define XOGECOIN_QT_TRANSACTIONFILTERPROXY_H
 
 #include <consensus/amount.h>
 
@@ -64,4 +64,4 @@ private:
     bool showInactive;
 };
 
-#endif // QOGECOIN_QT_TRANSACTIONFILTERPROXY_H
+#endif // XOGECOIN_QT_TRANSACTIONFILTERPROXY_H

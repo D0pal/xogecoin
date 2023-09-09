@@ -9,14 +9,14 @@ export LC_ALL=C.UTF-8
 if [ -n "$ANDROID_TOOLS_URL" ]; then
   CI_EXEC make distclean || true
   CI_EXEC ./autogen.sh
-  CI_EXEC ./configure "$QOGECOIN_CONFIG" --prefix="${DEPENDS_DIR}/aarch64-linux-android" || ( (CI_EXEC cat config.log) && false)
+  CI_EXEC ./configure "$XOGECOIN_CONFIG" --prefix="${DEPENDS_DIR}/aarch64-linux-android" || ( (CI_EXEC cat config.log) && false)
   CI_EXEC "make $MAKEJOBS && cd src/qt && ANDROID_HOME=${ANDROID_HOME} ANDROID_NDK_HOME=${ANDROID_NDK_HOME} make apk"
   exit 0
 fi
 
-QOGECOIN_CONFIG_ALL="--enable-external-signer --enable-suppress-external-warnings --disable-dependency-tracking --prefix=$DEPENDS_DIR/$HOST --bindir=$BASE_OUTDIR/bin --libdir=$BASE_OUTDIR/lib"
+XOGECOIN_CONFIG_ALL="--enable-external-signer --enable-suppress-external-warnings --disable-dependency-tracking --prefix=$DEPENDS_DIR/$HOST --bindir=$BASE_OUTDIR/bin --libdir=$BASE_OUTDIR/lib"
 if [ -z "$NO_WERROR" ]; then
-  QOGECOIN_CONFIG_ALL="${QOGECOIN_CONFIG_ALL} --enable-werror"
+  XOGECOIN_CONFIG_ALL="${XOGECOIN_CONFIG_ALL} --enable-werror"
 fi
 CI_EXEC "ccache --zero-stats --max-size=$CCACHE_SIZE"
 
@@ -29,13 +29,13 @@ fi
 CI_EXEC mkdir -p "${BASE_BUILD_DIR}"
 export P_CI_DIR="${BASE_BUILD_DIR}"
 
-CI_EXEC "${BASE_ROOT_DIR}/configure" --cache-file=config.cache "$QOGECOIN_CONFIG_ALL" "$QOGECOIN_CONFIG" || ( (CI_EXEC cat config.log) && false)
+CI_EXEC "${BASE_ROOT_DIR}/configure" --cache-file=config.cache "$XOGECOIN_CONFIG_ALL" "$XOGECOIN_CONFIG" || ( (CI_EXEC cat config.log) && false)
 
 CI_EXEC make distdir VERSION="$HOST"
 
-export P_CI_DIR="${BASE_BUILD_DIR}/qogecoin-$HOST"
+export P_CI_DIR="${BASE_BUILD_DIR}/xogecoin-$HOST"
 
-CI_EXEC ./configure --cache-file=../config.cache "$QOGECOIN_CONFIG_ALL" "$QOGECOIN_CONFIG" || ( (CI_EXEC cat config.log) && false)
+CI_EXEC ./configure --cache-file=../config.cache "$XOGECOIN_CONFIG_ALL" "$XOGECOIN_CONFIG" || ( (CI_EXEC cat config.log) && false)
 
 set -o errtrace
 trap 'CI_EXEC "cat ${BASE_SCRATCH_DIR}/sanitizer-output/* 2> /dev/null"' ERR
@@ -45,7 +45,7 @@ if [[ ${USE_MEMORY_SANITIZER} == "true" ]]; then
   # using the Linux getrandom syscall. Avoid using getrandom by undefining
   # HAVE_SYS_GETRANDOM. See https://github.com/google/sanitizers/issues/852 for
   # details.
-  CI_EXEC 'grep -v HAVE_SYS_GETRANDOM src/config/qogecoin-config.h > src/config/qogecoin-config.h.tmp && mv src/config/qogecoin-config.h.tmp src/config/qogecoin-config.h'
+  CI_EXEC 'grep -v HAVE_SYS_GETRANDOM src/config/xogecoin-config.h > src/config/xogecoin-config.h.tmp && mv src/config/xogecoin-config.h.tmp src/config/xogecoin-config.h'
 fi
 
 if [[ "${RUN_TIDY}" == "true" ]]; then

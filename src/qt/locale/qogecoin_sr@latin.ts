@@ -153,7 +153,7 @@
         <translation type="unfinished">Potvrdite šifrovanje novčanika</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">Upozorenje: Ako šifrujete svoj novčanik, i potom izgubite svoju pristupnu frazu &lt;b&gt;IZGUBIĆETE SVE SVOJE BITKOINE&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -280,7 +280,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Done loading</source>
         <translation type="unfinished">Zavrseno ucitavanje</translation>
@@ -394,8 +394,8 @@
         <translation type="unfinished">Alatke za tabove</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Zatražite plaćanje (generiše QR kodove i qogecoin: URI-e)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Zatražite plaćanje (generiše QR kodove i xogecoin: URI-e)</translation>
     </message>
     <message numerus="yes">
         <source>Processed %n block(s) of transaction history.</source>

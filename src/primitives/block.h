@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_PRIMITIVES_BLOCK_H
-#define QOGECOIN_PRIMITIVES_BLOCK_H
+#ifndef XOGECOIN_PRIMITIVES_BLOCK_H
+#define XOGECOIN_PRIMITIVES_BLOCK_H
 
 #include <primitives/transaction.h>
 #include <serialize.h>
@@ -140,4 +140,4 @@ struct CBlockLocator
     }
 };
 
-#endif // QOGECOIN_PRIMITIVES_BLOCK_H
+#endif // XOGECOIN_PRIMITIVES_BLOCK_H

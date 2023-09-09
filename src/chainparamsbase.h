@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CHAINPARAMSBASE_H
-#define QOGECOIN_CHAINPARAMSBASE_H
+#ifndef XOGECOIN_CHAINPARAMSBASE_H
+#define XOGECOIN_CHAINPARAMSBASE_H
 
 #include <memory>
 #include <string>
@@ -11,7 +11,7 @@
 class ArgsManager;
 
 /**
- * CBaseChainParams defines the base parameters (shared between qogecoin-cli and qogecoind)
+ * CBaseChainParams defines the base parameters (shared between xogecoin-cli and xogecoind)
  * of a given instance of the Qogecoin system.
  */
 class CBaseChainParams
@@ -60,4 +60,4 @@ const CBaseChainParams& BaseParams();
 /** Sets the params returned by Params() to those for the given network. */
 void SelectBaseParams(const std::string& chain);
 
-#endif // QOGECOIN_CHAINPARAMSBASE_H
+#endif // XOGECOIN_CHAINPARAMSBASE_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_MESSAGE_H
-#define QOGECOIN_UTIL_MESSAGE_H
+#ifndef XOGECOIN_UTIL_MESSAGE_H
+#define XOGECOIN_UTIL_MESSAGE_H
 
 #include <key.h> // For CKey
 #include <uint256.h>
@@ -46,7 +46,7 @@ enum class SigningResult {
 };
 
 /** Verify a signed message.
- * @param[in] address Signer's qogecoin address, it must refer to a public key.
+ * @param[in] address Signer's xogecoin address, it must refer to a public key.
  * @param[in] signature The signature in base64 format.
  * @param[in] message The message that was signed.
  * @return result code */
@@ -73,4 +73,4 @@ uint256 MessageHash(const std::string& message);
 
 std::string SigningResultString(const SigningResult res);
 
-#endif // QOGECOIN_UTIL_MESSAGE_H
+#endif // XOGECOIN_UTIL_MESSAGE_H

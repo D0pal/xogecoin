@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2021 The Bitcoin and Qogecoin Core Authors
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef QOGECOIN_POLICY_FEES_H
-#define QOGECOIN_POLICY_FEES_H
+#ifndef XOGECOIN_POLICY_FEES_H
+#define XOGECOIN_POLICY_FEES_H
 
 #include <consensus/amount.h>
 #include <policy/feerate.h>
@@ -307,4 +307,4 @@ private:
     FastRandomContext insecure_rand;
 };
 
-#endif // QOGECOIN_POLICY_FEES_H
+#endif // XOGECOIN_POLICY_FEES_H

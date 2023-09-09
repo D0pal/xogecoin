@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_ADDRMAN_H
-#define QOGECOIN_ADDRMAN_H
+#ifndef XOGECOIN_ADDRMAN_H
+#define XOGECOIN_ADDRMAN_H
 
 #include <netaddress.h>
 #include <netgroup.h>
@@ -183,4 +183,4 @@ public:
     std::optional<AddressPosition> FindAddressEntry(const CAddress& addr);
 };
 
-#endif // QOGECOIN_ADDRMAN_H
+#endif // XOGECOIN_ADDRMAN_H

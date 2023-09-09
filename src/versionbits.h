@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_VERSIONBITS_H
-#define QOGECOIN_VERSIONBITS_H
+#ifndef XOGECOIN_VERSIONBITS_H
+#define XOGECOIN_VERSIONBITS_H
 
 #include <chain.h>
 #include <sync.h>
@@ -104,4 +104,4 @@ public:
     void Clear();
 };
 
-#endif // QOGECOIN_VERSIONBITS_H
+#endif // XOGECOIN_VERSIONBITS_H

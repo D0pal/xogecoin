@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_I2P_H
-#define QOGECOIN_I2P_H
+#ifndef XOGECOIN_I2P_H
+#define XOGECOIN_I2P_H
 
 #include <compat.h>
 #include <fs.h>
@@ -267,4 +267,4 @@ private:
 } // namespace sam
 } // namespace i2p
 
-#endif // QOGECOIN_I2P_H
+#endif // XOGECOIN_I2P_H

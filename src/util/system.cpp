@@ -90,8 +90,8 @@
 // Application startup time (used for uptime calculation)
 const int64_t nStartupTime = GetTime();
 
-const char * const QOGECOIN_CONF_FILENAME = "qogecoin.conf";
-const char * const QOGECOIN_SETTINGS_FILENAME = "settings.json";
+const char * const XOGECOIN_CONF_FILENAME = "xogecoin.conf";
+const char * const XOGECOIN_SETTINGS_FILENAME = "settings.json";
 
 ArgsManager gArgs;
 
@@ -319,7 +319,7 @@ bool ArgsManager::ParseParameters(int argc, const char* const argv[], std::strin
         if (key.substr(0, 5) == "-psn_") continue;
 #endif
 
-        if (key == "-") break; //qogecoin-tx using stdin
+        if (key == "-") break; //xogecoin-tx using stdin
         std::string val;
         size_t is_index = key.find('=');
         if (is_index != std::string::npos) {
@@ -528,7 +528,7 @@ bool ArgsManager::InitSettings(std::string& error)
 
 bool ArgsManager::GetSettingsPath(fs::path* filepath, bool temp) const
 {
-    fs::path settings = GetPathArg("-settings", fs::path{QOGECOIN_SETTINGS_FILENAME});
+    fs::path settings = GetPathArg("-settings", fs::path{XOGECOIN_SETTINGS_FILENAME});
     if (settings.empty()) {
         return false;
     }
@@ -778,7 +778,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(nullptr, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "qogecoin";
+    const char* pszModule = "xogecoin";
 #endif
     if (pex)
         return strprintf(
@@ -799,7 +799,7 @@ fs::path GetDefaultDataDir()
 {
     // Windows: C:\Users\Username\AppData\Roaming\Qogecoin
     // macOS: ~/Library/Application Support/Qogecoin
-    // Unix-like: ~/.qogecoin
+    // Unix-like: ~/.xogecoin
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Qogecoin";
@@ -815,7 +815,7 @@ fs::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/Qogecoin";
 #else
     // Unix-like
-    return pathRet / ".qogecoin";
+    return pathRet / ".xogecoin";
 #endif
 #endif
 }
@@ -912,7 +912,7 @@ bool ArgsManager::ReadConfigFiles(std::string& error, bool ignore_invalid_keys)
         m_config_sections.clear();
     }
 
-    const std::string confPath = GetArg("-conf", QOGECOIN_CONF_FILENAME);
+    const std::string confPath = GetArg("-conf", XOGECOIN_CONF_FILENAME);
     std::ifstream stream{GetConfigFile(confPath)};
 
     // not ok to have a config file specified that cannot be opened

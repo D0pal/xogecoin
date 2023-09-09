@@ -1,13 +1,13 @@
 Qogecoin Core version 0.10.1 is now available from:
 
-  <https://qogecoin.org/bin/qogecoin-core-0.10.1/>
+  <https://xogecoin.org/bin/xogecoin-core-0.10.1/>
 
 This is a new minor version release, bringing bug fixes and translation 
 updates. It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/qogecoin/qogecoin/issues>
+  <https://github.com/xogecoin/xogecoin/issues>
 
 Upgrading and downgrading
 =========================
@@ -18,7 +18,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/Qogecoin-Qt (on Mac) or
-qogecoind/qogecoin-qt (on Linux).
+xogecoind/xogecoin-qt (on Linux).
 
 Downgrade warning
 ------------------
@@ -48,7 +48,7 @@ Notable changes
 
 This is a minor release and hence there are no notable changes.
 For the notable changes in 0.10, refer to the release notes for the
-0.10.0 release at https://github.com/qogecoin/qogecoin/blob/v0.10.0/doc/release-notes.md
+0.10.0 release at https://github.com/xogecoin/xogecoin/blob/v0.10.0/doc/release-notes.md
 
 0.10.1 Change log
 =================
@@ -140,4 +140,4 @@ And all those who contributed additional code review and/or security research:
 - Sergio Demian Lerner
 - Sharon Goldberg
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/qogecoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/xogecoin/).

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_RPC_BLOCKCHAIN_H
-#define QOGECOIN_RPC_BLOCKCHAIN_H
+#ifndef XOGECOIN_RPC_BLOCKCHAIN_H
+#define XOGECOIN_RPC_BLOCKCHAIN_H
 
 #include <consensus/amount.h>
 #include <core_io.h>
@@ -59,4 +59,4 @@ UniValue CreateUTXOSnapshot(
     const fs::path& path,
     const fs::path& tmppath);
 
-#endif // QOGECOIN_RPC_BLOCKCHAIN_H
+#endif // XOGECOIN_RPC_BLOCKCHAIN_H

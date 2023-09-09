@@ -152,7 +152,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Подтвердите шифрование кошелька</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">Предупреждение: если вы зашифруете кошелёк и потеряете парольную фразу, вы &lt;b&gt;ПОТЕРЯЕТЕ ВСЕ ВАШИ БИТКОИНЫ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -172,7 +172,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Введите старый и новый пароли для кошелька</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">Помните, что шифрование кошелька не может полностью защитить ваши биткойны от кражи вредоносными программами, заразившими ваш компьютер.</translation>
     </message>
     <message>
@@ -421,14 +421,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Разработчики %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s испорчен. Попробуйте восстановить с помощью инструмента qogecoin-wallet или восстановите из резервной копии.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s испорчен. Попробуйте восстановить с помощью инструмента xogecoin-wallet или восстановите из резервной копии.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -463,8 +463,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ошибка: запись идентификатора дамп-файла неверна. Обнаружено "%s", ожидалось "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Ошибка: версия дамп-файла не поддерживается. Эта версия qogecoin-wallet поддерживает только дамп-файлы версии 1. Обнаружено дамп-файл версии %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Ошибка: версия дамп-файла не поддерживается. Эта версия xogecoin-wallet поддерживает только дамп-файлы версии 1. Обнаружено дамп-файл версии %s</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -1187,8 +1187,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Подключение к узлам...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Запросить платёж (генерирует QR-коды и URI протокола qogecoin:)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Запросить платёж (генерирует QR-коды и URI протокола xogecoin:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1267,8 +1267,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Адреса для получения</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Открыть URI протокола qogecoin:</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Открыть URI протокола xogecoin:</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1897,11 +1897,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Форма</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished">Недавние транзакции могут быть пока не видны, и поэтому отображаемый баланс вашего кошелька может быть неверным. Информация станет верной после завершения синхронизации с сетью биткоина, прогресс которой вы можете видеть ниже.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">Попытка потратить средства, затронутые не видными пока транзакциями, будет отклонена сетью.</translation>
     </message>
     <message>
@@ -1952,7 +1952,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished">Открыть URI биткоина</translation>
     </message>
     <message>
@@ -2470,16 +2470,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ошибка запроса платежа</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Не удаётся запустить обработчик click-to-pay для протокола qogecoin:</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Не удаётся запустить обработчик click-to-pay для протокола xogecoin:</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Обработка URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">«qogecoin://» — это неверный URI. Используйте вместо него «qogecoin:».</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">«xogecoin://» — это неверный URI. Используйте вместо него «xogecoin:».</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3260,7 +3260,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Примечание: так как комиссия рассчитывается пропорционально размеру в байтах, комиссия «100 сатоши за ВКБ» для транзакции размером 500 виртуальных байт (половина 1 ВКБ) приведет к сбору в размере всего 50 сатоши.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished">Когда объём транзакций меньше, чем пространство в блоках, майнеры и ретранслирующие узлы могут устанавливать минимальную комиссию. Платить только эту минимальную комиссию вполне допустимо, но примите во внимание,  что ваша транзакция может никогда не подтвердиться, если впоследствии транзакций окажется больше, чем может обработать сеть.</translation>
     </message>
     <message>
@@ -3506,7 +3506,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Сумма к отправке в выбранных единицах</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">Комиссия будет вычтена из отправляемой суммы. Получателю придёт меньше биткоинов, чем вы ввели в поле «Сумма». Если выбрано несколько получателей, комиссия распределяется поровну.</translation>
     </message>
     <message>
@@ -3534,7 +3534,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Введите метку для этого адреса, чтобы добавить его в список использованных адресов</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
         <translation type="unfinished">Сообщение, которое было прикреплено к URI и которое будет сохранено вместе с транзакцией для вашего сведения. Обратите внимание: сообщение не будет отправлено через сеть биткоина.</translation>
     </message>
     <message>
@@ -3568,7 +3568,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">&amp;Подписать сообщение</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">Вы можете подписывать сообщения/соглашения своими адресами, чтобы доказать, что вы можете получать биткоины на них. Будьте осторожны и не подписывайте непонятные или случайные сообщения, так как мошенники могут таким образом пытаться присвоить вашу личность. Подписывайте только такие сообщения, с которыми вы согласны вплоть до мелочей.</translation>
     </message>
     <message>

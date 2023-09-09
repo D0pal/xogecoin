@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WARNINGS_H
-#define QOGECOIN_WARNINGS_H
+#ifndef XOGECOIN_WARNINGS_H
+#define XOGECOIN_WARNINGS_H
 
 #include <string>
 
@@ -20,4 +20,4 @@ void SetfLargeWorkInvalidChainFound(bool flag);
  */
 bilingual_str GetWarnings(bool verbose);
 
-#endif // QOGECOIN_WARNINGS_H
+#endif // XOGECOIN_WARNINGS_H

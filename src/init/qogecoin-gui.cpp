@@ -16,7 +16,7 @@
 
 namespace init {
 namespace {
-const char* EXE_NAME = "qogecoin-gui";
+const char* EXE_NAME = "xogecoin-gui";
 
 class QogecoinGuiInit : public interfaces::Init
 {

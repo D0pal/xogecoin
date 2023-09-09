@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_COMPRESSOR_H
-#define QOGECOIN_COMPRESSOR_H
+#ifndef XOGECOIN_COMPRESSOR_H
+#define XOGECOIN_COMPRESSOR_H
 
 #include <prevector.h>
 #include <primitives/transaction.h>
@@ -115,4 +115,4 @@ struct TxOutCompression
     FORMATTER_METHODS(CTxOut, obj) { READWRITE(Using<AmountCompression>(obj.nValue), Using<ScriptCompression>(obj.scriptPubKey)); }
 };
 
-#endif // QOGECOIN_COMPRESSOR_H
+#endif // XOGECOIN_COMPRESSOR_H

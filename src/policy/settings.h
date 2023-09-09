@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_POLICY_SETTINGS_H
-#define QOGECOIN_POLICY_SETTINGS_H
+#ifndef XOGECOIN_POLICY_SETTINGS_H
+#define XOGECOIN_POLICY_SETTINGS_H
 
 #include <policy/policy.h>
 
@@ -32,4 +32,4 @@ static inline int64_t GetVirtualTransactionSize(const CTransaction& tx, int64_t 
     return GetVirtualTransactionSize(tx, sigop_cost, ::nBytesPerSigOp);
 }
 
-#endif // QOGECOIN_POLICY_SETTINGS_H
+#endif // XOGECOIN_POLICY_SETTINGS_H

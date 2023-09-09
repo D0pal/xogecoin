@@ -205,7 +205,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -231,7 +231,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <location line="+55"/>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -313,7 +313,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
 <context>
     <name>QogecoinApplication</name>
     <message>
-        <location filename="../qogecoin.cpp" line="+433"/>
+        <location filename="../xogecoin.cpp" line="+433"/>
         <source>Runaway exception</source>
         <translation type="unfinished"></translation>
     </message>
@@ -336,7 +336,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
 <context>
     <name>QogecoinGUI</name>
     <message>
-        <location filename="../qogecoingui.cpp" line="+250"/>
+        <location filename="../xogecoingui.cpp" line="+250"/>
         <source>&amp;Overview</source>
         <translation>&amp;Overview</translation>
     </message>
@@ -563,7 +563,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <location line="-788"/>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -666,7 +666,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <location line="+4"/>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1432,12 +1432,12 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <location line="+119"/>
-        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet&apos;s balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+19"/>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1503,7 +1503,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     <name>OpenURIDialog</name>
     <message>
         <location filename="../forms/openuridialog.ui" line="+14"/>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2277,7 +2277,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2290,7 +2290,7 @@ Signing is only possible with addresses of the type &apos;legacy&apos;.</source>
     </message>
     <message>
         <location line="-29"/>
-        <source>&apos;qogecoin://&apos; is not a valid URI. Use &apos;qogecoin:&apos; instead.</source>
+        <source>&apos;xogecoin://&apos; is not a valid URI. Use &apos;xogecoin:&apos; instead.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2384,7 +2384,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../qogecoinunits.cpp" line="+215"/>
+        <location filename="../xogecoinunits.cpp" line="+215"/>
         <source>Amount</source>
         <translation type="unfinished">Amount</translation>
     </message>
@@ -2556,7 +2556,7 @@ If you are receiving this error you should request the merchant provide a BIP21 
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qogecoin.cpp" line="-276"/>
+        <location filename="../xogecoin.cpp" line="-276"/>
         <source>Do you want to reset settings to default values, or to abort without making changes?</source>
         <extracomment>Explanatory text shown on startup when the settings file cannot be read. Prompts user to make a choice between resetting or aborting.</extracomment>
         <translation type="unfinished"></translation>
@@ -3608,7 +3608,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     </message>
     <message>
         <location line="+35"/>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3972,7 +3972,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     </message>
     <message>
         <location line="+7"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4008,7 +4008,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     </message>
     <message>
         <location line="+58"/>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4064,7 +4064,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4836,7 +4836,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of &quot;100 
 <context>
     <name>UnitDisplayStatusBarControl</name>
     <message>
-        <location filename="../qogecoingui.cpp" line="+41"/>
+        <location filename="../xogecoingui.cpp" line="+41"/>
         <source>Unit to show amounts in. Click to select another unit.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -5048,15 +5048,15 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
 </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
-        <location filename="../qogecoinstrings.cpp" line="+12"/>
+        <location filename="../xogecoinstrings.cpp" line="+12"/>
         <source>The %s developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5106,7 +5106,7 @@ Go to File &gt; Open Wallet to load a wallet.
     </message>
     <message>
         <location line="+2"/>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -5870,7 +5870,7 @@ Go to File &gt; Open Wallet to load a wallet.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../qogecoin.cpp" line="-496"/>
+        <location filename="../xogecoin.cpp" line="-496"/>
         <source>Settings file could not be read</source>
         <translation type="unfinished"></translation>
     </message>

@@ -2,7 +2,7 @@
 
 **Updated for FreeBSD [12.3](https://www.freebsd.org/releases/12.3R/announce/)**
 
-This guide describes how to build qogecoind, command-line utilities, and GUI on FreeBSD.
+This guide describes how to build xogecoind, command-line utilities, and GUI on FreeBSD.
 
 ## Preparation
 
@@ -19,13 +19,13 @@ See [dependencies.md](dependencies.md) for a complete overview.
 ### 2. Clone Qogecoin Repo
 Now that `git` and all the required dependencies are installed, let's clone the Qogecoin Core repository to a directory. All build scripts and commands will run from this directory.
 ``` bash
-git clone https://github.com/qogecoin/qogecoin.git
+git clone https://github.com/xogecoin/xogecoin.git
 ```
 
 ### 3. Install Optional Dependencies
 
 #### Wallet Dependencies
-It is not necessary to build wallet functionality to run either `qogecoind` or `qogecoin-qt`.
+It is not necessary to build wallet functionality to run either `xogecoind` or `xogecoin-qt`.
 
 ###### Descriptor Wallet Support
 

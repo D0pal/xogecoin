@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_SALVAGE_H
-#define QOGECOIN_WALLET_SALVAGE_H
+#ifndef XOGECOIN_WALLET_SALVAGE_H
+#define XOGECOIN_WALLET_SALVAGE_H
 
 #include <fs.h>
 #include <streams.h>
@@ -16,4 +16,4 @@ namespace wallet {
 bool RecoverDatabaseFile(const ArgsManager& args, const fs::path& file_path, bilingual_str& error, std::vector<bilingual_str>& warnings);
 } // namespace wallet
 
-#endif // QOGECOIN_WALLET_SALVAGE_H
+#endif // XOGECOIN_WALLET_SALVAGE_H

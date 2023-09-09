@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_BANTABLEMODEL_H
-#define QOGECOIN_QT_BANTABLEMODEL_H
+#ifndef XOGECOIN_QT_BANTABLEMODEL_H
+#define XOGECOIN_QT_BANTABLEMODEL_H
 
 #include <addrdb.h>
 #include <net.h>
@@ -77,4 +77,4 @@ private:
     std::unique_ptr<BanTablePriv> priv;
 };
 
-#endif // QOGECOIN_QT_BANTABLEMODEL_H
+#endif // XOGECOIN_QT_BANTABLEMODEL_H

@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_TRANSACTIONDESC_H
-#define QOGECOIN_QT_TRANSACTIONDESC_H
+#ifndef XOGECOIN_QT_TRANSACTIONDESC_H
+#define XOGECOIN_QT_TRANSACTIONDESC_H
 
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 
 #include <QObject>
 #include <QString>
@@ -34,4 +34,4 @@ private:
     static QString FormatTxStatus(const interfaces::WalletTxStatus& status, bool inMempool);
 };
 
-#endif // QOGECOIN_QT_TRANSACTIONDESC_H
+#endif // XOGECOIN_QT_TRANSACTIONDESC_H

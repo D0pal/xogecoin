@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_INTERFACES_INIT_H
-#define QOGECOIN_INTERFACES_INIT_H
+#ifndef XOGECOIN_INTERFACES_INIT_H
+#define XOGECOIN_INTERFACES_INIT_H
 
 #include <memory>
 
@@ -22,7 +22,7 @@ class WalletLoader;
 //! and get access to other interfaces (Node, Chain, Wallet, etc).
 //!
 //! There is a different Init interface implementation for each process
-//! (qogecoin-gui, qogecoin-node, qogecoin-wallet, qogecoind, qogecoin-qt) and each
+//! (xogecoin-gui, xogecoin-node, xogecoin-wallet, xogecoind, xogecoin-qt) and each
 //! implementation can implement the make methods for interfaces it supports.
 //! The default make methods all return null.
 class Init
@@ -51,4 +51,4 @@ std::unique_ptr<Init> MakeWalletInit(int argc, char* argv[], int& exit_status);
 std::unique_ptr<Init> MakeGuiInit(int argc, char* argv[]);
 } // namespace interfaces
 
-#endif // QOGECOIN_INTERFACES_INIT_H
+#endif // XOGECOIN_INTERFACES_INIT_H

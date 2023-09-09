@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CRYPTO_SHA3_H
-#define QOGECOIN_CRYPTO_SHA3_H
+#ifndef XOGECOIN_CRYPTO_SHA3_H
+#define XOGECOIN_CRYPTO_SHA3_H
 
 #include <span.h>
 
@@ -38,4 +38,4 @@ public:
     SHA3_256& Reset();
 };
 
-#endif // QOGECOIN_CRYPTO_SHA3_H
+#endif // XOGECOIN_CRYPTO_SHA3_H

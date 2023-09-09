@@ -159,8 +159,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation type="unfinished">Confirmar el cifrado de la billetera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Advertencia: si encriptas tu billetera y pierdes tu contraseña &lt;b&gt; PIERDES TODOS TUS QOGECOINS &lt;/b&gt; !</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Advertencia: si encriptas tu billetera y pierdes tu contraseña &lt;b&gt; PIERDES TODOS TUS XOGECOINS &lt;/b&gt; !</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -179,8 +179,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation type="unfinished">Introducir la vieja contraseña y la nueva contraseña para la billetera.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recuerda que codificando tu billetera no garantiza mantener a salvo tus qogecoins en caso de tener virus en el computador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recuerda que codificando tu billetera no garantiza mantener a salvo tus xogecoins en caso de tener virus en el computador.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -341,7 +341,7 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Los desarrolladores de %s</translation>
@@ -663,8 +663,8 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation type="unfinished">Barra de herramientas de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Solicitar pagos (genera códigos QR y qogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Solicitar pagos (genera códigos QR y xogecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1160,12 +1160,12 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation type="unfinished">Configurar</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Es posible que las transacciones recientes aún no estén visibles y, por lo tanto, el saldo de su billetera podría ser incorrecto. Esta información será correcta una vez que su billetera haya terminado de sincronizarse con la red qogecoin, como se detalla a continuación.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Es posible que las transacciones recientes aún no estén visibles y, por lo tanto, el saldo de su billetera podría ser incorrecto. Esta información será correcta una vez que su billetera haya terminado de sincronizarse con la red xogecoin, como se detalla a continuación.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">La red no aceptará intentar gastar qogecoins que se vean afectados por transacciones aún no mostradas</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">La red no aceptará intentar gastar xogecoins que se vean afectados por transacciones aún no mostradas</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1502,7 +1502,7 @@ Usa el boton "Crear nueva direccion de recibimiento" en la pestaña de recibir p
         <translation type="unfinished">Error de solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">No se puede iniciar Qogecoin: controlador de clic para pagar</translation>
     </message>
     <message>

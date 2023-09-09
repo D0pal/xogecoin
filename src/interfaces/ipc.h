@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_INTERFACES_IPC_H
-#define QOGECOIN_INTERFACES_IPC_H
+#ifndef XOGECOIN_INTERFACES_IPC_H
+#define XOGECOIN_INTERFACES_IPC_H
 
 #include <functional>
 #include <memory>
@@ -75,4 +75,4 @@ protected:
 std::unique_ptr<Ipc> MakeIpc(const char* exe_name, const char* process_argv0, Init& init);
 } // namespace interfaces
 
-#endif // QOGECOIN_INTERFACES_IPC_H
+#endif // XOGECOIN_INTERFACES_IPC_H

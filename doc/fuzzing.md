@@ -5,12 +5,12 @@
 To quickly get started fuzzing Qogecoin Core using [libFuzzer](https://llvm.org/docs/LibFuzzer.html):
 
 ```sh
-$ git clone https://github.com/qogecoin/qogecoin
-$ cd qogecoin/
+$ git clone https://github.com/xogecoin/xogecoin
+$ cd xogecoin/
 $ ./autogen.sh
 $ CC=clang CXX=clang++ ./configure --enable-fuzz --with-sanitizers=address,fuzzer,undefined
 # macOS users: If you have problem with this step then make sure to read "macOS hints for
-# libFuzzer" on https://github.com/qogecoin/qogecoin/blob/master/doc/fuzzing.md#macos-hints-for-libfuzzer
+# libFuzzer" on https://github.com/xogecoin/xogecoin/blob/master/doc/fuzzing.md#macos-hints-for-libfuzzer
 $ make
 $ FUZZ=process_message src/test/fuzz/fuzz
 # abort fuzzing using ctrl-c
@@ -21,11 +21,11 @@ There is also a runner script to execute all fuzz targets. Refer to
 
 ## Overview of Qogecoin Core fuzzing
 
-[Google](https://github.com/google/fuzzing/) has a good overview of fuzzing in general, with contributions from key architects of some of the most-used fuzzers. [This paper](https://agroce.github.io/qogecoin_report.pdf) includes an external overview of the status of Qogecoin Core fuzzing, as of summer 2021.  [John Regehr](https://blog.regehr.org/archives/1687) provides good advice on writing code that assists fuzzers in finding bugs, which is useful for developers to keep in mind.
+[Google](https://github.com/google/fuzzing/) has a good overview of fuzzing in general, with contributions from key architects of some of the most-used fuzzers. [This paper](https://agroce.github.io/xogecoin_report.pdf) includes an external overview of the status of Qogecoin Core fuzzing, as of summer 2021.  [John Regehr](https://blog.regehr.org/archives/1687) provides good advice on writing code that assists fuzzers in finding bugs, which is useful for developers to keep in mind.
 
 ## Fuzzing harnesses and output
 
-[`process_message`](https://github.com/qogecoin/qogecoin/blob/master/src/test/fuzz/process_message.cpp) is a fuzzing harness for the [`ProcessMessage(...)` function (`net_processing`)](https://github.com/qogecoin/qogecoin/blob/master/src/net_processing.cpp). The available fuzzing harnesses are found in [`src/test/fuzz/`](https://github.com/qogecoin/qogecoin/tree/master/src/test/fuzz).
+[`process_message`](https://github.com/xogecoin/xogecoin/blob/master/src/test/fuzz/process_message.cpp) is a fuzzing harness for the [`ProcessMessage(...)` function (`net_processing`)](https://github.com/xogecoin/xogecoin/blob/master/src/net_processing.cpp). The available fuzzing harnesses are found in [`src/test/fuzz/`](https://github.com/xogecoin/xogecoin/tree/master/src/test/fuzz).
 
 The fuzzer will output `NEW` every time it has created a test input that covers new areas of the code under test. For more information on how to interpret the fuzzer output, see the [libFuzzer documentation](https://llvm.org/docs/LibFuzzer.html).
 
@@ -71,7 +71,7 @@ block^@M-^?M-^?M-^?M-^?M-^?nM-^?M-^?
 
 In this case the fuzzer managed to create a `block` message which when passed to `ProcessMessage(...)` increased coverage.
 
-It is possible to specify `qogecoind` arguments to the `fuzz` executable.
+It is possible to specify `xogecoind` arguments to the `fuzz` executable.
 Depending on the test, they may be ignored or consumed and alter the behavior
 of the test. Just make sure to use double-dash to distinguish them from the
 fuzzer's own arguments:
@@ -82,12 +82,12 @@ $ FUZZ=address_deserialize_v2 src/test/fuzz/fuzz -runs=1 fuzz_seed_corpus/addres
 
 ## Fuzzing corpora
 
-The project's collection of seed corpora is found in the [`qogecoin-core/qa-assets`](https://github.com/qogecoin-core/qa-assets) repo.
+The project's collection of seed corpora is found in the [`xogecoin-core/qa-assets`](https://github.com/xogecoin-core/qa-assets) repo.
 
-To fuzz `process_message` using the [`qogecoin-core/qa-assets`](https://github.com/qogecoin-core/qa-assets) seed corpus:
+To fuzz `process_message` using the [`xogecoin-core/qa-assets`](https://github.com/xogecoin-core/qa-assets) seed corpus:
 
 ```sh
-$ git clone https://github.com/qogecoin-core/qa-assets
+$ git clone https://github.com/xogecoin-core/qa-assets
 $ FUZZ=process_message src/test/fuzz/fuzz qa-assets/fuzz_seed_corpus/process_message/
 INFO: Seed: 1346407872
 INFO: Loaded 1 modules   (424174 inline 8-bit counters): 424174 [0x55d8a9004ab8, 0x55d8a906c3a6),
@@ -101,7 +101,7 @@ INFO: seed corpus: files: 991 min: 1b max: 1858b total: 288291b rss: 150Mb
 
 ## Run without sanitizers for increased throughput
 
-Fuzzing on a harness compiled with `--with-sanitizers=address,fuzzer,undefined` is good for finding bugs. However, the very slow execution even under libFuzzer will limit the ability to find new coverage. A good approach is to perform occasional long runs without the additional bug-detectors (configure `--with-sanitizers=fuzzer`) and then merge new inputs into a corpus as described in the qa-assets repo (https://github.com/qogecoin-core/qa-assets/blob/main/.github/PULL_REQUEST_TEMPLATE.md).  Patience is useful; even with improved throughput, libFuzzer may need days and 10s of millions of executions to reach deep/hard targets.
+Fuzzing on a harness compiled with `--with-sanitizers=address,fuzzer,undefined` is good for finding bugs. However, the very slow execution even under libFuzzer will limit the ability to find new coverage. A good approach is to perform occasional long runs without the additional bug-detectors (configure `--with-sanitizers=fuzzer`) and then merge new inputs into a corpus as described in the qa-assets repo (https://github.com/xogecoin-core/qa-assets/blob/main/.github/PULL_REQUEST_TEMPLATE.md).  Patience is useful; even with improved throughput, libFuzzer may need days and 10s of millions of executions to reach deep/hard targets.
 
 ## Reproduce a fuzzer crash reported by the CI
 
@@ -117,9 +117,9 @@ Fuzzing on a harness compiled with `--with-sanitizers=address,fuzzer,undefined` 
 
 ## Submit improved coverage
 
-If you find coverage increasing inputs when fuzzing you are highly encouraged to submit them for inclusion in the [`qogecoin-core/qa-assets`](https://github.com/qogecoin-core/qa-assets) repo.
+If you find coverage increasing inputs when fuzzing you are highly encouraged to submit them for inclusion in the [`xogecoin-core/qa-assets`](https://github.com/xogecoin-core/qa-assets) repo.
 
-Every single pull request submitted against the Qogecoin Core repo is automatically tested against all inputs in the [`qogecoin-core/qa-assets`](https://github.com/qogecoin-core/qa-assets) repo. Contributing new coverage increasing inputs is an easy way to help make Qogecoin Core more robust.
+Every single pull request submitted against the Qogecoin Core repo is automatically tested against all inputs in the [`xogecoin-core/qa-assets`](https://github.com/xogecoin-core/qa-assets) repo. Contributing new coverage increasing inputs is an easy way to help make Qogecoin Core more robust.
 
 ## macOS hints for libFuzzer
 
@@ -129,7 +129,7 @@ example using `brew install llvm`.
 
 Should you run into problems with the address sanitizer, it is possible you
 may need to run `./configure` with `--disable-asm` to avoid errors
-with certain assembly code from Qogecoin Core's code. See [developer notes on sanitizers](https://github.com/qogecoin/qogecoin/blob/master/doc/developer-notes.md#sanitizers)
+with certain assembly code from Qogecoin Core's code. See [developer notes on sanitizers](https://github.com/xogecoin/xogecoin/blob/master/doc/developer-notes.md#sanitizers)
 for more information.
 
 You may also need to take care of giving the correct path for `clang` and
@@ -151,8 +151,8 @@ Read the [libFuzzer documentation](https://llvm.org/docs/LibFuzzer.html) for mor
 To quickly get started fuzzing Qogecoin Core using [afl++](https://github.com/AFLplusplus/AFLplusplus):
 
 ```sh
-$ git clone https://github.com/qogecoin/qogecoin
-$ cd qogecoin/
+$ git clone https://github.com/xogecoin/xogecoin
+$ cd xogecoin/
 $ git clone https://github.com/AFLplusplus/AFLplusplus
 $ make -C AFLplusplus/ source-only
 $ ./autogen.sh
@@ -178,8 +178,8 @@ Read the [afl++ documentation](https://github.com/AFLplusplus/AFLplusplus) for m
 To quickly get started fuzzing Qogecoin Core using [Honggfuzz](https://github.com/google/honggfuzz):
 
 ```sh
-$ git clone https://github.com/qogecoin/qogecoin
-$ cd qogecoin/
+$ git clone https://github.com/xogecoin/xogecoin
+$ cd xogecoin/
 $ ./autogen.sh
 $ git clone https://github.com/google/honggfuzz
 $ cd honggfuzz/
@@ -196,7 +196,7 @@ Read the [Honggfuzz documentation](https://github.com/google/honggfuzz/blob/mast
 ## Fuzzing the Qogecoin Core P2P layer using Honggfuzz NetDriver
 
 Honggfuzz NetDriver allows for very easy fuzzing of TCP servers such as Qogecoin
-Core without having to write any custom fuzzing harness. The `qogecoind` server
+Core without having to write any custom fuzzing harness. The `xogecoind` server
 process is largely fuzzed without modification.
 
 This makes the fuzzing highly realistic: a bug reachable by the fuzzer is likely
@@ -205,10 +205,10 @@ also remotely triggerable by an untrusted peer.
 To quickly get started fuzzing the P2P layer using Honggfuzz NetDriver:
 
 ```sh
-$ mkdir qogecoin-honggfuzz-p2p/
-$ cd qogecoin-honggfuzz-p2p/
-$ git clone https://github.com/qogecoin/qogecoin
-$ cd qogecoin/
+$ mkdir xogecoin-honggfuzz-p2p/
+$ cd xogecoin-honggfuzz-p2p/
+$ git clone https://github.com/xogecoin/xogecoin
+$ cd xogecoin/
 $ ./autogen.sh
 $ git clone https://github.com/google/honggfuzz
 $ cd honggfuzz/
@@ -219,10 +219,10 @@ $ CC=$(pwd)/honggfuzz/hfuzz_cc/hfuzz-clang \
       ./configure --disable-wallet --with-gui=no \
                   --with-sanitizers=address,undefined
 $ git apply << "EOF"
-diff --git a/src/qogecoind.cpp b/src/qogecoind.cpp
+diff --git a/src/xogecoind.cpp b/src/xogecoind.cpp
 index 455a82e39..2faa3f80f 100644
---- a/src/qogecoind.cpp
-+++ b/src/qogecoind.cpp
+--- a/src/xogecoind.cpp
++++ b/src/xogecoind.cpp
 @@ -158,7 +158,11 @@ static bool AppInit(int argc, char* argv[])
      return fRet;
  }
@@ -258,11 +258,11 @@ index cf987b699..636a4176a 100644
                   SanitizeString(msg->m_command), msg->m_message_size,
                   HexStr(Span<uint8_t>(hash.begin(), hash.begin() + CMessageHeader::CHECKSUM_SIZE)),
 EOF
-$ make -C src/ qogecoind
+$ make -C src/ xogecoind
 $ mkdir -p inputs/
 $ honggfuzz/honggfuzz --exit_upon_crash --quiet --timeout 4 -n 1 -Q \
       -E HFND_TCP_PORT=18444 -f inputs/ -- \
-          src/qogecoind -regtest -discover=0 -dns=0 -dnsseed=0 -listenonion=0 \
+          src/xogecoind -regtest -discover=0 -dns=0 -dnsseed=0 -listenonion=0 \
                        -nodebuglogfile -bind=127.0.0.1:18444 -logthreadnames \
                        -debug
 ```
@@ -274,8 +274,8 @@ $ honggfuzz/honggfuzz --exit_upon_crash --quiet --timeout 4 -n 1 -Q \
 To quickly get started fuzzing Qogecoin Core using [Eclipser v1.x](https://github.com/SoftSec-KAIST/Eclipser/tree/v1.x):
 
 ```sh
-$ git clone https://github.com/qogecoin/qogecoin
-$ cd qogecoin/
+$ git clone https://github.com/xogecoin/xogecoin
+$ cd xogecoin/
 $ sudo vim /etc/apt/sources.list # Uncomment the lines starting with 'deb-src'.
 $ sudo apt-get update
 $ sudo apt-get build-dep qemu
@@ -323,21 +323,21 @@ be decoded in the same way.
 Fuzzing with Eclipser will likely be much more effective if using an existing corpus:
 
 ```sh
-$ git clone https://github.com/qogecoin-core/qa-assets
+$ git clone https://github.com/xogecoin-core/qa-assets
 $ FUZZ=bech32 dotnet Eclipser/build/Eclipser.dll fuzz -p src/test/fuzz/fuzz -t 36000 -i qa-assets/fuzz_seed_corpus/bech32 outputs --src stdin
 ```
 
 Note that fuzzing with Eclipser on certain targets (those that create 'full nodes', e.g. `process_message*`) will,
 for now, slowly fill `/tmp/` with improperly cleaned-up files, which will cause spurious crashes.
-See [this proposed patch](https://github.com/qogecoin/qogecoin/pull/22472) for more information.
+See [this proposed patch](https://github.com/xogecoin/xogecoin/pull/22472) for more information.
 
 Read the [Eclipser documentation for v1.x](https://github.com/SoftSec-KAIST/Eclipser/tree/v1.x) for more details on using Eclipser.
 
 
 # OSS-Fuzz
 
-Qogecoin Core participates in Google's [OSS-Fuzz](https://github.com/google/oss-fuzz/tree/master/projects/qogecoin-core)
-program, which includes a dashboard of [publicly disclosed vulnerabilities](https://bugs.chromium.org/p/oss-fuzz/issues/list?q=qogecoin-core).
+Qogecoin Core participates in Google's [OSS-Fuzz](https://github.com/google/oss-fuzz/tree/master/projects/xogecoin-core)
+program, which includes a dashboard of [publicly disclosed vulnerabilities](https://bugs.chromium.org/p/oss-fuzz/issues/list?q=xogecoin-core).
 Generally, we try to disclose vulnerabilities as soon as possible after they
 are fixed to give users the knowledge they need to be protected. However,
 because Qogecoin is a live P2P network, and not just standalone local software,
@@ -346,4 +346,4 @@ we might not fully disclose every issue within Google's standard
 if a partial or delayed disclosure is important to protect users or the
 function of the network.
 
-OSS-Fuzz also produces [a fuzzing coverage report](https://oss-fuzz.com/coverage-report/job/libfuzzer_asan_qogecoin-core/latest).
+OSS-Fuzz also produces [a fuzzing coverage report](https://oss-fuzz.com/coverage-report/job/libfuzzer_asan_xogecoin-core/latest).

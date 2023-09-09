@@ -7,11 +7,11 @@ noinst_PROGRAMS += test/fuzz/fuzz
 endif
 
 if !ENABLE_FUZZ
-bin_PROGRAMS += test/test_qogecoin
+bin_PROGRAMS += test/test_xogecoin
 endif
 
 TEST_SRCDIR = test
-TEST_BINARY=test/test_qogecoin$(EXEEXT)
+TEST_BINARY=test/test_xogecoin$(EXEEXT)
 FUZZ_BINARY=test/fuzz/fuzz$(EXEEXT)
 
 JSON_TEST_FILES = \
@@ -31,20 +31,20 @@ RAW_TEST_FILES = \
 
 GENERATED_TEST_FILES = $(JSON_TEST_FILES:.json=.json.h) $(RAW_TEST_FILES:.raw=.raw.h)
 
-QOGECOIN_TEST_SUITE = \
+XOGECOIN_TEST_SUITE = \
   test/main.cpp \
   $(TEST_UTIL_H)
 
 FUZZ_SUITE_LD_COMMON = \
  $(LIBTEST_UTIL) \
  $(LIBTEST_FUZZ) \
- $(LIBQOGECOIN_NODE) \
- $(LIBQOGECOIN_WALLET) \
- $(LIBQOGECOIN_COMMON) \
- $(LIBQOGECOIN_UTIL) \
- $(LIBQOGECOIN_CONSENSUS) \
- $(LIBQOGECOIN_CRYPTO) \
- $(LIBQOGECOIN_CLI) \
+ $(LIBXOGECOIN_NODE) \
+ $(LIBXOGECOIN_WALLET) \
+ $(LIBXOGECOIN_COMMON) \
+ $(LIBXOGECOIN_UTIL) \
+ $(LIBXOGECOIN_CONSENSUS) \
+ $(LIBXOGECOIN_CRYPTO) \
+ $(LIBXOGECOIN_CLI) \
  $(LIBUNIVALUE) \
  $(LIBLEVELDB) \
  $(LIBMEMENV) \
@@ -61,8 +61,8 @@ if USE_NATPMP
 FUZZ_SUITE_LD_COMMON += $(NATPMP_LIBS)
 endif
 
-# test_qogecoin binary #
-QOGECOIN_TESTS =\
+# test_xogecoin binary #
+XOGECOIN_TESTS =\
   test/addrman_tests.cpp \
   test/allocator_tests.cpp \
   test/amount_tests.cpp \
@@ -159,7 +159,7 @@ QOGECOIN_TESTS =\
   test/versionbits_tests.cpp
 
 if ENABLE_WALLET
-QOGECOIN_TESTS += \
+XOGECOIN_TESTS += \
   wallet/test/psbt_wallet_tests.cpp \
   wallet/test/spend_tests.cpp \
   wallet/test/wallet_tests.cpp \
@@ -176,7 +176,7 @@ FUZZ_SUITE_LD_COMMON +=\
  $(BDB_LIBS)
 
 if USE_BDB
-QOGECOIN_TESTS += wallet/test/db_tests.cpp
+XOGECOIN_TESTS += wallet/test/db_tests.cpp
 endif
 
 FUZZ_WALLET_SRC = \
@@ -187,7 +187,7 @@ FUZZ_WALLET_SRC += \
  wallet/test/fuzz/notifications.cpp
 endif # USE_SQLITE
 
-QOGECOIN_TEST_SUITE += \
+XOGECOIN_TEST_SUITE += \
   wallet/test/util.cpp \
   wallet/test/util.h \
   wallet/test/wallet_test_fixture.cpp \
@@ -196,27 +196,27 @@ QOGECOIN_TEST_SUITE += \
   wallet/test/init_test_fixture.h
 endif # ENABLE_WALLET
 
-test_test_qogecoin_SOURCES = $(QOGECOIN_TEST_SUITE) $(QOGECOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_qogecoin_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
-test_test_qogecoin_LDADD = $(LIBTEST_UTIL)
+test_test_xogecoin_SOURCES = $(XOGECOIN_TEST_SUITE) $(XOGECOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_xogecoin_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES) $(TESTDEFS) $(EVENT_CFLAGS)
+test_test_xogecoin_LDADD = $(LIBTEST_UTIL)
 if ENABLE_WALLET
-test_test_qogecoin_LDADD += $(LIBQOGECOIN_WALLET)
+test_test_xogecoin_LDADD += $(LIBXOGECOIN_WALLET)
 endif
 
-test_test_qogecoin_LDADD += $(LIBQOGECOIN_NODE) $(LIBQOGECOIN_CLI) $(LIBQOGECOIN_COMMON) $(LIBQOGECOIN_UTIL) $(LIBQOGECOIN_CONSENSUS) $(LIBQOGECOIN_CRYPTO) $(LIBUNIVALUE) \
+test_test_xogecoin_LDADD += $(LIBXOGECOIN_NODE) $(LIBXOGECOIN_CLI) $(LIBXOGECOIN_COMMON) $(LIBXOGECOIN_UTIL) $(LIBXOGECOIN_CONSENSUS) $(LIBXOGECOIN_CRYPTO) $(LIBUNIVALUE) \
   $(LIBLEVELDB) $(LIBMEMENV) $(LIBSECP256K1) $(EVENT_LIBS) $(EVENT_PTHREADS_LIBS) $(MINISKETCH_LIBS)
-test_test_qogecoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_xogecoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
-test_test_qogecoin_LDADD += $(BDB_LIBS) $(MINIUPNPC_LIBS) $(NATPMP_LIBS) $(SQLITE_LIBS)
-test_test_qogecoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS) -static
+test_test_xogecoin_LDADD += $(BDB_LIBS) $(MINIUPNPC_LIBS) $(NATPMP_LIBS) $(SQLITE_LIBS)
+test_test_xogecoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS) -static
 
 if ENABLE_ZMQ
-test_test_qogecoin_LDADD += $(LIBQOGECOIN_ZMQ) $(ZMQ_LIBS)
-FUZZ_SUITE_LD_COMMON += $(LIBQOGECOIN_ZMQ) $(ZMQ_LIBS)
+test_test_xogecoin_LDADD += $(LIBXOGECOIN_ZMQ) $(ZMQ_LIBS)
+FUZZ_SUITE_LD_COMMON += $(LIBXOGECOIN_ZMQ) $(ZMQ_LIBS)
 endif
 
 if ENABLE_FUZZ_BINARY
-test_fuzz_fuzz_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
+test_fuzz_fuzz_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
 test_fuzz_fuzz_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 test_fuzz_fuzz_LDADD = $(FUZZ_SUITE_LD_COMMON)
 test_fuzz_fuzz_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS) $(RUNTIME_LDFLAGS)
@@ -299,7 +299,7 @@ test_fuzz_fuzz_SOURCES = \
  test/fuzz/rpc.cpp \
  test/fuzz/script.cpp \
  test/fuzz/script_assets_test_minimizer.cpp \
- test/fuzz/script_qogecoin_consensus.cpp \
+ test/fuzz/script_xogecoin_consensus.cpp \
  test/fuzz/script_descriptor_cache.cpp \
  test/fuzz/script_flags.cpp \
  test/fuzz/script_format.cpp \
@@ -330,32 +330,32 @@ test_fuzz_fuzz_SOURCES = \
  test/fuzz/versionbits.cpp
 endif # ENABLE_FUZZ_BINARY
 
-nodist_test_test_qogecoin_SOURCES = $(GENERATED_TEST_FILES)
+nodist_test_test_xogecoin_SOURCES = $(GENERATED_TEST_FILES)
 
-$(QOGECOIN_TESTS): $(GENERATED_TEST_FILES)
+$(XOGECOIN_TESTS): $(GENERATED_TEST_FILES)
 
-CLEAN_QOGECOIN_TEST = test/*.gcda test/*.gcno test/fuzz/*.gcda test/fuzz/*.gcno test/util/*.gcda test/util/*.gcno $(GENERATED_TEST_FILES) $(QOGECOIN_TESTS:=.log)
+CLEAN_XOGECOIN_TEST = test/*.gcda test/*.gcno test/fuzz/*.gcda test/fuzz/*.gcno test/util/*.gcda test/util/*.gcno $(GENERATED_TEST_FILES) $(XOGECOIN_TESTS:=.log)
 
-CLEANFILES += $(CLEAN_QOGECOIN_TEST)
+CLEANFILES += $(CLEAN_XOGECOIN_TEST)
 
 if TARGET_WINDOWS
-qogecoin_test: $(TEST_BINARY)
+xogecoin_test: $(TEST_BINARY)
 else
 if ENABLE_BENCH
-qogecoin_test: $(TEST_BINARY) $(BENCH_BINARY)
+xogecoin_test: $(TEST_BINARY) $(BENCH_BINARY)
 else
-qogecoin_test: $(TEST_BINARY)
+xogecoin_test: $(TEST_BINARY)
 endif
 endif
 
-qogecoin_test_check: $(TEST_BINARY) FORCE
+xogecoin_test_check: $(TEST_BINARY) FORCE
 	$(MAKE) check-TESTS TESTS=$^
 
-qogecoin_test_clean : FORCE
-	rm -f $(CLEAN_QOGECOIN_TEST) $(test_test_qogecoin_OBJECTS) $(TEST_BINARY)
+xogecoin_test_clean : FORCE
+	rm -f $(CLEAN_XOGECOIN_TEST) $(test_test_xogecoin_OBJECTS) $(TEST_BINARY)
 
-check-local: $(QOGECOIN_TESTS:.cpp=.cpp.test)
-if BUILD_QOGECOIN_TX
+check-local: $(XOGECOIN_TESTS:.cpp=.cpp.test)
+if BUILD_XOGECOIN_TX
 	@echo "Running test/util/test_runner.py..."
 	$(PYTHON) $(top_builddir)/test/util/test_runner.py
 endif
@@ -364,7 +364,7 @@ endif
 if TARGET_WINDOWS
 else
 if ENABLE_BENCH
-	@echo "Running bench/bench_qogecoin ..."
+	@echo "Running bench/bench_xogecoin ..."
 	$(BENCH_BINARY) > /dev/null
 endif
 endif

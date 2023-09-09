@@ -139,8 +139,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Kumpirmahin ang pag-encrypt ng walet.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Babala: Kung na-encrypt mo ang iyong walet at nawala ang iyong passphrase, &lt;b&gt;MAWAWALA MO ANG LAHAT NG IYONG MGA QOGECOIN!&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Babala: Kung na-encrypt mo ang iyong walet at nawala ang iyong passphrase, &lt;b&gt;MAWAWALA MO ANG LAHAT NG IYONG MGA XOGECOIN!&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -159,8 +159,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ipasok ang lumang passphrase at bagong passphrase para sa pitaka.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Tandaan na ang pag-encrypt ng iyong pitaka ay hindi maaaring ganap na maprotektahan ang iyong mga qogecoin mula sa pagnanakaw ng malware na nahahawa sa iyong computer.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Tandaan na ang pag-encrypt ng iyong pitaka ay hindi maaaring ganap na maprotektahan ang iyong mga xogecoin mula sa pagnanakaw ng malware na nahahawa sa iyong computer.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -302,7 +302,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Ang mga %s developers</translation>
@@ -756,8 +756,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Tulong</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Humiling ng bayad (lumilikha ng QR codes at qogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Humiling ng bayad (lumilikha ng QR codes at xogecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1309,12 +1309,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Anyo</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Ang mga bagong transaksyon ay hindi pa makikita kaya ang balanse ng iyong walet ay maaaring hindi tama. Ang impormasyong ito ay maiitama pagkatapos ma-synchronize ng iyong walet sa qogecoin network, ayon sa ibaba.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Ang mga bagong transaksyon ay hindi pa makikita kaya ang balanse ng iyong walet ay maaaring hindi tama. Ang impormasyong ito ay maiitama pagkatapos ma-synchronize ng iyong walet sa xogecoin network, ayon sa ibaba.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Ang pagtangkang gastusin ang mga qogecoin na apektado ng mga transaksyon na hindi pa naipapakita ay hindi tatanggapin ng network.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Ang pagtangkang gastusin ang mga xogecoin na apektado ng mga transaksyon na hindi pa naipapakita ay hindi tatanggapin ng network.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1711,12 +1711,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Kamalian sa paghiling ng bayad</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Hindi masimulan ang qogecoin: click-to-pay handler</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Hindi masimulan ang xogecoin: click-to-pay handler</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">Ang 'qogecoin://' ay hindi wastong URI. Sa halip, gamitin ang 'qogecoin:'.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">Ang 'xogecoin://' ay hindi wastong URI. Sa halip, gamitin ang 'xogecoin:'.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -2256,8 +2256,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Itago ang mga Setting ng bayad sa Transaksyon</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Kapag mas kaunti ang dami ng transaksyon kaysa sa puwang sa mga blocks, ang mga minero pati na rin ang mga relaying node ay maaaring magpatupad ng minimum na bayad. Ang pagbabayad lamang ng minimum na bayad na ito ay maayos, ngunit malaman na maaari itong magresulta sa hindi kailanmang nagkukumpirmang transaksyon sa sandaling magkaroon ng higit na pangangailangan para sa mga transaksyon ng qogecoin kaysa sa kayang i-proseso ng network.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Kapag mas kaunti ang dami ng transaksyon kaysa sa puwang sa mga blocks, ang mga minero pati na rin ang mga relaying node ay maaaring magpatupad ng minimum na bayad. Ang pagbabayad lamang ng minimum na bayad na ito ay maayos, ngunit malaman na maaari itong magresulta sa hindi kailanmang nagkukumpirmang transaksyon sa sandaling magkaroon ng higit na pangangailangan para sa mga transaksyon ng xogecoin kaysa sa kayang i-proseso ng network.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -2455,8 +2455,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Alisin ang entry na ito</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Ibabawas ang bayad mula sa halagang ipapadala. Ang tatanggap ay makakatanggap ng mas kaunting mga qogecoin kaysa sa pinasok mo sa patlang ng halaga. Kung napili ang maraming tatanggap, ang bayad ay paghihiwalayin.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Ibabawas ang bayad mula sa halagang ipapadala. Ang tatanggap ay makakatanggap ng mas kaunting mga xogecoin kaysa sa pinasok mo sa patlang ng halaga. Kung napili ang maraming tatanggap, ang bayad ay paghihiwalayin.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2483,8 +2483,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Mag-enter ng label para sa address na ito upang idagdag ito sa listahan ng mga gamit na address.</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Mensahe na nakalakip sa qogecoin: URI na kung saan maiimbak kasama ang transaksyon para sa iyong sanggunian. Tandaan: Ang mensaheng ito ay hindi ipapadala sa network ng Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Mensahe na nakalakip sa xogecoin: URI na kung saan maiimbak kasama ang transaksyon para sa iyong sanggunian. Tandaan: Ang mensaheng ito ay hindi ipapadala sa network ng Qogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2509,8 +2509,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Pirmahan ang Mensahe</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Maaari kang pumirma ng mga mensahe/kasunduan sa iyong mga address upang mapatunayan na maaari kang makatanggap ng mga qogecoin na ipinadala sa kanila. Mag-ingat na huwag pumirma ng anumang bagay na hindi malinaw o random, dahil ang mga phishing attack ay maaaring subukan na linlangin ka sa pagpirma ng iyong pagkakakilanlan sa kanila. Pumirma lamang ng kumpletong mga pahayag na sumasang-ayon ka.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Maaari kang pumirma ng mga mensahe/kasunduan sa iyong mga address upang mapatunayan na maaari kang makatanggap ng mga xogecoin na ipinadala sa kanila. Mag-ingat na huwag pumirma ng anumang bagay na hindi malinaw o random, dahil ang mga phishing attack ay maaaring subukan na linlangin ka sa pagpirma ng iyong pagkakakilanlan sa kanila. Pumirma lamang ng kumpletong mga pahayag na sumasang-ayon ka.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

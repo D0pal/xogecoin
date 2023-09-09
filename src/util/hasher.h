@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_HASHER_H
-#define QOGECOIN_UTIL_HASHER_H
+#ifndef XOGECOIN_UTIL_HASHER_H
+#define XOGECOIN_UTIL_HASHER_H
 
 #include <crypto/siphash.h>
 #include <primitives/transaction.h>
@@ -92,4 +92,4 @@ public:
     size_t operator()(const Span<const unsigned char>& script) const;
 };
 
-#endif // QOGECOIN_UTIL_HASHER_H
+#endif // XOGECOIN_UTIL_HASHER_H

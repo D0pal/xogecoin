@@ -12,15 +12,15 @@ SOURCE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'
 DEFAULT_PLATFORM_TOOLSET = R'v142'
 
 libs = [
-    'libqogecoin_cli',
-    'libqogecoin_common',
-    'libqogecoin_crypto',
-    'libqogecoin_node',
-    'libqogecoin_util',
-    'libqogecoin_wallet_tool',
-    'libqogecoin_wallet',
-    'libqogecoin_zmq',
-    'bench_qogecoin',
+    'libxogecoin_cli',
+    'libxogecoin_common',
+    'libxogecoin_crypto',
+    'libxogecoin_node',
+    'libxogecoin_util',
+    'libxogecoin_wallet_tool',
+    'libxogecoin_wallet',
+    'libxogecoin_zmq',
+    'bench_xogecoin',
     'libtest_util',
 ]
 
@@ -72,7 +72,7 @@ def parse_config_into_btc_config():
     version = config_dict["PACKAGE_VERSION"].strip('"')
     config_dict["PACKAGE_STRING"] = f"\"Qogecoin Core {version}\""
 
-    with open(os.path.join(SOURCE_DIR,'../build_msvc/qogecoin_config.h.in'), "r", encoding="utf8") as template_file:
+    with open(os.path.join(SOURCE_DIR,'../build_msvc/xogecoin_config.h.in'), "r", encoding="utf8") as template_file:
         template = template_file.readlines()
 
     for index, line in enumerate(template):
@@ -82,7 +82,7 @@ def parse_config_into_btc_config():
         if header in config_dict:
             template[index] = line.replace("$", f"{config_dict[header]}")
 
-    with open(os.path.join(SOURCE_DIR,'../build_msvc/qogecoin_config.h'), "w", encoding="utf8") as btc_config:
+    with open(os.path.join(SOURCE_DIR,'../build_msvc/xogecoin_config.h'), "w", encoding="utf8") as btc_config:
         btc_config.writelines(template)
 
 def set_properties(vcxproj_filename, placeholder, content):
@@ -110,7 +110,7 @@ def main():
             content += '    </ClCompile>\n'
         set_properties(vcxproj_filename, '@SOURCE_FILES@\n', content)
     parse_config_into_btc_config()
-    copyfile(os.path.join(SOURCE_DIR,'../build_msvc/qogecoin_config.h'), os.path.join(SOURCE_DIR, 'config/qogecoin-config.h'))
+    copyfile(os.path.join(SOURCE_DIR,'../build_msvc/xogecoin_config.h'), os.path.join(SOURCE_DIR, 'config/xogecoin-config.h'))
     copyfile(os.path.join(SOURCE_DIR,'../build_msvc/libsecp256k1_config.h'), os.path.join(SOURCE_DIR, 'secp256k1/src/libsecp256k1-config.h'))
 
 if __name__ == '__main__':

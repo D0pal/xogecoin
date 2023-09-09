@@ -7,18 +7,18 @@ for the process.*
 
 Qogecoin Core version *version* is now available from:
 
-  <https://qogecoincore.org/bin/qogecoin-core-*version*/>
+  <https://xogecoincore.org/bin/xogecoin-core-*version*/>
 
 This release includes new features, various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/qogecoin/qogecoin/issues>
+  <https://github.com/xogecoin/xogecoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://qogecoincore.org/en/list/announcements/join/>
+  <https://xogecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -26,7 +26,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes in some cases), then run the
 installer (on Windows) or just copy over `/Applications/Qogecoin-Qt` (on Mac)
-or `qogecoind`/`qogecoin-qt` (on Linux).
+or `xogecoind`/`xogecoin-qt` (on Linux).
 
 Upgrading directly from a version of Qogecoin Core that has reached its EOL is
 possible, but it might take some time if the data directory needs to be migrated. Old
@@ -96,4 +96,4 @@ Thanks to everyone who directly contributed to this release:
 
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/qogecoin/qogecoin/).
+[Transifex](https://www.transifex.com/xogecoin/xogecoin/).

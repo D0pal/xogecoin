@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_TOKENPIPE_H
-#define QOGECOIN_UTIL_TOKENPIPE_H
+#ifndef XOGECOIN_UTIL_TOKENPIPE_H
+#define XOGECOIN_UTIL_TOKENPIPE_H
 
 #ifndef WIN32
 
@@ -124,4 +124,4 @@ public:
 
 #endif // WIN32
 
-#endif // QOGECOIN_UTIL_TOKENPIPE_H
+#endif // XOGECOIN_UTIL_TOKENPIPE_H

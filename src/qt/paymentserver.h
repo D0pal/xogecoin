@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_PAYMENTSERVER_H
-#define QOGECOIN_QT_PAYMENTSERVER_H
+#ifndef XOGECOIN_QT_PAYMENTSERVER_H
+#define XOGECOIN_QT_PAYMENTSERVER_H
 
 // This class handles payment requests from clicking on
-// qogecoin: URIs
+// xogecoin: URIs
 //
 // This is somewhat tricky, because we have to deal with
 // the situation where the user clicks on a link during
@@ -33,7 +33,7 @@
 //
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <qt/sendcoinsrecipient.h>
@@ -106,4 +106,4 @@ private:
     OptionsModel *optionsModel;
 };
 
-#endif // QOGECOIN_QT_PAYMENTSERVER_H
+#endif // XOGECOIN_QT_PAYMENTSERVER_H

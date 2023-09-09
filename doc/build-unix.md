@@ -24,7 +24,7 @@ make # use "-j N" for N parallel jobs
 make install # optional
 ```
 
-This will build qogecoin-qt as well, if the dependencies are met.
+This will build xogecoin-qt as well, if the dependencies are met.
 
 See [dependencies.md](dependencies.md) for a complete overview.
 
@@ -86,7 +86,7 @@ User-Space, Statically Defined Tracing (USDT) dependencies:
 
 GUI dependencies:
 
-If you want to build qogecoin-qt, make sure that the required packages for Qt development
+If you want to build xogecoin-qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 To build without GUI pass `--without-gui`.
 
@@ -102,7 +102,7 @@ libqrencode (optional) can be installed with:
 
     sudo apt-get install libqrencode-dev
 
-Once these are installed, they will be found by configure and a qogecoin-qt executable will be
+Once these are installed, they will be found by configure and a xogecoin-qt executable will be
 built by default.
 
 
@@ -147,7 +147,7 @@ User-Space, Statically Defined Tracing (USDT) dependencies:
 
 GUI dependencies:
 
-If you want to build qogecoin-qt, make sure that the required packages for Qt development
+If you want to build xogecoin-qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
 To build without GUI pass `--without-gui`.
 
@@ -163,12 +163,12 @@ libqrencode (optional) can be installed with:
 
     sudo dnf install qrencode-devel
 
-Once these are installed, they will be found by configure and a qogecoin-qt executable will be
+Once these are installed, they will be found by configure and a xogecoin-qt executable will be
 built by default.
 
 Notes
 -----
-The release is built with GCC and then "strip qogecoind" to strip the debug
+The release is built with GCC and then "strip xogecoind" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
 miniupnpc
@@ -235,7 +235,7 @@ Hardening enables the following features:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-        scanelf -e ./qogecoin
+        scanelf -e ./xogecoin
 
     The output should contain:
 
@@ -249,7 +249,7 @@ Hardening enables the following features:
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./qogecoin`
+    `scanelf -e ./xogecoin`
 
     The output should contain:
     STK/REL/PTL
@@ -280,8 +280,8 @@ Setup and Build Example: Arch Linux
 This example lists the steps necessary to setup and build a command line only, non-wallet distribution of the latest changes on Arch Linux:
 
     pacman -S git base-devel boost libevent python
-    git clone https://github.com/qogecoin/qogecoin.git
-    cd qogecoin/
+    git clone https://github.com/xogecoin/xogecoin.git
+    cd xogecoin/
     ./autogen.sh
     ./configure --disable-wallet --without-gui --without-miniupnpc
     make check
@@ -289,7 +289,7 @@ This example lists the steps necessary to setup and build a command line only, n
 Note:
 Enabling wallet support requires either compiling against a Berkeley DB newer than 4.8 (package `db`) using `--with-incompatible-bdb`,
 or building and depending on a local version of Berkeley DB 4.8. The readily available Arch Linux packages are currently built using
-`--with-incompatible-bdb` according to the [PKGBUILD](https://github.com/archlinux/svntogit-community/blob/packages/qogecoin/trunk/PKGBUILD).
+`--with-incompatible-bdb` according to the [PKGBUILD](https://github.com/archlinux/svntogit-community/blob/packages/xogecoin/trunk/PKGBUILD).
 As mentioned above, when maintaining portability of the wallet between the standard Qogecoin Core distributions and independently built
 node software is desired, Berkeley DB 4.8 must be used.
 

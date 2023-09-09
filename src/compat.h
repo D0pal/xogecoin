@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_COMPAT_H
-#define QOGECOIN_COMPAT_H
+#ifndef XOGECOIN_COMPAT_H
+#define XOGECOIN_COMPAT_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #ifdef WIN32
@@ -88,7 +88,7 @@ typedef char* sockopt_arg_type;
 
 // Note these both should work with the current usage of poll, but best to be safe
 // WIN32 poll is broken https://daniel.haxx.se/blog/2012/10/10/wsapoll-is-broken/
-// __APPLE__ poll is broke https://github.com/qogecoin/qogecoin/pull/14336#issuecomment-437384408
+// __APPLE__ poll is broke https://github.com/xogecoin/xogecoin/pull/14336#issuecomment-437384408
 #if defined(__linux__)
 #define USE_POLL
 #endif
@@ -111,4 +111,4 @@ bool static inline IsSelectableSocket(const SOCKET& s) {
 #define MSG_DONTWAIT 0
 #endif
 
-#endif // QOGECOIN_COMPAT_H
+#endif // XOGECOIN_COMPAT_H

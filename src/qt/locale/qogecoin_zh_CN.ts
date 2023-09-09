@@ -164,7 +164,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">确认钱包加密</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">警告: 如果把钱包加密后又忘记密码，你就会从此&lt;b&gt;失去其中所有的比特币了&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -184,7 +184,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">输入此钱包的旧密码和新密码。</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">请注意，当您的计算机感染恶意软件时，加密钱包并不能完全规避您的比特币被偷窃的可能。</translation>
     </message>
     <message>
@@ -409,14 +409,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s 开发者</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s损坏。请尝试用qogecoin-wallet钱包工具来对其进行急救。或者用一个备份进行还原。</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s损坏。请尝试用xogecoin-wallet钱包工具来对其进行急救。或者用一个备份进行还原。</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -451,8 +451,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">错误: 转储文件标识符记录不正确。得到的是 "%s"，而预期本应得到的是 "%s"。</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">错误: 转储文件版本不被支持。这个版本的 qogecoin-wallet 只支持版本为 1 的转储文件。得到的转储文件版本却是%s</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">错误: 转储文件版本不被支持。这个版本的 xogecoin-wallet 只支持版本为 1 的转储文件。得到的转储文件版本却是%s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -1191,8 +1191,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">连接到节点...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">请求支付 (生成二维码和 qogecoin: URI)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">请求支付 (生成二维码和 xogecoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1269,8 +1269,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">收款地址(&amp;R)</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">打开qogecoin:开头的URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">打开xogecoin:开头的URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1928,11 +1928,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">窗体</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished">近期交易可能尚未显示，因此当前余额可能不准确。以上信息将在与比特币网络完全同步后更正。详情如下</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">尝试使用受未可见交易影响的余额将不被网络接受。</translation>
     </message>
     <message>
@@ -1979,7 +1979,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished">打开比特币URI</translation>
     </message>
     <message>
@@ -2488,16 +2488,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">支付请求出错</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">无法启动 qogecoin: 协议的“一键支付”处理程序</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">无法启动 xogecoin: 协议的“一键支付”处理程序</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI 处理</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">‘qogecoin://’不是合法的URI。请改用'qogecoin:'。</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">‘xogecoin://’不是合法的URI。请改用'xogecoin:'。</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3306,7 +3306,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 附注：因为矿工费是按字节计费的，所以如果费率是“每kvB支付100聪”，那么对于一笔500虚拟字节 (1kvB的一半) 的交易，最终将只会产生50聪的矿工费。（译注：这里就是提醒单位是字节，而不是千字节，如果搞错的话，矿工费会过低，导致交易长时间无法确认，或者压根无法发出）</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished">当交易量小于可用区块空间时，矿工和中继节点可能会执行最低手续费率限制。按照这个最低费率来支付手续费也是可以的，但请注意，一旦交易需求超出比特币网络能处理的限度，你的交易可能永远也无法确认。</translation>
     </message>
     <message>
@@ -3578,7 +3578,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">用被选单位表示的待发送金额</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">交易费将从发送金额中扣除。接收人收到的比特币将会比您在金额框中输入的更少。如果选中了多个收件人，交易费平分。</translation>
     </message>
     <message>
@@ -3606,8 +3606,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">请为此地址输入一个标签以将它加入已用地址列表</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">qogecoin: URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过比特币网络传输。</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">xogecoin: URI 附带的备注信息，将会和交易一起存储，备查。 注意：该消息不会通过比特币网络传输。</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3640,7 +3640,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">消息签名(&amp;S)</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">您可以用你的地址对消息/协议进行签名，以证明您可以接收发送到该地址的比特币。注意不要对任何模棱两可或者随机的消息进行签名，以免遭受钓鱼式攻击。请确保消息内容准确的表达了您的真实意愿。</translation>
     </message>
     <message>

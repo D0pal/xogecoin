@@ -26,7 +26,7 @@ Developer Notes
     - [Threads](#threads)
     - [Ignoring IDE/editor files](#ignoring-ideeditor-files)
 - [Development guidelines](#development-guidelines)
-    - [General Qogecoin Core](#general-qogecoin-core)
+    - [General Qogecoin Core](#general-xogecoin-core)
     - [Wallet](#wallet)
     - [General C++](#general-c)
     - [C++ data structures](#c-data-structures)
@@ -349,7 +349,7 @@ to see it.
 
 If you are testing multi-machine code that needs to operate across the internet,
 you can run with either the `-signet` or the `-testnet` config option to test
-with "play qogecoins" on a test network.
+with "play xogecoins" on a test network.
 
 If you are testing something that can run on one machine, run with the
 `-regtest` option.  In regression test mode, blocks can be created on demand;
@@ -370,11 +370,11 @@ RPC that, when enabled, logs the location and duration of each lock contention
 to the `debug.log` file.
 
 To enable it, run configure with `-DDEBUG_LOCKCONTENTION` added to your
-CPPFLAGS, e.g. `CPPFLAGS="-DDEBUG_LOCKCONTENTION"`, then build and run qogecoind.
+CPPFLAGS, e.g. `CPPFLAGS="-DDEBUG_LOCKCONTENTION"`, then build and run xogecoind.
 
-You can then use the `-debug=lock` configuration option at qogecoind startup or
-`qogecoin-cli logging '["lock"]'` at runtime to turn on lock contention logging.
-It can be toggled off again with `qogecoin-cli logging [] '["lock"]'`.
+You can then use the `-debug=lock` configuration option at xogecoind startup or
+`xogecoin-cli logging '["lock"]'` at runtime to turn on lock contention logging.
+It can be toggled off again with `xogecoin-cli logging [] '["lock"]'`.
 
 ### Assertions and Checks
 
@@ -407,15 +407,15 @@ other input.
 
 Valgrind is a programming tool for memory debugging, memory leak detection, and
 profiling. The repo contains a Valgrind suppressions file
-([`valgrind.supp`](https://github.com/qogecoin/qogecoin/blob/master/contrib/valgrind.supp))
+([`valgrind.supp`](https://github.com/xogecoin/xogecoin/blob/master/contrib/valgrind.supp))
 which includes known Valgrind warnings in our dependencies that cannot be fixed
 in-tree. Example use:
 
 ```shell
-$ valgrind --suppressions=contrib/valgrind.supp src/test/test_qogecoin
+$ valgrind --suppressions=contrib/valgrind.supp src/test/test_xogecoin
 $ valgrind --suppressions=contrib/valgrind.supp --leak-check=full \
-      --show-leak-kinds=all src/test/test_qogecoin --log_level=test_suite
-$ valgrind -v --leak-check=full src/qogecoind -printtoconsole
+      --show-leak-kinds=all src/test/test_xogecoin --log_level=test_suite
+$ valgrind -v --leak-check=full src/xogecoind -printtoconsole
 $ ./test/functional/test_runner.py --valgrind
 ```
 
@@ -432,7 +432,7 @@ To enable LCOV report generation during test runs:
 make
 make cov
 
-# A coverage report will now be accessible at `./test_qogecoin.coverage/index.html`.
+# A coverage report will now be accessible at `./test_xogecoin.coverage/index.html`.
 ```
 
 ### Performance profiling with perf
@@ -459,13 +459,13 @@ Make sure you [understand the security
 trade-offs](https://lwn.net/Articles/420403/) of setting these kernel
 parameters.
 
-To profile a running qogecoind process for 60 seconds, you could use an
+To profile a running xogecoind process for 60 seconds, you could use an
 invocation of `perf record` like this:
 
 ```sh
 $ perf record \
     -g --call-graph dwarf --per-thread -F 140 \
-    -p `pgrep qogecoind` -- sleep 60
+    -p `pgrep xogecoind` -- sleep 60
 ```
 
 You could then analyze the results by running:
@@ -528,7 +528,7 @@ Additional resources:
  * [UndefinedBehaviorSanitizer](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html)
  * [GCC Instrumentation Options](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html)
  * [Google Sanitizers Wiki](https://github.com/google/sanitizers/wiki)
- * [Issue #12691: Enable -fsanitize flags in Travis](https://github.com/qogecoin/qogecoin/issues/12691)
+ * [Issue #12691: Enable -fsanitize flags in Travis](https://github.com/xogecoin/xogecoin/issues/12691)
 
 Locking/mutex usage notes
 -------------------------
@@ -550,51 +550,51 @@ and its `cs_KeyStore` lock for example).
 Threads
 -------
 
-- [Main thread (`qogecoind`)](https://doxygen.qogecoincore.org/qogecoind_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97)
-  : Started from `main()` in `qogecoind.cpp`. Responsible for starting up and
+- [Main thread (`xogecoind`)](https://doxygen.xogecoincore.org/xogecoind_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97)
+  : Started from `main()` in `xogecoind.cpp`. Responsible for starting up and
   shutting down the application.
 
-- [ThreadImport (`b-loadblk`)](https://doxygen.qogecoincore.org/init_8cpp.html#ae9e290a0e829ec0198518de2eda579d1)
+- [ThreadImport (`b-loadblk`)](https://doxygen.xogecoincore.org/init_8cpp.html#ae9e290a0e829ec0198518de2eda579d1)
   : Loads blocks from `blk*.dat` files or `-loadblock=<file>` on startup.
 
-- [ThreadScriptCheck (`b-scriptch.x`)](https://doxygen.qogecoincore.org/validation_8cpp.html#a925a33e7952a157922b0bbb8dab29a20)
+- [ThreadScriptCheck (`b-scriptch.x`)](https://doxygen.xogecoincore.org/validation_8cpp.html#a925a33e7952a157922b0bbb8dab29a20)
   : Parallel script validation threads for transactions in blocks.
 
-- [ThreadHTTP (`b-http`)](https://doxygen.qogecoincore.org/httpserver_8cpp.html#abb9f6ea8819672bd9a62d3695070709c)
+- [ThreadHTTP (`b-http`)](https://doxygen.xogecoincore.org/httpserver_8cpp.html#abb9f6ea8819672bd9a62d3695070709c)
   : Libevent thread to listen for RPC and REST connections.
 
-- [HTTP worker threads(`b-httpworker.x`)](https://doxygen.qogecoincore.org/httpserver_8cpp.html#aa6a7bc27265043bc0193220c5ae3a55f)
+- [HTTP worker threads(`b-httpworker.x`)](https://doxygen.xogecoincore.org/httpserver_8cpp.html#aa6a7bc27265043bc0193220c5ae3a55f)
   : Threads to service RPC and REST requests.
 
-- [Indexer threads (`b-txindex`, etc)](https://doxygen.qogecoincore.org/class_base_index.html#a96a7407421fbf877509248bbe64f8d87)
+- [Indexer threads (`b-txindex`, etc)](https://doxygen.xogecoincore.org/class_base_index.html#a96a7407421fbf877509248bbe64f8d87)
   : One thread per indexer.
 
-- [SchedulerThread (`b-scheduler`)](https://doxygen.qogecoincore.org/class_c_scheduler.html#a14d2800815da93577858ea078aed1fba)
+- [SchedulerThread (`b-scheduler`)](https://doxygen.xogecoincore.org/class_c_scheduler.html#a14d2800815da93577858ea078aed1fba)
   : Does asynchronous background tasks like dumping wallet contents, dumping
   addrman and running asynchronous validationinterface callbacks.
 
-- [TorControlThread (`b-torcontrol`)](https://doxygen.qogecoincore.org/torcontrol_8cpp.html#a4faed3692d57a0d7bdbecf3b37f72de0)
+- [TorControlThread (`b-torcontrol`)](https://doxygen.xogecoincore.org/torcontrol_8cpp.html#a4faed3692d57a0d7bdbecf3b37f72de0)
   : Libevent thread for tor connections.
 
 - Net threads:
 
-  - [ThreadMessageHandler (`b-msghand`)](https://doxygen.qogecoincore.org/class_c_connman.html#aacdbb7148575a31bb33bc345e2bf22a9)
+  - [ThreadMessageHandler (`b-msghand`)](https://doxygen.xogecoincore.org/class_c_connman.html#aacdbb7148575a31bb33bc345e2bf22a9)
     : Application level message handling (sending and receiving). Almost
     all net_processing and validation logic runs on this thread.
 
-  - [ThreadDNSAddressSeed (`b-dnsseed`)](https://doxygen.qogecoincore.org/class_c_connman.html#aa7c6970ed98a4a7bafbc071d24897d13)
+  - [ThreadDNSAddressSeed (`b-dnsseed`)](https://doxygen.xogecoincore.org/class_c_connman.html#aa7c6970ed98a4a7bafbc071d24897d13)
     : Loads addresses of peers from the DNS.
 
-  - [ThreadMapPort (`b-upnp`)](https://doxygen.qogecoincore.org/net_8cpp.html#a63f82a71c4169290c2db1651a9bbe249)
+  - [ThreadMapPort (`b-upnp`)](https://doxygen.xogecoincore.org/net_8cpp.html#a63f82a71c4169290c2db1651a9bbe249)
     : Universal plug-and-play startup/shutdown.
 
-  - [ThreadSocketHandler (`b-net`)](https://doxygen.qogecoincore.org/class_c_connman.html#a765597cbfe99c083d8fa3d61bb464e34)
+  - [ThreadSocketHandler (`b-net`)](https://doxygen.xogecoincore.org/class_c_connman.html#a765597cbfe99c083d8fa3d61bb464e34)
     : Sends/Receives data from peers on port 8333.
 
-  - [ThreadOpenAddedConnections (`b-addcon`)](https://doxygen.qogecoincore.org/class_c_connman.html#a0b787caf95e52a346a2b31a580d60a62)
+  - [ThreadOpenAddedConnections (`b-addcon`)](https://doxygen.xogecoincore.org/class_c_connman.html#a0b787caf95e52a346a2b31a580d60a62)
     : Opens network connections to added nodes.
 
-  - [ThreadOpenConnections (`b-opencon`)](https://doxygen.qogecoincore.org/class_c_connman.html#a55e9feafc3bab78e5c9d408c207faa45)
+  - [ThreadOpenConnections (`b-opencon`)](https://doxygen.xogecoincore.org/class_c_connman.html#a55e9feafc3bab78e5c9d408c207faa45)
     : Initiates new connections to peers.
 
 Ignoring IDE/editor files
@@ -1017,13 +1017,13 @@ namespace {
     the location of the source file actually is relevant.
 
 - Use include guards to avoid the problem of double inclusion. The header file
-  `foo/bar.h` should use the include guard identifier `QOGECOIN_FOO_BAR_H`, e.g.
+  `foo/bar.h` should use the include guard identifier `XOGECOIN_FOO_BAR_H`, e.g.
 
 ```c++
-#ifndef QOGECOIN_FOO_BAR_H
-#define QOGECOIN_FOO_BAR_H
+#ifndef XOGECOIN_FOO_BAR_H
+#define XOGECOIN_FOO_BAR_H
 ...
-#endif // QOGECOIN_FOO_BAR_H
+#endif // XOGECOIN_FOO_BAR_H
 ```
 
 GUI
@@ -1068,7 +1068,7 @@ to check a subtree directory for consistency with its upstream repository.
 Current subtrees include:
 
 - src/leveldb
-  - Subtree at https://github.com/qogecoin-core/leveldb-subtree ; maintained by Core contributors.
+  - Subtree at https://github.com/xogecoin-core/leveldb-subtree ; maintained by Core contributors.
   - Upstream at https://github.com/google/leveldb ; maintained by Google. Open
     important PRs to the subtree to avoid delay.
   - **Note**: Follow the instructions in [Upgrading LevelDB](#upgrading-leveldb) when
@@ -1076,17 +1076,17 @@ Current subtrees include:
 
 - src/crc32c
   - Used by leveldb for hardware acceleration of CRC32C checksums for data integrity.
-  - Subtree at https://github.com/qogecoin-core/crc32c-subtree ; maintained by Core contributors.
+  - Subtree at https://github.com/xogecoin-core/crc32c-subtree ; maintained by Core contributors.
   - Upstream at https://github.com/google/crc32c ; maintained by Google.
 
 - src/secp256k1
-  - Upstream at https://github.com/qogecoin-core/secp256k1/ ; maintained by Core contributors.
+  - Upstream at https://github.com/xogecoin-core/secp256k1/ ; maintained by Core contributors.
 
 - src/crypto/ctaes
-  - Upstream at https://github.com/qogecoin-core/ctaes ; maintained by Core contributors.
+  - Upstream at https://github.com/xogecoin-core/ctaes ; maintained by Core contributors.
 
 - src/univalue
-  - Subtree at https://github.com/qogecoin-core/univalue-subtree ; maintained by Core contributors.
+  - Subtree at https://github.com/xogecoin-core/univalue-subtree ; maintained by Core contributors.
   - Deviates from upstream https://github.com/jgarzik/univalue.
 
 - src/minisketch
@@ -1113,7 +1113,7 @@ In addition to reviewing the upstream changes in `env_posix.cc`, you can use `ls
 check this. For example, on Linux this command will show open `.ldb` file counts:
 
 ```bash
-$ lsof -p $(pidof qogecoind) |\
+$ lsof -p $(pidof xogecoind) |\
     awk 'BEGIN { fd=0; mem=0; } /ldb$/ { if ($4 == "mem") mem++; else fd++ } END { printf "mem = %s, fd = %s\n", mem, fd}'
 mem = 119, fd = 0
 ```
@@ -1181,13 +1181,13 @@ introduce accidental changes.
 
 Some good examples of scripted-diff:
 
-- [scripted-diff: Rename InitInterfaces to NodeContext](https://github.com/qogecoin/qogecoin/commit/301bd41a2e6765b185bd55f4c541f9e27aeea29d)
+- [scripted-diff: Rename InitInterfaces to NodeContext](https://github.com/xogecoin/xogecoin/commit/301bd41a2e6765b185bd55f4c541f9e27aeea29d)
 uses an elegant script to replace occurrences of multiple terms in all source files.
 
-- [scripted-diff: Remove g_connman, g_banman globals](https://github.com/qogecoin/qogecoin/commit/8922d7f6b751a3e6b3b9f6fb7961c442877fb65a)
+- [scripted-diff: Remove g_connman, g_banman globals](https://github.com/xogecoin/xogecoin/commit/8922d7f6b751a3e6b3b9f6fb7961c442877fb65a)
 replaces specific terms in a list of specific source files.
 
-- [scripted-diff: Replace fprintf with tfm::format](https://github.com/qogecoin/qogecoin/commit/fac03ec43a15ad547161e37e53ea82482cc508f9)
+- [scripted-diff: Replace fprintf with tfm::format](https://github.com/xogecoin/xogecoin/commit/fac03ec43a15ad547161e37e53ea82482cc508f9)
 does a global replacement but excludes certain directories.
 
 To find all previous uses of scripted diffs in the repository, do:
@@ -1254,7 +1254,7 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 - Try not to overload methods on argument type. E.g. don't make `getblock(true)` and `getblock("hash")`
   do different things.
 
-  - *Rationale*: This is impossible to use with `qogecoin-cli`, and can be surprising to users.
+  - *Rationale*: This is impossible to use with `xogecoin-cli`, and can be surprising to users.
 
   - *Exception*: Some RPC calls can take both an `int` and `bool`, most notably when a bool was switched
     to a multi-value, or due to other historical reasons. **Always** have false map to 0 and
@@ -1266,7 +1266,7 @@ A few guidelines for introducing and reviewing new RPC interfaces:
 
 - Add every non-string RPC argument `(method, idx, name)` to the table `vRPCConvertParams` in `rpc/client.cpp`.
 
-  - *Rationale*: `qogecoin-cli` and the GUI debug console use this table to determine how to
+  - *Rationale*: `xogecoin-cli` and the GUI debug console use this table to determine how to
     convert a plaintext command line to JSON. If the types don't match, the method can be unusable
     from there.
 
@@ -1442,4 +1442,4 @@ communication:
 
   Note: This last convention isn't generally followed outside of
   [`src/interfaces/`](../src/interfaces/), though it did come up for discussion
-  before in [#14635](https://github.com/qogecoin/qogecoin/pull/14635).
+  before in [#14635](https://github.com/xogecoin/xogecoin/pull/14635).

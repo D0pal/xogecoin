@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_FLATFILE_H
-#define QOGECOIN_FLATFILE_H
+#ifndef XOGECOIN_FLATFILE_H
+#define XOGECOIN_FLATFILE_H
 
 #include <string>
 
@@ -87,4 +87,4 @@ public:
     bool Flush(const FlatFilePos& pos, bool finalize = false);
 };
 
-#endif // QOGECOIN_FLATFILE_H
+#endif // XOGECOIN_FLATFILE_H

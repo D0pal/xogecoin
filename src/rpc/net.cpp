@@ -446,7 +446,7 @@ static RPCHelpMan getaddednodeinfo()
                             {
                                 {RPCResult::Type::OBJ, "", "",
                                 {
-                                    {RPCResult::Type::STR, "address", "The qogecoin server IP and port we're connected to"},
+                                    {RPCResult::Type::STR, "address", "The xogecoin server IP and port we're connected to"},
                                     {RPCResult::Type::STR, "connected", "connection, inbound or outbound"},
                                 }},
                             }},

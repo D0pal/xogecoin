@@ -52,7 +52,7 @@
         </size>
        </property>
        <property name="pixmap">
-        <pixmap resource="../qogecoin.qrc">:/icons/qogecoin</pixmap>
+        <pixmap resource="../xogecoin.qrc">:/icons/xogecoin</pixmap>
        </property>
        <property name="scaledContents">
         <bool>true</bool>
@@ -150,7 +150,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../qogecoin.qrc"/>
+  <include location="../xogecoin.qrc"/>
  </resources>
  <connections>
   <connection>

@@ -10,7 +10,7 @@
 #include <util/tokenpipe.h>
 #include <warnings.h>
 
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 
 #include <assert.h>
 #include <atomic>

@@ -3,14 +3,14 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <qt/coincontroldialog.h>
 #include <qt/forms/ui_coincontroldialog.h>
 
 #include <qt/addresstablemodel.h>
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 #include <qt/guiutil.h>
 #include <qt/optionsmodel.h>
 #include <qt/platformstyle.h>
@@ -635,7 +635,7 @@ void CoinControlDialog::updateView()
             {
                 sAddress = QString::fromStdString(EncodeDestination(outputAddress));
 
-                // if listMode or change => show qogecoin address. In tree mode, address is not shown again for direct wallet address outputs
+                // if listMode or change => show xogecoin address. In tree mode, address is not shown again for direct wallet address outputs
                 if (!treeMode || (!(sAddress == sWalletAddress)))
                     itemOutput->setText(COLUMN_ADDRESS, sAddress);
             }

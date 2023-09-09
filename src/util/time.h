@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_TIME_H
-#define QOGECOIN_UTIL_TIME_H
+#ifndef XOGECOIN_UTIL_TIME_H
+#define XOGECOIN_UTIL_TIME_H
 
 #include <compat.h>
 
@@ -89,4 +89,4 @@ struct timeval MillisToTimeval(std::chrono::milliseconds ms);
 /** Sanity check epoch match normal Unix epoch */
 bool ChronoSanityCheck();
 
-#endif // QOGECOIN_UTIL_TIME_H
+#endif // XOGECOIN_UTIL_TIME_H

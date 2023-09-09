@@ -1,6 +1,6 @@
 all:
-	$(MAKE) -C .. qogecoin_test
+	$(MAKE) -C .. xogecoin_test
 clean:
-	$(MAKE) -C .. qogecoin_test_clean
+	$(MAKE) -C .. xogecoin_test_clean
 check:
-	$(MAKE) -C .. qogecoin_test_check
+	$(MAKE) -C .. xogecoin_test_check

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NODE_COINSTATS_H
-#define QOGECOIN_NODE_COINSTATS_H
+#ifndef XOGECOIN_NODE_COINSTATS_H
+#define XOGECOIN_NODE_COINSTATS_H
 
 #include <chain.h>
 #include <coins.h>
@@ -81,4 +81,4 @@ uint64_t GetBogoSize(const CScript& script_pub_key);
 CDataStream TxOutSer(const COutPoint& outpoint, const Coin& coin);
 } // namespace node
 
-#endif // QOGECOIN_NODE_COINSTATS_H
+#endif // XOGECOIN_NODE_COINSTATS_H

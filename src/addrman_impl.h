@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_ADDRMAN_IMPL_H
-#define QOGECOIN_ADDRMAN_IMPL_H
+#ifndef XOGECOIN_ADDRMAN_IMPL_H
+#define XOGECOIN_ADDRMAN_IMPL_H
 
 #include <logging.h>
 #include <logging/timer.h>
@@ -264,4 +264,4 @@ private:
     int CheckAddrman() const EXCLUSIVE_LOCKS_REQUIRED(cs);
 };
 
-#endif // QOGECOIN_ADDRMAN_IMPL_H
+#endif // XOGECOIN_ADDRMAN_IMPL_H

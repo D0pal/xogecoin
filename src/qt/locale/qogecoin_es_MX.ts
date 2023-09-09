@@ -154,8 +154,8 @@
         <translation type="unfinished">Confirmar la encriptación de cartera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Advertencia: Si encripta su cartera y pierde su contraseña, &lt;b&gt;PERDERÁ TODOS SUS QOGECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Advertencia: Si encripta su cartera y pierde su contraseña, &lt;b&gt;PERDERÁ TODOS SUS XOGECOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -174,8 +174,8 @@
         <translation type="unfinished">Ingresa la antigua frase de contraseña y la nueva frase de contraseña para la billetera.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recuerda que encriptar tu billetera no protege completamente tus qogecoins contra robo por malware que haya infectado tu computadora.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recuerda que encriptar tu billetera no protege completamente tus xogecoins contra robo por malware que haya infectado tu computadora.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -348,7 +348,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Cannot downgrade wallet from version %i to version %i. Wallet version unchanged.</source>
         <translation type="unfinished">No se pudo cambiar la versión %i a la versión anterior %i.  Versión del monedero sin cambios.</translation>
@@ -718,9 +718,9 @@
         <translation type="unfinished">Conectando a pares...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
         <translation type="unfinished"> 
-Solicitar pagos (genera códigos QR y qogecoin: URI)
+Solicitar pagos (genera códigos QR y xogecoin: URI)
  </translation>
     </message>
     <message>
@@ -1261,12 +1261,12 @@ Solicitar pagos (genera códigos QR y qogecoin: URI)
         <translation type="unfinished">Formulario</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Las transacciones recientes pueden no ser visibles todavía, y por lo tanto el saldo de su cartera podría ser incorrecto. Esta información será correcta una vez que su cartera haya terminado de sincronizarse con la red de qogecoin, como se detalla abajo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Las transacciones recientes pueden no ser visibles todavía, y por lo tanto el saldo de su cartera podría ser incorrecto. Esta información será correcta una vez que su cartera haya terminado de sincronizarse con la red de xogecoin, como se detalla abajo.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Los intentos de gastar qogecoins que se vean afectados por transacciones aún no mostradas no serán aceptados por la red.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Los intentos de gastar xogecoins que se vean afectados por transacciones aún no mostradas no serán aceptados por la red.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1304,8 +1304,8 @@ Solicitar pagos (genera códigos QR y qogecoin: URI)
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Abrir la URI de qogecoin</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Abrir la URI de xogecoin</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>

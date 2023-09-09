@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_SOCK_H
-#define QOGECOIN_UTIL_SOCK_H
+#ifndef XOGECOIN_UTIL_SOCK_H
+#define XOGECOIN_UTIL_SOCK_H
 
 #include <compat.h>
 #include <threadinterrupt.h>
@@ -201,4 +201,4 @@ std::string NetworkErrorString(int err);
 /** Close socket and set hSocket to INVALID_SOCKET */
 bool CloseSocket(SOCKET& hSocket);
 
-#endif // QOGECOIN_UTIL_SOCK_H
+#endif // XOGECOIN_UTIL_SOCK_H

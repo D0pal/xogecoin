@@ -1,5 +1,5 @@
 {
-  "name": "qogecoin-core",
+  "name": "xogecoin-core",
   "version-string": "1",
   "dependencies": [
     "berkeleydb",

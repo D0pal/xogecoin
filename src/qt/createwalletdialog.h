@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_CREATEWALLETDIALOG_H
-#define QOGECOIN_QT_CREATEWALLETDIALOG_H
+#ifndef XOGECOIN_QT_CREATEWALLETDIALOG_H
+#define XOGECOIN_QT_CREATEWALLETDIALOG_H
 
 #include <QDialog>
 
@@ -43,4 +43,4 @@ private:
     bool m_has_signers = false;
 };
 
-#endif // QOGECOIN_QT_CREATEWALLETDIALOG_H
+#endif // XOGECOIN_QT_CREATEWALLETDIALOG_H

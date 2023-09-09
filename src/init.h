@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_INIT_H
-#define QOGECOIN_INIT_H
+#ifndef XOGECOIN_INIT_H
+#define XOGECOIN_INIT_H
 
 #include <any>
 #include <memory>
@@ -31,7 +31,7 @@ void InitLogging(const ArgsManager& args);
 //!Parameter interaction: change current parameters depending on various rules
 void InitParameterInteraction(ArgsManager& args);
 
-/** Initialize qogecoin core: Basic context setup.
+/** Initialize xogecoin core: Basic context setup.
  *  @note This can be done before daemonization. Do not call Shutdown() if this function fails.
  *  @pre Parameters should be parsed and config file should be read.
  */
@@ -49,7 +49,7 @@ bool AppInitParameterInteraction(const ArgsManager& args, bool use_syscall_sandb
  */
 bool AppInitSanityChecks();
 /**
- * Lock qogecoin core data directory.
+ * Lock xogecoin core data directory.
  * @note This should only be done after daemonization. Do not call Shutdown() if this function fails.
  * @pre Parameters should be parsed and config file should be read, AppInitSanityChecks should have been called.
  */
@@ -70,4 +70,4 @@ bool AppInitMain(node::NodeContext& node, interfaces::BlockAndHeaderTipInfo* tip
  */
 void SetupServerArgs(ArgsManager& argsman);
 
-#endif // QOGECOIN_INIT_H
+#endif // XOGECOIN_INIT_H

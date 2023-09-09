@@ -27,7 +27,7 @@ if [ "$RUN_UNIT_TESTS" = "true" ]; then
 fi
 
 if [ "$RUN_UNIT_TESTS_SEQUENTIAL" = "true" ]; then
-  CI_EXEC "${TEST_RUNNER_ENV}" DIR_UNIT_TEST_DATA="${DIR_UNIT_TEST_DATA}" LD_LIBRARY_PATH="${DEPENDS_DIR}/${HOST}/lib" "${BASE_OUTDIR}/bin/test_qogecoin" --catch_system_errors=no -l test_suite
+  CI_EXEC "${TEST_RUNNER_ENV}" DIR_UNIT_TEST_DATA="${DIR_UNIT_TEST_DATA}" LD_LIBRARY_PATH="${DEPENDS_DIR}/${HOST}/lib" "${BASE_OUTDIR}/bin/test_xogecoin" --catch_system_errors=no -l test_suite
 fi
 
 if [ "$RUN_FUNCTIONAL_TESTS" = "true" ]; then
@@ -35,10 +35,10 @@ if [ "$RUN_FUNCTIONAL_TESTS" = "true" ]; then
 fi
 
 if [ "${RUN_TIDY}" = "true" ]; then
-  export P_CI_DIR="${BASE_BUILD_DIR}/qogecoin-$HOST/src/"
+  export P_CI_DIR="${BASE_BUILD_DIR}/xogecoin-$HOST/src/"
   CI_EXEC run-clang-tidy "${MAKEJOBS}"
-  export P_CI_DIR="${BASE_BUILD_DIR}/qogecoin-$HOST/"
-  CI_EXEC "python3 ${BASE_SCRATCH_DIR}/iwyu/include-what-you-use/iwyu_tool.py src/compat src/init -p . ${MAKEJOBS} -- -Xiwyu --cxx17ns -Xiwyu --mapping_file=${BASE_BUILD_DIR}/qogecoin-$HOST/contrib/devtools/iwyu/qogecoin.core.imp"
+  export P_CI_DIR="${BASE_BUILD_DIR}/xogecoin-$HOST/"
+  CI_EXEC "python3 ${BASE_SCRATCH_DIR}/iwyu/include-what-you-use/iwyu_tool.py src/compat src/init -p . ${MAKEJOBS} -- -Xiwyu --cxx17ns -Xiwyu --mapping_file=${BASE_BUILD_DIR}/xogecoin-$HOST/contrib/devtools/iwyu/xogecoin.core.imp"
 fi
 
 if [ "$RUN_SECURITY_TESTS" = "true" ]; then

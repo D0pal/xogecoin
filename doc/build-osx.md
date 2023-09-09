@@ -2,7 +2,7 @@
 
 **Updated for MacOS [11.2](https://www.apple.com/macos/big-sur/)**
 
-This guide describes how to build qogecoind, command-line utilities, and GUI on macOS
+This guide describes how to build xogecoind, command-line utilities, and GUI on macOS
 
 ## Preparation
 
@@ -58,14 +58,14 @@ Now that all the required dependencies are installed, let's clone the Qogecoin C
 All build scripts and commands will run from this directory.
 
 ``` bash
-git clone https://github.com/qogecoin/qogecoin.git
+git clone https://github.com/xogecoin/xogecoin.git
 ```
 
 ### 5. Install Optional Dependencies
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run `qogecoind` or  `qogecoin-qt`.
+It is not necessary to build wallet functionality to run `xogecoind` or  `xogecoin-qt`.
 
 ###### Descriptor Wallet Support
 
@@ -105,7 +105,7 @@ brew uninstall qt
 ```
 
 Note: Building with Qt binaries downloaded from the Qt website is not officially supported.
-See the notes in [#7714](https://github.com/qogecoin/qogecoin/issues/7714).
+See the notes in [#7714](https://github.com/xogecoin/xogecoin/issues/7714).
 
 ###### qrencode
 
@@ -246,10 +246,10 @@ make deploy
 
 ## Running Qogecoin Core
 
-Qogecoin Core should now be available at `./src/qogecoind`.
-If you compiled support for the GUI, it should be available at `./src/qt/qogecoin-qt`.
+Qogecoin Core should now be available at `./src/xogecoind`.
+If you compiled support for the GUI, it should be available at `./src/qt/xogecoin-qt`.
 
-The first time you run `qogecoind` or `qogecoin-qt`, it will start downloading the blockchain.
+The first time you run `xogecoind` or `xogecoin-qt`, it will start downloading the blockchain.
 This process could take many hours, or even days on slower than average systems.
 
 By default, blockchain and wallet data files will be stored in:
@@ -263,9 +263,9 @@ Before running, you may create an empty configuration file:
 ```shell
 mkdir -p "/Users/${USER}/Library/Application Support/Qogecoin"
 
-touch "/Users/${USER}/Library/Application Support/Qogecoin/qogecoin.conf"
+touch "/Users/${USER}/Library/Application Support/Qogecoin/xogecoin.conf"
 
-chmod 600 "/Users/${USER}/Library/Application Support/Qogecoin/qogecoin.conf"
+chmod 600 "/Users/${USER}/Library/Application Support/Qogecoin/xogecoin.conf"
 ```
 
 You can monitor the download process by looking at the debug.log file:
@@ -277,8 +277,8 @@ tail -f $HOME/Library/Application\ Support/Qogecoin/debug.log
 ## Other commands:
 
 ```shell
-./src/qogecoind -daemon      # Starts the qogecoin daemon.
-./src/qogecoin-cli --help    # Outputs a list of command-line options.
-./src/qogecoin-cli help      # Outputs a list of RPC commands when the daemon is running.
-./src/qt/qogecoin-qt -server # Starts the qogecoin-qt server mode, allows qogecoin-cli control
+./src/xogecoind -daemon      # Starts the xogecoin daemon.
+./src/xogecoin-cli --help    # Outputs a list of command-line options.
+./src/xogecoin-cli help      # Outputs a list of RPC commands when the daemon is running.
+./src/qt/xogecoin-qt -server # Starts the xogecoin-qt server mode, allows xogecoin-cli control
 ```

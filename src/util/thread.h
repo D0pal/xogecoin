@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_THREAD_H
-#define QOGECOIN_UTIL_THREAD_H
+#ifndef XOGECOIN_UTIL_THREAD_H
+#define XOGECOIN_UTIL_THREAD_H
 
 #include <functional>
 
@@ -15,4 +15,4 @@ void TraceThread(const char* thread_name, std::function<void()> thread_func);
 
 } // namespace util
 
-#endif // QOGECOIN_UTIL_THREAD_H
+#endif // XOGECOIN_UTIL_THREAD_H

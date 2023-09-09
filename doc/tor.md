@@ -1,4 +1,4 @@
-# TOR SUPPORT IN QOGECOIN
+# TOR SUPPORT IN XOGECOIN
 
 It is possible to run Qogecoin Core as a Tor onion service, and connect to such services.
 
@@ -65,7 +65,7 @@ outgoing connections, but more is possible.
 
 In a typical situation, this suffices to run behind a Tor proxy:
 
-    ./qogecoind -proxy=127.0.0.1:9050
+    ./xogecoind -proxy=127.0.0.1:9050
 
 ## 2. Automatically create a Qogecoin Core onion service
 
@@ -80,7 +80,7 @@ it requires a Tor connection to work. It can be explicitly disabled with
 `-listenonion=0`. If it is not disabled, it can be configured using the
 `-torcontrol` and `-torpassword` settings.
 
-To see verbose Tor information in the qogecoind debug log, pass `-debug=tor`.
+To see verbose Tor information in the xogecoind debug log, pass `-debug=tor`.
 
 ### Control Port
 
@@ -108,20 +108,20 @@ DataDirectoryGroupReadable 1
 ### Authentication
 
 Connecting to Tor's control socket API requires one of two authentication
-methods to be configured: cookie authentication or qogecoind's `-torpassword`
+methods to be configured: cookie authentication or xogecoind's `-torpassword`
 configuration option.
 
 #### Cookie authentication
 
-For cookie authentication, the user running qogecoind must have read access to
+For cookie authentication, the user running xogecoind must have read access to
 the `CookieAuthFile` specified in the Tor configuration. In some cases this is
 preconfigured and the creation of an onion service is automatic. Don't forget to
-use the `-debug=tor` qogecoind configuration option to enable Tor debug logging.
+use the `-debug=tor` xogecoind configuration option to enable Tor debug logging.
 
 If a permissions problem is seen in the debug log, e.g. `tor: Authentication
 cookie /run/tor/control.authcookie could not be opened (check permissions)`, it
 can be resolved by adding both the user running Tor and the user running
-qogecoind to the same Tor group and setting permissions appropriately.
+xogecoind to the same Tor group and setting permissions appropriately.
 
 On Debian-derived systems, the Tor group will likely be `debian-tor` and one way
 to verify could be to list the groups and grep for a "tor" group name:
@@ -138,14 +138,14 @@ TORGROUP=$(stat -c '%G' /run/tor/control.authcookie)
 ```
 
 Once you have determined the `${TORGROUP}` and selected the `${USER}` that will
-run qogecoind, run this as root:
+run xogecoind, run this as root:
 
 ```
 usermod -a -G ${TORGROUP} ${USER}
 ```
 
 Then restart the computer (or log out) and log in as the `${USER}` that will run
-qogecoind.
+xogecoind.
 
 #### `torpassword` authentication
 
@@ -164,17 +164,17 @@ details).
 You can also manually configure your node to be reachable from the Tor network.
 Add these lines to your `/etc/tor/torrc` (or equivalent config file):
 
-    HiddenServiceDir /var/lib/tor/qogecoin-service/
+    HiddenServiceDir /var/lib/tor/xogecoin-service/
     HiddenServicePort 8333 127.0.0.1:8334
 
 The directory can be different of course, but virtual port numbers should be equal to
-your qogecoind's P2P listen port (8333 by default), and target addresses and ports
+your xogecoind's P2P listen port (8333 by default), and target addresses and ports
 should be equal to binding address and port for inbound Tor connections (127.0.0.1:8334 by default).
 
-    -externalip=X   You can tell qogecoin about its publicly reachable addresses using
+    -externalip=X   You can tell xogecoin about its publicly reachable addresses using
                     this option, and this can be an onion address. Given the above
                     configuration, you can find your onion address in
-                    /var/lib/tor/qogecoin-service/hostname. For connections
+                    /var/lib/tor/xogecoin-service/hostname. For connections
                     coming from unroutable addresses (such as 127.0.0.1, where the
                     Tor proxy typically runs), onion addresses are given
                     preference for your node to advertise itself with.
@@ -196,25 +196,25 @@ should be equal to binding address and port for inbound Tor connections (127.0.0
 
 In a typical situation, where you're only reachable via Tor, this should suffice:
 
-    ./qogecoind -proxy=127.0.0.1:9050 -externalip=7zvj7a2imdgkdbg4f2dryd5rgtrn7upivr5eeij4cicjh65pooxeshid.onion -listen
+    ./xogecoind -proxy=127.0.0.1:9050 -externalip=7zvj7a2imdgkdbg4f2dryd5rgtrn7upivr5eeij4cicjh65pooxeshid.onion -listen
 
 (obviously, replace the .onion address with your own). It should be noted that you still
 listen on all devices and another node could establish a clearnet connection, when knowing
 your address. To mitigate this, additionally bind the address of your Tor proxy:
 
-    ./qogecoind ... -bind=127.0.0.1
+    ./xogecoind ... -bind=127.0.0.1
 
 If you don't care too much about hiding your node, and want to be reachable on IPv4
 as well, use `discover` instead:
 
-    ./qogecoind ... -discover
+    ./xogecoind ... -discover
 
 and open port 8333 on your firewall (or use port mapping, i.e., `-upnp` or `-natpmp`).
 
 If you only want to use Tor to reach .onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
 
-    ./qogecoind -onion=127.0.0.1:9050 -externalip=7zvj7a2imdgkdbg4f2dryd5rgtrn7upivr5eeij4cicjh65pooxeshid.onion -discover
+    ./xogecoind -onion=127.0.0.1:9050 -externalip=7zvj7a2imdgkdbg4f2dryd5rgtrn7upivr5eeij4cicjh65pooxeshid.onion -discover
 
 ## 4. Privacy recommendations
 

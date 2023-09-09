@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_GOLOMBRICE_H
-#define QOGECOIN_UTIL_GOLOMBRICE_H
+#ifndef XOGECOIN_UTIL_GOLOMBRICE_H
+#define XOGECOIN_UTIL_GOLOMBRICE_H
 
 #include <util/fastrange.h>
 
@@ -42,4 +42,4 @@ uint64_t GolombRiceDecode(BitStreamReader<IStream>& bitreader, uint8_t P)
     return (q << P) + r;
 }
 
-#endif // QOGECOIN_UTIL_GOLOMBRICE_H
+#endif // XOGECOIN_UTIL_GOLOMBRICE_H

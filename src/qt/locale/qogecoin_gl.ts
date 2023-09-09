@@ -150,8 +150,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation type="unfinished">Confirmar encriptación de moedeiro</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Precaución: Se encriptas o teu moedeiro e perdes o teu contrasinal, ti &lt;b&gt;PERDERÁS TÓDOLOS TEUS QOGECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Precaución: Se encriptas o teu moedeiro e perdes o teu contrasinal, ti &lt;b&gt;PERDERÁS TÓDOLOS TEUS XOGECOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -252,7 +252,7 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation type="unfinished">Esta é unha build de test pre-lanzamento - emprégaa baixo o teu propio risco - non empregar para minado ou aplicacións de comerciantes</translation>
@@ -409,8 +409,8 @@ Firmar é posible unicamente con enderezos de tipo 'legacy'.</translation>
         <translation type="unfinished">Barra de ferramentas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Solicitar pagamentos (xera códigos QR e qogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Solicitar pagamentos (xera códigos QR e xogecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>

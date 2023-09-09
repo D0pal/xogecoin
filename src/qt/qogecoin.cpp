@@ -3,10 +3,10 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
-#include <qt/qogecoin.h>
+#include <qt/xogecoin.h>
 
 #include <chainparams.h>
 #include <init.h>
@@ -15,7 +15,7 @@
 #include <interfaces/node.h>
 #include <node/ui_interface.h>
 #include <noui.h>
-#include <qt/qogecoingui.h>
+#include <qt/xogecoingui.h>
 #include <qt/clientmodel.h>
 #include <qt/guiconstants.h>
 #include <qt/guiutil.h>
@@ -143,11 +143,11 @@ static void initTranslations(QTranslator &qtTranslatorBase, QTranslator &qtTrans
     if (qtTranslator.load("qt_" + lang_territory, QLibraryInfo::location(QLibraryInfo::TranslationsPath)))
         QApplication::installTranslator(&qtTranslator);
 
-    // Load e.g. qogecoin_de.qm (shortcut "de" needs to be defined in qogecoin.qrc)
+    // Load e.g. xogecoin_de.qm (shortcut "de" needs to be defined in xogecoin.qrc)
     if (translatorBase.load(lang, ":/translations/"))
         QApplication::installTranslator(&translatorBase);
 
-    // Load e.g. qogecoin_de_DE.qm (shortcut "de_DE" needs to be defined in qogecoin.qrc)
+    // Load e.g. xogecoin_de_DE.qm (shortcut "de_DE" needs to be defined in xogecoin.qrc)
     if (translator.load(lang_territory, ":/translations/"))
         QApplication::installTranslator(&translator);
 }
@@ -160,8 +160,8 @@ static bool InitSettings()
 
     std::vector<std::string> errors;
     if (!gArgs.ReadSettingsFile(&errors)) {
-        std::string error = QT_TRANSLATE_NOOP("qogecoin-core", "Settings file could not be read");
-        std::string error_translated = QCoreApplication::translate("qogecoin-core", error.c_str()).toStdString();
+        std::string error = QT_TRANSLATE_NOOP("xogecoin-core", "Settings file could not be read");
+        std::string error_translated = QCoreApplication::translate("xogecoin-core", error.c_str()).toStdString();
         InitError(Untranslated(strprintf("%s:\n%s\n", error, MakeUnorderedList(errors))));
 
         QMessageBox messagebox(QMessageBox::Critical, PACKAGE_NAME, QString::fromStdString(strprintf("%s.", error_translated)), QMessageBox::Reset | QMessageBox::Abort);
@@ -183,8 +183,8 @@ static bool InitSettings()
 
     errors.clear();
     if (!gArgs.WriteSettingsFile(&errors)) {
-        std::string error = QT_TRANSLATE_NOOP("qogecoin-core", "Settings file could not be written");
-        std::string error_translated = QCoreApplication::translate("qogecoin-core", error.c_str()).toStdString();
+        std::string error = QT_TRANSLATE_NOOP("xogecoin-core", "Settings file could not be written");
+        std::string error_translated = QCoreApplication::translate("xogecoin-core", error.c_str()).toStdString();
         InitError(Untranslated(strprintf("%s:\n%s\n", error, MakeUnorderedList(errors))));
 
         QMessageBox messagebox(QMessageBox::Critical, PACKAGE_NAME, QString::fromStdString(strprintf("%s.", error_translated)), QMessageBox::Ok);
@@ -213,7 +213,7 @@ void DebugMessageHandler(QtMsgType type, const QMessageLogContext& context, cons
 }
 
 static int qt_argc = 1;
-static const char* qt_argv = "qogecoin-qt";
+static const char* qt_argv = "xogecoin-qt";
 
 QogecoinApplication::QogecoinApplication():
     QApplication(qt_argc, const_cast<char **>(&qt_argv)),
@@ -412,7 +412,7 @@ void QogecoinApplication::initializeResult(bool success, interfaces::BlockAndHea
 
 #ifdef ENABLE_WALLET
         // Now that initialization/startup is done, process any command-line
-        // qogecoin: URIs or payment requests:
+        // xogecoin: URIs or payment requests:
         if (paymentServer) {
             connect(paymentServer, &PaymentServer::receivedPaymentRequest, window, &QogecoinGUI::handlePaymentRequest);
             connect(window, &QogecoinGUI::receivedURI, paymentServer, &PaymentServer::handleURIOrFile);
@@ -496,8 +496,8 @@ int GuiMain(int argc, char* argv[])
     // Do not refer to data directory yet, this can be overridden by Intro::pickDataDirectory
 
     /// 1. Basic Qt initialization (not dependent on parameters or configuration)
-    Q_INIT_RESOURCE(qogecoin);
-    Q_INIT_RESOURCE(qogecoin_locale);
+    Q_INIT_RESOURCE(xogecoin);
+    Q_INIT_RESOURCE(xogecoin_locale);
 
     // Generate high-dpi pixmaps
     QApplication::setAttribute(Qt::AA_UseHighDpiPixmaps);
@@ -559,7 +559,7 @@ int GuiMain(int argc, char* argv[])
     // Gracefully exit if the user cancels
     if (!Intro::showIfNeeded(did_show_intro, prune_MiB)) return EXIT_SUCCESS;
 
-    /// 6. Determine availability of data directory and parse qogecoin.conf
+    /// 6. Determine availability of data directory and parse xogecoin.conf
     /// - Do not call gArgs.GetDataDirNet() before this step finishes
     if (!CheckDataDirOption()) {
         InitError(strprintf(Untranslated("Specified data directory \"%s\" does not exist.\n"), gArgs.GetArg("-datadir", "")));
@@ -615,7 +615,7 @@ int GuiMain(int argc, char* argv[])
         exit(EXIT_SUCCESS);
 
     // Start up the payment server early, too, so impatient users that click on
-    // qogecoin: links repeatedly have their payment requests routed to this process:
+    // xogecoin: links repeatedly have their payment requests routed to this process:
     if (WalletModel::isWalletEnabled()) {
         app.createPaymentServer();
     }

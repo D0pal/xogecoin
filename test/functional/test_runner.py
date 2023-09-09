@@ -138,8 +138,8 @@ BASE_SCRIPTS = [
     'feature_fee_estimation.py',
     'interface_zmq.py',
     'rpc_invalid_address_message.py',
-    'interface_qogecoin_cli.py --legacy-wallet',
-    'interface_qogecoin_cli.py --descriptors',
+    'interface_xogecoin_cli.py --legacy-wallet',
+    'interface_xogecoin_cli.py --descriptors',
     'feature_bind_extra.py',
     'mempool_resurrect.py',
     'wallet_txn_doublespend.py --mineblock',
@@ -400,9 +400,9 @@ def main():
 
     logging.debug("Temporary test directory at %s" % tmpdir)
 
-    enable_qogecoind = config["components"].getboolean("ENABLE_QOGECOIND")
+    enable_xogecoind = config["components"].getboolean("ENABLE_XOGECOIND")
 
-    if not enable_qogecoind:
+    if not enable_xogecoind:
         print("No functional tests to run.")
         print("Rerun ./configure with --with-daemon and then make")
         sys.exit(0)
@@ -484,11 +484,11 @@ def main():
 def run_tests(*, test_list, src_dir, build_dir, tmpdir, jobs=1, enable_coverage=False, args=None, combined_logs_len=0, failfast=False, use_term_control):
     args = args or []
 
-    # Warn if qogecoind is already running
+    # Warn if xogecoind is already running
     try:
         # pgrep exits with code zero when one or more matching processes found
-        if subprocess.run(["pgrep", "-x", "qogecoind"], stdout=subprocess.DEVNULL).returncode == 0:
-            print("%sWARNING!%s There is already a qogecoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
+        if subprocess.run(["pgrep", "-x", "xogecoind"], stdout=subprocess.DEVNULL).returncode == 0:
+            print("%sWARNING!%s There is already a xogecoind process running on this system. Tests may fail unexpectedly due to resource contention!" % (BOLD[1], BOLD[0]))
     except OSError:
         # pgrep not supported
         pass
@@ -764,7 +764,7 @@ class RPCCoverage():
     Coverage calculation works by having each test script subprocess write
     coverage files into a particular directory. These files contain the RPC
     commands invoked during testing, as well as a complete listing of RPC
-    commands per `qogecoin-cli help` (`rpc_interface.txt`).
+    commands per `xogecoin-cli help` (`rpc_interface.txt`).
 
     After all tests complete, the commands run are combined and diff'd against
     the complete list to calculate uncovered RPC commands.

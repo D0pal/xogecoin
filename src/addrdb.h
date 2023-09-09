@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_ADDRDB_H
-#define QOGECOIN_ADDRDB_H
+#ifndef XOGECOIN_ADDRDB_H
+#define XOGECOIN_ADDRDB_H
 
 #include <fs.h>
 #include <net_types.h> // For banmap_t
@@ -67,4 +67,4 @@ void DumpAnchors(const fs::path& anchors_db_path, const std::vector<CAddress>& a
  */
 std::vector<CAddress> ReadAnchors(const fs::path& anchors_db_path);
 
-#endif // QOGECOIN_ADDRDB_H
+#endif // XOGECOIN_ADDRDB_H

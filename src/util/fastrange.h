@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_FASTRANGE_H
-#define QOGECOIN_UTIL_FASTRANGE_H
+#ifndef XOGECOIN_UTIL_FASTRANGE_H
+#define XOGECOIN_UTIL_FASTRANGE_H
 
 #include <cstdint>
 
@@ -48,4 +48,4 @@ static inline uint64_t FastRange64(uint64_t x, uint64_t n)
 #endif
 }
 
-#endif // QOGECOIN_UTIL_FASTRANGE_H
+#endif // XOGECOIN_UTIL_FASTRANGE_H

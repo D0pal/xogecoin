@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #include <util/tokenpipe.h>
 
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 
 #ifndef WIN32
 

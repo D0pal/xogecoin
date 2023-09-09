@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_MACROS_H
-#define QOGECOIN_UTIL_MACROS_H
+#ifndef XOGECOIN_UTIL_MACROS_H
+#define XOGECOIN_UTIL_MACROS_H
 
 #define PASTE(x, y) x ## y
 #define PASTE2(x, y) PASTE(x, y)
@@ -17,4 +17,4 @@
 #define STRINGIZE(X) DO_STRINGIZE(X)
 #define DO_STRINGIZE(X) #X
 
-#endif // QOGECOIN_UTIL_MACROS_H
+#endif // XOGECOIN_UTIL_MACROS_H

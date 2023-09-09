@@ -3,10 +3,10 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 //! @file
-//! @brief Common init functions shared by qogecoin-node, qogecoin-wallet, etc.
+//! @brief Common init functions shared by xogecoin-node, xogecoin-wallet, etc.
 
-#ifndef QOGECOIN_INIT_COMMON_H
-#define QOGECOIN_INIT_COMMON_H
+#ifndef XOGECOIN_INIT_COMMON_H
+#define XOGECOIN_INIT_COMMON_H
 
 class ArgsManager;
 
@@ -25,4 +25,4 @@ bool StartLogging(const ArgsManager& args);
 void LogPackageVersion();
 } // namespace init
 
-#endif // QOGECOIN_INIT_COMMON_H
+#endif // XOGECOIN_INIT_COMMON_H

@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2021 The Bitcoin and Qogecoin Core Authors
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef QOGECOIN_BANMAN_H
-#define QOGECOIN_BANMAN_H
+#ifndef XOGECOIN_BANMAN_H
+#define XOGECOIN_BANMAN_H
 
 #include <addrdb.h>
 #include <common/bloom.h>
@@ -95,4 +95,4 @@ private:
     CRollingBloomFilter m_discouraged GUARDED_BY(m_cs_banned) {50000, 0.000001};
 };
 
-#endif // QOGECOIN_BANMAN_H
+#endif // XOGECOIN_BANMAN_H

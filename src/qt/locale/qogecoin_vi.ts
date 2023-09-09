@@ -155,8 +155,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Xác nhận mã hóa ví</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Cảnh báo: Nếu bạn mã hóa ví và mất cụm mật khẩu, bạn sẽ &lt;b&gt;MẤT TẤT CẢ QOGECOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Cảnh báo: Nếu bạn mã hóa ví và mất cụm mật khẩu, bạn sẽ &lt;b&gt;MẤT TẤT CẢ XOGECOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -175,8 +175,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Nhập cụm mật khẩu cũ và mật khẩu mới cho ví.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Xin lưu ý rằng mật mã hóa ví của bạn không thể bảo vệ hoàn toàn qogecoin của bạn khỏi đánh cắp bởi các phẩn mềm gián điệp nhiễm vào máy tính của bạn.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Xin lưu ý rằng mật mã hóa ví của bạn không thể bảo vệ hoàn toàn xogecoin của bạn khỏi đánh cắp bởi các phẩn mềm gián điệp nhiễm vào máy tính của bạn.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -309,7 +309,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Fee estimation failed. Fallbackfee is disabled. Wait a few blocks or enable -fallbackfee.</source>
         <translation type="unfinished">Dự toán phí không thành công. Fallbackfee bị vô hiệu hóa. Đợi sau một vài khối hoặc kích hoạt -fallbackfee.</translation>
@@ -555,8 +555,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Các thanh công cụ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Yêu cầu thanh toán (tạo QR code và qogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Yêu cầu thanh toán (tạo QR code và xogecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -629,8 +629,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Các địa chỉ đang nhận</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Mở một qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Mở một xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1138,12 +1138,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Giao dịch gần đây có thể chưa được hiển thị, và vì vậy số dư wallet của bạn có thể không dúng. Thông tin này sẽ được làm đúng khi wallet hoàn thành đồng bộ với qogecoin network, như chi tiết bên dưới.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Giao dịch gần đây có thể chưa được hiển thị, và vì vậy số dư wallet của bạn có thể không dúng. Thông tin này sẽ được làm đúng khi wallet hoàn thành đồng bộ với xogecoin network, như chi tiết bên dưới.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Cố gắng spend các qogecoins bị ảnh hưởng bởi các giao dịch chưa được hiển thị sẽ không được chấp nhận bởi mạng.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Cố gắng spend các xogecoins bị ảnh hưởng bởi các giao dịch chưa được hiển thị sẽ không được chấp nhận bởi mạng.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1177,8 +1177,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Mở qogecoin URI</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Mở xogecoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1524,12 +1524,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Không thể khởi tạo qogecoin: click-to-pay handler</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Không thể khởi tạo xogecoin: click-to-pay handler</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' không khả dụng URI. Dùng thay vì 'qogecoin:' .</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' không khả dụng URI. Dùng thay vì 'xogecoin:' .</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -1998,8 +1998,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Ẩn cài đặt phí giao dịch</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Khi có khối lượng giao dịch ít hơn chổ trống trong các khối, các nhà đào mỏ cũng như các nút chuyển tiếp có thể thực thi chỉ với một khoản phí tối thiểu. Chỉ trả khoản phí tối thiểu này là tốt, nhưng lưu ý rằng điều này có thể dẫn đến một giao dịch không bao giờ xác nhận một khi có nhu cầu giao dịch qogecoin nhiều hơn khả năng mạng có thể xử lý.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Khi có khối lượng giao dịch ít hơn chổ trống trong các khối, các nhà đào mỏ cũng như các nút chuyển tiếp có thể thực thi chỉ với một khoản phí tối thiểu. Chỉ trả khoản phí tối thiểu này là tốt, nhưng lưu ý rằng điều này có thể dẫn đến một giao dịch không bao giờ xác nhận một khi có nhu cầu giao dịch xogecoin nhiều hơn khả năng mạng có thể xử lý.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -2184,8 +2184,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Lượng tiền để gửi trong mỗi đơn vị đã chọn</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">The fee sẽ được khấu trừ từ số tiền đang gửi. Người nhận sẽ receive ít qogecoins hơn bạn gõ vào khoảng trống. Nếu nhiều người gửi được chọn, fee sẽ được chia đều.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">The fee sẽ được khấu trừ từ số tiền đang gửi. Người nhận sẽ receive ít xogecoins hơn bạn gõ vào khoảng trống. Nếu nhiều người gửi được chọn, fee sẽ được chia đều.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2212,8 +2212,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Nhập một label cho cái address này để thêm vào danh sách địa chỉ đã sử dụng</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Một tin nhắn được đính kèm với số qogecoin: URI mà sẽ được lưu giữ với transaction dành cho tài liệu tham khảo. Lưu ý: Tin nhắn này sẽ không được gửi thông qua Qogecoin network.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Một tin nhắn được đính kèm với số xogecoin: URI mà sẽ được lưu giữ với transaction dành cho tài liệu tham khảo. Lưu ý: Tin nhắn này sẽ không được gửi thông qua Qogecoin network.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2242,8 +2242,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Sign Tin nhắn</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Bạn có thể ký/đồng ý với địa chỉ chứng minh bạn có thể receive qogecoins đã gửi đến chúng. Cẩn thận không ký bất cứ không rõ hay random, như các cuộc tấn công lừa đảo có thể cố lừa bạn ký tên vào danh tính của bạn.. Chỉ ký các bản tuyên bố hoàn chỉnh mà bạn đồng ý.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Bạn có thể ký/đồng ý với địa chỉ chứng minh bạn có thể receive xogecoins đã gửi đến chúng. Cẩn thận không ký bất cứ không rõ hay random, như các cuộc tấn công lừa đảo có thể cố lừa bạn ký tên vào danh tính của bạn.. Chỉ ký các bản tuyên bố hoàn chỉnh mà bạn đồng ý.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

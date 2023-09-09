@@ -1,15 +1,15 @@
 Qogecoin version 0.4.4 is now available for download at:
-http://luke.dashjr.org/programs/qogecoin/files/qogecoind-0.4.4/
+http://luke.dashjr.org/programs/xogecoin/files/xogecoind-0.4.4/
 
 This is a bugfix-only release based on 0.4.0.
 
 Please note that the wxQogecoin GUI client is no longer maintained nor supported. If someone would like to step up to maintain this, they should contact Luke-Jr.
 
 Please report bugs for the daemon only using the issue tracker at github:
-https://github.com/qogecoin/qogecoin/issues
+https://github.com/xogecoin/xogecoin/issues
 
 Stable source code is hosted at Gitorious:
-http://gitorious.org/qogecoin/qogecoind-stable/archive-tarball/v0.4.4#.tar.gz
+http://gitorious.org/xogecoin/xogecoind-stable/archive-tarball/v0.4.4#.tar.gz
 
 BUG FIXES
 
@@ -24,7 +24,7 @@ Several shutdown issues have been fixed.
 Check that keys stored in the wallet are valid at startup, and if not,
 report corruption.
 Various build fixes.
-If no password is specified to qogecoind, recommend a secure password.
+If no password is specified to xogecoind, recommend a secure password.
 Update hard-coded fallback seed nodes, choosing recent ones with long uptime and versions at least 0.4.0.
 Add checkpoint at block 168,000.
 

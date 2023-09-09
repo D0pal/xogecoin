@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_SQLITE_H
-#define QOGECOIN_WALLET_SQLITE_H
+#ifndef XOGECOIN_WALLET_SQLITE_H
+#define XOGECOIN_WALLET_SQLITE_H
 
 #include <wallet/db.h>
 
@@ -121,4 +121,4 @@ std::unique_ptr<SQLiteDatabase> MakeSQLiteDatabase(const fs::path& path, const D
 std::string SQLiteDatabaseVersion();
 } // namespace wallet
 
-#endif // QOGECOIN_WALLET_SQLITE_H
+#endif // XOGECOIN_WALLET_SQLITE_H

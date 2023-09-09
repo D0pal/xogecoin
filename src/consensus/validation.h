@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CONSENSUS_VALIDATION_H
-#define QOGECOIN_CONSENSUS_VALIDATION_H
+#ifndef XOGECOIN_CONSENSUS_VALIDATION_H
+#define XOGECOIN_CONSENSUS_VALIDATION_H
 
 #include <string>
 #include <version.h>
@@ -179,4 +179,4 @@ inline int GetWitnessCommitmentIndex(const CBlock& block)
     return commitpos;
 }
 
-#endif // QOGECOIN_CONSENSUS_VALIDATION_H
+#endif // XOGECOIN_CONSENSUS_VALIDATION_H

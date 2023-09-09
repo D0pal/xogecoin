@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SUPPORT_LOCKEDPOOL_H
-#define QOGECOIN_SUPPORT_LOCKEDPOOL_H
+#ifndef XOGECOIN_SUPPORT_LOCKEDPOOL_H
+#define XOGECOIN_SUPPORT_LOCKEDPOOL_H
 
 #include <stdint.h>
 #include <list>
@@ -237,4 +237,4 @@ private:
     static LockedPoolManager* _instance;
 };
 
-#endif // QOGECOIN_SUPPORT_LOCKEDPOOL_H
+#endif // XOGECOIN_SUPPORT_LOCKEDPOOL_H

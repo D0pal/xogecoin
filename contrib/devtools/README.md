@@ -114,10 +114,10 @@ If no errors occur the return value will be 0 and the output will be empty.
 
 If there are any errors the return value will be 1 and output like this will be printed:
 
-    .../64/test_qogecoin: symbol memcpy from unsupported version GLIBC_2.14
-    .../64/test_qogecoin: symbol __fdelt_chk from unsupported version GLIBC_2.15
-    .../64/test_qogecoin: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
-    .../64/test_qogecoin: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
+    .../64/test_xogecoin: symbol memcpy from unsupported version GLIBC_2.14
+    .../64/test_xogecoin: symbol __fdelt_chk from unsupported version GLIBC_2.15
+    .../64/test_xogecoin: symbol std::out_of_range::~out_of_range() from unsupported version GLIBCXX_3.4.15
+    .../64/test_xogecoin: symbol _ZNSt8__detail15_List_nod from unsupported version GLIBCXX_3.4.15
 
 circular-dependencies.py
 ========================

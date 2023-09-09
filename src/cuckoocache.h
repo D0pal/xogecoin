@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CUCKOOCACHE_H
-#define QOGECOIN_CUCKOOCACHE_H
+#ifndef XOGECOIN_CUCKOOCACHE_H
+#define XOGECOIN_CUCKOOCACHE_H
 
 #include <util/fastrange.h>
 
@@ -477,4 +477,4 @@ public:
 };
 } // namespace CuckooCache
 
-#endif // QOGECOIN_CUCKOOCACHE_H
+#endif // XOGECOIN_CUCKOOCACHE_H

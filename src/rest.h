@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_REST_H
-#define QOGECOIN_REST_H
+#ifndef XOGECOIN_REST_H
+#define XOGECOIN_REST_H
 
 #include <string>
 
@@ -25,4 +25,4 @@ enum class RESTResponseFormat {
  */
 RESTResponseFormat ParseDataFormat(std::string& param, const std::string& strReq);
 
-#endif // QOGECOIN_REST_H
+#endif // XOGECOIN_REST_H

@@ -73,7 +73,7 @@ Gönderim yapmadan önce her zaman tutarı ve alıcı adresi kontrol ediniz.</tr
     <message>
         <source>These are your Qogecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Bunlar ödeme almak için kullanacağınız qogecoin adreslerinizdir. Yeni adres oluşturmak için ödeme alma sekmesindeki 'Yeni alıcı adresi oluşturun' kısmına tıklayın.
+        <translation type="unfinished">Bunlar ödeme almak için kullanacağınız xogecoin adreslerinizdir. Yeni adres oluşturmak için ödeme alma sekmesindeki 'Yeni alıcı adresi oluşturun' kısmına tıklayın.
 İmzalama sadece 'legacy' tipindeki adreslerle mümkündür.</translation>
     </message>
     <message>
@@ -166,8 +166,8 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">Cüzdan şifrelemeyi onayla</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Uyarı: Cüzdanınızı şifreler ve parolanızı unutursanız &lt;b&gt;TÜM QOGECOINLERINIZI KAYBEDERSİNİZ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Uyarı: Cüzdanınızı şifreler ve parolanızı unutursanız &lt;b&gt;TÜM XOGECOINLERINIZI KAYBEDERSİNİZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -186,8 +186,8 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">Cüzdanınızın eski ve yeni parolasını giriniz.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Cüzdanınızı şifrelemenin bilgisayarınıza bulaşan kötü amaçlı yazılımlar tarafından qogecoinlerinizin çalınmasına karşı tamamen koruyamayacağını unutmayın.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Cüzdanınızı şifrelemenin bilgisayarınıza bulaşan kötü amaçlı yazılımlar tarafından xogecoinlerinizin çalınmasına karşı tamamen koruyamayacağını unutmayın.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -294,7 +294,7 @@ Cüzdan kilidini aç.</translation>
     </message>
     <message>
         <source>Enter a Qogecoin address (e.g. %1)</source>
-        <translation type="unfinished">Bir qogecoin adresi giriniz (örneğin %1)</translation>
+        <translation type="unfinished">Bir xogecoin adresi giriniz (örneğin %1)</translation>
     </message>
     <message>
         <source>Internal</source>
@@ -381,7 +381,7 @@ Cüzdan kilidini aç.</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">Ayarlar dosyası okunamadı</translation>
@@ -444,7 +444,7 @@ Cüzdan kilidini aç.</translation>
     </message>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
-        <translation type="unfinished">Bu kararlı sürümden önceki bir deneme sürümüdür. - risklerini bilerek kullanma sorumluluğu sizdedir - qogecoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
+        <translation type="unfinished">Bu kararlı sürümden önceki bir deneme sürümüdür. - risklerini bilerek kullanma sorumluluğu sizdedir - xogecoin oluşturmak ya da ticari uygulamalar için kullanmayınız</translation>
     </message>
     <message>
         <source>This is the transaction fee you may pay when fee estimates are not available.</source>
@@ -660,7 +660,7 @@ Cüzdan kilidini aç.</translation>
     </message>
     <message>
         <source>The transaction amount is too small to pay the fee</source>
-        <translation type="unfinished">İşlemdeki qogecoin tutarı ücreti ödemek için çok düşük</translation>
+        <translation type="unfinished">İşlemdeki xogecoin tutarı ücreti ödemek için çok düşük</translation>
     </message>
     <message>
         <source>The wallet will avoid paying less than the minimum relay fee.</source>
@@ -923,8 +923,8 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">Eşlere Bağlanılıyor...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Ödeme isteyin (QR kodları ve qogecoin: URI'ler üretir)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Ödeme isteyin (QR kodları ve xogecoin: URI'ler üretir)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1001,7 +1001,7 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">&amp; Adresler alınıyor</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished">Qogecoin’i aç.</translation>
     </message>
     <message>
@@ -1607,12 +1607,12 @@ Cüzdan kilidini aç.</translation>
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız qogecoin ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Son işlemler henüz görünmeyebilir ve bu nedenle cüzdanınızın bakiyesi yanlış olabilir. Bu bilgiler, aşağıda detaylandırıldığı gibi, cüzdanınız xogecoin ağı ile senkronizasyonunu tamamladığında doğru olacaktır. </translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Henüz görüntülenmeyen işlemlerden etkilenen qogecoinleri harcama girişiminde bulunmak ağ tarafından kabul edilmeyecektir.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Henüz görüntülenmeyen işlemlerden etkilenen xogecoinleri harcama girişiminde bulunmak ağ tarafından kabul edilmeyecektir.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1650,7 +1650,7 @@ Cüzdan kilidini aç.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished">Qogecoin URI aç</translation>
     </message>
     <message>
@@ -2096,7 +2096,7 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">Ödeme isteği hatası</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">Qogecoin başlatılamadı: tıkla-ve-öde yöneticisi</translation>
     </message>
     <message>
@@ -2104,8 +2104,8 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">URI yönetimi</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' geçerli bir URI değil. Onun yerine 'qogecoin:' kullanın.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' geçerli bir URI değil. Onun yerine 'xogecoin:' kullanın.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -2953,8 +2953,8 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">Bu ögeyi kaldır</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Ücret yollanan tutardan alınacaktır. Alıcı tutar alanına girdiğinizden daha az qogecoin alacaktır. Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Ücret yollanan tutardan alınacaktır. Alıcı tutar alanına girdiğinizden daha az xogecoin alacaktır. Eğer birden çok alıcı seçiliyse ücret eşit olarak bölünecektir.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2981,8 +2981,8 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">Kullanılmış adres listesine eklemek için bu adrese bir etiket girin</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Referans için qogecoin: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Qogecoin ağı üzerinden gönderilmeyecektir.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Referans için xogecoin: URI'siyle iliştirilmiş işlemle birlikte depolanacak bir ileti. Not: Bu mesaj Qogecoin ağı üzerinden gönderilmeyecektir.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3015,8 +3015,8 @@ Cüzdan kilidini aç.</translation>
         <translation type="unfinished">İleti &amp;imzala</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Adreslerinize yollanan qogecoinleri alabileceğiniz ispatlamak için adreslerinizle iletiler/anlaşmalar imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Adreslerinize yollanan xogecoinleri alabileceğiniz ispatlamak için adreslerinizle iletiler/anlaşmalar imzalayabilirsiniz. Oltalama saldırılarının kimliğinizi imzanızla elde etmeyi deneyebilecekleri için belirsiz ya da rastgele hiçbir şey imzalamamaya dikkat ediniz. Sadece ayrıntılı açıklaması olan ve tümüne katıldığınız ifadeleri imzalayınız.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>
@@ -3292,7 +3292,7 @@ Cüzdan kilidini aç.</translation>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished">Oluşturulan qogecoin'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
+        <translation type="unfinished">Oluşturulan xogecoin'lerin harcanabilmelerinden önce %1 blok beklemeleri gerekmektedir. Bu blok, oluşturduğunuzda, blok zincirine eklenmesi için ağda yayınlandı. Zincire eklenmesi başarısız olursa, durumu "kabul edilmedi" olarak değiştirilecek ve harcanamayacaktır. Bu, bazen başka bir düğüm sizden birkaç saniye önce ya da sonra blok oluşturursa meydana gelebilir.</translation>
     </message>
     <message>
         <source>Debug information</source>

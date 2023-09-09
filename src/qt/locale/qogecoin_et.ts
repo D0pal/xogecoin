@@ -158,8 +158,8 @@
         <translation type="unfinished">Kinnita rahakoti krüpteerimine.</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA QOGECOINID&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Hoiatus:Kui sa krüpteerid oma rahakoti ja kaotad salafraasi, siis sa&lt;b&gt;KAOTAD OMA XOGECOINID&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -178,8 +178,8 @@
         <translation type="unfinished">Sisesta rahakoti vana salafraas ja uus salafraas.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Pea meeles, et rahakoti krüpteerimine ei välista qogecoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Pea meeles, et rahakoti krüpteerimine ei välista xogecoinide vargust, kui sinu arvuti on nakatunud pahavaraga.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -316,7 +316,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation type="unfinished">See on test-versioon - kasutamine omal riisikol - ära kasuta mining'uks ega kaupmeeste programmides</translation>
@@ -485,8 +485,8 @@
         <translation type="unfinished">Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Loo maksepäring (genereerib QR koodid ja qogecoini: URId)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Loo maksepäring (genereerib QR koodid ja xogecoini: URId)</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -966,7 +966,7 @@
         <translation type="unfinished">Maksepäringu tõrge</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">Qogecoin ei käivitu: vajuta-maksa toiming</translation>
     </message>
     <message>

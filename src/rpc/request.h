@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_RPC_REQUEST_H
-#define QOGECOIN_RPC_REQUEST_H
+#ifndef XOGECOIN_RPC_REQUEST_H
+#define XOGECOIN_RPC_REQUEST_H
 
 #include <any>
 #include <string>
@@ -40,4 +40,4 @@ public:
     void parse(const UniValue& valRequest);
 };
 
-#endif // QOGECOIN_RPC_REQUEST_H
+#endif // XOGECOIN_RPC_REQUEST_H

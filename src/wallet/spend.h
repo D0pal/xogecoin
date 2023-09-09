@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_SPEND_H
-#define QOGECOIN_WALLET_SPEND_H
+#ifndef XOGECOIN_WALLET_SPEND_H
+#define XOGECOIN_WALLET_SPEND_H
 
 #include <consensus/amount.h>
 #include <wallet/coinselection.h>
@@ -96,4 +96,4 @@ bool CreateTransaction(CWallet& wallet, const std::vector<CRecipient>& vecSend, 
 bool FundTransaction(CWallet& wallet, CMutableTransaction& tx, CAmount& nFeeRet, int& nChangePosInOut, bilingual_str& error, bool lockUnspents, const std::set<int>& setSubtractFeeFromOutputs, CCoinControl);
 } // namespace wallet
 
-#endif // QOGECOIN_WALLET_SPEND_H
+#endif // XOGECOIN_WALLET_SPEND_H

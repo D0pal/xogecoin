@@ -1,4 +1,4 @@
-package org.qogecoincore.qt;
+package org.xogecoincore.qt;
 
 import android.os.Bundle;
 import android.system.ErrnoException;
@@ -13,9 +13,9 @@ public class QogecoinQtActivity extends QtActivity
     @Override
     public void onCreate(Bundle savedInstanceState)
     {
-        final File qogecoinDir = new File(getFilesDir().getAbsolutePath() + "/.qogecoin");
-        if (!qogecoinDir.exists()) {
-            qogecoinDir.mkdir();
+        final File xogecoinDir = new File(getFilesDir().getAbsolutePath() + "/.xogecoin");
+        if (!xogecoinDir.exists()) {
+            xogecoinDir.mkdir();
         }
 
         super.onCreate(savedInstanceState);

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CHECKQUEUE_H
-#define QOGECOIN_CHECKQUEUE_H
+#ifndef XOGECOIN_CHECKQUEUE_H
+#define XOGECOIN_CHECKQUEUE_H
 
 #include <sync.h>
 #include <tinyformat.h>
@@ -254,4 +254,4 @@ public:
     }
 };
 
-#endif // QOGECOIN_CHECKQUEUE_H
+#endif // XOGECOIN_CHECKQUEUE_H

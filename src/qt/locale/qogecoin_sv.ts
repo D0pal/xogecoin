@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Qogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Detta är dina Qogecoin-adresser för att skicka betalningar. Kontrollera alltid belopp och mottagaradress innan du skickar qogecoin.</translation>
+        <translation type="unfinished">Detta är dina Qogecoin-adresser för att skicka betalningar. Kontrollera alltid belopp och mottagaradress innan du skickar xogecoin.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -159,8 +159,8 @@ Försök igen.</translation>
         <translation type="unfinished">Bekräfta kryptering av plånbok</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">VARNING: Om du krypterar din plånbok och glömmer din lösenfras, &lt;b&gt;FÖRLORAR DU ALLA DINA QOGECOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">VARNING: Om du krypterar din plånbok och glömmer din lösenfras, &lt;b&gt;FÖRLORAR DU ALLA DINA XOGECOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -179,8 +179,8 @@ Försök igen.</translation>
         <translation type="unfinished">Ange den gamla lösenfrasen och den nya lösenfrasen för plånboken.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Kom ihåg att kryptering av din plånbok inte helt kan skydda dig från stöld av dina qogecoins om skadlig kod infekterat din dator.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Kom ihåg att kryptering av din plånbok inte helt kan skydda dig från stöld av dina xogecoins om skadlig kod infekterat din dator.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -346,14 +346,14 @@ Försök igen.</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s-utvecklarna</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s är korrupt. Testa att använda verktyget qogecoin-wallet för att rädda eller återställa en backup.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s är korrupt. Testa att använda verktyget xogecoin-wallet för att rädda eller återställa en backup.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -585,7 +585,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Insufficient funds</source>
-        <translation type="unfinished">Otillräckligt med qogecoins</translation>
+        <translation type="unfinished">Otillräckligt med xogecoins</translation>
     </message>
     <message>
         <source>Invalid -onion address or hostname: '%s'</source>
@@ -873,7 +873,7 @@ Försök igen.</translation>
     </message>
     <message>
         <source>Send coins to a Qogecoin address</source>
-        <translation type="unfinished">Skicka qogecoin till en Qogecoin-adress</translation>
+        <translation type="unfinished">Skicka xogecoin till en Qogecoin-adress</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -964,8 +964,8 @@ Försök igen.</translation>
         <translation type="unfinished">Behandlar block på disken…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Begär betalningar (skapar QR-koder och qogecoin: -URIer)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Begär betalningar (skapar QR-koder och xogecoin: -URIer)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1039,8 +1039,8 @@ Försök igen.</translation>
         <translation type="unfinished">Mottaga&amp;radresser</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Öppna en qogecoin:-URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Öppna en xogecoin:-URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1635,12 +1635,12 @@ Försök igen.</translation>
         <translation type="unfinished">Formulär</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished">Nyligen gjorda transaktioner visas inte korrekt och därför kan din plånboks saldo visas felaktigt. Denna information kommer att visas korrekt så snart din plånbok har synkroniserats med Qogecoin-nätverket enligt informationen nedan.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Att försöka spendera qogecoin som påverkas av transaktioner som ännu inte visas kommer inte accepteras av nätverket.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Att försöka spendera xogecoin som påverkas av transaktioner som ännu inte visas kommer inte accepteras av nätverket.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1678,8 +1678,8 @@ Försök igen.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Öppna qogecoin-URI</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Öppna xogecoin-URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2093,16 +2093,16 @@ Försök igen.</translation>
         <translation type="unfinished">Fel vid betalningsbegäran</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Kan inte starta qogecoin: klicka-och-betala hanteraren</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Kan inte starta xogecoin: klicka-och-betala hanteraren</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI-hantering</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' är inte en accepterad URI. Använd 'qogecoin:' istället.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' är inte en accepterad URI. Använd 'xogecoin:' istället.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -2750,8 +2750,8 @@ Försök igen.</translation>
         <translation type="unfinished">Dölj alternativ för transaktionsavgift</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">När transaktionsvolymen är mindre än utrymmet i blocken kan både brytardatorer och relänoder kräva en minimiavgift. Det är okej att bara betala denna minimiavgift, men du ska vara medveten om att det kan leda till att en transaktion aldrig bekräftas så fort efterfrågan på qogecointransaktioner är större än vad nätverket kan hantera.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">När transaktionsvolymen är mindre än utrymmet i blocken kan både brytardatorer och relänoder kräva en minimiavgift. Det är okej att bara betala denna minimiavgift, men du ska vara medveten om att det kan leda till att en transaktion aldrig bekräftas så fort efterfrågan på xogecointransaktioner är större än vad nätverket kan hantera.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -2978,8 +2978,8 @@ Försök igen.</translation>
         <translation type="unfinished">Beloppett att skicka i vald enhet</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Avgiften dras från beloppet som skickas. Mottagaren kommer att ta emot mindre qogecoin än du angivit i beloppsfältet. Om flera mottagare väljs kommer avgiften att fördelas jämt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Avgiften dras från beloppet som skickas. Mottagaren kommer att ta emot mindre xogecoin än du angivit i beloppsfältet. Om flera mottagare väljs kommer avgiften att fördelas jämt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3006,8 +3006,8 @@ Försök igen.</translation>
         <translation type="unfinished">Ange en etikett för denna adress för att lägga till den i listan med använda adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Ett meddelande som bifogades qogecoin: -URIn och som sparas med transaktionen som referens. Obs: Meddelandet sänds inte över Qogecoin-nätverket.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Ett meddelande som bifogades xogecoin: -URIn och som sparas med transaktionen som referens. Obs: Meddelandet sänds inte över Qogecoin-nätverket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3040,8 +3040,8 @@ Försök igen.</translation>
         <translation type="unfinished">&amp;Signera meddelande</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Du kan signera meddelanden/avtal med dina adresser för att bevisa att du kan ta emot qogecoin som skickats till dem. Var försiktig så du inte signerar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att signera över din identitet till dem. Signera endast väldetaljerade meddelanden som du godkänner.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Du kan signera meddelanden/avtal med dina adresser för att bevisa att du kan ta emot xogecoin som skickats till dem. Var försiktig så du inte signerar något oklart eller konstigt, eftersom phishing-angrepp kan försöka få dig att signera över din identitet till dem. Signera endast väldetaljerade meddelanden som du godkänner.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

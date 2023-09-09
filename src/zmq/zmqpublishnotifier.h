@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
-#define QOGECOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
+#ifndef XOGECOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
+#define XOGECOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
 
 #include <zmq/zmqabstractnotifier.h>
 
@@ -61,4 +61,4 @@ public:
     bool NotifyTransactionRemoval(const CTransaction &transaction, uint64_t mempool_sequence) override;
 };
 
-#endif // QOGECOIN_ZMQ_ZMQPUBLISHNOTIFIER_H
+#endif // XOGECOIN_ZMQ_ZMQPUBLISHNOTIFIER_H

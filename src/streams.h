@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_STREAMS_H
-#define QOGECOIN_STREAMS_H
+#ifndef XOGECOIN_STREAMS_H
+#define XOGECOIN_STREAMS_H
 
 #include <serialize.h>
 #include <span.h>
@@ -721,4 +721,4 @@ public:
     }
 };
 
-#endif // QOGECOIN_STREAMS_H
+#endif // XOGECOIN_STREAMS_H

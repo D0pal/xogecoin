@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_RECEIVEREQUESTDIALOG_H
-#define QOGECOIN_QT_RECEIVEREQUESTDIALOG_H
+#ifndef XOGECOIN_QT_RECEIVEREQUESTDIALOG_H
+#define XOGECOIN_QT_RECEIVEREQUESTDIALOG_H
 
 #include <qt/sendcoinsrecipient.h>
 
@@ -37,4 +37,4 @@ private:
     SendCoinsRecipient info;
 };
 
-#endif // QOGECOIN_QT_RECEIVEREQUESTDIALOG_H
+#endif // XOGECOIN_QT_RECEIVEREQUESTDIALOG_H

@@ -1,20 +1,20 @@
 Qogecoin Core version *0.15.0.1* is now available from:
 
-  <https://qogecoin.org/bin/qogecoin-core-0.15.0.1/>
+  <https://xogecoin.org/bin/xogecoin-core-0.15.0.1/>
 
 and
 
-  <https://qogecoincore.org/bin/qogecoin-core-0.15.0.1/>
+  <https://xogecoincore.org/bin/xogecoin-core-0.15.0.1/>
 
 This is a minor bug fix for 0.15.0.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/qogecoin/qogecoin/issues>
+  <https://github.com/xogecoin/xogecoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://qogecoincore.org/en/list/announcements/join/>
+  <https://xogecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -22,7 +22,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the 
 installer (on Windows) or just copy over `/Applications/Qogecoin-Qt` (on Mac)
-or `qogecoind`/`qogecoin-qt` (on Linux).
+or `xogecoind`/`xogecoin-qt` (on Linux).
 
 The first time you run version 0.15.0 or higher, your chainstate database will
 be converted to a new format, which will take anywhere from a few minutes to
@@ -84,4 +84,4 @@ Thanks to everyone who directly contributed to this release:
 - Jonas Schnelli
 - Wladimir J. van der Laan
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/qogecoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/xogecoin/).

@@ -154,7 +154,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">വാലറ്റ് എൻക്രിപ്ഷൻ സ്ഥിരീകരിക്കുക</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">മുന്നറിയിപ്പ്: നിങ്ങളുടെ വാലറ്റ് എൻക്രിപ്റ്റ് ചെയ്ത, രഹസ്യ പദം നഷ്ടപ്പെടുകയാണെങ്കിൽ നിങ്ങളുടെ എല്ലാ ബിറ്റ് കോയിനുകളും  നഷ്ടപ്പെടും!</translation>
     </message>
     <message>
@@ -174,7 +174,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">വാലെറ്റിന്റെ പഴയ രഹസ്യപദവും പുതിയ രഹസ്യപദവും നൽകുക.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">നിങ്ങളുടെ വാലറ്റ് എൻ‌ക്രിപ്റ്റ് ചെയ്യുന്നതിലൂടെ നിങ്ങളുടെ കമ്പ്യൂട്ടറിനെ ബാധിക്കുന്ന ക്ഷുദ്രവെയർ‌ മോഷ്ടിക്കുന്നതിൽ‌ നിന്നും നിങ്ങളുടെ ബിറ്റ്കോയിനുകളെ പൂർണ്ണമായി സംരക്ഷിക്കാൻ‌ കഴിയില്ല.</translation>
     </message>
     <message>
@@ -303,7 +303,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
         <translation type="unfinished">-maxtxfee യുടെ മൂല്യം വളരെ വലുതാണ്! ഇത്രയും ഉയര്ന്ന പ്രതിഫലം ഒരൊറ്റ ഇടപാടിൽ നൽകാൻ സാധ്യതയുണ്ട്.</translation>
@@ -513,7 +513,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">ടാബുകളുടെ ടൂൾബാർ</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
         <translation type="unfinished">പേയ്‌മെന്റുകൾ അഭ്യർത്ഥിക്കുക (QR കോഡുകളും ബിറ്റ്കോയിനും സൃഷ്ടിക്കുന്നു: URI- കൾ)</translation>
     </message>
     <message>
@@ -584,7 +584,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;വിലാസങ്ങൾ അയയ്ക്കുന്നു</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished">ഒരു ബിറ്റ്കോയിൻ തുറക്കുക: URI</translation>
     </message>
     <message>
@@ -1076,8 +1076,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">യു‌ആർ‌ഐ കൈകാര്യം ചെയ്യൽ</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' എന്നത് ശരിയായ ഒരു URI അല്ല .പകരം 'qogecoin:' ഉപയോഗിക്കൂ </translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' എന്നത് ശരിയായ ഒരു URI അല്ല .പകരം 'xogecoin:' ഉപയോഗിക്കൂ </translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>

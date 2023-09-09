@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_TEST_WALLETTESTS_H
-#define QOGECOIN_QT_TEST_WALLETTESTS_H
+#ifndef XOGECOIN_QT_TEST_WALLETTESTS_H
+#define XOGECOIN_QT_TEST_WALLETTESTS_H
 
 #include <QObject>
 #include <QTest>
@@ -24,4 +24,4 @@ private Q_SLOTS:
     void walletTests();
 };
 
-#endif // QOGECOIN_QT_TEST_WALLETTESTS_H
+#endif // XOGECOIN_QT_TEST_WALLETTESTS_H

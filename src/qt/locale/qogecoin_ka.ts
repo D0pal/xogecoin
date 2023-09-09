@@ -153,7 +153,7 @@
         <translation type="unfinished">საფულის დაშიფრვის დადასტურება</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">გაფრთხილება: თუ თქვენ დაშიფრავთ თქვენს საფულეს და ამის შემდეგ დაკარგავთ გასაშიფრ ფრაზას, &lt;b&gt;თქვენ დაკარგავთ ყველა ბიტკოინს!&lt;/b&gt;</translation>
     </message>
     <message>
@@ -173,7 +173,7 @@
         <translation type="unfinished">შეიყვანეთ ძველი საიდუმლო ფრაზა და ახალი საიდუმლო ფრაზა საფულისთვის</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">გახსოვდეთ, რომ თქვენი საფულის დაშიფვრა ვერ უზრუნველყოფს სრულად დაიცვას თქვენი ბიტკოინების მოპარვა კომპიუტერში მავნე პროგრამებით.</translation>
     </message>
     <message>
@@ -306,7 +306,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation type="unfinished">ეს არის წინასწარი სატესტო ვერსია - გამოიყენეთ საკუთარი რისკით - არ გამოიყენოთ მოპოვებისა ან კომერციული მიზნებისათვის</translation>
@@ -484,8 +484,8 @@
         <translation type="unfinished">ბარათების პანელი</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">გადახდის მოთხოვნა (შეიქმნება QR-კოდები და qogecoin: ბმულები)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">გადახდის მოთხოვნა (შეიქმნება QR-კოდები და xogecoin: ბმულები)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -551,7 +551,7 @@
         <translation type="unfinished">მისამართების მიღება</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished">გახსენით ბიტკოინი: URI</translation>
     </message>
     <message>
@@ -1115,8 +1115,8 @@
         <translation type="unfinished">გადახდის მოთხოვნის შეცდომა</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">ვერ გაიშვა qogecoin: click-to-pay</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">ვერ გაიშვა xogecoin: click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1573,7 +1573,7 @@
         <translation type="unfinished">შეიყვანეთ ამ მისამართის ნიშნული გამოყენებული მისამართების სიაში დასამატებლად</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
         <translation type="unfinished">მესიჯი, რომელიც თან ერთვის მონეტებს:  URI, რომელიც შეინახება ტრანსაქციასთან ერთად თქვენთვის. შენიშვნა: მესიჯი არ გაყვება გადახდას ბითქოინის ქსელში.</translation>
     </message>
     <message>

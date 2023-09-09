@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Tárca titkosításának megerősítése</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Figyelem: Ha titkosítja a tárcáját és elveszíti a jelszavát, akkor &lt;b&gt;AZ ÖSSZES QOGECOINJA ELVÉSZ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Figyelem: Ha titkosítja a tárcáját és elveszíti a jelszavát, akkor &lt;b&gt;AZ ÖSSZES XOGECOINJA ELVÉSZ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -183,7 +183,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Írja be a tárca régi és új jelszavát.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">Ne feledje, hogy a tárca titkosítása nem nyújt teljes védelmet az adathalász programok fertőzésével szemben.</translation>
     </message>
     <message>
@@ -406,7 +406,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">Nem sikerült olvasni a beállítások fájlból</translation>
@@ -420,8 +420,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">A %s fejlesztők</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s sérült. Próbálja meg a qogecoint-wallet tárca mentő eszközt használni, vagy állítsa helyre egy biztonsági mentésből.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s sérült. Próbálja meg a xogecoint-wallet tárca mentő eszközt használni, vagy állítsa helyre egy biztonsági mentésből.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -460,8 +460,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Hiba: A dump fájl azonosító rekordja helytelen. Talált "%s", várt "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Hiba: A dump fájl verziója nem támogatott. A qogecoin-wallet ez a kiadása csak 1-es verziójú dump fájlokat támogat. A talált dump fájl verziója %s.</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Hiba: A dump fájl verziója nem támogatott. A xogecoin-wallet ez a kiadása csak 1-es verziójú dump fájlokat támogat. A talált dump fájl verziója %s.</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -1240,8 +1240,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Csatlakozás partnerekhez…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Fizetési kérelem (QR-kódot és "qogecoin:" URI azonosítót hoz létre)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Fizetési kérelem (QR-kódot és "xogecoin:" URI azonosítót hoz létre)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1322,7 +1322,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Fogadó címek</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished">Qogecoin URI megnyitása</translation>
     </message>
     <message>
@@ -1998,12 +1998,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Űrlap</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">A legutóbbi tranzakciók még lehet, hogy nem láthatók, és így előfordulhat, hogy a tárca egyenlege helytelen. A tárca azon nyomban az aktuális egyenleget fogja mutatni, amint befejezte a qogecoin hálózattal történő szinkronizációt, amely alább van részletezve.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">A legutóbbi tranzakciók még lehet, hogy nem láthatók, és így előfordulhat, hogy a tárca egyenlege helytelen. A tárca azon nyomban az aktuális egyenleget fogja mutatni, amint befejezte a xogecoin hálózattal történő szinkronizációt, amely alább van részletezve.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">A hálózat nem fogadja el azoknak a qogecoinoknak az elköltését, amelyek érintettek a még nem látszódó tranzakciókban.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">A hálózat nem fogadja el azoknak a xogecoinoknak az elköltését, amelyek érintettek a még nem látszódó tranzakciókban.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -2053,7 +2053,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished">Qogecoin URI megnyitása</translation>
     </message>
     <message>
@@ -2610,16 +2610,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Hiba történt a fizetési kérelem során</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">A qogecoin nem tud elindulni: click-to-pay kezelő</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">A xogecoin nem tud elindulni: click-to-pay kezelő</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI kezelés</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' nem érvényes egységes erőforrás azonosító (URI). Használja helyette a 'qogecoin:'-t.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' nem érvényes egységes erőforrás azonosító (URI). Használja helyette a 'xogecoin:'-t.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3445,7 +3445,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nként"-ként megadott díj egy 500 virtuális bájt (1kvB fele) méretű tranzakció végül csak 50 satoshi-s díjat jelentene.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished">Ha kevesebb a tranzakció, mint amennyi hely lenne egy blokkban, akkor a bányászok és a többi csomópont megkövetelheti a minimum díjat. Ezt a minimum díjat fizetni elegendő lehet de elképzelhető, hogy ez esetleg egy soha sem jóváhagyott tranzakciót eredményez ahogy a tranzakciók száma magasabb lesz, mint a hálózat által megengedett.</translation>
     </message>
     <message>
@@ -3727,8 +3727,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation type="unfinished">A küldendő összeg a választott egységben.</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">A díj le lesz vonva a küldött teljes összegből. A címzett kevesebb qogecoint fog megkapni, mint amennyit az összeg mezőben megadott. Amennyiben több címzett van kiválasztva, az illeték egyenlő mértékben lesz elosztva.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">A díj le lesz vonva a küldött teljes összegből. A címzett kevesebb xogecoint fog megkapni, mint amennyit az összeg mezőben megadott. Amennyiben több címzett van kiválasztva, az illeték egyenlő mértékben lesz elosztva.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3755,8 +3755,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation type="unfinished">Adjon egy címkét ehhez a címhez, hogy bekerüljön a használt címek közé</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Egy üzenet a qogecoin: URI-hoz csatolva, amely a tranzakciócal együtt lesz eltárolva az Ön számára. Megjegyzés: Ez az üzenet nem kerül elküldésre a Qogecoin hálózaton keresztül.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Egy üzenet a xogecoin: URI-hoz csatolva, amely a tranzakciócal együtt lesz eltárolva az Ön számára. Megjegyzés: Ez az üzenet nem kerül elküldésre a Qogecoin hálózaton keresztül.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3789,8 +3789,8 @@ Megjegyzés: Mivel a díj bájtonként van kiszámítva, egy "100 satoshi kvB-nk
         <translation type="unfinished">Üzenet aláírása...</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Címeivel aláírhatja az üzeneteket/egyezményeket, amivel bizonyíthatja, hogy át tudja venni az ezekre a címekre küldött qogecoin-t. Vigyázzon, hogy ne írjon alá semmi félreérthetőt, mivel adathalász támadásokkal megpróbálhatják becsapni, hogy az azonosságát átírja másokra. Csak olyan részletes állításokat írjon alá, amivel egyetért.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Címeivel aláírhatja az üzeneteket/egyezményeket, amivel bizonyíthatja, hogy át tudja venni az ezekre a címekre küldött xogecoin-t. Vigyázzon, hogy ne írjon alá semmi félreérthetőt, mivel adathalász támadásokkal megpróbálhatják becsapni, hogy az azonosságát átírja másokra. Csak olyan részletes állításokat írjon alá, amivel egyetért.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

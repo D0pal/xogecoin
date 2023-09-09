@@ -57,7 +57,7 @@
         <translation type="unfinished">标签工具栏</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
         <translation type="unfinished">请求支付(生成二维码和比特币链接)</translation>
     </message>
     <message>
@@ -123,7 +123,7 @@
         <translation type="unfinished">&amp;接受地址</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished">打开比特币: URI</translation>
     </message>
     <message>

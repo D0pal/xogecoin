@@ -1,15 +1,15 @@
-# bash programmable completion for qogecoind(1) and qogecoin-qt(1)
+# bash programmable completion for xogecoind(1) and xogecoin-qt(1)
 # Copyright (c) 2012-2019 The Bitcoin and Qogecoin Core Authors
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_qogecoind() {
+_xogecoind() {
     local cur prev words=() cword
-    local qogecoind
+    local xogecoind
 
-    # save and use original argument to invoke qogecoind for -help
+    # save and use original argument to invoke xogecoind for -help
     # it might not be in $PATH
-    qogecoind="$1"
+    xogecoind="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -33,7 +33,7 @@ _qogecoind() {
             # only parse -help if sensible
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
                 local helpopts
-                helpopts=$($qogecoind -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($xogecoind -help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
                 COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
             fi
 
@@ -45,7 +45,7 @@ _qogecoind() {
             ;;
     esac
 } &&
-complete -F _qogecoind qogecoind qogecoin-qt
+complete -F _xogecoind xogecoind xogecoin-qt
 
 # Local variables:
 # mode: shell-script

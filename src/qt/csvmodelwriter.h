@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_CSVMODELWRITER_H
-#define QOGECOIN_QT_CSVMODELWRITER_H
+#ifndef XOGECOIN_QT_CSVMODELWRITER_H
+#define XOGECOIN_QT_CSVMODELWRITER_H
 
 #include <QList>
 #include <QObject>
@@ -43,4 +43,4 @@ private:
     QList<Column> columns;
 };
 
-#endif // QOGECOIN_QT_CSVMODELWRITER_H
+#endif // XOGECOIN_QT_CSVMODELWRITER_H

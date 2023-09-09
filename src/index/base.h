@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_INDEX_BASE_H
-#define QOGECOIN_INDEX_BASE_H
+#ifndef XOGECOIN_INDEX_BASE_H
+#define XOGECOIN_INDEX_BASE_H
 
 #include <dbwrapper.h>
 #include <threadinterrupt.h>
@@ -133,4 +133,4 @@ public:
     IndexSummary GetSummary() const;
 };
 
-#endif // QOGECOIN_INDEX_BASE_H
+#endif // XOGECOIN_INDEX_BASE_H

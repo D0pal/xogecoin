@@ -6,8 +6,8 @@
 /**
  * Utilities for converting data from/to strings.
  */
-#ifndef QOGECOIN_UTIL_STRENCODINGS_H
-#define QOGECOIN_UTIL_STRENCODINGS_H
+#ifndef XOGECOIN_UTIL_STRENCODINGS_H
+#define XOGECOIN_UTIL_STRENCODINGS_H
 
 #include <attributes.h>
 #include <span.h>
@@ -358,4 +358,4 @@ std::string Capitalize(std::string str);
  */
 std::optional<uint64_t> ParseByteUnits(std::string_view str, ByteUnit default_multiplier);
 
-#endif // QOGECOIN_UTIL_STRENCODINGS_H
+#endif // XOGECOIN_UTIL_STRENCODINGS_H

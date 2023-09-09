@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_READWRITEFILE_H
-#define QOGECOIN_UTIL_READWRITEFILE_H
+#ifndef XOGECOIN_UTIL_READWRITEFILE_H
+#define XOGECOIN_UTIL_READWRITEFILE_H
 
 #include <fs.h>
 
@@ -25,4 +25,4 @@ std::pair<bool,std::string> ReadBinaryFile(const fs::path &filename, size_t maxs
  */
 bool WriteBinaryFile(const fs::path &filename, const std::string &data);
 
-#endif // QOGECOIN_UTIL_READWRITEFILE_H
+#endif // XOGECOIN_UTIL_READWRITEFILE_H

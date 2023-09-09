@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_TEST_UTIL_WALLET_H
-#define QOGECOIN_TEST_UTIL_WALLET_H
+#ifndef XOGECOIN_TEST_UTIL_WALLET_H
+#define XOGECOIN_TEST_UTIL_WALLET_H
 
 #include <string>
 
@@ -23,4 +23,4 @@ void importaddress(wallet::CWallet& wallet, const std::string& address);
 std::string getnewaddress(wallet::CWallet& w);
 
 
-#endif // QOGECOIN_TEST_UTIL_WALLET_H
+#endif // XOGECOIN_TEST_UTIL_WALLET_H

@@ -158,8 +158,8 @@
         <translation type="unfinished">Әмиян шифрлауды растау</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Ескерту: әмияныңызды шифрлап, құпиясөйлеміңізден айырылып қалсаңыз, &lt;b&gt;БАРЛЫҚ QOGECOIN-ІҢІЗДЕН ДЕ АЙЫРЫЛАСЫЗ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Ескерту: әмияныңызды шифрлап, құпиясөйлеміңізден айырылып қалсаңыз, &lt;b&gt;БАРЛЫҚ XOGECOIN-ІҢІЗДЕН ДЕ АЙЫРЫЛАСЫЗ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -178,7 +178,7 @@
         <translation type="unfinished">Әмияныңыздың ескі құпиясөйлемі мен жаңа құпиясөйлемін енгізіңіз.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">Шифрлау биткоиніңізді компьютер жұқтырған зиянды БЖ-дан толығымен қорғай алмайтынын есіңізде сақтаңыз.</translation>
     </message>
     <message>
@@ -310,7 +310,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Invalid amount for -fallbackfee=&lt;amount&gt;: '%s'</source>
         <translation type="unfinished">-fallbackfee=&lt;amount&gt; үшін қате сан: "%s"</translation>
@@ -500,7 +500,7 @@
         <translation type="unfinished">Дискідегі блоктар қайта индекстелуде…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
         <translation type="unfinished">Төлем талап ету (QR кодтары мен биткоин құрады: URI)</translation>
     </message>
     <message>

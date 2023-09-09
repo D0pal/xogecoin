@@ -47,11 +47,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation type="unfinished">Vælg adresse at sende qogecoins til</translation>
+        <translation type="unfinished">Vælg adresse at sende xogecoins til</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation type="unfinished">Vælg adresse at modtage qogecoins med</translation>
+        <translation type="unfinished">Vælg adresse at modtage xogecoins med</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -67,7 +67,7 @@
     </message>
     <message>
         <source>These are your Qogecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished">Disse er dine Qogecoin-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender qogecoins.</translation>
+        <translation type="unfinished">Disse er dine Qogecoin-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender xogecoins.</translation>
     </message>
     <message>
         <source>These are your Qogecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Bekræft tegnebogskryptering</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE QOGECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Advarsel: Hvis du krypterer din tegnebog og mister din adgangskode, vil du &lt;b&gt;MISTE ALLE DINE XOGECOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -183,8 +183,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Indtast den gamle adgangskode og en ny adgangskode til tegnebogen.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Husk, at kryptere din tegnebog vil ikke fuldt ud beskytte dine qogecoins mod at blive stjålet af malware på din computer.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Husk, at kryptere din tegnebog vil ikke fuldt ud beskytte dine xogecoins mod at blive stjålet af malware på din computer.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -359,14 +359,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Udviklerne af %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s beskadiget. Prøv at bruge pung-værktøjet qogecoin-wallet til, at bjærge eller gendanne en sikkerhedskopi.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s beskadiget. Prøv at bruge pung-værktøjet xogecoin-wallet til, at bjærge eller gendanne en sikkerhedskopi.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -898,7 +898,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Qogecoin address</source>
-        <translation type="unfinished">Send qogecoins til en Qogecoin-adresse</translation>
+        <translation type="unfinished">Send xogecoins til en Qogecoin-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -977,8 +977,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Forbinder til knuder...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Anmod om betalinger (genererer QR-koder og “qogecoin:”-URI'er)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Anmod om betalinger (genererer QR-koder og “xogecoin:”-URI'er)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1052,8 +1052,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Modtageradresser</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Åbn en qogecoin:-URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Åbn en xogecoin:-URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1632,12 +1632,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Formular</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Nylige transaktioner er måske ikke synlige endnu, og derfor kan din tegnebogs saldo være ukorrekt. Denne information vil være korrekt, når din tegnebog er færdig med at synkronisere med qogecoin-netværket, som detaljerne herunder viser.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Nylige transaktioner er måske ikke synlige endnu, og derfor kan din tegnebogs saldo være ukorrekt. Denne information vil være korrekt, når din tegnebog er færdig med at synkronisere med xogecoin-netværket, som detaljerne herunder viser.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Forsøg på at bruge qogecoin, som er indeholdt i endnu-ikke-viste transaktioner, accepteres ikke af netværket.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Forsøg på at bruge xogecoin, som er indeholdt i endnu-ikke-viste transaktioner, accepteres ikke af netværket.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1679,8 +1679,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Åbn qogecoin-URI</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Åbn xogecoin-URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -1848,7 +1848,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation type="unfinished">Vælg standard for underopdeling af enhed, som skal vises i brugergrænsefladen og ved afsendelse af qogecoins.</translation>
+        <translation type="unfinished">Vælg standard for underopdeling af enhed, som skal vises i brugergrænsefladen og ved afsendelse af xogecoins.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2122,16 +2122,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Fejl i betalingsanmodning</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Kan ikke starte qogecoin: click-to-pay-håndtering</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Kan ikke starte xogecoin: click-to-pay-håndtering</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI-håndtering</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' er ikke et gyldigt URI. Brug 'qogecoin:' istedet.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' er ikke et gyldigt URI. Brug 'xogecoin:' istedet.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -2662,7 +2662,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Send qogecoins</translation>
+        <translation type="unfinished">Send xogecoins</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -2765,8 +2765,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Skjul indstillinger for transaktionsgebyr</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">På tidspunkter, hvor der er færre transaktioner, end der er plads til i nye blokke, kan minere og videresendende knuder gennemtvinge et minimumsgebyr. Du kan vælge kun at betale dette minimumsgebyr, men vær opmærksom på, at det kan resultere i en transaktion, der aldrig bliver bekræftet, hvis mængden af nye qogecoin-transaktioner stiger til mere, end hvad netværket kan behandle ad gangen.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">På tidspunkter, hvor der er færre transaktioner, end der er plads til i nye blokke, kan minere og videresendende knuder gennemtvinge et minimumsgebyr. Du kan vælge kun at betale dette minimumsgebyr, men vær opmærksom på, at det kan resultere i en transaktion, der aldrig bliver bekræftet, hvis mængden af nye xogecoin-transaktioner stiger til mere, end hvad netværket kan behandle ad gangen.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -2888,7 +2888,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation type="unfinished">Bekræft afsendelse af qogecoins</translation>
+        <translation type="unfinished">Bekræft afsendelse af xogecoins</translation>
     </message>
     <message>
         <source>Watch-only balance:</source>
@@ -2989,8 +2989,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Beløbet der skal afsendes i den valgte enhed</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Gebyret vil blive trukket fra det sendte beløb. Modtageren vil modtage færre qogecoin, end du indtaster i beløbfeltet. Hvis flere modtagere vælges, vil gebyret deles ligeligt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Gebyret vil blive trukket fra det sendte beløb. Modtageren vil modtage færre xogecoin, end du indtaster i beløbfeltet. Hvis flere modtagere vælges, vil gebyret deles ligeligt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3017,8 +3017,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Indtast et mærkat for denne adresse for at føje den til listen over brugte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">En besked, som blev føjet til “qogecoin:”-URI'en, som vil gemmes med transaktionen til din reference. Bemærk: Denne besked vil ikke blive sendt over Qogecoin-netværket.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">En besked, som blev føjet til “xogecoin:”-URI'en, som vil gemmes med transaktionen til din reference. Bemærk: Denne besked vil ikke blive sendt over Qogecoin-netværket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3047,8 +3047,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Singér besked</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Du kan signere beskeder/aftaler med dine adresser for at bevise, at du kan modtage qogecoin, der bliver sendt til adresserne. Vær forsigtig med ikke at signere noget vagt eller tilfældigt, da eventuelle phishing-angreb kan snyde dig til at overlade din identitet til dem. Signér kun fuldt ud detaljerede udsagn, som du er enig i.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Du kan signere beskeder/aftaler med dine adresser for at bevise, at du kan modtage xogecoin, der bliver sendt til adresserne. Vær forsigtig med ikke at signere noget vagt eller tilfældigt, da eventuelle phishing-angreb kan snyde dig til at overlade din identitet til dem. Signér kun fuldt ud detaljerede udsagn, som du er enig i.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>
@@ -3321,7 +3321,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation type="unfinished">Minede qogecoins skal modne %1 blokke, før de kan bruges. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det ikke lykkes at få den i kæden, vil dens tilstand ændres til “ikke accepteret”, og den vil ikke kunne bruges. Dette kan ske nu og da, hvis en anden knude udvinder en blok inden for nogle få sekunder fra din.</translation>
+        <translation type="unfinished">Minede xogecoins skal modne %1 blokke, før de kan bruges. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det ikke lykkes at få den i kæden, vil dens tilstand ændres til “ikke accepteret”, og den vil ikke kunne bruges. Dette kan ske nu og da, hvis en anden knude udvinder en blok inden for nogle få sekunder fra din.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -3605,7 +3605,7 @@ Gå til Fil &gt; Åbn Pung for, at indlæse en pung.
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation type="unfinished">Send qogecoins</translation>
+        <translation type="unfinished">Send xogecoins</translation>
     </message>
     <message>
         <source>Fee bump error</source>

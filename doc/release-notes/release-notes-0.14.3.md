@@ -1,17 +1,17 @@
 Qogecoin Core version *0.14.3* is now available from:
 
-  <https://qogecoin.org/bin/qogecoin-core-0.14.3/>
+  <https://xogecoin.org/bin/xogecoin-core-0.14.3/>
 
 This is a new minor version release, including various bugfixes and
 performance improvements.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/qogecoin/qogecoin/issues>
+  <https://github.com/xogecoin/xogecoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://qogecoincore.org/en/list/announcements/join/>
+  <https://xogecoincore.org/en/list/announcements/join/>
 
 Compatibility
 ==============
@@ -72,7 +72,7 @@ git merge commit are mentioned.
 
 ### Miscellaneous
 
-- #10451 `3612219` contrib/init/qogecoind.openrcconf: Don't disable wallet by default (Luke Dashjr)
+- #10451 `3612219` contrib/init/xogecoind.openrcconf: Don't disable wallet by default (Luke Dashjr)
 - #10250 `e23cef0` Fix some empty vector references (Pieter Wuille)
 - #10196 `d28d583` PrioritiseTransaction updates the mempool tx counter (Suhas Daftuar)
 - #9497 `e207342` Fix CCheckQueue IsIdle (potential) race condition and remove dangerous constructors. (Jeremy Rubin)

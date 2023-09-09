@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NET_TYPES_H
-#define QOGECOIN_NET_TYPES_H
+#ifndef XOGECOIN_NET_TYPES_H
+#define XOGECOIN_NET_TYPES_H
 
 #include <cstdint>
 #include <map>
@@ -57,4 +57,4 @@ UniValue BanMapToJson(const banmap_t& bans);
  */
 void BanMapFromJson(const UniValue& bans_json, banmap_t& bans);
 
-#endif // QOGECOIN_NET_TYPES_H
+#endif // XOGECOIN_NET_TYPES_H

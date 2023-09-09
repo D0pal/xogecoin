@@ -10,7 +10,7 @@ from bcc import BPF, USDT
 """Example logging Qogecoin Core utxo set cache flushes utilizing
     the utxocache:flush tracepoint."""
 
-# USAGE:  ./contrib/tracing/log_utxocache_flush.py path/to/qogecoind
+# USAGE:  ./contrib/tracing/log_utxocache_flush.py path/to/xogecoind
 
 # BCC: The C program to be compiled to an eBPF program (by BCC) and loaded into
 # a sandboxed Linux kernel VM.
@@ -70,14 +70,14 @@ def print_event(event):
     ))
 
 
-def main(qogecoind_path):
-    qogecoind_with_usdts = USDT(path=str(qogecoind_path))
+def main(xogecoind_path):
+    xogecoind_with_usdts = USDT(path=str(xogecoind_path))
 
     # attaching the trace functions defined in the BPF program
     # to the tracepoints
-    qogecoind_with_usdts.enable_probe(
+    xogecoind_with_usdts.enable_probe(
         probe="flush", fn_name="trace_flush")
-    b = BPF(text=program, usdt_contexts=[qogecoind_with_usdts])
+    b = BPF(text=program, usdt_contexts=[xogecoind_with_usdts])
 
     def handle_flush(_, data, size):
         """ Coins Flush handler.
@@ -100,7 +100,7 @@ def main(qogecoind_path):
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("USAGE: ", sys.argv[0], "path/to/qogecoind")
+        print("USAGE: ", sys.argv[0], "path/to/xogecoind")
         exit(1)
 
     path = sys.argv[1]

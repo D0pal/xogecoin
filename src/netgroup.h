@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NETGROUP_H
-#define QOGECOIN_NETGROUP_H
+#ifndef XOGECOIN_NETGROUP_H
+#define XOGECOIN_NETGROUP_H
 
 #include <netaddress.h>
 #include <uint256.h>
@@ -63,4 +63,4 @@ private:
     const std::vector<bool> m_asmap;
 };
 
-#endif // QOGECOIN_NETGROUP_H
+#endif // XOGECOIN_NETGROUP_H

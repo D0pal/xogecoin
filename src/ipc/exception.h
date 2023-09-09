@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_IPC_EXCEPTION_H
-#define QOGECOIN_IPC_EXCEPTION_H
+#ifndef XOGECOIN_IPC_EXCEPTION_H
+#define XOGECOIN_IPC_EXCEPTION_H
 
 #include <stdexcept>
 
@@ -17,4 +17,4 @@ public:
 };
 } // namespace ipc
 
-#endif // QOGECOIN_IPC_EXCEPTION_H
+#endif // XOGECOIN_IPC_EXCEPTION_H

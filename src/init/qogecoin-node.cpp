@@ -16,7 +16,7 @@
 
 namespace init {
 namespace {
-const char* EXE_NAME = "qogecoin-node";
+const char* EXE_NAME = "xogecoin-node";
 
 class QogecoinNodeInit : public interfaces::Init
 {
@@ -46,7 +46,7 @@ namespace interfaces {
 std::unique_ptr<Init> MakeNodeInit(node::NodeContext& node, int argc, char* argv[], int& exit_status)
 {
     auto init = std::make_unique<init::QogecoinNodeInit>(node, argc > 0 ? argv[0] : "");
-    // Check if qogecoin-node is being invoked as an IPC server. If so, then
+    // Check if xogecoin-node is being invoked as an IPC server. If so, then
     // bypass normal execution and just respond to requests over the IPC
     // channel and return null.
     if (init->m_ipc->startSpawnedProcess(argc, argv, exit_status)) {

@@ -1,22 +1,22 @@
 Qogecoin version 0.6.3 is now available for download at:
-  http://sourceforge.net/projects/qogecoin/files/Qogecoin/qogecoin-0.6.3/
+  http://sourceforge.net/projects/xogecoin/files/Qogecoin/xogecoin-0.6.3/
 
 This is a bug-fix release, with no new features.
 
 Please report bugs using the issue tracker at github:
-  https://github.com/qogecoin/qogecoin/issues
+  https://github.com/xogecoin/xogecoin/issues
 
 CHANGE SUMMARY
 
 Fixed a serious denial-of-service attack that could cause the
-qogecoin process to become unresponsive. Thanks to Sergio Lerner
+xogecoin process to become unresponsive. Thanks to Sergio Lerner
 for finding and responsibly reporting the problem. (CVE-2012-3789)
 
 Optimized the process of checking transaction signatures, to
 speed up processing of new block messages and make propagating
 blocks across the network faster.
 
-Fixed an obscure bug that could cause the qogecoin process to get
+Fixed an obscure bug that could cause the xogecoin process to get
 stuck on an invalid block-chain, if the invalid chain was
 hundreds of blocks long.
 

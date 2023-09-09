@@ -1,10 +1,10 @@
-# `qogecoin.conf` Configuration File
+# `xogecoin.conf` Configuration File
 
-The configuration file is used by `qogecoind`, `qogecoin-qt` and `qogecoin-cli`.
+The configuration file is used by `xogecoind`, `xogecoin-qt` and `xogecoin-cli`.
 
 All command-line options (except for `-?`, `-help`, `-version` and `-conf`) may be specified in a configuration file, and all configuration file options (except for `includeconf`) may also be specified on the command line. Command-line options override values set in the configuration file and configuration file options override values set in the GUI.
 
-Changes to the configuration file while `qogecoind` or `qogecoin-qt` is running only take effect after restarting.
+Changes to the configuration file while `xogecoind` or `xogecoin-qt` is running only take effect after restarting.
 
 ## Configuration File Format
 
@@ -49,16 +49,16 @@ rpcport=4000
 
 ## Configuration File Path
 
-The configuration file is not automatically created; you can create it using your favorite text editor. By default, the configuration file name is `qogecoin.conf` and it is located in the Qogecoin data directory, but both the Qogecoin data directory and the configuration file path may be changed using the `-datadir` and `-conf` command-line options.
+The configuration file is not automatically created; you can create it using your favorite text editor. By default, the configuration file name is `xogecoin.conf` and it is located in the Qogecoin data directory, but both the Qogecoin data directory and the configuration file path may be changed using the `-datadir` and `-conf` command-line options.
 
-The `includeconf=<file>` option in the `qogecoin.conf` file can be used to include additional configuration files.
+The `includeconf=<file>` option in the `xogecoin.conf` file can be used to include additional configuration files.
 
 ### Default configuration file locations
 
 Operating System | Data Directory | Example Path
 -- | -- | --
-Windows | `%APPDATA%\Qogecoin\` | `C:\Users\username\AppData\Roaming\Qogecoin\qogecoin.conf`
-Linux | `$HOME/.qogecoin/` | `/home/username/.qogecoin/qogecoin.conf`
-macOS | `$HOME/Library/Application Support/Qogecoin/` | `/Users/username/Library/Application Support/Qogecoin/qogecoin.conf`
+Windows | `%APPDATA%\Qogecoin\` | `C:\Users\username\AppData\Roaming\Qogecoin\xogecoin.conf`
+Linux | `$HOME/.xogecoin/` | `/home/username/.xogecoin/xogecoin.conf`
+macOS | `$HOME/Library/Application Support/Qogecoin/` | `/Users/username/Library/Application Support/Qogecoin/xogecoin.conf`
 
-You can find an example qogecoin.conf file in [share/examples/qogecoin.conf](../share/examples/qogecoin.conf).
+You can find an example xogecoin.conf file in [share/examples/xogecoin.conf](../share/examples/xogecoin.conf).

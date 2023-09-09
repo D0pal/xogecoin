@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_VECTOR_H
-#define QOGECOIN_UTIL_VECTOR_H
+#ifndef XOGECOIN_UTIL_VECTOR_H
+#define XOGECOIN_UTIL_VECTOR_H
 
 #include <initializer_list>
 #include <type_traits>
@@ -48,4 +48,4 @@ inline V Cat(V v1, const V& v2)
     return v1;
 }
 
-#endif // QOGECOIN_UTIL_VECTOR_H
+#endif // XOGECOIN_UTIL_VECTOR_H

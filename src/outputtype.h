@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_OUTPUTTYPE_H
-#define QOGECOIN_OUTPUTTYPE_H
+#ifndef XOGECOIN_OUTPUTTYPE_H
+#define XOGECOIN_OUTPUTTYPE_H
 
 #include <attributes.h>
 #include <script/signingprovider.h>
@@ -51,4 +51,4 @@ CTxDestination AddAndGetDestinationForScript(FillableSigningProvider& keystore, 
 /** Get the OutputType for a CTxDestination */
 std::optional<OutputType> OutputTypeFromDestination(const CTxDestination& dest);
 
-#endif // QOGECOIN_OUTPUTTYPE_H
+#endif // XOGECOIN_OUTPUTTYPE_H

@@ -46,7 +46,7 @@ TEST_EXIT_PASSED = 0
 TEST_EXIT_FAILED = 1
 TEST_EXIT_SKIPPED = 77
 
-TMPDIR_PREFIX = "qogecoin_func_test_"
+TMPDIR_PREFIX = "xogecoin_func_test_"
 
 
 class SkipTest(Exception):
@@ -77,9 +77,9 @@ class QogecoinTestMetaClass(type):
 
 
 class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
-    """Base class for a qogecoin test script.
+    """Base class for a xogecoin test script.
 
-    Individual qogecoin test scripts should subclass this class and override the set_test_params() and run_test() methods.
+    Individual xogecoin test scripts should subclass this class and override the set_test_params() and run_test() methods.
 
     Individual tests can also override the following methods to customize the test setup:
 
@@ -160,11 +160,11 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
         previous_releases_path = os.getenv("PREVIOUS_RELEASES_DIR") or os.getcwd() + "/releases"
         parser = argparse.ArgumentParser(usage="%(prog)s [options]")
         parser.add_argument("--nocleanup", dest="nocleanup", default=False, action="store_true",
-                            help="Leave qogecoinds and test.* datadir on exit or error")
+                            help="Leave xogecoinds and test.* datadir on exit or error")
         parser.add_argument("--nosandbox", dest="nosandbox", default=False, action="store_true",
                             help="Don't use the syscall sandbox")
         parser.add_argument("--noshutdown", dest="noshutdown", default=False, action="store_true",
-                            help="Don't stop qogecoinds after the test execution")
+                            help="Don't stop xogecoinds after the test execution")
         parser.add_argument("--cachedir", dest="cachedir", default=os.path.abspath(os.path.dirname(os.path.realpath(__file__)) + "/../../cache"),
                             help="Directory for caching pregenerated datadirs (default: %(default)s)")
         parser.add_argument("--tmpdir", dest="tmpdir", help="Root directory for datadirs")
@@ -185,7 +185,7 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
         parser.add_argument("--pdbonfailure", dest="pdbonfailure", default=False, action="store_true",
                             help="Attach a python debugger if test fails")
         parser.add_argument("--usecli", dest="usecli", default=False, action="store_true",
-                            help="use qogecoin-cli instead of RPC for all commands")
+                            help="use xogecoin-cli instead of RPC for all commands")
         parser.add_argument("--perf", dest="perf", default=False, action="store_true",
                             help="profile running nodes with perf for the duration of the test")
         parser.add_argument("--valgrind", dest="valgrind", default=False, action="store_true",
@@ -234,24 +234,24 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
 
         config = self.config
 
-        fname_qogecoind = os.path.join(
+        fname_xogecoind = os.path.join(
             config["environment"]["BUILDDIR"],
             "src",
-            "qogecoind" + config["environment"]["EXEEXT"],
+            "xogecoind" + config["environment"]["EXEEXT"],
         )
-        fname_qogecoincli = os.path.join(
+        fname_xogecoincli = os.path.join(
             config["environment"]["BUILDDIR"],
             "src",
-            "qogecoin-cli" + config["environment"]["EXEEXT"],
+            "xogecoin-cli" + config["environment"]["EXEEXT"],
         )
-        fname_qogecoinutil = os.path.join(
+        fname_xogecoinutil = os.path.join(
             config["environment"]["BUILDDIR"],
             "src",
-            "qogecoin-util" + config["environment"]["EXEEXT"],
+            "xogecoin-util" + config["environment"]["EXEEXT"],
         )
-        self.options.qogecoind = os.getenv("QOGECOIND", default=fname_qogecoind)
-        self.options.qogecoincli = os.getenv("QOGECOINCLI", default=fname_qogecoincli)
-        self.options.qogecoinutil = os.getenv("QOGECOINUTIL", default=fname_qogecoinutil)
+        self.options.xogecoind = os.getenv("XOGECOIND", default=fname_xogecoind)
+        self.options.xogecoincli = os.getenv("XOGECOINCLI", default=fname_xogecoincli)
+        self.options.xogecoinutil = os.getenv("XOGECOINUTIL", default=fname_xogecoinutil)
 
         os.environ['PATH'] = os.pathsep.join([
             os.path.join(config['environment']['BUILDDIR'], 'src'),
@@ -312,7 +312,7 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
         else:
             for node in self.nodes:
                 node.cleanup_on_exit = False
-            self.log.info("Note: qogecoinds were not stopped and may still be running")
+            self.log.info("Note: xogecoinds were not stopped and may still be running")
 
         should_clean_up = (
             not self.options.nocleanup and
@@ -488,9 +488,9 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
                 if versions[i] is None or versions[i] >= 229900:
                     extra_args[i] = extra_args[i] + ["-sandbox=log-and-abort"]
         if binary is None:
-            binary = [get_bin_from_version(v, 'qogecoind', self.options.qogecoind) for v in versions]
+            binary = [get_bin_from_version(v, 'xogecoind', self.options.xogecoind) for v in versions]
         if binary_cli is None:
-            binary_cli = [get_bin_from_version(v, 'qogecoin-cli', self.options.qogecoincli) for v in versions]
+            binary_cli = [get_bin_from_version(v, 'xogecoin-cli', self.options.xogecoincli) for v in versions]
         assert_equal(len(extra_confs), num_nodes)
         assert_equal(len(extra_args), num_nodes)
         assert_equal(len(versions), num_nodes)
@@ -504,8 +504,8 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
                 rpchost=rpchost,
                 timewait=self.rpc_timeout,
                 timeout_factor=self.options.timeout_factor,
-                qogecoind=binary[i],
-                qogecoin_cli=binary_cli[i],
+                xogecoind=binary[i],
+                xogecoin_cli=binary_cli[i],
                 version=versions[i],
                 coverage_dir=self.options.coveragedir,
                 cwd=self.options.tmpdir,
@@ -519,14 +519,14 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
             self.nodes.append(test_node_i)
             if not test_node_i.version_is_at_least(170000):
                 # adjust conf for pre 17
-                conf_file = test_node_i.qogecoinconf
+                conf_file = test_node_i.xogecoinconf
                 with open(conf_file, 'r', encoding='utf8') as conf:
                     conf_data = conf.read()
                 with open(conf_file, 'w', encoding='utf8') as conf:
                     conf.write(conf_data.replace('[regtest]', ''))
 
     def start_node(self, i, *args, **kwargs):
-        """Start a qogecoind"""
+        """Start a xogecoind"""
 
         node = self.nodes[i]
 
@@ -537,7 +537,7 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
             coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def start_nodes(self, extra_args=None, *args, **kwargs):
-        """Start multiple qogecoinds"""
+        """Start multiple xogecoinds"""
 
         if extra_args is None:
             extra_args = [None] * self.num_nodes
@@ -557,11 +557,11 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
                 coverage.write_all_rpc_commands(self.options.coveragedir, node.rpc)
 
     def stop_node(self, i, expected_stderr='', wait=0):
-        """Stop a qogecoind test node"""
+        """Stop a xogecoind test node"""
         self.nodes[i].stop_node(expected_stderr, wait=wait)
 
     def stop_nodes(self, wait=0):
-        """Stop multiple qogecoind test nodes"""
+        """Stop multiple xogecoind test nodes"""
         for node in self.nodes:
             # Issue RPC to stop nodes
             node.stop_node(wait=wait, wait_until_stopped=False)
@@ -728,7 +728,7 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
         # User can provide log level as a number or string (eg DEBUG). loglevel was caught as a string, so try to convert it to an int
         ll = int(self.options.loglevel) if self.options.loglevel.isdigit() else self.options.loglevel.upper()
         ch.setLevel(ll)
-        # Format logs the same as qogecoind's debug.log with microprecision (so log files can be concatenated and sorted)
+        # Format logs the same as xogecoind's debug.log with microprecision (so log files can be concatenated and sorted)
         formatter = logging.Formatter(fmt='%(asctime)s.%(msecs)03d000Z %(name)s (%(levelname)s): %(message)s', datefmt='%Y-%m-%dT%H:%M:%S')
         formatter.converter = time.gmtime
         fh.setFormatter(formatter)
@@ -768,8 +768,8 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
                     rpchost=None,
                     timewait=self.rpc_timeout,
                     timeout_factor=self.options.timeout_factor,
-                    qogecoind=self.options.qogecoind,
-                    qogecoin_cli=self.options.qogecoincli,
+                    xogecoind=self.options.xogecoind,
+                    xogecoin_cli=self.options.xogecoincli,
                     coverage_dir=None,
                     cwd=self.options.tmpdir,
                     descriptors=self.options.descriptors,
@@ -816,7 +816,7 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
             self.log.debug("Copy cache directory {} to node {}".format(cache_node_dir, i))
             to_dir = get_datadir_path(self.options.tmpdir, i)
             shutil.copytree(cache_node_dir, to_dir)
-            initialize_datadir(self.options.tmpdir, i, self.chain, self.disable_autoconnect)  # Overwrite port/rpcport in qogecoin.conf
+            initialize_datadir(self.options.tmpdir, i, self.chain, self.disable_autoconnect)  # Overwrite port/rpcport in xogecoin.conf
 
     def _initialize_chain_clean(self):
         """Initialize empty blockchain for use by the test.
@@ -840,10 +840,10 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
         except ImportError:
             raise SkipTest("bcc python module not available")
 
-    def skip_if_no_qogecoind_tracepoints(self):
-        """Skip the running test if qogecoind has not been compiled with USDT tracepoint support."""
+    def skip_if_no_xogecoind_tracepoints(self):
+        """Skip the running test if xogecoind has not been compiled with USDT tracepoint support."""
         if not self.is_usdt_compiled():
-            raise SkipTest("qogecoind has not been built with USDT tracepoints enabled.")
+            raise SkipTest("xogecoind has not been built with USDT tracepoints enabled.")
 
     def skip_if_no_bpf_permissions(self):
         """Skip the running test if we don't have permissions to do BPF syscalls and load BPF maps."""
@@ -856,10 +856,10 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
         if platform.system() != "Linux":
             raise SkipTest("not on a Linux system")
 
-    def skip_if_no_qogecoind_zmq(self):
-        """Skip the running test if qogecoind has not been compiled with zmq support."""
+    def skip_if_no_xogecoind_zmq(self):
+        """Skip the running test if xogecoind has not been compiled with zmq support."""
         if not self.is_zmq_compiled():
-            raise SkipTest("qogecoind has not been built with zmq enabled.")
+            raise SkipTest("xogecoind has not been built with zmq enabled.")
 
     def skip_if_no_wallet(self):
         """Skip the running test if wallet has not been compiled."""
@@ -882,19 +882,19 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
             raise SkipTest("BDB has not been compiled.")
 
     def skip_if_no_wallet_tool(self):
-        """Skip the running test if qogecoin-wallet has not been compiled."""
+        """Skip the running test if xogecoin-wallet has not been compiled."""
         if not self.is_wallet_tool_compiled():
-            raise SkipTest("qogecoin-wallet has not been compiled")
+            raise SkipTest("xogecoin-wallet has not been compiled")
 
-    def skip_if_no_qogecoin_util(self):
-        """Skip the running test if qogecoin-util has not been compiled."""
-        if not self.is_qogecoin_util_compiled():
-            raise SkipTest("qogecoin-util has not been compiled")
+    def skip_if_no_xogecoin_util(self):
+        """Skip the running test if xogecoin-util has not been compiled."""
+        if not self.is_xogecoin_util_compiled():
+            raise SkipTest("xogecoin-util has not been compiled")
 
     def skip_if_no_cli(self):
-        """Skip the running test if qogecoin-cli has not been compiled."""
+        """Skip the running test if xogecoin-cli has not been compiled."""
         if not self.is_cli_compiled():
-            raise SkipTest("qogecoin-cli has not been compiled.")
+            raise SkipTest("xogecoin-cli has not been compiled.")
 
     def skip_if_no_previous_releases(self):
         """Skip the running test if previous releases are not available."""
@@ -915,7 +915,7 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
             raise SkipTest("external signer support has not been compiled.")
 
     def is_cli_compiled(self):
-        """Checks whether qogecoin-cli was compiled."""
+        """Checks whether xogecoin-cli was compiled."""
         return self.config["components"].getboolean("ENABLE_CLI")
 
     def is_external_signer_compiled(self):
@@ -935,12 +935,12 @@ class QogecoinTestFramework(metaclass=QogecoinTestMetaClass):
             return self.is_bdb_compiled()
 
     def is_wallet_tool_compiled(self):
-        """Checks whether qogecoin-wallet was compiled."""
+        """Checks whether xogecoin-wallet was compiled."""
         return self.config["components"].getboolean("ENABLE_WALLET_TOOL")
 
-    def is_qogecoin_util_compiled(self):
-        """Checks whether qogecoin-util was compiled."""
-        return self.config["components"].getboolean("ENABLE_QOGECOIN_UTIL")
+    def is_xogecoin_util_compiled(self):
+        """Checks whether xogecoin-util was compiled."""
+        return self.config["components"].getboolean("ENABLE_XOGECOIN_UTIL")
 
     def is_zmq_compiled(self):
         """Checks whether the zmq module was compiled."""

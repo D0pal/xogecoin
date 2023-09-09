@@ -23,7 +23,7 @@ don't have test cases for.
 - The oldest supported Python version is specified in [doc/dependencies.md](/doc/dependencies.md).
   Consider using [pyenv](https://github.com/pyenv/pyenv), which checks [.python-version](/.python-version),
   to prevent accidentally introducing modern syntax from an unsupported Python version.
-  The CI linter job also checks this, but [possibly not in all cases](https://github.com/qogecoin/qogecoin/pull/14884#discussion_r239585126).
+  The CI linter job also checks this, but [possibly not in all cases](https://github.com/xogecoin/xogecoin/pull/14884#discussion_r239585126).
 - See [the python lint script](/test/lint/lint-python.py) that checks for violations that
   could lead to bugs and issues in the test code.
 - Use [type hints](https://docs.python.org/3/library/typing.html) in your code to improve code readability
@@ -97,10 +97,10 @@ over the network (`CBlock`, `CTransaction`, etc, along with the network-level
 wrappers for them, `msg_block`, `msg_tx`, etc).
 
 - P2P tests have two threads. One thread handles all network communication
-with the qogecoind(s) being tested in a callback-based event loop; the other
+with the xogecoind(s) being tested in a callback-based event loop; the other
 implements the test logic.
 
-- `P2PConnection` is the class used to connect to a qogecoind.  `P2PInterface`
+- `P2PConnection` is the class used to connect to a xogecoind.  `P2PInterface`
 contains the higher level logic for processing P2P payloads and connecting to
 the Qogecoin Core node application logic. For custom behaviour, subclass the
 P2PInterface object and override the callback methods.
@@ -138,7 +138,7 @@ The following are useful modules for test developers. They are located in
 [test/functional/test_framework/](test_framework).
 
 #### [authproxy.py](test_framework/authproxy.py)
-Taken from the [python-qogecoinrpc repository](https://github.com/jgarzik/python-qogecoinrpc).
+Taken from the [python-xogecoinrpc repository](https://github.com/jgarzik/python-xogecoinrpc).
 
 #### [test_framework.py](test_framework/test_framework.py)
 Base class for functional tests.
@@ -147,10 +147,10 @@ Base class for functional tests.
 Generally useful functions.
 
 #### [p2p.py](test_framework/p2p.py)
-Test objects for interacting with a qogecoind node over the p2p interface.
+Test objects for interacting with a xogecoind node over the p2p interface.
 
 #### [script.py](test_framework/script.py)
-Utilities for manipulating transaction scripts (originally from python-qogecoinlib)
+Utilities for manipulating transaction scripts (originally from python-xogecoinlib)
 
 #### [key.py](test_framework/key.py)
 Test-only secp256k1 elliptic curve implementation

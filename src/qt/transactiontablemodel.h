@@ -2,10 +2,10 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_TRANSACTIONTABLEMODEL_H
-#define QOGECOIN_QT_TRANSACTIONTABLEMODEL_H
+#ifndef XOGECOIN_QT_TRANSACTIONTABLEMODEL_H
+#define XOGECOIN_QT_TRANSACTIONTABLEMODEL_H
 
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 
 #include <QAbstractTableModel>
 #include <QStringList>
@@ -120,4 +120,4 @@ public Q_SLOTS:
     friend class TransactionTablePriv;
 };
 
-#endif // QOGECOIN_QT_TRANSACTIONTABLEMODEL_H
+#endif // XOGECOIN_QT_TRANSACTIONTABLEMODEL_H

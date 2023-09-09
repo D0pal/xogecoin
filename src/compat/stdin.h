@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_COMPAT_STDIN_H
-#define QOGECOIN_COMPAT_STDIN_H
+#ifndef XOGECOIN_COMPAT_STDIN_H
+#define XOGECOIN_COMPAT_STDIN_H
 
 struct NoechoInst {
     NoechoInst();
@@ -15,4 +15,4 @@ struct NoechoInst {
 bool StdinTerminal();
 bool StdinReady();
 
-#endif // QOGECOIN_COMPAT_STDIN_H
+#endif // XOGECOIN_COMPAT_STDIN_H

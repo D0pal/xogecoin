@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SCRIPT_SCRIPT_H
-#define QOGECOIN_SCRIPT_SCRIPT_H
+#ifndef XOGECOIN_SCRIPT_SCRIPT_H
+#define XOGECOIN_SCRIPT_SCRIPT_H
 
 #include <attributes.h>
 #include <crypto/common.h>
@@ -605,4 +605,4 @@ CScript BuildScript(Ts&&... inputs)
     return ret;
 }
 
-#endif // QOGECOIN_SCRIPT_SCRIPT_H
+#endif // XOGECOIN_SCRIPT_SCRIPT_H

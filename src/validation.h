@@ -3,11 +3,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_VALIDATION_H
-#define QOGECOIN_VALIDATION_H
+#ifndef XOGECOIN_VALIDATION_H
+#define XOGECOIN_VALIDATION_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <arith_uint256.h>
@@ -1010,4 +1010,4 @@ bool LoadMempool(CTxMemPool& pool, CChainState& active_chainstate, FopenFn mocka
  */
 const AssumeutxoData* ExpectedAssumeutxo(const int height, const CChainParams& params);
 
-#endif // QOGECOIN_VALIDATION_H
+#endif // XOGECOIN_VALIDATION_H

@@ -1,16 +1,16 @@
 Qogecoin Core version 0.17.0.1 is now available from:
 
-  <https://qogecoincore.org/bin/qogecoin-core-0.17.0.1/>
+  <https://xogecoincore.org/bin/xogecoin-core-0.17.0.1/>
 
 This release provides a minor bug fix for 0.17.0.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/qogecoin/qogecoin/issues>
+  <https://github.com/xogecoin/xogecoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://qogecoincore.org/en/list/announcements/join/>
+  <https://xogecoincore.org/en/list/announcements/join/>
 
 Notable changes
 ===============

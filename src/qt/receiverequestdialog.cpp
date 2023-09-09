@@ -5,7 +5,7 @@
 #include <qt/receiverequestdialog.h>
 #include <qt/forms/ui_receiverequestdialog.h>
 
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 #include <qt/guiutil.h>
 #include <qt/optionsmodel.h>
 #include <qt/qrimagewidget.h>
@@ -15,7 +15,7 @@
 #include <QString>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h> /* for USE_QRCODE */
+#include <config/xogecoin-config.h> /* for USE_QRCODE */
 #endif
 
 ReceiveRequestDialog::ReceiveRequestDialog(QWidget *parent) :

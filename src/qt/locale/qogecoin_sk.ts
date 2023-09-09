@@ -163,8 +163,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Potvrďte zašifrovanie peňaženky</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE QOGECOINY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Varovanie: Ak zašifrujete peňaženku a stratíte heslo, &lt;b&gt;STRATÍTE VŠETKY VAŠE XOGECOINY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -183,8 +183,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Zadajte starú a novú frázu pre túto peňaženku.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Pamätajte, že zašifrovanie peňaženky neochráni úplne vaše qogecoiny pred ukradnutím škodlivými programami vo vašom počítači.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Pamätajte, že zašifrovanie peňaženky neochráni úplne vaše xogecoiny pred ukradnutím škodlivými programami vo vašom počítači.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -289,7 +289,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Enter a Qogecoin address (e.g. %1)</source>
-        <translation type="unfinished">Zadajte qogecoin adresu (napr. %1)</translation>
+        <translation type="unfinished">Zadajte xogecoin adresu (napr. %1)</translation>
     </message>
     <message>
         <source>Unroutable</source>
@@ -391,14 +391,14 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Vývojári %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s je poškodený. Skúste použiť nástroj peňaženky qogecoin-wallet na záchranu alebo obnovu zálohy.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s je poškodený. Skúste použiť nástroj peňaženky xogecoin-wallet na záchranu alebo obnovu zálohy.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -433,8 +433,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Chyba: Záznam identifikátora v súbore dumpu je nesprávny. Obdržaný "%s", očakávaný "%s".</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Chyba: Verzia súboru dumpu nie je podporovaná. Táto verzia peňaženky qogecoin podporuje iba súbory dumpu verzie 1. Obdržal som súbor s verziou %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Chyba: Verzia súboru dumpu nie je podporovaná. Táto verzia peňaženky xogecoin podporuje iba súbory dumpu verzie 1. Obdržal som súbor s verziou %s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -1054,7 +1054,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Qogecoin address</source>
-        <translation type="unfinished">Poslať qogecoins na adresu</translation>
+        <translation type="unfinished">Poslať xogecoins na adresu</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1169,8 +1169,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Pripája sa k partnerom…</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Vyžiadať platby (vygeneruje QR kódy a qogecoin: URI)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Vyžiadať platby (vygeneruje QR kódy a xogecoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1249,8 +1249,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Prijímajúce adresy</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Otvoriť qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Otvoriť xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1908,12 +1908,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Formulár</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Nedávne transakcie nemusia byť ešte viditeľné preto môže byť zostatok vo vašej peňaženke nesprávny. Táto informácia bude správna keď sa dokončí synchronizovanie peňaženky so sieťou qogecoin, ako je rozpísané nižšie.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Nedávne transakcie nemusia byť ešte viditeľné preto môže byť zostatok vo vašej peňaženke nesprávny. Táto informácia bude správna keď sa dokončí synchronizovanie peňaženky so sieťou xogecoin, ako je rozpísané nižšie.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Pokus o minutie qogecoinov, ktoré sú ovplyvnené ešte nezobrazenými transakciami, nebude sieťou akceptovaný.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Pokus o minutie xogecoinov, ktoré sú ovplyvnené ešte nezobrazenými transakciami, nebude sieťou akceptovaný.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1963,8 +1963,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Otvoriť qogecoin URI</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Otvoriť xogecoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2156,7 +2156,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation type="unfinished">Zvoľte ako deliť qogecoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
+        <translation type="unfinished">Zvoľte ako deliť xogecoin pri zobrazovaní pri platbách a užívateľskom rozhraní.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2456,7 +2456,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Chyba pri vyžiadaní platby</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">Nemôžeme spustiť Qogecoin: obsluha click-to-pay</translation>
     </message>
     <message>
@@ -2464,8 +2464,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">URI manipulácia</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' je neplatná URI. Použite 'qogecoin:'</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' je neplatná URI. Použite 'xogecoin:'</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3279,8 +3279,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 satoshi za kB" pri veľkosti transakcie 500 bajtov (polovica z 1 kB) by stál len 50 satoshi.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Ak je v blokoch menej objemu transakcií ako priestoru, ťažiari ako aj vysielacie uzly, môžu uplatniť minimálny poplatok. Platiť iba minimálny poplatok je v poriadku, ale uvedomte si, že to môže mať za následok transakciu, ktorá sa nikdy nepotvrdí, akonáhle je väčší dopyt po qogecoinových transakciách, než dokáže sieť spracovať.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Ak je v blokoch menej objemu transakcií ako priestoru, ťažiari ako aj vysielacie uzly, môžu uplatniť minimálny poplatok. Platiť iba minimálny poplatok je v poriadku, ale uvedomte si, že to môže mať za následok transakciu, ktorá sa nikdy nepotvrdí, akonáhle je väčší dopyt po xogecoinových transakciách, než dokáže sieť spracovať.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3430,7 +3430,7 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 sat
     <message>
         <source>Please, review your transaction proposal. This will produce a Partially Signed Qogecoin Transaction (PSBT) which you can save or copy and then sign with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
         <extracomment>Text to inform a user attempting to create a transaction of their current options. At this stage, a user can only create a PSBT. This string is displayed when private keys are disabled and an external signer is not available.</extracomment>
-        <translation type="unfinished">Prečítajte si prosím svoj návrh transakcie. Výsledkom bude čiastočne podpísaná qogecoinová transakcia (PSBT), ktorú môžete uložiť alebo skopírovať a potom podpísať napr. cez offline peňaženku %1 alebo hardvérovú peňaženku kompatibilnú s PSBT.</translation>
+        <translation type="unfinished">Prečítajte si prosím svoj návrh transakcie. Výsledkom bude čiastočne podpísaná xogecoinová transakcia (PSBT), ktorú môžete uložiť alebo skopírovať a potom podpísať napr. cez offline peňaženku %1 alebo hardvérovú peňaženku kompatibilnú s PSBT.</translation>
     </message>
     <message>
         <source>Please, review your transaction.</source>
@@ -3553,8 +3553,8 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 sat
         <translation type="unfinished">Suma na odoslanie vo vybranej mene</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Poplatok sa odpočíta od čiastky, ktorú odosielate. Príjemca dostane menej qogecoinov ako zadáte. Ak je vybraných viacero príjemcov, poplatok je rozdelený rovným dielom.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Poplatok sa odpočíta od čiastky, ktorú odosielate. Príjemca dostane menej xogecoinov ako zadáte. Ak je vybraných viacero príjemcov, poplatok je rozdelený rovným dielom.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3581,8 +3581,8 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 sat
         <translation type="unfinished">Vložte popis pre túto adresu aby sa uložila do zoznamu použitých adries</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Správa ktorá bola pripojená k qogecoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Správa ktorá bola pripojená k xogecoin: URI a ktorá bude uložená s transakcou pre Vaše potreby. Poznámka: Táto správa nebude poslaná cez sieť Qogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3615,7 +3615,7 @@ Poznámka: Keďže poplatok je počítaný za bajt, poplatok pri sadzbe "100 sat
         <translation type="unfinished">&amp;Podpísať Správu</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">Môžete podpísať správy svojou adresou a dokázať, že viete prijímať mince zaslané na túto adresu. Buďte však opatrní a podpíšte len podrobné prehlásenia, s ktorými plne súhlasíte, nakoľko útoky typu "phishing" Vás môžu lákať k podpísaniu nejasných alebo príliš všeobecných tvrdení čím prevezmú vašu identitu.</translation>
     </message>
     <message>

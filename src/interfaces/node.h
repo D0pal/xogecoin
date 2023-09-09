@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_INTERFACES_NODE_H
-#define QOGECOIN_INTERFACES_NODE_H
+#ifndef XOGECOIN_INTERFACES_NODE_H
+#define XOGECOIN_INTERFACES_NODE_H
 
 #include <consensus/amount.h>
 #include <net.h>        // For NodeId
@@ -64,7 +64,7 @@ public:
     virtual std::string getName() = 0;
 };
 
-//! Top-level interface for a qogecoin node (qogecoind process).
+//! Top-level interface for a xogecoin node (xogecoind process).
 class Node
 {
 public:
@@ -262,4 +262,4 @@ struct BlockTip {
 
 } // namespace interfaces
 
-#endif // QOGECOIN_INTERFACES_NODE_H
+#endif // XOGECOIN_INTERFACES_NODE_H

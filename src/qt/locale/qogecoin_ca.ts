@@ -164,8 +164,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Confirma el xifratge de la cartera</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Avís: si xifreu la cartera i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS QOGECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Avís: si xifreu la cartera i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS XOGECOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Introduïu la contrasenya antiga i la contrasenya nova a la cartera.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recorda que tot i xifrant la teva cartera, els teus qogecoins no estan completament protegits de robatori a través de programari maliciós que estigui infectant el teu ordinador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recorda que tot i xifrant la teva cartera, els teus xogecoins no estan completament protegits de robatori a través de programari maliciós que estigui infectant el teu ordinador.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -382,14 +382,14 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Els desenvolupadors %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s està malmès. Proveu d’utilitzar l’eina qogecoin-wallet per a recuperar o restaurar una còpia de seguretat.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s està malmès. Proveu d’utilitzar l’eina xogecoin-wallet per a recuperar o restaurar una còpia de seguretat.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -424,8 +424,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Error: el registre de l'identificador del fitxer de bolcat és incorrecte. S'ha obtingut «%s», s'esperava «%s».</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Error: la versió del fitxer de bolcat no és compatible. Aquesta versió de qogecoin-wallet només admet fitxers de bolcat de la versió 1. S'ha obtingut un fitxer de bolcat amb la versió %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Error: la versió del fitxer de bolcat no és compatible. Aquesta versió de xogecoin-wallet només admet fitxers de bolcat de la versió 1. S'ha obtingut un fitxer de bolcat amb la versió %s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -1161,8 +1161,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Connectant als iguals...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Sol·licita pagaments (genera codis QR i qogecoin: URI)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Sol·licita pagaments (genera codis QR i xogecoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1236,8 +1236,8 @@ Només és possible firmar amb adreces del tipus "legacy".</translation>
         <translation type="unfinished">Adreces de &amp;recepció</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Obrir un qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Obrir un xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1882,12 +1882,12 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation type="unfinished">Formulari</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">És possible que les transaccions recents encara no siguin visibles i, per tant, el saldo de la vostra cartera podria ser incorrecte. Aquesta informació serà correcta una vegada que la cartera hagi finalitzat la sincronització amb la xarxa qogecoin, tal com es detalla més avall.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">És possible que les transaccions recents encara no siguin visibles i, per tant, el saldo de la vostra cartera podria ser incorrecte. Aquesta informació serà correcta una vegada que la cartera hagi finalitzat la sincronització amb la xarxa xogecoin, tal com es detalla més avall.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Els intents de gastar qogecoins que es veuen afectats per les transaccions que encara no s'hagin mostrat no seran acceptats per la xarxa.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Els intents de gastar xogecoins que es veuen afectats per les transaccions que encara no s'hagin mostrat no seran acceptats per la xarxa.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1933,7 +1933,7 @@ Això és ideal per a carteres de mode només lectura.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished">Obre Qogecoin URI</translation>
     </message>
     <message>
@@ -2418,16 +2418,16 @@ Això és ideal per a carteres de mode només lectura.</translation>
         <translation type="unfinished">Error de la sol·licitud de pagament</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">No es pot iniciar qogecoin: controlador click-to-pay</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">No es pot iniciar xogecoin: controlador click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Gestió d'URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' no és una URI vàlida. Usi 'qogecoin:' en lloc seu.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' no és una URI vàlida. Usi 'xogecoin:' en lloc seu.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3204,8 +3204,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per kvB" per a una mida de transacció de 500 bytes virtuals (la meitat d'1 kvB) donaria finalment una tarifa de només 50 satoshis.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Quan no hi ha prou espai en els blocs per a encabir totes les transaccions, els miners i així mateix els nodes de trànsit poden exigir una taxa mínima. És acceptable pagar únicament la taxa mínima, però tingueu present que pot resultar que la vostra transacció no sigui mai confirmada mentre hi hagi més demanda de transaccions qogecoin de les que la xarxa pot processar.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Quan no hi ha prou espai en els blocs per a encabir totes les transaccions, els miners i així mateix els nodes de trànsit poden exigir una taxa mínima. És acceptable pagar únicament la taxa mínima, però tingueu present que pot resultar que la vostra transacció no sigui mai confirmada mentre hi hagi més demanda de transaccions xogecoin de les que la xarxa pot processar.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3295,7 +3295,7 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
     </message>
     <message>
         <source>Creates a Partially Signed Qogecoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Crea una transacció qogecoin parcialment signada (PSBT) per a utilitzar, per exemple,  amb una cartera %1 fora de línia o amb una cartera compatible amb PSBT.</translation>
+        <translation type="unfinished">Crea una transacció xogecoin parcialment signada (PSBT) per a utilitzar, per exemple,  amb una cartera %1 fora de línia o amb una cartera compatible amb PSBT.</translation>
     </message>
     <message>
         <source> from wallet '%1'</source>
@@ -3481,8 +3481,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation type="unfinished">L’import a enviar a la unitat seleccionada</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">La tarifa es deduirà de l'import que s'enviarà. El destinatari rebrà menys qogecoins que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la tarifa es dividirà per igual.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">La tarifa es deduirà de l'import que s'enviarà. El destinatari rebrà menys xogecoins que les que introduïu al camp d'import. Si se seleccionen múltiples destinataris, la tarifa es dividirà per igual.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3509,8 +3509,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation type="unfinished">Introduïu una etiqueta per a aquesta adreça per afegir-la a la llista d'adreces utilitzades</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Un missatge que s'ha adjuntat al qogecoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Un missatge que s'ha adjuntat al xogecoin: URI que s'emmagatzemarà amb la transacció per a la vostra referència. Nota: el missatge no s'enviarà a través de la xarxa Qogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3539,8 +3539,8 @@ Nota: atès que la tarifa es calcula per byte, una tarifa de "100 satoshis per k
         <translation type="unfinished">&amp;Signa el missatge</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Podeu signar missatges/acords amb les vostres adreces per a provar que rebeu les qogecoins que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Podeu signar missatges/acords amb les vostres adreces per a provar que rebeu les xogecoins que s'hi envien. Aneu amb compte no signar res que sigui vague o aleatori, perquè en alguns atacs de suplantació es pot provar que hi signeu la vostra identitat. Només signeu aquelles declaracions completament detallades en què hi esteu d'acord. </translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

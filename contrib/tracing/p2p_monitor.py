@@ -3,7 +3,7 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-""" Interactive qogecoind P2P network traffic monitor utilizing USDT and the
+""" Interactive xogecoind P2P network traffic monitor utilizing USDT and the
     net:inbound_message and net:outbound_message tracepoints. """
 
 # This script demonstrates what USDT for Qogecoin Core can enable. It uses BCC
@@ -115,17 +115,17 @@ class Peer:
             self.total_outbound_msgs += 1
 
 
-def main(qogecoind_path):
+def main(xogecoind_path):
     peers = dict()
 
-    qogecoind_with_usdts = USDT(path=str(qogecoind_path))
+    xogecoind_with_usdts = USDT(path=str(xogecoind_path))
 
     # attaching the trace functions defined in the BPF program to the tracepoints
-    qogecoind_with_usdts.enable_probe(
+    xogecoind_with_usdts.enable_probe(
         probe="inbound_message", fn_name="trace_inbound_message")
-    qogecoind_with_usdts.enable_probe(
+    xogecoind_with_usdts.enable_probe(
         probe="outbound_message", fn_name="trace_outbound_message")
-    bpf = BPF(text=program, usdt_contexts=[qogecoind_with_usdts])
+    bpf = BPF(text=program, usdt_contexts=[xogecoind_with_usdts])
 
     # BCC: perf buffer handle function for inbound_messages
     def handle_inbound(_, data, size):
@@ -247,7 +247,7 @@ def render(screen, peers, cur_list_pos, scroll, ROWS_AVALIABLE_FOR_LIST, info_pa
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
-        print("USAGE:", sys.argv[0], "path/to/qogecoind")
+        print("USAGE:", sys.argv[0], "path/to/xogecoind")
         exit()
     path = sys.argv[1]
     main(path)

@@ -55,10 +55,10 @@ using node::ReadBlockFromDisk;
 
 static void TxToJSON(const CTransaction& tx, const uint256 hashBlock, UniValue& entry, CChainState& active_chainstate)
 {
-    // Call into TxToUniv() in qogecoin-common to decode the transaction hex.
+    // Call into TxToUniv() in xogecoin-common to decode the transaction hex.
     //
     // Blockchain contextual information (confirmations and blocktime) is not
-    // available to code in qogecoin-common, so we query them here and push the
+    // available to code in xogecoin-common, so we query them here and push the
     // data into the returned UniValue.
     TxToUniv(tx, /*block_hash=*/uint256(), entry, /*include_hex=*/true, RPCSerializationFlags());
 
@@ -148,7 +148,7 @@ static std::vector<RPCArg> CreateTxDoc()
             {
                 {"", RPCArg::Type::OBJ_USER_KEYS, RPCArg::Optional::OMITTED, "",
                     {
-                        {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "A key-value pair. The key (string) is the qogecoin address, the value (float or string) is the amount in " + CURRENCY_UNIT},
+                        {"address", RPCArg::Type::AMOUNT, RPCArg::Optional::NO, "A key-value pair. The key (string) is the xogecoin address, the value (float or string) is the amount in " + CURRENCY_UNIT},
                     },
                 },
                 {"", RPCArg::Type::OBJ, RPCArg::Optional::OMITTED, "",

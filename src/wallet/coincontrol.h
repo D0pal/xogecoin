@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_COINCONTROL_H
-#define QOGECOIN_WALLET_COINCONTROL_H
+#ifndef XOGECOIN_WALLET_COINCONTROL_H
+#define XOGECOIN_WALLET_COINCONTROL_H
 
 #include <outputtype.h>
 #include <policy/feerate.h>
@@ -140,4 +140,4 @@ private:
 };
 } // namespace wallet
 
-#endif // QOGECOIN_WALLET_COINCONTROL_H
+#endif // XOGECOIN_WALLET_COINCONTROL_H

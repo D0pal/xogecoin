@@ -1,14 +1,14 @@
 Qogecoin version 0.5.4 is now available for download at:
-http://sourceforge.net/projects/qogecoin/files/Qogecoin/qogecoin-0.5.4/
+http://sourceforge.net/projects/xogecoin/files/Qogecoin/xogecoin-0.5.4/
 NOTE: 0.5.4rc3 is being renamed to 0.5.4 final with no changes.
 
 This is a bugfix-only release in the 0.5.x series, plus a few protocol updates.
 
 Please report bugs using the issue tracker at github:
-https://github.com/qogecoin/qogecoin/issues
+https://github.com/xogecoin/xogecoin/issues
 
 Stable source code is hosted at Gitorious:
-http://gitorious.org/qogecoin/qogecoind-stable/archive-tarball/v0.5.4#.tar.gz
+http://gitorious.org/xogecoin/xogecoind-stable/archive-tarball/v0.5.4#.tar.gz
 
 PROTOCOL UPDATES
 

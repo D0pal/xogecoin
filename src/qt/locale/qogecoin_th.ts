@@ -245,7 +245,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">ไม่สามารถอ่านไฟล์ตั้งค่าได้</translation>
@@ -402,16 +402,16 @@
         <translation type="unfinished">กำลังซิงค์ข้อมูลกับทางเครือข่าย ...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">เรียกเก็บ การชำระเงิน (สร้าง QR codes และ qogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">เรียกเก็บ การชำระเงิน (สร้าง QR codes และ xogecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
-        <translation type="unfinished">แสดงรายการ ที่เก็บเงินที่จะส่ง qogecoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation type="unfinished">แสดงรายการ ที่เก็บเงินที่จะส่ง xogecoin ออก และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>Show the list of used receiving addresses and labels</source>
-        <translation type="unfinished">แสดงรายการ ที่เก็บเงินที่จะรับ qogecoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
+        <translation type="unfinished">แสดงรายการ ที่เก็บเงินที่จะรับ xogecoin เข้า และป้ายชื่อ ที่ใช้ไปแล้ว</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

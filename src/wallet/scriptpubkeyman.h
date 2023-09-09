@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_SCRIPTPUBKEYMAN_H
-#define QOGECOIN_WALLET_SCRIPTPUBKEYMAN_H
+#ifndef XOGECOIN_WALLET_SCRIPTPUBKEYMAN_H
+#define XOGECOIN_WALLET_SCRIPTPUBKEYMAN_H
 
 #include <psbt.h>
 #include <script/descriptor.h>
@@ -635,4 +635,4 @@ public:
 };
 } // namespace wallet
 
-#endif // QOGECOIN_WALLET_SCRIPTPUBKEYMAN_H
+#endif // XOGECOIN_WALLET_SCRIPTPUBKEYMAN_H

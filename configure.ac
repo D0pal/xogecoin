@@ -7,9 +7,9 @@ define(_CLIENT_VERSION_IS_RELEASE, true)
 define(_COPYRIGHT_YEAR, 2022)
 define(_COPYRIGHT_HOLDERS,[The %s developers])
 define(_COPYRIGHT_HOLDERS_SUBSTITUTION,[[Qogecoin Core]])
-AC_INIT([Qogecoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_BUILD)m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/qogecoin/qogecoin/issues],[qogecoin],[https://qogecoincore.org/])
+AC_INIT([Qogecoin Core],m4_join([.], _CLIENT_VERSION_MAJOR, _CLIENT_VERSION_MINOR, _CLIENT_VERSION_BUILD)m4_if(_CLIENT_VERSION_RC, [0], [], [rc]_CLIENT_VERSION_RC),[https://github.com/xogecoin/xogecoin/issues],[xogecoin],[https://xogecoincore.org/])
 AC_CONFIG_SRCDIR([src/validation.cpp])
-AC_CONFIG_HEADERS([src/config/qogecoin-config.h])
+AC_CONFIG_HEADERS([src/config/xogecoin-config.h])
 AC_CONFIG_AUX_DIR([build-aux])
 AC_CONFIG_MACRO_DIR([build-aux/m4])
 
@@ -19,16 +19,16 @@ if test "$PKG_CONFIG" = ""; then
   AC_MSG_ERROR([pkg-config not found])
 fi
 
-QOGECOIN_DAEMON_NAME=qogecoind
-QOGECOIN_GUI_NAME=qogecoin-qt
-QOGECOIN_CLI_NAME=qogecoin-cli
-QOGECOIN_TX_NAME=qogecoin-tx
-QOGECOIN_UTIL_NAME=qogecoin-util
-QOGECOIN_CHAINSTATE_NAME=qogecoin-chainstate
-QOGECOIN_WALLET_TOOL_NAME=qogecoin-wallet
+XOGECOIN_DAEMON_NAME=xogecoind
+XOGECOIN_GUI_NAME=xogecoin-qt
+XOGECOIN_CLI_NAME=xogecoin-cli
+XOGECOIN_TX_NAME=xogecoin-tx
+XOGECOIN_UTIL_NAME=xogecoin-util
+XOGECOIN_CHAINSTATE_NAME=xogecoin-chainstate
+XOGECOIN_WALLET_TOOL_NAME=xogecoin-wallet
 dnl Multi Process
-QOGECOIN_MP_NODE_NAME=qogecoin-node
-QOGECOIN_MP_GUI_NAME=qogecoin-gui
+XOGECOIN_MP_NODE_NAME=xogecoin-node
+XOGECOIN_MP_GUI_NAME=xogecoin-gui
 
 dnl Unless the user specified ARFLAGS, force it to be cr
 AC_ARG_VAR([ARFLAGS], [Flags for the archiver, defaults to <cr> if not set])
@@ -38,9 +38,9 @@ fi
 
 AC_CANONICAL_HOST
 
-AH_TOP([#ifndef QOGECOIN_CONFIG_H])
-AH_TOP([#define QOGECOIN_CONFIG_H])
-AH_BOTTOM([#endif //QOGECOIN_CONFIG_H])
+AH_TOP([#ifndef XOGECOIN_CONFIG_H])
+AH_TOP([#define XOGECOIN_CONFIG_H])
+AH_BOTTOM([#endif //XOGECOIN_CONFIG_H])
 
 dnl Automake init set-up and checks
 AM_INIT_AUTOMAKE([1.13 no-define subdir-objects foreign])
@@ -288,7 +288,7 @@ AC_ARG_WITH([mpgen],
 
 AC_ARG_ENABLE([multiprocess],
   [AS_HELP_STRING([--enable-multiprocess],
-  [build multiprocess qogecoin-node, qogecoin-wallet, and qogecoin-gui executables in addition to monolithic qogecoind and qogecoin-qt executables. Requires libmultiprocess library. Experimental (default is no)])],
+  [build multiprocess xogecoin-node, xogecoin-wallet, and xogecoin-gui executables in addition to monolithic xogecoind and xogecoin-qt executables. Requires libmultiprocess library. Experimental (default is no)])],
   [enable_multiprocess=$enableval],
   [enable_multiprocess=no])
 
@@ -623,57 +623,57 @@ CORE_CPPFLAGS="$CORE_CPPFLAGS -DHAVE_BUILD_INFO"
 
 AC_ARG_WITH([utils],
   [AS_HELP_STRING([--with-utils],
-  [build qogecoin-cli qogecoin-tx qogecoin-util qogecoin-wallet (default=yes)])],
-  [build_qogecoin_utils=$withval],
-  [build_qogecoin_utils=yes])
+  [build xogecoin-cli xogecoin-tx xogecoin-util xogecoin-wallet (default=yes)])],
+  [build_xogecoin_utils=$withval],
+  [build_xogecoin_utils=yes])
 
 AC_ARG_ENABLE([util-cli],
   [AS_HELP_STRING([--enable-util-cli],
-  [build qogecoin-cli])],
-  [build_qogecoin_cli=$enableval],
-  [build_qogecoin_cli=$build_qogecoin_utils])
+  [build xogecoin-cli])],
+  [build_xogecoin_cli=$enableval],
+  [build_xogecoin_cli=$build_xogecoin_utils])
 
 AC_ARG_ENABLE([util-tx],
   [AS_HELP_STRING([--enable-util-tx],
-  [build qogecoin-tx])],
-  [build_qogecoin_tx=$enableval],
-  [build_qogecoin_tx=$build_qogecoin_utils])
+  [build xogecoin-tx])],
+  [build_xogecoin_tx=$enableval],
+  [build_xogecoin_tx=$build_xogecoin_utils])
 
 AC_ARG_ENABLE([util-wallet],
   [AS_HELP_STRING([--enable-util-wallet],
-  [build qogecoin-wallet])],
-  [build_qogecoin_wallet=$enableval],
-  [build_qogecoin_wallet=$build_qogecoin_utils])
+  [build xogecoin-wallet])],
+  [build_xogecoin_wallet=$enableval],
+  [build_xogecoin_wallet=$build_xogecoin_utils])
 
 AC_ARG_ENABLE([util-util],
   [AS_HELP_STRING([--enable-util-util],
-  [build qogecoin-util])],
-  [build_qogecoin_util=$enableval],
-  [build_qogecoin_util=$build_qogecoin_utils])
+  [build xogecoin-util])],
+  [build_xogecoin_util=$enableval],
+  [build_xogecoin_util=$build_xogecoin_utils])
 
 AC_ARG_ENABLE([experimental-util-chainstate],
   [AS_HELP_STRING([--enable-experimental-util-chainstate],
-  [build experimental qogecoin-chainstate executable (default=no)])],
-  [build_qogecoin_chainstate=$enableval],
-  [build_qogecoin_chainstate=no])
+  [build experimental xogecoin-chainstate executable (default=no)])],
+  [build_xogecoin_chainstate=$enableval],
+  [build_xogecoin_chainstate=no])
 
 AC_ARG_WITH([libs],
   [AS_HELP_STRING([--with-libs],
   [build libraries (default=yes)])],
-  [build_qogecoin_libs=$withval],
-  [build_qogecoin_libs=yes])
+  [build_xogecoin_libs=$withval],
+  [build_xogecoin_libs=yes])
 
 AC_ARG_WITH([experimental-kernel-lib],
   [AS_HELP_STRING([--with-experimental-kernel-lib],
-  [build experimental qogecoinkernel library (default is to build if we're building libraries and the experimental build-chainstate executable)])],
+  [build experimental xogecoinkernel library (default is to build if we're building libraries and the experimental build-chainstate executable)])],
   [build_experimental_kernel_lib=$withval],
   [build_experimental_kernel_lib=auto])
 
 AC_ARG_WITH([daemon],
   [AS_HELP_STRING([--with-daemon],
-  [build qogecoind daemon (default=yes)])],
-  [build_qogecoind=$withval],
-  [build_qogecoind=yes])
+  [build xogecoind daemon (default=yes)])],
+  [build_xogecoind=$withval],
+  [build_xogecoind=yes])
 
 case $host in
   *mingw*)
@@ -734,7 +734,7 @@ case $host in
 
          if test "$use_bdb" != "no" && $BREW list --versions berkeley-db@4 >/dev/null && test "$BDB_CFLAGS" = "" && test "$BDB_LIBS" = ""; then
            bdb_prefix=$($BREW --prefix berkeley-db@4 2>/dev/null)
-           dnl This must precede the call to QOGECOIN_FIND_BDB48 below.
+           dnl This must precede the call to XOGECOIN_FIND_BDB48 below.
            BDB_CFLAGS="-I$bdb_prefix/include"
            BDB_LIBS="-L$bdb_prefix/lib -ldb_cxx-4.8"
          fi
@@ -881,7 +881,7 @@ AC_C_BIGENDIAN
 dnl Check for pthread compile/link requirements
 AX_PTHREAD
 
-dnl The following macro will add the necessary defines to qogecoin-config.h, but
+dnl The following macro will add the necessary defines to xogecoin-config.h, but
 dnl they also need to be passed down to any subprojects. Pull the results out of
 dnl the cache and add them to CPPFLAGS.
 AC_SYS_LARGEFILE
@@ -993,7 +993,7 @@ AC_CHECK_DECLS([getifaddrs, freeifaddrs],[CHECK_SOCKET],,
     #include <ifaddrs.h>]
 )
 
-dnl These are used for daemonization in qogecoind
+dnl These are used for daemonization in xogecoind
 AC_CHECK_DECLS([fork])
 AC_CHECK_DECLS([setsid])
 
@@ -1286,17 +1286,17 @@ AC_DEFUN([SUPPRESS_WARNINGS],
 dnl enable-fuzz should disable all other targets
 if test "$enable_fuzz" = "yes"; then
   AC_MSG_WARN([enable-fuzz will disable all other targets and force --enable-fuzz-binary=yes])
-  build_qogecoin_utils=no
-  build_qogecoin_cli=no
-  build_qogecoin_tx=no
-  build_qogecoin_util=no
-  build_qogecoin_chainstate=no
-  build_qogecoin_wallet=no
-  build_qogecoind=no
-  build_qogecoin_libs=no
-  qogecoin_enable_qt=no
-  qogecoin_enable_qt_test=no
-  qogecoin_enable_qt_dbus=no
+  build_xogecoin_utils=no
+  build_xogecoin_cli=no
+  build_xogecoin_tx=no
+  build_xogecoin_util=no
+  build_xogecoin_chainstate=no
+  build_xogecoin_wallet=no
+  build_xogecoind=no
+  build_xogecoin_libs=no
+  xogecoin_enable_qt=no
+  xogecoin_enable_qt_test=no
+  xogecoin_enable_qt_dbus=no
   use_bench=no
   use_external_signer=no
   use_upnp=no
@@ -1306,10 +1306,10 @@ if test "$enable_fuzz" = "yes"; then
 
   AX_CHECK_PREPROC_FLAG([-DABORT_ON_FAILED_ASSUME], [DEBUG_CPPFLAGS="$DEBUG_CPPFLAGS -DABORT_ON_FAILED_ASSUME"], [], [$CXXFLAG_WERROR])
 else
-  QOGECOIN_QT_INIT
+  XOGECOIN_QT_INIT
 
-  dnl sets $qogecoin_enable_qt, $qogecoin_enable_qt_test, $qogecoin_enable_qt_dbus
-  QOGECOIN_QT_CONFIGURE([5.11.3])
+  dnl sets $xogecoin_enable_qt, $xogecoin_enable_qt_test, $xogecoin_enable_qt_dbus
+  XOGECOIN_QT_CONFIGURE([5.11.3])
 
   dnl Keep a copy of the original $QT_INCLUDES and use it when invoking qt's moc
   QT_INCLUDES_UNSUPPRESSED=$QT_INCLUDES
@@ -1342,7 +1342,7 @@ fi
 if test "$enable_wallet" != "no"; then
     dnl Check for libdb_cxx only if wallet enabled
     if test "$use_bdb" != "no"; then
-      QOGECOIN_FIND_BDB48
+      XOGECOIN_FIND_BDB48
       if test "$suppress_external_warnings" != "no" ; then
         BDB_CPPFLAGS=SUPPRESS_WARNINGS($BDB_CPPFLAGS)
       fi
@@ -1390,7 +1390,7 @@ if test "$use_usdt" != "no"; then
 fi
 AM_CONDITIONAL([ENABLE_USDT_TRACEPOINTS], [test "$use_usdt" = "yes"])
 
-if test "$build_qogecoin_cli$build_qogecoin_tx$build_qogecoin_util$build_qogecoind$qogecoin_enable_qt$use_bench$use_tests" = "nonononononono"; then
+if test "$build_xogecoin_cli$build_xogecoin_tx$build_xogecoin_util$build_xogecoind$xogecoin_enable_qt$use_bench$use_tests" = "nonononononono"; then
   use_upnp=no
   use_natpmp=no
   use_zmq=no
@@ -1438,7 +1438,7 @@ if test "$use_natpmp" != "no"; then
   CPPFLAGS="$TEMP_CPPFLAGS"
 fi
 
-if test "$build_qogecoin_wallet$build_qogecoin_cli$build_qogecoin_tx$build_qogecoind$qogecoin_enable_qt$use_tests$use_bench" = "nonononononono"; then
+if test "$build_xogecoin_wallet$build_xogecoin_cli$build_xogecoin_tx$build_xogecoind$xogecoin_enable_qt$use_tests$use_bench" = "nonononononono"; then
   use_boost=no
 else
   use_boost=yes
@@ -1449,7 +1449,7 @@ if test "$use_boost" = "yes"; then
   dnl Check for Boost headers
   AX_BOOST_BASE([1.64.0],[],[AC_MSG_ERROR([Boost is not available!])])
   if test "$want_boost" = "no"; then
-    AC_MSG_ERROR([only libqogecoinconsensus can be built without Boost])
+    AC_MSG_ERROR([only libxogecoinconsensus can be built without Boost])
   fi
 
   dnl we don't use multi_index serialization
@@ -1504,10 +1504,10 @@ fi
 AM_CONDITIONAL([ENABLE_EXTERNAL_SIGNER], [test "$use_external_signer" = "yes"])
 
 dnl Do not compile with syscall sandbox support when compiling under the sanitizers.
-dnl The sanitizers introduce use of syscalls that are not typically used in qogecoind
+dnl The sanitizers introduce use of syscalls that are not typically used in xogecoind
 dnl (such as execve when the sanitizers execute llvm-symbolizer).
 if test "$use_sanitizers" != ""; then
-  AC_MSG_WARN([Specifying --with-sanitizers forces --without-seccomp since the sanitizers introduce use of syscalls not allowed by the qogecoind syscall sandbox (-sandbox=<mode>).])
+  AC_MSG_WARN([Specifying --with-sanitizers forces --without-seccomp since the sanitizers introduce use of syscalls not allowed by the xogecoind syscall sandbox (-sandbox=<mode>).])
   seccomp_found=no
 fi
 if test "$seccomp_found" != "no"; then
@@ -1549,7 +1549,7 @@ fi
 
 dnl libevent check
 
-if test "$build_qogecoin_cli$build_qogecoind$qogecoin_enable_qt$use_tests$use_bench" != "nonononono"; then
+if test "$build_xogecoin_cli$build_xogecoind$xogecoin_enable_qt$use_tests$use_bench" != "nonononono"; then
   PKG_CHECK_MODULES([EVENT], [libevent >= 2.1.8], [use_libevent=yes], [AC_MSG_ERROR([libevent version 2.1.8 or greater not found.])])
   if test "$TARGET_OS" != "windows"; then
     PKG_CHECK_MODULES([EVENT_PTHREADS], [libevent_pthreads >= 2.1.8], [], [AC_MSG_ERROR([libevent_pthreads version 2.1.8 or greater not found.])])
@@ -1583,7 +1583,7 @@ fi
 dnl QR Code encoding library check
 
 if test "$use_qr" != "no"; then
-  QOGECOIN_QT_CHECK([PKG_CHECK_MODULES([QR], [libqrencode], [have_qrencode=yes], [have_qrencode=no])])
+  XOGECOIN_QT_CHECK([PKG_CHECK_MODULES([QR], [libqrencode], [have_qrencode=yes], [have_qrencode=no])])
 fi
 
 dnl ZMQ check
@@ -1633,8 +1633,8 @@ else
 fi
 
 AM_CONDITIONAL([BUILD_MULTIPROCESS], [test "$build_multiprocess" = "yes"])
-AM_CONDITIONAL([BUILD_QOGECOIN_NODE], [test "$build_multiprocess" = "yes"])
-AM_CONDITIONAL([BUILD_QOGECOIN_GUI], [test "$build_multiprocess" = "yes"])
+AM_CONDITIONAL([BUILD_XOGECOIN_NODE], [test "$build_multiprocess" = "yes"])
+AM_CONDITIONAL([BUILD_XOGECOIN_GUI], [test "$build_multiprocess" = "yes"])
 
 dnl codegen tools check
 
@@ -1647,45 +1647,45 @@ if test "$build_multiprocess" != "no"; then
   AC_SUBST(MPGEN_PREFIX)
 fi
 
-AC_MSG_CHECKING([whether to build qogecoind])
-AM_CONDITIONAL([BUILD_QOGECOIND], [test $build_qogecoind = "yes"])
-AC_MSG_RESULT($build_qogecoind)
+AC_MSG_CHECKING([whether to build xogecoind])
+AM_CONDITIONAL([BUILD_XOGECOIND], [test $build_xogecoind = "yes"])
+AC_MSG_RESULT($build_xogecoind)
 
-AC_MSG_CHECKING([whether to build qogecoin-cli])
-AM_CONDITIONAL([BUILD_QOGECOIN_CLI], [test $build_qogecoin_cli = "yes"])
-AC_MSG_RESULT($build_qogecoin_cli)
+AC_MSG_CHECKING([whether to build xogecoin-cli])
+AM_CONDITIONAL([BUILD_XOGECOIN_CLI], [test $build_xogecoin_cli = "yes"])
+AC_MSG_RESULT($build_xogecoin_cli)
 
-AC_MSG_CHECKING([whether to build qogecoin-tx])
-AM_CONDITIONAL([BUILD_QOGECOIN_TX], [test $build_qogecoin_tx = "yes"])
-AC_MSG_RESULT($build_qogecoin_tx)
+AC_MSG_CHECKING([whether to build xogecoin-tx])
+AM_CONDITIONAL([BUILD_XOGECOIN_TX], [test $build_xogecoin_tx = "yes"])
+AC_MSG_RESULT($build_xogecoin_tx)
 
-AC_MSG_CHECKING([whether to build qogecoin-wallet])
-AM_CONDITIONAL([BUILD_QOGECOIN_WALLET], [test $build_qogecoin_wallet = "yes"])
-AC_MSG_RESULT($build_qogecoin_wallet)
+AC_MSG_CHECKING([whether to build xogecoin-wallet])
+AM_CONDITIONAL([BUILD_XOGECOIN_WALLET], [test $build_xogecoin_wallet = "yes"])
+AC_MSG_RESULT($build_xogecoin_wallet)
 
-AC_MSG_CHECKING([whether to build qogecoin-util])
-AM_CONDITIONAL([BUILD_QOGECOIN_UTIL], [test $build_qogecoin_util = "yes"])
-AC_MSG_RESULT($build_qogecoin_util)
+AC_MSG_CHECKING([whether to build xogecoin-util])
+AM_CONDITIONAL([BUILD_XOGECOIN_UTIL], [test $build_xogecoin_util = "yes"])
+AC_MSG_RESULT($build_xogecoin_util)
 
-AC_MSG_CHECKING([whether to build experimental qogecoin-chainstate])
+AC_MSG_CHECKING([whether to build experimental xogecoin-chainstate])
 if test "$build_experimental_kernel_lib" = "no"; then
-AC_MSG_ERROR([experimental qogecoin-chainstate cannot be built without the experimental qogecoinkernel library. Use --with-experimental-kernel-lib]);
+AC_MSG_ERROR([experimental xogecoin-chainstate cannot be built without the experimental xogecoinkernel library. Use --with-experimental-kernel-lib]);
 else
-  AM_CONDITIONAL([BUILD_QOGECOIN_CHAINSTATE], [test $build_qogecoin_chainstate = "yes"])
+  AM_CONDITIONAL([BUILD_XOGECOIN_CHAINSTATE], [test $build_xogecoin_chainstate = "yes"])
 fi
-AC_MSG_RESULT($build_qogecoin_chainstate)
+AC_MSG_RESULT($build_xogecoin_chainstate)
 
 AC_MSG_CHECKING([whether to build libraries])
-AM_CONDITIONAL([BUILD_QOGECOIN_LIBS], [test $build_qogecoin_libs = "yes"])
+AM_CONDITIONAL([BUILD_XOGECOIN_LIBS], [test $build_xogecoin_libs = "yes"])
 
-if test "$build_qogecoin_libs" = "yes"; then
+if test "$build_xogecoin_libs" = "yes"; then
   AC_DEFINE([HAVE_CONSENSUS_LIB], [1], [Define this symbol if the consensus lib has been built])
-  AC_CONFIG_FILES([libqogecoinconsensus.pc:libqogecoinconsensus.pc.in])
+  AC_CONFIG_FILES([libxogecoinconsensus.pc:libxogecoinconsensus.pc.in])
 fi
 
-AM_CONDITIONAL([BUILD_QOGECOIN_KERNEL_LIB], [test "$build_experimental_kernel_lib" != "no" && ( test "$build_experimental_kernel_lib" = "yes" || test "$build_qogecoin_chainstate" = "yes" )])
+AM_CONDITIONAL([BUILD_XOGECOIN_KERNEL_LIB], [test "$build_experimental_kernel_lib" != "no" && ( test "$build_experimental_kernel_lib" = "yes" || test "$build_xogecoin_chainstate" = "yes" )])
 
-AC_MSG_RESULT($build_qogecoin_libs)
+AC_MSG_RESULT($build_xogecoin_libs)
 
 AC_LANG_POP
 
@@ -1778,13 +1778,13 @@ fi
 
 dnl these are only used when qt is enabled
 BUILD_TEST_QT=""
-if test "$qogecoin_enable_qt" != "no"; then
+if test "$xogecoin_enable_qt" != "no"; then
   dnl enable dbus support
   AC_MSG_CHECKING([whether to build GUI with support for D-Bus])
-  if test "$qogecoin_enable_qt_dbus" != "no"; then
+  if test "$xogecoin_enable_qt_dbus" != "no"; then
     AC_DEFINE([USE_DBUS], [1], [Define if dbus support should be compiled in])
   fi
-  AC_MSG_RESULT([$qogecoin_enable_qt_dbus])
+  AC_MSG_RESULT([$xogecoin_enable_qt_dbus])
 
   dnl enable qr support
   AC_MSG_CHECKING([whether to build GUI with support for QR codes])
@@ -1805,8 +1805,8 @@ if test "$qogecoin_enable_qt" != "no"; then
     AC_MSG_WARN([xgettext is required to update qt translations])
   fi
 
-  AC_MSG_CHECKING([whether to build test_qogecoin-qt])
-  if test "$use_gui_tests$qogecoin_enable_qt_test" = "yesyes"; then
+  AC_MSG_CHECKING([whether to build test_xogecoin-qt])
+  if test "$use_gui_tests$xogecoin_enable_qt_test" = "yesyes"; then
     AC_MSG_RESULT([yes])
     BUILD_TEST_QT="yes"
   else
@@ -1816,7 +1816,7 @@ fi
 
 AM_CONDITIONAL([ENABLE_ZMQ], [test "$use_zmq" = "yes"])
 
-AC_MSG_CHECKING([whether to build test_qogecoin])
+AC_MSG_CHECKING([whether to build test_xogecoin])
 if test "$use_tests" = "yes"; then
   if test "$enable_fuzz" = "yes"; then
     AC_MSG_RESULT([no, because fuzzing is enabled])
@@ -1836,7 +1836,7 @@ else
   AC_MSG_RESULT([no])
 fi
 
-if test "$build_qogecoin_wallet$build_qogecoin_cli$build_qogecoin_tx$build_qogecoin_libs$build_qogecoind$qogecoin_enable_qt$use_bench$use_tests" = "nononononononono"; then
+if test "$build_xogecoin_wallet$build_xogecoin_cli$build_xogecoin_tx$build_xogecoin_libs$build_xogecoind$xogecoin_enable_qt$use_bench$use_tests" = "nononononononono"; then
   AC_MSG_ERROR([No targets! Please specify at least one of: --with-utils --with-libs --with-daemon --with-gui --enable-bench or --enable-tests])
 fi
 
@@ -1850,7 +1850,7 @@ AM_CONDITIONAL([USE_BDB], [test "$use_bdb" = "yes"])
 AM_CONDITIONAL([ENABLE_TESTS], [test "$BUILD_TEST" = "yes"])
 AM_CONDITIONAL([ENABLE_FUZZ], [test "$enable_fuzz" = "yes"])
 AM_CONDITIONAL([ENABLE_FUZZ_BINARY], [test "$enable_fuzz_binary" = "yes"])
-AM_CONDITIONAL([ENABLE_QT], [test "$qogecoin_enable_qt" = "yes"])
+AM_CONDITIONAL([ENABLE_QT], [test "$xogecoin_enable_qt" = "yes"])
 AM_CONDITIONAL([ENABLE_QT_TESTS], [test "$BUILD_TEST_QT" = "yes"])
 AM_CONDITIONAL([ENABLE_BENCH], [test "$use_bench" = "yes"])
 AM_CONDITIONAL([USE_QRCODE], [test "$use_qr" = "yes"])
@@ -1889,15 +1889,15 @@ AC_SUBST(COPYRIGHT_YEAR, _COPYRIGHT_YEAR)
 AC_SUBST(COPYRIGHT_HOLDERS, "_COPYRIGHT_HOLDERS")
 AC_SUBST(COPYRIGHT_HOLDERS_SUBSTITUTION, "_COPYRIGHT_HOLDERS_SUBSTITUTION")
 AC_SUBST(COPYRIGHT_HOLDERS_FINAL, "_COPYRIGHT_HOLDERS_FINAL")
-AC_SUBST(QOGECOIN_DAEMON_NAME)
-AC_SUBST(QOGECOIN_GUI_NAME)
-AC_SUBST(QOGECOIN_CLI_NAME)
-AC_SUBST(QOGECOIN_TX_NAME)
-AC_SUBST(QOGECOIN_UTIL_NAME)
-AC_SUBST(QOGECOIN_CHAINSTATE_NAME)
-AC_SUBST(QOGECOIN_WALLET_TOOL_NAME)
-AC_SUBST(QOGECOIN_MP_NODE_NAME)
-AC_SUBST(QOGECOIN_MP_GUI_NAME)
+AC_SUBST(XOGECOIN_DAEMON_NAME)
+AC_SUBST(XOGECOIN_GUI_NAME)
+AC_SUBST(XOGECOIN_CLI_NAME)
+AC_SUBST(XOGECOIN_TX_NAME)
+AC_SUBST(XOGECOIN_UTIL_NAME)
+AC_SUBST(XOGECOIN_CHAINSTATE_NAME)
+AC_SUBST(XOGECOIN_WALLET_TOOL_NAME)
+AC_SUBST(XOGECOIN_MP_NODE_NAME)
+AC_SUBST(XOGECOIN_MP_GUI_NAME)
 
 AC_SUBST(RELDFLAGS)
 AC_SUBST(CORE_LDFLAGS)
@@ -1953,7 +1953,7 @@ AC_CONFIG_LINKS([contrib/devtools/security-check.py:contrib/devtools/security-ch
 AC_CONFIG_LINKS([contrib/devtools/symbol-check.py:contrib/devtools/symbol-check.py])
 AC_CONFIG_LINKS([contrib/devtools/test-security-check.py:contrib/devtools/test-security-check.py])
 AC_CONFIG_LINKS([contrib/devtools/test-symbol-check.py:contrib/devtools/test-symbol-check.py])
-AC_CONFIG_LINKS([contrib/devtools/iwyu/qogecoin.core.imp:contrib/devtools/iwyu/qogecoin.core.imp])
+AC_CONFIG_LINKS([contrib/devtools/iwyu/xogecoin.core.imp:contrib/devtools/iwyu/xogecoin.core.imp])
 AC_CONFIG_LINKS([contrib/filter-lcov.py:contrib/filter-lcov.py])
 AC_CONFIG_LINKS([contrib/macdeploy/background.tiff:contrib/macdeploy/background.tiff])
 AC_CONFIG_LINKS([src/.bear-tidy-config:src/.bear-tidy-config])
@@ -1996,21 +1996,21 @@ echo "Options used to compile and link:"
 echo "  external signer = $use_external_signer"
 echo "  multiprocess    = $build_multiprocess"
 echo "  with experimental syscall sandbox support = $use_syscall_sandbox"
-echo "  with libs       = $build_qogecoin_libs"
+echo "  with libs       = $build_xogecoin_libs"
 echo "  with wallet     = $enable_wallet"
 if test "$enable_wallet" != "no"; then
     echo "    with sqlite   = $use_sqlite"
     echo "    with bdb      = $use_bdb"
 fi
-echo "  with gui / qt   = $qogecoin_enable_qt"
-if test $qogecoin_enable_qt != "no"; then
+echo "  with gui / qt   = $xogecoin_enable_qt"
+if test $xogecoin_enable_qt != "no"; then
     echo "    with qr       = $use_qr"
 fi
 echo "  with zmq        = $use_zmq"
 if test $enable_fuzz = "no"; then
     echo "  with test       = $use_tests"
 else
-    echo "  with test       = not building test_qogecoin because fuzzing is enabled"
+    echo "  with test       = not building test_xogecoin because fuzzing is enabled"
 fi
 echo "  with fuzz binary = $enable_fuzz_binary"
 echo "  with bench      = $use_bench"

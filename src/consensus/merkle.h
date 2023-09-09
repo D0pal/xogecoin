@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CONSENSUS_MERKLE_H
-#define QOGECOIN_CONSENSUS_MERKLE_H
+#ifndef XOGECOIN_CONSENSUS_MERKLE_H
+#define XOGECOIN_CONSENSUS_MERKLE_H
 
 #include <vector>
 
@@ -24,4 +24,4 @@ uint256 BlockMerkleRoot(const CBlock& block, bool* mutated = nullptr);
  */
 uint256 BlockWitnessMerkleRoot(const CBlock& block, bool* mutated = nullptr);
 
-#endif // QOGECOIN_CONSENSUS_MERKLE_H
+#endif // XOGECOIN_CONSENSUS_MERKLE_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UINT256_H
-#define QOGECOIN_UINT256_H
+#ifndef XOGECOIN_UINT256_H
+#define XOGECOIN_UINT256_H
 
 #include <span.h>
 
@@ -153,4 +153,4 @@ inline uint256 uint256S(const std::string& str)
     return rv;
 }
 
-#endif // QOGECOIN_UINT256_H
+#endif // XOGECOIN_UINT256_H

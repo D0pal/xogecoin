@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_TRAFFICGRAPHWIDGET_H
-#define QOGECOIN_QT_TRAFFICGRAPHWIDGET_H
+#ifndef XOGECOIN_QT_TRAFFICGRAPHWIDGET_H
+#define XOGECOIN_QT_TRAFFICGRAPHWIDGET_H
 
 #include <QWidget>
 #include <QQueue>
@@ -47,4 +47,4 @@ private:
     ClientModel *clientModel;
 };
 
-#endif // QOGECOIN_QT_TRAFFICGRAPHWIDGET_H
+#endif // XOGECOIN_QT_TRAFFICGRAPHWIDGET_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_ATTRIBUTES_H
-#define QOGECOIN_ATTRIBUTES_H
+#ifndef XOGECOIN_ATTRIBUTES_H
+#define XOGECOIN_ATTRIBUTES_H
 
 #if defined(__clang__)
 #  if __has_attribute(lifetimebound)
@@ -16,4 +16,4 @@
 #  define LIFETIMEBOUND
 #endif
 
-#endif // QOGECOIN_ATTRIBUTES_H
+#endif // XOGECOIN_ATTRIBUTES_H

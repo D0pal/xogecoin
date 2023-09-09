@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_INDEX_BLOCKFILTERINDEX_H
-#define QOGECOIN_INDEX_BLOCKFILTERINDEX_H
+#ifndef XOGECOIN_INDEX_BLOCKFILTERINDEX_H
+#define XOGECOIN_INDEX_BLOCKFILTERINDEX_H
 
 #include <blockfilter.h>
 #include <chain.h>
@@ -101,4 +101,4 @@ bool DestroyBlockFilterIndex(BlockFilterType filter_type);
 /** Destroy all open block filter indexes. */
 void DestroyAllBlockFilterIndexes();
 
-#endif // QOGECOIN_INDEX_BLOCKFILTERINDEX_H
+#endif // XOGECOIN_INDEX_BLOCKFILTERINDEX_H

@@ -120,7 +120,7 @@
         <translation type="unfinished">Confirma cifrationem cassidilis</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">Monitio: Si cassidile tuum cifras et tesseram amittis, tu &lt;b&gt;AMITTES OMNES TUOS NUMMOS BITOS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -225,7 +225,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>This is a pre-release test build - use at your own risk - do not use for mining or merchant applications</source>
         <translation type="unfinished">Hoc est prae-dimittum experimentala aedes - utere eo periculo tuo proprio - nolite utere fodendo vel applicationibus mercatoriis</translation>
@@ -676,7 +676,7 @@
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">Qogecoin incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
     <message>

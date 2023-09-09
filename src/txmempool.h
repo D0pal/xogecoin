@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_TXMEMPOOL_H
-#define QOGECOIN_TXMEMPOOL_H
+#ifndef XOGECOIN_TXMEMPOOL_H
+#define XOGECOIN_TXMEMPOOL_H
 
 #include <atomic>
 #include <map>
@@ -998,4 +998,4 @@ struct DisconnectedBlockTransactions {
     }
 };
 
-#endif // QOGECOIN_TXMEMPOOL_H
+#endif // XOGECOIN_TXMEMPOOL_H

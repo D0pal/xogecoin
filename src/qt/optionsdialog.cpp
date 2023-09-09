@@ -3,13 +3,13 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <qt/optionsdialog.h>
 #include <qt/forms/ui_optionsdialog.h>
 
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 #include <qt/guiconstants.h>
 #include <qt/guiutil.h>
 #include <qt/optionsmodel.h>
@@ -82,8 +82,8 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     /* remove Window tab on Mac */
     ui->tabWidget->removeTab(ui->tabWidget->indexOf(ui->tabWindow));
     /* hide launch at startup option on macOS */
-    ui->qogecoinAtStartup->setVisible(false);
-    ui->verticalLayout_Main->removeWidget(ui->qogecoinAtStartup);
+    ui->xogecoinAtStartup->setVisible(false);
+    ui->verticalLayout_Main->removeWidget(ui->xogecoinAtStartup);
     ui->verticalLayout_Main->removeItem(ui->horizontalSpacer_0_Main);
 #endif
 
@@ -102,8 +102,8 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
     /* Display elements init */
     QDir translations(":translations");
 
-    ui->qogecoinAtStartup->setToolTip(ui->qogecoinAtStartup->toolTip().arg(PACKAGE_NAME));
-    ui->qogecoinAtStartup->setText(ui->qogecoinAtStartup->text().arg(PACKAGE_NAME));
+    ui->xogecoinAtStartup->setToolTip(ui->xogecoinAtStartup->toolTip().arg(PACKAGE_NAME));
+    ui->xogecoinAtStartup->setText(ui->xogecoinAtStartup->text().arg(PACKAGE_NAME));
 
     ui->openQogecoinConfButton->setToolTip(ui->openQogecoinConfButton->toolTip().arg(PACKAGE_NAME));
 
@@ -233,7 +233,7 @@ void OptionsDialog::setCurrentTab(OptionsDialog::Tab tab)
 void OptionsDialog::setMapper()
 {
     /* Main */
-    mapper->addMapping(ui->qogecoinAtStartup, OptionsModel::StartAtStartup);
+    mapper->addMapping(ui->xogecoinAtStartup, OptionsModel::StartAtStartup);
     mapper->addMapping(ui->threadsScriptVerif, OptionsModel::ThreadsScriptVerif);
     mapper->addMapping(ui->databaseCache, OptionsModel::DatabaseCache);
     mapper->addMapping(ui->prune, OptionsModel::Prune);

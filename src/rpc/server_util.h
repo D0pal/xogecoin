@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_RPC_SERVER_UTIL_H
-#define QOGECOIN_RPC_SERVER_UTIL_H
+#ifndef XOGECOIN_RPC_SERVER_UTIL_H
+#define XOGECOIN_RPC_SERVER_UTIL_H
 
 #include <any>
 
@@ -29,4 +29,4 @@ CBlockPolicyEstimator& EnsureAnyFeeEstimator(const std::any& context);
 CConnman& EnsureConnman(const node::NodeContext& node);
 PeerManager& EnsurePeerman(const node::NodeContext& node);
 
-#endif // QOGECOIN_RPC_SERVER_UTIL_H
+#endif // XOGECOIN_RPC_SERVER_UTIL_H

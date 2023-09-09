@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_RPC_REGISTER_H
-#define QOGECOIN_RPC_REGISTER_H
+#ifndef XOGECOIN_RPC_REGISTER_H
+#define XOGECOIN_RPC_REGISTER_H
 
 /** These are in one header file to avoid creating tons of single-function
  * headers for everything under src/rpc/ */
@@ -32,4 +32,4 @@ static inline void RegisterAllCoreRPCCommands(CRPCTable &t)
 #endif // ENABLE_EXTERNAL_SIGNER
 }
 
-#endif // QOGECOIN_RPC_REGISTER_H
+#endif // XOGECOIN_RPC_REGISTER_H

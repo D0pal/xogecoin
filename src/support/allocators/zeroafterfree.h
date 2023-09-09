@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
-#define QOGECOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
+#ifndef XOGECOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
+#define XOGECOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
 
 #include <support/cleanse.h>
 
@@ -43,4 +43,4 @@ struct zero_after_free_allocator : public std::allocator<T> {
 /** Byte-vector that clears its contents before deletion. */
 using SerializeData = std::vector<std::byte, zero_after_free_allocator<std::byte>>;
 
-#endif // QOGECOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H
+#endif // XOGECOIN_SUPPORT_ALLOCATORS_ZEROAFTERFREE_H

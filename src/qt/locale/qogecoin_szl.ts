@@ -149,8 +149,8 @@
         <translation type="unfinished">Przituplikuj szyfrowanie portmanyja</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Pozōr: jeźli zaszyfrujesz swōj portmanyj i stracisz hasło &lt;b&gt;STRACISZ WSZYJSKE SWOJE QOGECOINY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Pozōr: jeźli zaszyfrujesz swōj portmanyj i stracisz hasło &lt;b&gt;STRACISZ WSZYJSKE SWOJE XOGECOINY&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -270,7 +270,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Twōrcy %s</translation>
@@ -440,8 +440,8 @@
         <translation type="unfinished">Lajsta szkart</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Żōndej płatu (gyneruje kod QR jak tyż URI qogecoin:)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Żōndej płatu (gyneruje kod QR jak tyż URI xogecoin:)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -888,12 +888,12 @@
         <translation type="unfinished">Formular</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Świyże transakcyje mogōm niy być jeszcze widzialne, a tedyć saldo portmanyja może być niynŏleżne. Te detale bydōm nŏleżne, kej portmanyj zakōńczy synchrōnizacyjõ z necym qogecoin, zgodnie z miyniōnym ôpisym.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Świyże transakcyje mogōm niy być jeszcze widzialne, a tedyć saldo portmanyja może być niynŏleżne. Te detale bydōm nŏleżne, kej portmanyj zakōńczy synchrōnizacyjõ z necym xogecoin, zgodnie z miyniōnym ôpisym.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Prōba wydaniŏ qogecoinōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Prōba wydaniŏ xogecoinōw kere niy sōm jeszcze wyświytlōne za transakcyjŏ ôstanie ôdciepniyntŏ bez nec.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1080,7 +1080,7 @@
     </message>
     <message>
         <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Qogecoin network after a connection is established, but this process has not completed yet.</source>
-        <translation type="unfinished">Wyświytlanŏ informacyjŏ może być niyterŏźnŏ. Twōj portmanyj synchrōnizuje sie autōmatycznie z necym qogecoin zarŏz po tym, jak zrychtowane je skuplowanie, ale proces tyn niy ôstoł jeszcze skōńczōny.</translation>
+        <translation type="unfinished">Wyświytlanŏ informacyjŏ może być niyterŏźnŏ. Twōj portmanyj synchrōnizuje sie autōmatycznie z necym xogecoin zarŏz po tym, jak zrychtowane je skuplowanie, ale proces tyn niy ôstoł jeszcze skōńczōny.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -1121,8 +1121,8 @@
         <translation type="unfinished">Bedynōng URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' to niyma nŏleżne URI. Użyj 'qogecoin:'.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' to niyma nŏleżne URI. Użyj 'xogecoin:'.</translation>
     </message>
     </context>
 <context>
@@ -1495,8 +1495,8 @@
         <translation type="unfinished">Wiadōmość:</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Wiadōmość, kerŏ ôstała prziwstōnŏ do URI qogecoin:, kerŏ bydzie przechowowanŏ z transakcyjōm w cylach informacyjnych. Napōmniynie: Ta wiadōmość niy bydzie rozszyrzowanŏ w necu Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Wiadōmość, kerŏ ôstała prziwstōnŏ do URI xogecoin:, kerŏ bydzie przechowowanŏ z transakcyjōm w cylach informacyjnych. Napōmniynie: Ta wiadōmość niy bydzie rozszyrzowanŏ w necu Qogecoin.</translation>
     </message>
     </context>
 <context>

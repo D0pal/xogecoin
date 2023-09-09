@@ -6,8 +6,8 @@
 /**
  * Money parsing/formatting utilities.
  */
-#ifndef QOGECOIN_UTIL_MONEYSTR_H
-#define QOGECOIN_UTIL_MONEYSTR_H
+#ifndef XOGECOIN_UTIL_MONEYSTR_H
+#define XOGECOIN_UTIL_MONEYSTR_H
 
 #include <attributes.h>
 #include <consensus/amount.h>
@@ -22,4 +22,4 @@ std::string FormatMoney(const CAmount n);
 /** Parse an amount denoted in full coins. E.g. "0.0034" supplied on the command line. **/
 std::optional<CAmount> ParseMoney(const std::string& str);
 
-#endif // QOGECOIN_UTIL_MONEYSTR_H
+#endif // XOGECOIN_UTIL_MONEYSTR_H

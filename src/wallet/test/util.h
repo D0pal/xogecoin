@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_TEST_UTIL_H
-#define QOGECOIN_WALLET_TEST_UTIL_H
+#ifndef XOGECOIN_WALLET_TEST_UTIL_H
+#define XOGECOIN_WALLET_TEST_UTIL_H
 
 #include <memory>
 
@@ -20,4 +20,4 @@ class CWallet;
 std::unique_ptr<CWallet> CreateSyncedWallet(interfaces::Chain& chain, CChain& cchain, ArgsManager& args, const CKey& key);
 } // namespace wallet
 
-#endif // QOGECOIN_WALLET_TEST_UTIL_H
+#endif // XOGECOIN_WALLET_TEST_UTIL_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_TXREQUEST_H
-#define QOGECOIN_TXREQUEST_H
+#ifndef XOGECOIN_TXREQUEST_H
+#define XOGECOIN_TXREQUEST_H
 
 #include <primitives/transaction.h>
 #include <net.h> // For NodeId
@@ -208,4 +208,4 @@ public:
     void PostGetRequestableSanityCheck(std::chrono::microseconds now) const;
 };
 
-#endif // QOGECOIN_TXREQUEST_H
+#endif // XOGECOIN_TXREQUEST_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_THREADSAFETY_H
-#define QOGECOIN_THREADSAFETY_H
+#ifndef XOGECOIN_THREADSAFETY_H
+#define XOGECOIN_THREADSAFETY_H
 
 #include <mutex>
 
@@ -74,4 +74,4 @@ public:
     ~StdLockGuard() UNLOCK_FUNCTION() {}
 };
 
-#endif // QOGECOIN_THREADSAFETY_H
+#endif // XOGECOIN_THREADSAFETY_H

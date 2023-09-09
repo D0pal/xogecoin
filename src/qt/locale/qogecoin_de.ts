@@ -164,8 +164,8 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
         <translation type="unfinished">Wallet-Verschlüsselung bestätigen</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;ALLE IHRE QOGECOINS VERLIEREN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Warnung: Wenn Sie Ihre Wallet verschlüsseln und Ihre Passphrase verlieren, werden Sie &lt;b&gt;ALLE IHRE XOGECOINS VERLIEREN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,7 +184,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
         <translation type="unfinished">Geben Sie die alte und die neue Wallet-Passphrase ein.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">Beachten Sie, dass das Verschlüsseln Ihrer Wallet nicht komplett vor Diebstahl Ihrer Qogecoins durch Malware schützt, die Ihren Computer infiziert hat.</translation>
     </message>
     <message>
@@ -399,7 +399,7 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">Einstellungen konnten nicht gelesen werden.</translation>
@@ -413,8 +413,8 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
         <translation type="unfinished">Die %s-Entwickler</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s korrupt. Versuche mit dem Wallet-Werkzeug qogecoin-wallet zu retten, oder eine Sicherung wiederherzustellen.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s korrupt. Versuche mit dem Wallet-Werkzeug xogecoin-wallet zu retten, oder eine Sicherung wiederherzustellen.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -449,8 +449,8 @@ Das Signieren ist nur mit Adressen vom Typ 'Legacy' möglich.</translation>
         <translation type="unfinished">Fehler: Dumpdatei Identifikationseintrag ist ungültig. Habe "%s" bekommen, aber "%s" erwartet.</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Fehler: Die Version der Speicherauszugsdatei ist %s und wird nicht unterstützt. Diese Version von qogecoin-wallet unterstützt nur Speicherauszugsdateien der Version 1.</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Fehler: Die Version der Speicherauszugsdatei ist %s und wird nicht unterstützt. Diese Version von xogecoin-wallet unterstützt nur Speicherauszugsdateien der Version 1.</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -1205,8 +1205,8 @@ Verifikations-Error: %s</translation>
         <translation type="unfinished">Verbinde mit Peers...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Zahlungen anfordern (erzeugt QR-Codes und "qogecoin:"-URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Zahlungen anfordern (erzeugt QR-Codes und "xogecoin:"-URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1284,8 +1284,8 @@ Verifikations-Error: %s</translation>
         <translation type="unfinished">&amp;Empfangsadressen</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">qogecoin: URI öffnen</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">xogecoin: URI öffnen</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1958,11 +1958,11 @@ Verifikations-Error: %s</translation>
         <translation type="unfinished">Formular</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished">Neueste Transaktionen werden eventuell noch nicht angezeigt, daher könnte Ihr Kontostand veraltet sein. Er wird korrigiert, sobald Ihr Wallet die Synchronisation mit dem Qogecoin-Netzwerk erfolgreich abgeschlossen hat. Details dazu finden sich weiter unten.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">Versuche, Qogecoins aus noch nicht angezeigten Transaktionen auszugeben, werden vom Netzwerk nicht akzeptiert.</translation>
     </message>
     <message>
@@ -2009,8 +2009,8 @@ Verifikations-Error: %s</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Öffne qogecoin URI</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Öffne xogecoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2519,7 +2519,7 @@ Verifikations-Error: %s</translation>
         <translation type="unfinished">Fehler bei der Zahlungsanforderung</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">Kann Qogecoin nicht starten: Klicken-zum-Bezahlen-Handler</translation>
     </message>
     <message>
@@ -2527,8 +2527,8 @@ Verifikations-Error: %s</translation>
         <translation type="unfinished">URI-Verarbeitung</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' ist kein gültiger URL. Bitte 'qogecoin:' nutzen.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' ist kein gültiger URL. Bitte 'xogecoin:' nutzen.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3347,7 +3347,7 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebührenrate von "100 Satoshis per kvB" für eine Transaktion von 500 virtuellen Bytes (die Hälfte von 1 kvB) letztlich zu einer Gebühr von nur 50 Satoshis.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished">Nur die minimale Gebühr zu bezahlen ist so lange in Ordnung, wie weniger Transaktionsvolumen als Platz in den Blöcken vorhanden ist. Aber Vorsicht, diese Option kann dazu führen, dass Transaktionen nicht bestätigt werden, wenn mehr Bedarf an Qogecoin-Transaktionen besteht als das Netzwerk verarbeiten kann.</translation>
     </message>
     <message>
@@ -3625,7 +3625,7 @@ Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebühre
         <translation type="unfinished">Zu sendender Betrag in der ausgewählten Einheit</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">Die Gebühr wird vom zu überweisenden Betrag abgezogen. Der Empfänger wird also weniger Qogecoins erhalten, als Sie im Betrags-Feld eingegeben haben. Falls mehrere Empfänger ausgewählt wurden, wird die Gebühr gleichmäßig verteilt.</translation>
     </message>
     <message>
@@ -3653,8 +3653,8 @@ Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebühre
         <translation type="unfinished">Adressbezeichnung eingeben, die dann zusammen mit der Adresse der Liste bereits verwendeter Adressen hinzugefügt wird.</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Eine an die "qogecoin:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Qogecoin-Netzwerk gesendet.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Eine an die "xogecoin:"-URI angefügte Nachricht, die zusammen mit der Transaktion gespeichert wird. Hinweis: Diese Nachricht wird nicht über das Qogecoin-Netzwerk gesendet.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3679,7 +3679,7 @@ Hinweis: Da die Gebühr auf Basis der Bytes berechnet wird, führt eine Gebühre
         <translation type="unfinished">Nachricht &amp;signieren</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">Sie können Nachrichten/Vereinbarungen mit Hilfe Ihrer Adressen signieren, um zu beweisen, dass Sie Qogecoins empfangen können, die an diese Adressen überwiesen werden. Seien Sie vorsichtig und signieren Sie nichts Vages oder Willkürliches, um Ihre Indentität vor Phishingangriffen zu schützen. Signieren Sie nur vollständig-detaillierte Aussagen, mit denen Sie auch einverstanden sind.</translation>
     </message>
     <message>

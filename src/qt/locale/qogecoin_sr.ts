@@ -159,7 +159,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Потврди шифрирање новчаника</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">Упозорење: Уколико шифрираш новчаник и изгубиш своју лозинку, &lt;b&gt;ИЗГУБИЋЕШ СВЕ СВОЈЕ БИТКОИНЕ&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -179,7 +179,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Унеси стару лозинку и нову лозинку новчаника.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">Упамти, шифрирање новчаника не може у потуности заштити твоје биткоине од крађе од стране малвера инфицира твој рачунар.</translation>
     </message>
     <message>
@@ -339,7 +339,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s девелопери</translation>
@@ -869,7 +869,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Синхронизација са мрежом...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
         <translation type="unfinished">Затражи плаћање (генерише QR кодове и биткоин: URI-е)</translation>
     </message>
     <message>
@@ -937,7 +937,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Адресе за примање</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished">Отвори биткоин: URI</translation>
     </message>
     <message>
@@ -1493,11 +1493,11 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Форма</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished">Недавне трансакције можда не буду видљиве, зато салдо твог новчаника може бити нетачан. Ова информација биће тачна када новчаник заврши са синхронизацијом биткоин мреже, приказаном испод.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
         <translation type="unfinished">Покушај трошења биткоина на које утичу још увек неприказане трансакције мрежа неће прихватити.</translation>
     </message>
     <message>
@@ -1544,7 +1544,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished">Отвори биткоин URI</translation>
     </message>
     <message>
@@ -1911,7 +1911,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Грешка у захтеву за плаћање</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">Не могу покренути биткоин: "кликни-да-платиш" механизам</translation>
     </message>
     <message>
@@ -1919,8 +1919,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">URI руковање</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' није важећи URI. Уместо тога користити  'qogecoin:'.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' није важећи URI. Уместо тога користити  'xogecoin:'.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -2522,7 +2522,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Сакријте износ накнаде за трансакцију</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished">Када је мањи обим трансакција од простора у блоку, рудари, као и повезани нодови могу применити минималну провизију. Плаћање само минималне накнаде - провизије је добро, али треба бити свестан да ово може резултовати трансакцијом која неће никада бити потврђена, у случају када је број захтева за биткоин трансакцијама већи од могућности мреже да обради.</translation>
     </message>
     <message>
@@ -2746,7 +2746,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Износ који ће бити послат у одабрану јединицу</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished">Провизија ће бити одузета од износа који је послат. Примаоц ће добити мање биткоина него што је унесено у поље за износ. Уколико је одабрано више примаоца, провизија се дели равномерно.</translation>
     </message>
     <message>
@@ -2774,7 +2774,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Унесите ознаку за ову адресу да бисте је додали на листу коришћених адреса</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
         <translation type="unfinished">Порука која је приложена биткоину: URI која ће бити сачувана уз трансакцију ради референце. Напомена: Ова порука се шаље преко Биткоин мреже.</translation>
     </message>
     <message>
@@ -2800,7 +2800,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Потписи - Потпиши / Потврди поруку</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">Можете потписати поруку/споразум са вашом адресом да би сте доказали да можете примити биткоин послат ка њима. Будите опрезни да не потписујете ништа нејасно или случајно, јер се може десити напад крађе идентитета, да потпишете ваш идентитет нападачу. Потпишите само потпуно детаљне изјаве са којима се слажете.</translation>
     </message>
     <message>

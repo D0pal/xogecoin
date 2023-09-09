@@ -2,9 +2,9 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#include <qt/qogecoingui.h>
+#include <qt/xogecoingui.h>
 
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 #include <qt/clientmodel.h>
 #include <qt/createwalletdialog.h>
 #include <qt/guiconstants.h>
@@ -264,7 +264,7 @@ void QogecoinGUI::createActions()
     tabGroup->addAction(sendCoinsAction);
 
     receiveCoinsAction = new QAction(platformStyle->SingleColorIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
-    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and qogecoin: URIs)"));
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and xogecoin: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(QStringLiteral("Alt+3")));
@@ -334,7 +334,7 @@ void QogecoinGUI::createActions()
     usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
 
     openAction = new QAction(tr("Open &URI…"), this);
-    openAction->setStatusTip(tr("Open a qogecoin: URI"));
+    openAction->setStatusTip(tr("Open a xogecoin: URI"));
 
     m_open_wallet_action = new QAction(tr("Open Wallet"), this);
     m_open_wallet_action->setEnabled(false);

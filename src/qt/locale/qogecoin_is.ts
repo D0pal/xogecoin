@@ -149,8 +149,8 @@
         <translation type="unfinished">Staðfesta dulkóðun veskis</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Viðvörun: Ef þú dulkóðar veskið og týnir lykilsetningunn þá munt þú &lt;b&gt;TAPA ALLRI ÞINNI QOGECOIN MYNT&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Viðvörun: Ef þú dulkóðar veskið og týnir lykilsetningunn þá munt þú &lt;b&gt;TAPA ALLRI ÞINNI XOGECOIN MYNT&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -258,7 +258,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Error reading %s! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation type="unfinished">Villa við lestur %s! Allir lyklar fóru inn á réttan hátt, en færslugögn eða færslugildi gætu verið röng eða horfin.</translation>
@@ -364,8 +364,8 @@
         <translation type="unfinished">Tólaborð flipa</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Óska eftir greiðslum (býr til QR kóða og qogecoin: URI)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Óska eftir greiðslum (býr til QR kóða og xogecoin: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>

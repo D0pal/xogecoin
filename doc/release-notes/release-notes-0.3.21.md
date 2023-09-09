@@ -1,19 +1,19 @@
 Binaries for Qogecoin version 0.3.21 are available at:
-  https://sourceforge.net/projects/qogecoin/files/Qogecoin/qogecoin-0.3.21/
+  https://sourceforge.net/projects/xogecoin/files/Qogecoin/xogecoin-0.3.21/
 
 Changes and new features from the 0.3.20 release include:
 
-* Universal Plug and Play support.  Enable automatic opening of a port for incoming connections by running qogecoin or qogecoind with the - -upnp=1 command line switch or using the Options dialog box.
+* Universal Plug and Play support.  Enable automatic opening of a port for incoming connections by running xogecoin or xogecoind with the - -upnp=1 command line switch or using the Options dialog box.
 
-* Support for full-precision qogecoin amounts.  You can now send, and qogecoin will display, qogecoin amounts smaller than 0.01.  However, sending fewer than 0.01 qogecoins still requires a 0.01 qogecoin fee (so you can send 1.0001 qogecoins without a fee, but you will be asked to pay a fee if you try to send 0.0001).
+* Support for full-precision xogecoin amounts.  You can now send, and xogecoin will display, xogecoin amounts smaller than 0.01.  However, sending fewer than 0.01 xogecoins still requires a 0.01 xogecoin fee (so you can send 1.0001 xogecoins without a fee, but you will be asked to pay a fee if you try to send 0.0001).
 
-* A new method of finding qogecoin nodes to connect with, via DNS A records. Use the -dnsseed option to enable.
+* A new method of finding xogecoin nodes to connect with, via DNS A records. Use the -dnsseed option to enable.
 
-For developers, changes to qogecoin's remote-procedure-call API:
+For developers, changes to xogecoin's remote-procedure-call API:
 
-* New rpc command "sendmany" to send qogecoins to more than one address in a single transaction.
+* New rpc command "sendmany" to send xogecoins to more than one address in a single transaction.
 
-* Several bug fixes, including a serious intermittent bug that would sometimes cause qogecoind to stop accepting rpc requests. 
+* Several bug fixes, including a serious intermittent bug that would sometimes cause xogecoind to stop accepting rpc requests. 
 
 * -logtimestamps option, to add a timestamp to each line in debug.log.
 

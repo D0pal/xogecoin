@@ -145,7 +145,7 @@ chain for " target " development."))
     xglibc "libc_cv_ssp" "no")
    "libc_cv_ssp_strong" "no"))
 
-(define* (make-qogecoin-cross-toolchain target
+(define* (make-xogecoin-cross-toolchain target
                                        #:key
                                        (base-gcc-for-libc gcc-7)
                                        (base-kernel-headers linux-libre-headers-4.9)
@@ -535,7 +535,7 @@ inspecting signatures in Mach-O binaries.")
                                            "glibc-2.24-elfm-loadaddr-dynamic-rewrite.patch"
                                            "glibc-2.24-no-build-time-cxx-header-run.patch"))))))
 
-(define-public glibc-2.27/qogecoin-patched
+(define-public glibc-2.27/xogecoin-patched
   (package
     (inherit glibc-2.31)
     (version "2.27")
@@ -602,11 +602,11 @@ inspecting signatures in Mach-O binaries.")
                  gcc-toolchain-7
                  (list gcc-toolchain-7 "static")
                  (cond ((string-contains target "riscv64-")
-                        (make-qogecoin-cross-toolchain target
-                                                      #:base-libc glibc-2.27/qogecoin-patched
+                        (make-xogecoin-cross-toolchain target
+                                                      #:base-libc glibc-2.27/xogecoin-patched
                                                       #:base-kernel-headers linux-libre-headers-4.19))
                        (else
-                        (make-qogecoin-cross-toolchain target)))))
+                        (make-xogecoin-cross-toolchain target)))))
           ((string-contains target "darwin")
            (list ;; Native GCC 10 toolchain
                  gcc-toolchain-10

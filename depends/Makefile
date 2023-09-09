@@ -42,7 +42,7 @@ NO_UPNP ?=
 NO_USDT ?=
 NO_NATPMP ?=
 MULTIPROCESS ?=
-FALLBACK_DOWNLOAD_PATH ?= https://qogecoincore.org/depends-sources
+FALLBACK_DOWNLOAD_PATH ?= https://xogecoincore.org/depends-sources
 
 BUILD = $(shell ./config.guess)
 HOST ?= $(BUILD)

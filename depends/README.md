@@ -119,7 +119,7 @@ The following can be set when running make: `make FOO=bar`
   of build error. After successful build log files are moved along with package archives
 
 If some packages are not built, for example `make NO_WALLET=1`, the appropriate
-options will be passed to qogecoin's configure. In this case, `--disable-wallet`.
+options will be passed to xogecoin's configure. In this case, `--disable-wallet`.
 
 ### Additional targets
 

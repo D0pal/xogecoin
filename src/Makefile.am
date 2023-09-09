@@ -23,50 +23,50 @@ noinst_PROGRAMS =
 TESTS =
 BENCHMARKS =
 
-QOGECOIN_INCLUDES=-I$(builddir) -I$(srcdir)/$(MINISKETCH_INCLUDE_DIR_INT) -I$(srcdir)/secp256k1/include -I$(srcdir)/$(UNIVALUE_INCLUDE_DIR_INT) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS)
+XOGECOIN_INCLUDES=-I$(builddir) -I$(srcdir)/$(MINISKETCH_INCLUDE_DIR_INT) -I$(srcdir)/secp256k1/include -I$(srcdir)/$(UNIVALUE_INCLUDE_DIR_INT) $(BDB_CPPFLAGS) $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS)
 
-LIBQOGECOIN_NODE=libqogecoin_node.a
-LIBQOGECOIN_COMMON=libqogecoin_common.a
-LIBQOGECOIN_CONSENSUS=libqogecoin_consensus.a
-LIBQOGECOIN_CLI=libqogecoin_cli.a
-LIBQOGECOIN_KERNEL=libqogecoin_kernel.a
-LIBQOGECOIN_UTIL=libqogecoin_util.a
-LIBQOGECOIN_CRYPTO_BASE=crypto/libqogecoin_crypto_base.la
-LIBQOGECOINQT=qt/libqogecoinqt.a
+LIBXOGECOIN_NODE=libxogecoin_node.a
+LIBXOGECOIN_COMMON=libxogecoin_common.a
+LIBXOGECOIN_CONSENSUS=libxogecoin_consensus.a
+LIBXOGECOIN_CLI=libxogecoin_cli.a
+LIBXOGECOIN_KERNEL=libxogecoin_kernel.a
+LIBXOGECOIN_UTIL=libxogecoin_util.a
+LIBXOGECOIN_CRYPTO_BASE=crypto/libxogecoin_crypto_base.la
+LIBXOGECOINQT=qt/libxogecoinqt.a
 LIBSECP256K1=secp256k1/libsecp256k1.la
 
 if ENABLE_ZMQ
-LIBQOGECOIN_ZMQ=libqogecoin_zmq.a
+LIBXOGECOIN_ZMQ=libxogecoin_zmq.a
 endif
-if BUILD_QOGECOIN_LIBS
-LIBQOGECOINCONSENSUS=libqogecoinconsensus.la
+if BUILD_XOGECOIN_LIBS
+LIBXOGECOINCONSENSUS=libxogecoinconsensus.la
 endif
-if BUILD_QOGECOIN_KERNEL_LIB
-LIBQOGECOINKERNEL=libqogecoinkernel.la
+if BUILD_XOGECOIN_KERNEL_LIB
+LIBXOGECOINKERNEL=libxogecoinkernel.la
 endif
 if ENABLE_WALLET
-LIBQOGECOIN_WALLET=libqogecoin_wallet.a
-LIBQOGECOIN_WALLET_TOOL=libqogecoin_wallet_tool.a
+LIBXOGECOIN_WALLET=libxogecoin_wallet.a
+LIBXOGECOIN_WALLET_TOOL=libxogecoin_wallet_tool.a
 endif
 
-LIBQOGECOIN_CRYPTO = $(LIBQOGECOIN_CRYPTO_BASE)
+LIBXOGECOIN_CRYPTO = $(LIBXOGECOIN_CRYPTO_BASE)
 if ENABLE_SSE41
-LIBQOGECOIN_CRYPTO_SSE41 = crypto/libqogecoin_crypto_sse41.la
-LIBQOGECOIN_CRYPTO += $(LIBQOGECOIN_CRYPTO_SSE41)
+LIBXOGECOIN_CRYPTO_SSE41 = crypto/libxogecoin_crypto_sse41.la
+LIBXOGECOIN_CRYPTO += $(LIBXOGECOIN_CRYPTO_SSE41)
 endif
 if ENABLE_AVX2
-LIBQOGECOIN_CRYPTO_AVX2 = crypto/libqogecoin_crypto_avx2.la
-LIBQOGECOIN_CRYPTO += $(LIBQOGECOIN_CRYPTO_AVX2)
+LIBXOGECOIN_CRYPTO_AVX2 = crypto/libxogecoin_crypto_avx2.la
+LIBXOGECOIN_CRYPTO += $(LIBXOGECOIN_CRYPTO_AVX2)
 endif
 if ENABLE_X86_SHANI
-LIBQOGECOIN_CRYPTO_X86_SHANI = crypto/libqogecoin_crypto_x86_shani.la
-LIBQOGECOIN_CRYPTO += $(LIBQOGECOIN_CRYPTO_X86_SHANI)
+LIBXOGECOIN_CRYPTO_X86_SHANI = crypto/libxogecoin_crypto_x86_shani.la
+LIBXOGECOIN_CRYPTO += $(LIBXOGECOIN_CRYPTO_X86_SHANI)
 endif
 if ENABLE_ARM_SHANI
-LIBQOGECOIN_CRYPTO_ARM_SHANI = crypto/libqogecoin_crypto_arm_shani.la
-LIBQOGECOIN_CRYPTO += $(LIBQOGECOIN_CRYPTO_ARM_SHANI)
+LIBXOGECOIN_CRYPTO_ARM_SHANI = crypto/libxogecoin_crypto_arm_shani.la
+LIBXOGECOIN_CRYPTO += $(LIBXOGECOIN_CRYPTO_ARM_SHANI)
 endif
-noinst_LTLIBRARIES += $(LIBQOGECOIN_CRYPTO)
+noinst_LTLIBRARIES += $(LIBXOGECOIN_CRYPTO)
 
 $(LIBSECP256K1): $(wildcard secp256k1/src/*.h) $(wildcard secp256k1/src/*.c) $(wildcard secp256k1/include/*)
 	$(AM_V_at)$(MAKE) $(AM_MAKEFLAGS) -C $(@D) $(@F)
@@ -74,49 +74,49 @@ $(LIBSECP256K1): $(wildcard secp256k1/src/*.h) $(wildcard secp256k1/src/*.c) $(w
 # Make is not made aware of per-object dependencies to avoid limiting building parallelization
 # But to build the less dependent modules first, we manually select their order here:
 EXTRA_LIBRARIES += \
-  $(LIBQOGECOIN_UTIL) \
-  $(LIBQOGECOIN_COMMON) \
-  $(LIBQOGECOIN_CONSENSUS) \
-  $(LIBQOGECOIN_NODE) \
-  $(LIBQOGECOIN_CLI) \
-  $(LIBQOGECOIN_IPC) \
-  $(LIBQOGECOIN_WALLET) \
-  $(LIBQOGECOIN_WALLET_TOOL) \
-  $(LIBQOGECOIN_ZMQ)
+  $(LIBXOGECOIN_UTIL) \
+  $(LIBXOGECOIN_COMMON) \
+  $(LIBXOGECOIN_CONSENSUS) \
+  $(LIBXOGECOIN_NODE) \
+  $(LIBXOGECOIN_CLI) \
+  $(LIBXOGECOIN_IPC) \
+  $(LIBXOGECOIN_WALLET) \
+  $(LIBXOGECOIN_WALLET_TOOL) \
+  $(LIBXOGECOIN_ZMQ)
 
-if BUILD_QOGECOIND
-  bin_PROGRAMS += qogecoind
+if BUILD_XOGECOIND
+  bin_PROGRAMS += xogecoind
 endif
 
-if BUILD_QOGECOIN_NODE
-  bin_PROGRAMS += qogecoin-node
+if BUILD_XOGECOIN_NODE
+  bin_PROGRAMS += xogecoin-node
 endif
 
-if BUILD_QOGECOIN_CLI
-  bin_PROGRAMS += qogecoin-cli
+if BUILD_XOGECOIN_CLI
+  bin_PROGRAMS += xogecoin-cli
 endif
 
-if BUILD_QOGECOIN_TX
-  bin_PROGRAMS += qogecoin-tx
+if BUILD_XOGECOIN_TX
+  bin_PROGRAMS += xogecoin-tx
 endif
 
 if ENABLE_WALLET
-if BUILD_QOGECOIN_WALLET
-  bin_PROGRAMS += qogecoin-wallet
+if BUILD_XOGECOIN_WALLET
+  bin_PROGRAMS += xogecoin-wallet
 endif
 endif
 
-if BUILD_QOGECOIN_UTIL
-  bin_PROGRAMS += qogecoin-util
+if BUILD_XOGECOIN_UTIL
+  bin_PROGRAMS += xogecoin-util
 endif
 
-if BUILD_QOGECOIN_CHAINSTATE
-  bin_PROGRAMS += qogecoin-chainstate
+if BUILD_XOGECOIN_CHAINSTATE
+  bin_PROGRAMS += xogecoin-chainstate
 endif
 
 .PHONY: FORCE check-symbols check-security
-# qogecoin core #
-QOGECOIN_CORE_H = \
+# xogecoin core #
+XOGECOIN_CORE_H = \
   addrdb.h \
   addrman.h \
   addrman_impl.h \
@@ -326,17 +326,17 @@ obj/build.h: FORCE
 	@$(MKDIR_P) $(builddir)/obj
 	@$(top_srcdir)/share/genbuild.sh "$(abs_top_builddir)/src/obj/build.h" \
 	  "$(abs_top_srcdir)"
-libqogecoin_util_a-clientversion.$(OBJEXT): obj/build.h
+libxogecoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-ipc/capnp/libqogecoin_ipc_a-ipc.$(OBJEXT): $(libqogecoin_ipc_mpgen_input:=.h)
+ipc/capnp/libxogecoin_ipc_a-ipc.$(OBJEXT): $(libxogecoin_ipc_mpgen_input:=.h)
 
-# server: shared between qogecoind and qogecoin-qt
+# server: shared between xogecoind and xogecoin-qt
 # Contains code accessing mempool and chain state that is meant to be separated
 # from wallet and gui code (see node/README.md). Shared code should go in
-# libqogecoin_common or libqogecoin_util libraries, instead.
-libqogecoin_node_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(NATPMP_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
-libqogecoin_node_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libqogecoin_node_a_SOURCES = \
+# libxogecoin_common or libxogecoin_util libraries, instead.
+libxogecoin_node_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(NATPMP_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
+libxogecoin_node_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoin_node_a_SOURCES = \
   addrdb.cpp \
   addrman.cpp \
   banman.cpp \
@@ -399,19 +399,19 @@ libqogecoin_node_a_SOURCES = \
   validation.cpp \
   validationinterface.cpp \
   versionbits.cpp \
-  $(QOGECOIN_CORE_H)
+  $(XOGECOIN_CORE_H)
 
 if ENABLE_WALLET
-libqogecoin_node_a_SOURCES += wallet/init.cpp
+libxogecoin_node_a_SOURCES += wallet/init.cpp
 endif
 if !ENABLE_WALLET
-libqogecoin_node_a_SOURCES += dummywallet.cpp
+libxogecoin_node_a_SOURCES += dummywallet.cpp
 endif
 
 if ENABLE_ZMQ
-libqogecoin_zmq_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES) $(ZMQ_CFLAGS)
-libqogecoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libqogecoin_zmq_a_SOURCES = \
+libxogecoin_zmq_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES) $(ZMQ_CFLAGS)
+libxogecoin_zmq_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoin_zmq_a_SOURCES = \
   zmq/zmqabstractnotifier.cpp \
   zmq/zmqnotificationinterface.cpp \
   zmq/zmqpublishnotifier.cpp \
@@ -420,11 +420,11 @@ libqogecoin_zmq_a_SOURCES = \
 endif
 
 
-# wallet: shared between qogecoind and qogecoin-qt, but only linked
+# wallet: shared between xogecoind and xogecoin-qt, but only linked
 # when wallet enabled
-libqogecoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES) $(SQLITE_CFLAGS)
-libqogecoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libqogecoin_wallet_a_SOURCES = \
+libxogecoin_wallet_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES) $(SQLITE_CFLAGS)
+libxogecoin_wallet_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoin_wallet_a_SOURCES = \
   wallet/coincontrol.cpp \
   wallet/context.cpp \
   wallet/crypter.cpp \
@@ -452,32 +452,32 @@ libqogecoin_wallet_a_SOURCES = \
   wallet/walletdb.cpp \
   wallet/walletutil.cpp \
   wallet/coinselection.cpp \
-  $(QOGECOIN_CORE_H)
+  $(XOGECOIN_CORE_H)
 
 if USE_SQLITE
-libqogecoin_wallet_a_SOURCES += wallet/sqlite.cpp
+libxogecoin_wallet_a_SOURCES += wallet/sqlite.cpp
 endif
 if USE_BDB
-libqogecoin_wallet_a_SOURCES += wallet/bdb.cpp wallet/salvage.cpp
+libxogecoin_wallet_a_SOURCES += wallet/bdb.cpp wallet/salvage.cpp
 endif
 
-libqogecoin_wallet_tool_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-libqogecoin_wallet_tool_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libqogecoin_wallet_tool_a_SOURCES = \
+libxogecoin_wallet_tool_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+libxogecoin_wallet_tool_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoin_wallet_tool_a_SOURCES = \
   wallet/wallettool.cpp \
-  $(QOGECOIN_CORE_H)
+  $(XOGECOIN_CORE_H)
 
 # crypto primitives library
-crypto_libqogecoin_crypto_base_la_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libxogecoin_crypto_base_la_CPPFLAGS = $(AM_CPPFLAGS)
 
 # Specify -static in both CXXFLAGS and LDFLAGS so libtool will only build a
 # static version of this library. We don't need a dynamic version, and a dynamic
 # version can't be used on windows anyway because the library doesn't currently
 # export DLL symbols.
-crypto_libqogecoin_crypto_base_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
-crypto_libqogecoin_crypto_base_la_LDFLAGS = $(AM_LDFLAGS) -static
+crypto_libxogecoin_crypto_base_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
+crypto_libxogecoin_crypto_base_la_LDFLAGS = $(AM_LDFLAGS) -static
 
-crypto_libqogecoin_crypto_base_la_SOURCES = \
+crypto_libxogecoin_crypto_base_la_SOURCES = \
   crypto/aes.cpp \
   crypto/aes.h \
   crypto/chacha_poly_aead.h \
@@ -509,49 +509,49 @@ crypto_libqogecoin_crypto_base_la_SOURCES = \
   crypto/siphash.h
 
 if USE_ASM
-crypto_libqogecoin_crypto_base_la_SOURCES += crypto/sha256_sse4.cpp
+crypto_libxogecoin_crypto_base_la_SOURCES += crypto/sha256_sse4.cpp
 endif
 
-# See explanation for -static in crypto_libqogecoin_crypto_base_la's LDFLAGS and
+# See explanation for -static in crypto_libxogecoin_crypto_base_la's LDFLAGS and
 # CXXFLAGS above
-crypto_libqogecoin_crypto_sse41_la_LDFLAGS = $(AM_LDFLAGS) -static
-crypto_libqogecoin_crypto_sse41_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
-crypto_libqogecoin_crypto_sse41_la_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libqogecoin_crypto_sse41_la_CXXFLAGS += $(SSE41_CXXFLAGS)
-crypto_libqogecoin_crypto_sse41_la_CPPFLAGS += -DENABLE_SSE41
-crypto_libqogecoin_crypto_sse41_la_SOURCES = crypto/sha256_sse41.cpp
+crypto_libxogecoin_crypto_sse41_la_LDFLAGS = $(AM_LDFLAGS) -static
+crypto_libxogecoin_crypto_sse41_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
+crypto_libxogecoin_crypto_sse41_la_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libxogecoin_crypto_sse41_la_CXXFLAGS += $(SSE41_CXXFLAGS)
+crypto_libxogecoin_crypto_sse41_la_CPPFLAGS += -DENABLE_SSE41
+crypto_libxogecoin_crypto_sse41_la_SOURCES = crypto/sha256_sse41.cpp
 
-# See explanation for -static in crypto_libqogecoin_crypto_base_la's LDFLAGS and
+# See explanation for -static in crypto_libxogecoin_crypto_base_la's LDFLAGS and
 # CXXFLAGS above
-crypto_libqogecoin_crypto_avx2_la_LDFLAGS = $(AM_LDFLAGS) -static
-crypto_libqogecoin_crypto_avx2_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
-crypto_libqogecoin_crypto_avx2_la_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libqogecoin_crypto_avx2_la_CXXFLAGS += $(AVX2_CXXFLAGS)
-crypto_libqogecoin_crypto_avx2_la_CPPFLAGS += -DENABLE_AVX2
-crypto_libqogecoin_crypto_avx2_la_SOURCES = crypto/sha256_avx2.cpp
+crypto_libxogecoin_crypto_avx2_la_LDFLAGS = $(AM_LDFLAGS) -static
+crypto_libxogecoin_crypto_avx2_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
+crypto_libxogecoin_crypto_avx2_la_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libxogecoin_crypto_avx2_la_CXXFLAGS += $(AVX2_CXXFLAGS)
+crypto_libxogecoin_crypto_avx2_la_CPPFLAGS += -DENABLE_AVX2
+crypto_libxogecoin_crypto_avx2_la_SOURCES = crypto/sha256_avx2.cpp
 
-# See explanation for -static in crypto_libqogecoin_crypto_base_la's LDFLAGS and
+# See explanation for -static in crypto_libxogecoin_crypto_base_la's LDFLAGS and
 # CXXFLAGS above
-crypto_libqogecoin_crypto_x86_shani_la_LDFLAGS = $(AM_LDFLAGS) -static
-crypto_libqogecoin_crypto_x86_shani_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
-crypto_libqogecoin_crypto_x86_shani_la_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libqogecoin_crypto_x86_shani_la_CXXFLAGS += $(X86_SHANI_CXXFLAGS)
-crypto_libqogecoin_crypto_x86_shani_la_CPPFLAGS += -DENABLE_X86_SHANI
-crypto_libqogecoin_crypto_x86_shani_la_SOURCES = crypto/sha256_x86_shani.cpp
+crypto_libxogecoin_crypto_x86_shani_la_LDFLAGS = $(AM_LDFLAGS) -static
+crypto_libxogecoin_crypto_x86_shani_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
+crypto_libxogecoin_crypto_x86_shani_la_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libxogecoin_crypto_x86_shani_la_CXXFLAGS += $(X86_SHANI_CXXFLAGS)
+crypto_libxogecoin_crypto_x86_shani_la_CPPFLAGS += -DENABLE_X86_SHANI
+crypto_libxogecoin_crypto_x86_shani_la_SOURCES = crypto/sha256_x86_shani.cpp
 
-# See explanation for -static in crypto_libqogecoin_crypto_base_la's LDFLAGS and
+# See explanation for -static in crypto_libxogecoin_crypto_base_la's LDFLAGS and
 # CXXFLAGS above
-crypto_libqogecoin_crypto_arm_shani_la_LDFLAGS = $(AM_LDFLAGS) -static
-crypto_libqogecoin_crypto_arm_shani_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
-crypto_libqogecoin_crypto_arm_shani_la_CPPFLAGS = $(AM_CPPFLAGS)
-crypto_libqogecoin_crypto_arm_shani_la_CXXFLAGS += $(ARM_SHANI_CXXFLAGS)
-crypto_libqogecoin_crypto_arm_shani_la_CPPFLAGS += -DENABLE_ARM_SHANI
-crypto_libqogecoin_crypto_arm_shani_la_SOURCES = crypto/sha256_arm_shani.cpp
+crypto_libxogecoin_crypto_arm_shani_la_LDFLAGS = $(AM_LDFLAGS) -static
+crypto_libxogecoin_crypto_arm_shani_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -static
+crypto_libxogecoin_crypto_arm_shani_la_CPPFLAGS = $(AM_CPPFLAGS)
+crypto_libxogecoin_crypto_arm_shani_la_CXXFLAGS += $(ARM_SHANI_CXXFLAGS)
+crypto_libxogecoin_crypto_arm_shani_la_CPPFLAGS += -DENABLE_ARM_SHANI
+crypto_libxogecoin_crypto_arm_shani_la_SOURCES = crypto/sha256_arm_shani.cpp
 
 # consensus: shared between all executables that validate any consensus rules.
-libqogecoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-libqogecoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libqogecoin_consensus_a_SOURCES = \
+libxogecoin_consensus_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+libxogecoin_consensus_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoin_consensus_a_SOURCES = \
   arith_uint256.cpp \
   arith_uint256.h \
   consensus/amount.h \
@@ -578,7 +578,7 @@ libqogecoin_consensus_a_SOURCES = \
   primitives/transaction.h \
   pubkey.cpp \
   pubkey.h \
-  script/qogecoinconsensus.cpp \
+  script/xogecoinconsensus.cpp \
   script/interpreter.cpp \
   script/interpreter.h \
   script/script.cpp \
@@ -594,10 +594,10 @@ libqogecoin_consensus_a_SOURCES = \
   util/strencodings.h \
   version.h
 
-# common: shared between qogecoind, and qogecoin-qt and non-server tools
-libqogecoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-libqogecoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libqogecoin_common_a_SOURCES = \
+# common: shared between xogecoind, and xogecoin-qt and non-server tools
+libxogecoin_common_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+libxogecoin_common_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoin_common_a_SOURCES = \
   base58.cpp \
   bech32.cpp \
   chainparams.cpp \
@@ -631,14 +631,14 @@ libqogecoin_common_a_SOURCES = \
   script/signingprovider.cpp \
   script/standard.cpp \
   warnings.cpp \
-  $(QOGECOIN_CORE_H)
+  $(XOGECOIN_CORE_H)
 
 # util: shared between all executables.
 # This library *must* be included to make sure that the glibc
 # sanity checks are linked.
-libqogecoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-libqogecoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libqogecoin_util_a_SOURCES = \
+libxogecoin_util_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+libxogecoin_util_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoin_util_a_SOURCES = \
   support/lockedpool.cpp \
   chainparamsbase.cpp \
   clientversion.cpp \
@@ -678,183 +678,183 @@ libqogecoin_util_a_SOURCES = \
   util/syscall_sandbox.cpp \
   util/time.cpp \
   util/tokenpipe.cpp \
-  $(QOGECOIN_CORE_H)
+  $(XOGECOIN_CORE_H)
 
 if USE_LIBEVENT
-libqogecoin_util_a_SOURCES += util/url.cpp
+libxogecoin_util_a_SOURCES += util/url.cpp
 endif
 
-# cli: shared between qogecoin-cli and qogecoin-qt
-libqogecoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-libqogecoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-libqogecoin_cli_a_SOURCES = \
+# cli: shared between xogecoin-cli and xogecoin-qt
+libxogecoin_cli_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+libxogecoin_cli_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoin_cli_a_SOURCES = \
   compat/stdin.h \
   compat/stdin.cpp \
   rpc/client.cpp \
-  $(QOGECOIN_CORE_H)
+  $(XOGECOIN_CORE_H)
 
-nodist_libqogecoin_util_a_SOURCES = $(srcdir)/obj/build.h
+nodist_libxogecoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
-# qogecoind & qogecoin-node binaries #
-qogecoin_daemon_sources = qogecoind.cpp
-qogecoin_bin_cppflags = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-qogecoin_bin_cxxflags = $(AM_CXXFLAGS) $(PIE_FLAGS)
-qogecoin_bin_ldflags = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
+# xogecoind & xogecoin-node binaries #
+xogecoin_daemon_sources = xogecoind.cpp
+xogecoin_bin_cppflags = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+xogecoin_bin_cxxflags = $(AM_CXXFLAGS) $(PIE_FLAGS)
+xogecoin_bin_ldflags = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
-qogecoin_daemon_sources += qogecoind-res.rc
+xogecoin_daemon_sources += xogecoind-res.rc
 endif
 
-qogecoin_bin_ldadd = \
-  $(LIBQOGECOIN_WALLET) \
-  $(LIBQOGECOIN_COMMON) \
-  $(LIBQOGECOIN_UTIL) \
+xogecoin_bin_ldadd = \
+  $(LIBXOGECOIN_WALLET) \
+  $(LIBXOGECOIN_COMMON) \
+  $(LIBXOGECOIN_UTIL) \
   $(LIBUNIVALUE) \
-  $(LIBQOGECOIN_ZMQ) \
-  $(LIBQOGECOIN_CONSENSUS) \
-  $(LIBQOGECOIN_CRYPTO) \
+  $(LIBXOGECOIN_ZMQ) \
+  $(LIBXOGECOIN_CONSENSUS) \
+  $(LIBXOGECOIN_CRYPTO) \
   $(LIBLEVELDB) \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-qogecoin_bin_ldadd += $(BDB_LIBS) $(MINIUPNPC_LIBS) $(NATPMP_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(SQLITE_LIBS)
+xogecoin_bin_ldadd += $(BDB_LIBS) $(MINIUPNPC_LIBS) $(NATPMP_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS) $(SQLITE_LIBS)
 
-qogecoind_SOURCES = $(qogecoin_daemon_sources) init/qogecoind.cpp
-qogecoind_CPPFLAGS = $(qogecoin_bin_cppflags)
-qogecoind_CXXFLAGS = $(qogecoin_bin_cxxflags)
-qogecoind_LDFLAGS = $(qogecoin_bin_ldflags)
-qogecoind_LDADD = $(LIBQOGECOIN_NODE) $(qogecoin_bin_ldadd)
+xogecoind_SOURCES = $(xogecoin_daemon_sources) init/xogecoind.cpp
+xogecoind_CPPFLAGS = $(xogecoin_bin_cppflags)
+xogecoind_CXXFLAGS = $(xogecoin_bin_cxxflags)
+xogecoind_LDFLAGS = $(xogecoin_bin_ldflags)
+xogecoind_LDADD = $(LIBXOGECOIN_NODE) $(xogecoin_bin_ldadd)
 
-qogecoin_node_SOURCES = $(qogecoin_daemon_sources) init/qogecoin-node.cpp
-qogecoin_node_CPPFLAGS = $(qogecoin_bin_cppflags)
-qogecoin_node_CXXFLAGS = $(qogecoin_bin_cxxflags)
-qogecoin_node_LDFLAGS = $(qogecoin_bin_ldflags)
-qogecoin_node_LDADD = $(LIBQOGECOIN_NODE) $(qogecoin_bin_ldadd) $(LIBQOGECOIN_IPC) $(LIBMULTIPROCESS_LIBS)
+xogecoin_node_SOURCES = $(xogecoin_daemon_sources) init/xogecoin-node.cpp
+xogecoin_node_CPPFLAGS = $(xogecoin_bin_cppflags)
+xogecoin_node_CXXFLAGS = $(xogecoin_bin_cxxflags)
+xogecoin_node_LDFLAGS = $(xogecoin_bin_ldflags)
+xogecoin_node_LDADD = $(LIBXOGECOIN_NODE) $(xogecoin_bin_ldadd) $(LIBXOGECOIN_IPC) $(LIBMULTIPROCESS_LIBS)
 
-# qogecoin-cli binary #
-qogecoin_cli_SOURCES = qogecoin-cli.cpp
-qogecoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES) $(EVENT_CFLAGS)
-qogecoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-qogecoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
+# xogecoin-cli binary #
+xogecoin_cli_SOURCES = xogecoin-cli.cpp
+xogecoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES) $(EVENT_CFLAGS)
+xogecoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+xogecoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
-qogecoin_cli_SOURCES += qogecoin-cli-res.rc
+xogecoin_cli_SOURCES += xogecoin-cli-res.rc
 endif
 
-qogecoin_cli_LDADD = \
-  $(LIBQOGECOIN_CLI) \
+xogecoin_cli_LDADD = \
+  $(LIBXOGECOIN_CLI) \
   $(LIBUNIVALUE) \
-  $(LIBQOGECOIN_UTIL) \
-  $(LIBQOGECOIN_CRYPTO)
+  $(LIBXOGECOIN_UTIL) \
+  $(LIBXOGECOIN_CRYPTO)
 
-qogecoin_cli_LDADD += $(EVENT_LIBS)
+xogecoin_cli_LDADD += $(EVENT_LIBS)
 #
 
-# qogecoin-tx binary #
-qogecoin_tx_SOURCES = qogecoin-tx.cpp
-qogecoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-qogecoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-qogecoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
+# xogecoin-tx binary #
+xogecoin_tx_SOURCES = xogecoin-tx.cpp
+xogecoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+xogecoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+xogecoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
-qogecoin_tx_SOURCES += qogecoin-tx-res.rc
+xogecoin_tx_SOURCES += xogecoin-tx-res.rc
 endif
 
-qogecoin_tx_LDADD = \
+xogecoin_tx_LDADD = \
   $(LIBUNIVALUE) \
-  $(LIBQOGECOIN_COMMON) \
-  $(LIBQOGECOIN_UTIL) \
-  $(LIBQOGECOIN_CONSENSUS) \
-  $(LIBQOGECOIN_CRYPTO) \
+  $(LIBXOGECOIN_COMMON) \
+  $(LIBXOGECOIN_UTIL) \
+  $(LIBXOGECOIN_CONSENSUS) \
+  $(LIBXOGECOIN_CRYPTO) \
   $(LIBSECP256K1)
 #
 
-# qogecoin-wallet binary #
-qogecoin_wallet_SOURCES = qogecoin-wallet.cpp
-qogecoin_wallet_SOURCES += init/qogecoin-wallet.cpp
-qogecoin_wallet_CPPFLAGS = $(qogecoin_bin_cppflags)
-qogecoin_wallet_CXXFLAGS = $(qogecoin_bin_cxxflags)
-qogecoin_wallet_LDFLAGS = $(qogecoin_bin_ldflags)
-qogecoin_wallet_LDADD = \
-  $(LIBQOGECOIN_WALLET_TOOL) \
-  $(LIBQOGECOIN_WALLET) \
-  $(LIBQOGECOIN_COMMON) \
-  $(LIBQOGECOIN_UTIL) \
+# xogecoin-wallet binary #
+xogecoin_wallet_SOURCES = xogecoin-wallet.cpp
+xogecoin_wallet_SOURCES += init/xogecoin-wallet.cpp
+xogecoin_wallet_CPPFLAGS = $(xogecoin_bin_cppflags)
+xogecoin_wallet_CXXFLAGS = $(xogecoin_bin_cxxflags)
+xogecoin_wallet_LDFLAGS = $(xogecoin_bin_ldflags)
+xogecoin_wallet_LDADD = \
+  $(LIBXOGECOIN_WALLET_TOOL) \
+  $(LIBXOGECOIN_WALLET) \
+  $(LIBXOGECOIN_COMMON) \
+  $(LIBXOGECOIN_UTIL) \
   $(LIBUNIVALUE) \
-  $(LIBQOGECOIN_CONSENSUS) \
-  $(LIBQOGECOIN_CRYPTO) \
+  $(LIBXOGECOIN_CONSENSUS) \
+  $(LIBXOGECOIN_CRYPTO) \
   $(LIBSECP256K1) \
   $(BDB_LIBS) \
   $(SQLITE_LIBS)
 
 if TARGET_WINDOWS
-qogecoin_wallet_SOURCES += qogecoin-wallet-res.rc
+xogecoin_wallet_SOURCES += xogecoin-wallet-res.rc
 endif
 #
 
-# qogecoin-util binary #
-qogecoin_util_SOURCES = qogecoin-util.cpp
-qogecoin_util_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-qogecoin_util_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-qogecoin_util_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
+# xogecoin-util binary #
+xogecoin_util_SOURCES = xogecoin-util.cpp
+xogecoin_util_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+xogecoin_util_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+xogecoin_util_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) $(PTHREAD_FLAGS)
 
 if TARGET_WINDOWS
-qogecoin_util_SOURCES += qogecoin-util-res.rc
+xogecoin_util_SOURCES += xogecoin-util-res.rc
 endif
 
-qogecoin_util_LDADD = \
-  $(LIBQOGECOIN_COMMON) \
-  $(LIBQOGECOIN_UTIL) \
+xogecoin_util_LDADD = \
+  $(LIBXOGECOIN_COMMON) \
+  $(LIBXOGECOIN_UTIL) \
   $(LIBUNIVALUE) \
-  $(LIBQOGECOIN_CONSENSUS) \
-  $(LIBQOGECOIN_CRYPTO) \
+  $(LIBXOGECOIN_CONSENSUS) \
+  $(LIBXOGECOIN_CRYPTO) \
   $(LIBSECP256K1)
 #
 
-# qogecoin-chainstate binary #
-qogecoin_chainstate_SOURCES = qogecoin-chainstate.cpp
-qogecoin_chainstate_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-qogecoin_chainstate_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+# xogecoin-chainstate binary #
+xogecoin_chainstate_SOURCES = xogecoin-chainstate.cpp
+xogecoin_chainstate_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+xogecoin_chainstate_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 # $(LIBTOOL_APP_LDFLAGS) deliberately omitted here so that we can test linking
-# qogecoin-chainstate against libqogecoinkernel as a shared or static library by
+# xogecoin-chainstate against libxogecoinkernel as a shared or static library by
 # setting --{en,dis}able-shared.
-qogecoin_chainstate_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(PTHREAD_FLAGS)
-qogecoin_chainstate_LDADD = $(LIBQOGECOINKERNEL)
+xogecoin_chainstate_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(PTHREAD_FLAGS)
+xogecoin_chainstate_LDADD = $(LIBXOGECOINKERNEL)
 #
 
-# qogecoinkernel library #
-if BUILD_QOGECOIN_KERNEL_LIB
-lib_LTLIBRARIES += $(LIBQOGECOINKERNEL)
+# xogecoinkernel library #
+if BUILD_XOGECOIN_KERNEL_LIB
+lib_LTLIBRARIES += $(LIBXOGECOINKERNEL)
 
-libqogecoinkernel_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS) $(PTHREAD_FLAGS)
-libqogecoinkernel_la_LIBADD = $(LIBQOGECOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) $(LIBSECP256K1)
-libqogecoinkernel_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_QOGECOIN_INTERNAL $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) -I$(srcdir)/$(UNIVALUE_INCLUDE_DIR_INT)
+libxogecoinkernel_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS) $(PTHREAD_FLAGS)
+libxogecoinkernel_la_LIBADD = $(LIBXOGECOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) $(LIBSECP256K1)
+libxogecoinkernel_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_XOGECOIN_INTERNAL $(BOOST_CPPFLAGS) $(LEVELDB_CPPFLAGS) -I$(srcdir)/$(UNIVALUE_INCLUDE_DIR_INT)
 
-# libqogecoinkernel requires default symbol visibility, explicitly specify that
+# libxogecoinkernel requires default symbol visibility, explicitly specify that
 # here so that things still work even when user configures with
 #   --enable-reduce-exports
 #
 # Note this is a quick hack that will be removed as we incrementally define what
 # to export from the library.
-libqogecoinkernel_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -fvisibility=default
+libxogecoinkernel_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) -fvisibility=default
 
 # TODO: For now, Specify -static in both CXXFLAGS and LDFLAGS when building for
 #       windows targets so libtool will only build a static version of this
 #       library. There are unresolved problems when building dll's for mingw-w64
 #       and attempting to statically embed libstdc++, libpthread, etc.
 if TARGET_WINDOWS
-libqogecoinkernel_la_LDFLAGS += -static
-libqogecoinkernel_la_CXXFLAGS += -static
+libxogecoinkernel_la_LDFLAGS += -static
+libxogecoinkernel_la_CXXFLAGS += -static
 endif
 
-# TODO: libqogecoinkernel is a work in progress consensus engine library, as more
+# TODO: libxogecoinkernel is a work in progress consensus engine library, as more
 #       and more modules are decoupled from the consensus engine, this list will
 #       shrink to only those which are absolutely necessary. For example, things
 #       like index/*.cpp will be removed.
-libqogecoinkernel_la_SOURCES = \
-  kernel/qogecoinkernel.cpp \
+libxogecoinkernel_la_SOURCES = \
+  kernel/xogecoinkernel.cpp \
   arith_uint256.cpp \
   blockfilter.cpp \
   chain.cpp \
@@ -936,21 +936,21 @@ libqogecoinkernel_la_SOURCES = \
 
 # Required for obj/build.h to be generated first.
 # More details: https://www.gnu.org/software/automake/manual/html_node/Built-Sources-Example.html
-libqogecoinkernel_la-clientversion.l$(OBJEXT): obj/build.h
-endif # BUILD_QOGECOIN_KERNEL_LIB
+libxogecoinkernel_la-clientversion.l$(OBJEXT): obj/build.h
+endif # BUILD_XOGECOIN_KERNEL_LIB
 #
 
-# qogecoinconsensus library #
-if BUILD_QOGECOIN_LIBS
-lib_LTLIBRARIES += $(LIBQOGECOINCONSENSUS)
+# xogecoinconsensus library #
+if BUILD_XOGECOIN_LIBS
+lib_LTLIBRARIES += $(LIBXOGECOINCONSENSUS)
 
-include_HEADERS = script/qogecoinconsensus.h
-libqogecoinconsensus_la_SOURCES = support/cleanse.cpp $(crypto_libqogecoin_crypto_base_la_SOURCES) $(libqogecoin_consensus_a_SOURCES)
+include_HEADERS = script/xogecoinconsensus.h
+libxogecoinconsensus_la_SOURCES = support/cleanse.cpp $(crypto_libxogecoin_crypto_base_la_SOURCES) $(libxogecoin_consensus_a_SOURCES)
 
-libqogecoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
-libqogecoinconsensus_la_LIBADD = $(LIBSECP256K1)
-libqogecoinconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_QOGECOIN_INTERNAL
-libqogecoinconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+libxogecoinconsensus_la_LDFLAGS = $(AM_LDFLAGS) -no-undefined $(RELDFLAGS)
+libxogecoinconsensus_la_LIBADD = $(LIBSECP256K1)
+libxogecoinconsensus_la_CPPFLAGS = $(AM_CPPFLAGS) -I$(builddir)/obj -I$(srcdir)/secp256k1/include -DBUILD_XOGECOIN_INTERNAL
+libxogecoinconsensus_la_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 
 endif
 #
@@ -986,12 +986,12 @@ CLEANFILES += obj/build.h
 EXTRA_DIST = $(CTAES_DIST)
 
 
-config/qogecoin-config.h: config/stamp-h1
+config/xogecoin-config.h: config/stamp-h1
 	@$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-config/stamp-h1: $(top_srcdir)/$(subdir)/config/qogecoin-config.h.in $(top_builddir)/config.status
+config/stamp-h1: $(top_srcdir)/$(subdir)/config/xogecoin-config.h.in $(top_builddir)/config.status
 	$(AM_V_at)$(MAKE) -C $(top_builddir) $(subdir)/$(@)
-$(top_srcdir)/$(subdir)/config/qogecoin-config.h.in:  $(am__configure_deps)
-	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/qogecoin-config.h.in
+$(top_srcdir)/$(subdir)/config/xogecoin-config.h.in:  $(am__configure_deps)
+	$(AM_V_at)$(MAKE) -C $(top_srcdir) $(subdir)/config/xogecoin-config.h.in
 
 clean-local:
 	-$(MAKE) -C secp256k1 clean
@@ -1014,15 +1014,15 @@ if HARDEN
 	$(AM_V_at) $(PYTHON) $(top_srcdir)/contrib/devtools/security-check.py $(bin_PROGRAMS)
 endif
 
-libqogecoin_ipc_mpgen_input = \
+libxogecoin_ipc_mpgen_input = \
   ipc/capnp/echo.capnp \
   ipc/capnp/init.capnp
-EXTRA_DIST += $(libqogecoin_ipc_mpgen_input)
+EXTRA_DIST += $(libxogecoin_ipc_mpgen_input)
 %.capnp:
 
 if BUILD_MULTIPROCESS
-LIBQOGECOIN_IPC=libqogecoin_ipc.a
-libqogecoin_ipc_a_SOURCES = \
+LIBXOGECOIN_IPC=libxogecoin_ipc.a
+libxogecoin_ipc_a_SOURCES = \
   ipc/capnp/context.h \
   ipc/capnp/init-types.h \
   ipc/capnp/protocol.cpp \
@@ -1033,20 +1033,20 @@ libqogecoin_ipc_a_SOURCES = \
   ipc/process.cpp \
   ipc/process.h \
   ipc/protocol.h
-libqogecoin_ipc_a_CPPFLAGS = $(AM_CPPFLAGS) $(QOGECOIN_INCLUDES)
-libqogecoin_ipc_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(LIBMULTIPROCESS_CFLAGS)
+libxogecoin_ipc_a_CPPFLAGS = $(AM_CPPFLAGS) $(XOGECOIN_INCLUDES)
+libxogecoin_ipc_a_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS) $(LIBMULTIPROCESS_CFLAGS)
 
 include $(MPGEN_PREFIX)/include/mpgen.mk
-libqogecoin_ipc_mpgen_output = \
-  $(libqogecoin_ipc_mpgen_input:=.c++) \
-  $(libqogecoin_ipc_mpgen_input:=.h) \
-  $(libqogecoin_ipc_mpgen_input:=.proxy-client.c++) \
-  $(libqogecoin_ipc_mpgen_input:=.proxy-server.c++) \
-  $(libqogecoin_ipc_mpgen_input:=.proxy-types.c++) \
-  $(libqogecoin_ipc_mpgen_input:=.proxy-types.h) \
-  $(libqogecoin_ipc_mpgen_input:=.proxy.h)
-nodist_libqogecoin_ipc_a_SOURCES = $(libqogecoin_ipc_mpgen_output)
-CLEANFILES += $(libqogecoin_ipc_mpgen_output)
+libxogecoin_ipc_mpgen_output = \
+  $(libxogecoin_ipc_mpgen_input:=.c++) \
+  $(libxogecoin_ipc_mpgen_input:=.h) \
+  $(libxogecoin_ipc_mpgen_input:=.proxy-client.c++) \
+  $(libxogecoin_ipc_mpgen_input:=.proxy-server.c++) \
+  $(libxogecoin_ipc_mpgen_input:=.proxy-types.c++) \
+  $(libxogecoin_ipc_mpgen_input:=.proxy-types.h) \
+  $(libxogecoin_ipc_mpgen_input:=.proxy.h)
+nodist_libxogecoin_ipc_a_SOURCES = $(libxogecoin_ipc_mpgen_output)
+CLEANFILES += $(libxogecoin_ipc_mpgen_output)
 endif
 
 include Makefile.minisketch.include

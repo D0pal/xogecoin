@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_RPC_UTIL_H
-#define QOGECOIN_RPC_UTIL_H
+#ifndef XOGECOIN_RPC_UTIL_H
+#define XOGECOIN_RPC_UTIL_H
 
 #include <node/coinstats.h>
 #include <node/transaction.h>
@@ -380,4 +380,4 @@ private:
     const RPCExamples m_examples;
 };
 
-#endif // QOGECOIN_RPC_UTIL_H
+#endif // XOGECOIN_RPC_UTIL_H

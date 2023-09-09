@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_OPENURIDIALOG_H
-#define QOGECOIN_QT_OPENURIDIALOG_H
+#ifndef XOGECOIN_QT_OPENURIDIALOG_H
+#define XOGECOIN_QT_OPENURIDIALOG_H
 
 #include <QDialog>
 
@@ -33,4 +33,4 @@ private:
     const PlatformStyle* m_platform_style;
 };
 
-#endif // QOGECOIN_QT_OPENURIDIALOG_H
+#endif // XOGECOIN_QT_OPENURIDIALOG_H

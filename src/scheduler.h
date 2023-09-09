@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SCHEDULER_H
-#define QOGECOIN_SCHEDULER_H
+#ifndef XOGECOIN_SCHEDULER_H
+#define XOGECOIN_SCHEDULER_H
 
 #include <condition_variable>
 #include <functional>
@@ -146,4 +146,4 @@ public:
     size_t CallbacksPending();
 };
 
-#endif // QOGECOIN_SCHEDULER_H
+#endif // XOGECOIN_SCHEDULER_H

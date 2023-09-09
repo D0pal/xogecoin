@@ -46,7 +46,7 @@ class OrphanedBlockRewardTest(QogecoinTestFramework):
         })
         # The following abandontransaction is necessary to make the later
         # lines succeed, and probably should not be needed; see
-        # https://github.com/qogecoin/qogecoin/issues/14148.
+        # https://github.com/xogecoin/xogecoin/issues/14148.
         self.nodes[1].abandontransaction(txid)
         assert_equal(self.nodes[1].getbalances()["mine"], {
           "trusted": 10,

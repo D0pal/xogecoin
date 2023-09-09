@@ -42,7 +42,7 @@ nmake install
 
 One could speed up building with [`jom`](https://wiki.qt.io/Jom), a replacement for `nmake` which makes use of all CPU cores.
 
-To build Qogecoin Core without Qt, unload or disable the `qogecoin-qt`, `libqogecoin_qt` and `test_qogecoin-qt` projects.
+To build Qogecoin Core without Qt, unload or disable the `xogecoin-qt`, `libxogecoin_qt` and `test_xogecoin-qt` projects.
 
 
 Building
@@ -58,19 +58,19 @@ PS >py -3 msvc-autogen.py
 3. To build from the command-line with the Visual Studio 2019 toolchain use:
 
 ```cmd
-msbuild -property:Configuration=Release -maxCpuCount -verbosity:minimal qogecoin.sln
+msbuild -property:Configuration=Release -maxCpuCount -verbosity:minimal xogecoin.sln
 ```
 
-Alternatively, open the `build_msvc/qogecoin.sln` file in Visual Studio 2019.
+Alternatively, open the `build_msvc/xogecoin.sln` file in Visual Studio 2019.
 
 Security
 ---------------------
 [Base address randomization](https://docs.microsoft.com/en-us/cpp/build/reference/dynamicbase-use-address-space-layout-randomization?view=msvc-160) is used to make Qogecoin Core more secure. When building Qogecoin using the `build_msvc` process base address randomization can be disabled by editing `common.init.vcproj` to change `RandomizedBaseAddress` from `true` to `false` and then rebuilding the project.
 
-To check if `qogecoind` has `RandomizedBaseAddress` enabled or disabled run
+To check if `xogecoind` has `RandomizedBaseAddress` enabled or disabled run
 
 ```
-.\dumpbin.exe /headers src/qogecoind.exe
+.\dumpbin.exe /headers src/xogecoind.exe
 ```
 
 If is it enabled then in the output `Dynamic base` will be listed in the `DLL characteristics` under `OPTIONAL HEADER VALUES` as shown below

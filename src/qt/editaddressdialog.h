@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_EDITADDRESSDIALOG_H
-#define QOGECOIN_QT_EDITADDRESSDIALOG_H
+#ifndef XOGECOIN_QT_EDITADDRESSDIALOG_H
+#define XOGECOIN_QT_EDITADDRESSDIALOG_H
 
 #include <QDialog>
 
@@ -56,4 +56,4 @@ private:
     QString address;
 };
 
-#endif // QOGECOIN_QT_EDITADDRESSDIALOG_H
+#endif // XOGECOIN_QT_EDITADDRESSDIALOG_H

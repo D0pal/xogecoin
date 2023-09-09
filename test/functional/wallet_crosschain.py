@@ -22,9 +22,9 @@ class WalletCrossChain(QogecoinTestFramework):
         # Switch node 1 to testnet before starting it.
         self.nodes[1].chain = 'testnet3'
         self.nodes[1].extra_args = ['-maxconnections=0'] # disable testnet sync
-        with open(self.nodes[1].qogecoinconf, 'r', encoding='utf8') as conf:
+        with open(self.nodes[1].xogecoinconf, 'r', encoding='utf8') as conf:
             conf_data = conf.read()
-        with open (self.nodes[1].qogecoinconf, 'w', encoding='utf8') as conf:
+        with open (self.nodes[1].xogecoinconf, 'w', encoding='utf8') as conf:
             conf.write(conf_data.replace('regtest=', 'testnet=').replace('[regtest]', '[test]'))
 
         self.start_nodes()

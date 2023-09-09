@@ -2,8 +2,8 @@
 // Copyright (c) 2009-2020 The Bitcoin and Qogecoin Core Authors
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef QOGECOIN_UTIL_FEES_H
-#define QOGECOIN_UTIL_FEES_H
+#ifndef XOGECOIN_UTIL_FEES_H
+#define XOGECOIN_UTIL_FEES_H
 
 #include <string>
 
@@ -15,4 +15,4 @@ std::string StringForFeeReason(FeeReason reason);
 std::string FeeModes(const std::string& delimiter);
 const std::string InvalidEstimateModeErrorMessage();
 
-#endif // QOGECOIN_UTIL_FEES_H
+#endif // XOGECOIN_UTIL_FEES_H

@@ -149,8 +149,8 @@
         <translation type="unfinished">Ҳамённи кодлашни тасдиқлаш</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА QOGECOIN ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Диққат: Агар сиз ҳамёнингизни кодласангиз ва махфий сўзингизни унутсангиз, сиз &lt;b&gt;БАРЧА XOGECOIN ПУЛЛАРИНГИЗНИ ЙЎҚОТАСИЗ&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -297,7 +297,7 @@
     </message>
 </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Done loading</source>
         <translation type="unfinished">Юклаш тайёр</translation>
@@ -390,8 +390,8 @@
         <translation type="unfinished">Ички ойналар асбоблар панели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Тўловлар (QR кодлари ва qogecoin ёрдамида яратишлар: URI’лар) сўраш</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Тўловлар (QR кодлари ва xogecoin ёрдамида яратишлар: URI’лар) сўраш</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>

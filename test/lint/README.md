@@ -26,17 +26,17 @@ Usage: test/lint/git-subtree-check.sh [-r] DIR [COMMIT]
 
 To do a full check with `-r`, make sure that you have fetched the upstream repository branch in which the subtree is
 maintained:
-* for `src/secp256k1`: https://github.com/qogecoin-core/secp256k1.git (branch master)
-* for `src/leveldb`: https://github.com/qogecoin-core/leveldb-subtree.git (branch qogecoin-fork)
-* for `src/univalue`: https://github.com/qogecoin-core/univalue-subtree.git (branch master)
-* for `src/crypto/ctaes`: https://github.com/qogecoin-core/ctaes.git (branch master)
-* for `src/crc32c`: https://github.com/qogecoin-core/crc32c-subtree.git (branch qogecoin-fork)
+* for `src/secp256k1`: https://github.com/xogecoin-core/secp256k1.git (branch master)
+* for `src/leveldb`: https://github.com/xogecoin-core/leveldb-subtree.git (branch xogecoin-fork)
+* for `src/univalue`: https://github.com/xogecoin-core/univalue-subtree.git (branch master)
+* for `src/crypto/ctaes`: https://github.com/xogecoin-core/ctaes.git (branch master)
+* for `src/crc32c`: https://github.com/xogecoin-core/crc32c-subtree.git (branch xogecoin-fork)
 * for `src/minisketch`: https://github.com/sipa/minisketch.git (branch master)
 
 To do so, add the upstream repository as remote:
 
 ```
-git remote add --fetch secp256k1 https://github.com/qogecoin-core/secp256k1.git
+git remote add --fetch secp256k1 https://github.com/xogecoin-core/secp256k1.git
 ```
 
 lint-all.py

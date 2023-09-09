@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_BDB_H
-#define QOGECOIN_WALLET_BDB_H
+#ifndef XOGECOIN_WALLET_BDB_H
+#define XOGECOIN_WALLET_BDB_H
 
 #include <clientversion.h>
 #include <fs.h>
@@ -232,4 +232,4 @@ bool BerkeleyDatabaseSanityCheck();
 std::unique_ptr<BerkeleyDatabase> MakeBerkeleyDatabase(const fs::path& path, const DatabaseOptions& options, DatabaseStatus& status, bilingual_str& error);
 } // namespace wallet
 
-#endif // QOGECOIN_WALLET_BDB_H
+#endif // XOGECOIN_WALLET_BDB_H

@@ -1,15 +1,15 @@
-# bash programmable completion for qogecoin-tx(1)
+# bash programmable completion for xogecoin-tx(1)
 # Copyright (c) 2016 The Bitcoin and Qogecoin Core Authors
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-_qogecoin_tx() {
+_xogecoin_tx() {
     local cur prev words=() cword
-    local qogecoin_tx
+    local xogecoin_tx
 
-    # save and use original argument to invoke qogecoin-tx for -help
+    # save and use original argument to invoke xogecoin-tx for -help
     # it might not be in $PATH
-    qogecoin_tx="$1"
+    xogecoin_tx="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n =: cur prev words cword
@@ -27,15 +27,15 @@ _qogecoin_tx() {
 
     if [[ "$cword" == 1 || ( "$prev" != "-create" && "$prev" == -* ) ]]; then
         # only options (or an uncompletable hex-string) allowed
-        # parse qogecoin-tx -help for options
+        # parse xogecoin-tx -help for options
         local helpopts
-        helpopts=$($qogecoin_tx -help | sed -e '/^  -/ p' -e d )
+        helpopts=$($xogecoin_tx -help | sed -e '/^  -/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpopts" -- "$cur" ) )
     else
         # only commands are allowed
         # parse -help for commands
         local helpcmds
-        helpcmds=$($qogecoin_tx -help | sed -e '1,/Commands:/d' -e 's/=.*/=/' -e '/^  [a-z]/ p' -e d )
+        helpcmds=$($xogecoin_tx -help | sed -e '1,/Commands:/d' -e 's/=.*/=/' -e '/^  [a-z]/ p' -e d )
         COMPREPLY=( $( compgen -W "$helpcmds" -- "$cur" ) )
     fi
 
@@ -46,7 +46,7 @@ _qogecoin_tx() {
 
     return 0
 } &&
-complete -F _qogecoin_tx qogecoin-tx
+complete -F _xogecoin_tx xogecoin-tx
 
 # Local variables:
 # mode: shell-script

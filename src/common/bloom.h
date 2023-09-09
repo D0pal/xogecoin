@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_COMMON_BLOOM_H
-#define QOGECOIN_COMMON_BLOOM_H
+#ifndef XOGECOIN_COMMON_BLOOM_H
+#define XOGECOIN_COMMON_BLOOM_H
 
 #include <serialize.h>
 #include <span.h>
@@ -124,4 +124,4 @@ private:
     int nHashFuncs;
 };
 
-#endif // QOGECOIN_COMMON_BLOOM_H
+#endif // XOGECOIN_COMMON_BLOOM_H

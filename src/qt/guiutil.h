@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_GUIUTIL_H
-#define QOGECOIN_QT_GUIUTIL_H
+#ifndef XOGECOIN_QT_GUIUTIL_H
+#define XOGECOIN_QT_GUIUTIL_H
 
 #include <consensus/amount.h>
 #include <fs.h>
@@ -77,7 +77,7 @@ namespace GUIUtil
      */
     void AddButtonShortcut(QAbstractButton* button, const QKeySequence& shortcut);
 
-    // Parse "qogecoin:" URI into recipient object, return true on successful parsing
+    // Parse "xogecoin:" URI into recipient object, return true on successful parsing
     bool parseQogecoinURI(const QUrl &uri, SendCoinsRecipient *out);
     bool parseQogecoinURI(QString uri, SendCoinsRecipient *out);
     QString formatQogecoinURI(const SendCoinsRecipient &info);
@@ -430,4 +430,4 @@ namespace GUIUtil
 
 } // namespace GUIUtil
 
-#endif // QOGECOIN_QT_GUIUTIL_H
+#endif // XOGECOIN_QT_GUIUTIL_H

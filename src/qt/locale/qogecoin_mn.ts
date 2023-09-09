@@ -222,7 +222,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Done loading</source>
         <translation type="unfinished">Ачааллаж дууслаа</translation>

@@ -16,7 +16,7 @@ import os
 
 EXCLUDE = [
     # auto generated:
-    'src/qt/qogecoinstrings.cpp',
+    'src/qt/xogecoinstrings.cpp',
     'src/chainparamsseeds.h',
     # other external copyrights:
     'src/reverse_iterator.h',
@@ -274,7 +274,7 @@ Usage:
     $ ./copyright_header.py report <base_directory> [verbose]
 
 Arguments:
-    <base_directory> - The base directory of a qogecoin source code repository.
+    <base_directory> - The base directory of a xogecoin source code repository.
     [verbose] - Includes a list of every file of each subcategory in the report.
 """
 
@@ -427,7 +427,7 @@ Usage:
     $ ./copyright_header.py update <base_directory>
 
 Arguments:
-    <base_directory> - The base directory of a qogecoin source code repository.
+    <base_directory> - The base directory of a xogecoin source code repository.
 """
 
 def print_file_action_message(filename, action):
@@ -550,7 +550,7 @@ Usage:
     $ ./copyright_header.py insert <file>
 
 Arguments:
-    <file> - A source file in the qogecoin repository.
+    <file> - A source file in the xogecoin repository.
 """
 
 def insert_cmd(argv):

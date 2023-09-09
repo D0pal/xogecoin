@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_ASMAP_H
-#define QOGECOIN_UTIL_ASMAP_H
+#ifndef XOGECOIN_UTIL_ASMAP_H
+#define XOGECOIN_UTIL_ASMAP_H
 
 #include <fs.h>
 
@@ -17,4 +17,4 @@ bool SanityCheckASMap(const std::vector<bool>& asmap, int bits);
 /** Read asmap from provided binary file */
 std::vector<bool> DecodeAsmap(fs::path path);
 
-#endif // QOGECOIN_UTIL_ASMAP_H
+#endif // XOGECOIN_UTIL_ASMAP_H

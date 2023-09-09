@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLETINITINTERFACE_H
-#define QOGECOIN_WALLETINITINTERFACE_H
+#ifndef XOGECOIN_WALLETINITINTERFACE_H
+#define XOGECOIN_WALLETINITINTERFACE_H
 
 class ArgsManager;
 
@@ -27,4 +27,4 @@ public:
 
 extern const WalletInitInterface& g_wallet_init_interface;
 
-#endif // QOGECOIN_WALLETINITINTERFACE_H
+#endif // XOGECOIN_WALLETINITINTERFACE_H

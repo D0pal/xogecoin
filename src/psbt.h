@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_PSBT_H
-#define QOGECOIN_PSBT_H
+#ifndef XOGECOIN_PSBT_H
+#define XOGECOIN_PSBT_H
 
 #include <attributes.h>
 #include <node/transaction.h>
@@ -990,4 +990,4 @@ bool FinalizeAndExtractPSBT(PartiallySignedTransaction& psbtx, CMutableTransacti
 //! Decode a raw (binary blob) PSBT into a PartiallySignedTransaction
 [[nodiscard]] bool DecodeRawPSBT(PartiallySignedTransaction& decoded_psbt, Span<const std::byte> raw_psbt, std::string& error);
 
-#endif // QOGECOIN_PSBT_H
+#endif // XOGECOIN_PSBT_H

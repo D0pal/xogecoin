@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_NOTIFICATOR_H
-#define QOGECOIN_QT_NOTIFICATOR_H
+#ifndef XOGECOIN_QT_NOTIFICATOR_H
+#define XOGECOIN_QT_NOTIFICATOR_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <QIcon>
@@ -74,4 +74,4 @@ private:
 #endif
 };
 
-#endif // QOGECOIN_QT_NOTIFICATOR_H
+#endif // XOGECOIN_QT_NOTIFICATOR_H

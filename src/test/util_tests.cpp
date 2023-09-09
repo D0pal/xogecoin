@@ -1114,7 +1114,7 @@ BOOST_FIXTURE_TEST_CASE(util_ArgsMerge, ArgsMergeTestingSetup)
 
     // If check below fails, should manually dump the results with:
     //
-    //   ARGS_MERGE_TEST_OUT=results.txt ./test_qogecoin --run_test=util_tests/util_ArgsMerge
+    //   ARGS_MERGE_TEST_OUT=results.txt ./test_xogecoin --run_test=util_tests/util_ArgsMerge
     //
     // And verify diff against previous results to make sure the changes are expected.
     //
@@ -1217,7 +1217,7 @@ BOOST_FIXTURE_TEST_CASE(util_ChainMerge, ChainMergeTestingSetup)
 
     // If check below fails, should manually dump the results with:
     //
-    //   CHAIN_MERGE_TEST_OUT=results.txt ./test_qogecoin --run_test=util_tests/util_ChainMerge
+    //   CHAIN_MERGE_TEST_OUT=results.txt ./test_xogecoin --run_test=util_tests/util_ChainMerge
     //
     // And verify diff against previous results to make sure the changes are expected.
     //
@@ -2222,7 +2222,7 @@ BOOST_AUTO_TEST_CASE(test_ToUpper)
 BOOST_AUTO_TEST_CASE(test_Capitalize)
 {
     BOOST_CHECK_EQUAL(Capitalize(""), "");
-    BOOST_CHECK_EQUAL(Capitalize("qogecoin"), "Qogecoin");
+    BOOST_CHECK_EQUAL(Capitalize("xogecoin"), "Qogecoin");
     BOOST_CHECK_EQUAL(Capitalize("\x00\xfe\xff"), "\x00\xfe\xff");
 }
 
@@ -2713,7 +2713,7 @@ BOOST_AUTO_TEST_CASE(util_WriteBinaryFile)
 {
     fs::path tmpfolder = m_args.GetDataDirBase();
     fs::path tmpfile = tmpfolder / "write_binary.dat";
-    std::string expected_text = "qogecoin";
+    std::string expected_text = "xogecoin";
     auto valid = WriteBinaryFile(tmpfile, expected_text);
     std::string actual_text;
     std::ifstream file{tmpfile};

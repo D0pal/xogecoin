@@ -164,8 +164,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">Vahvista lompakon salaaminen</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI QOGECOINISI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI XOGECOINISI&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">Syötä vanha ja uusi salasanalause lompakolle.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Muista, että salaamalla lompakkosi et täysin pysty suojaamaan qogecoineja varkaudelta, jotka aiheutuvat koneellasi olevista haittaohjelmista.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Muista, että salaamalla lompakkosi et täysin pysty suojaamaan xogecoineja varkaudelta, jotka aiheutuvat koneellasi olevista haittaohjelmista.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -377,7 +377,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">Asetustiedostoa ei voitu lukea</translation>
@@ -391,8 +391,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">%s kehittäjät</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s on vioittunut. Yritä käyttää lompakkotyökalua qogecoin-wallet pelastaaksesi sen tai palauttaa varmuuskopio.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s on vioittunut. Yritä käyttää lompakkotyökalua xogecoin-wallet pelastaaksesi sen tai palauttaa varmuuskopio.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -415,8 +415,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">Virhe luettaessa %s! Avaimet luetttiin oikein, mutta rahansiirtotiedot tai osoitekirjan sisältö saattavat olla puutteellisia tai vääriä.</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Virhe: Dump-tiedoston versio ei ole tuettu. Tämä qogecoin-lompakon versio tukee vain version 1 dump-tiedostoja. Annetun dump-tiedoston versio %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Virhe: Dump-tiedoston versio ei ole tuettu. Tämä xogecoin-lompakon versio tukee vain version 1 dump-tiedostoja. Annetun dump-tiedoston versio %s</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -1087,8 +1087,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">Yhdistetään vertaisiin...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Pyydä maksuja (Luo QR koodit ja qogecoin: URIt)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Pyydä maksuja (Luo QR koodit ja xogecoin: URIt)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1143,11 +1143,11 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>Load Partially Signed Qogecoin Transaction</source>
-        <translation type="unfinished">Lataa osittain allekirjoitettu qogecoin-siirtotapahtuma</translation>
+        <translation type="unfinished">Lataa osittain allekirjoitettu xogecoin-siirtotapahtuma</translation>
     </message>
     <message>
         <source>Load Partially Signed Qogecoin Transaction from clipboard</source>
-        <translation type="unfinished">Lataa osittain allekirjoitettu qogecoin-siirtotapahtuma leikepöydältä</translation>
+        <translation type="unfinished">Lataa osittain allekirjoitettu xogecoin-siirtotapahtuma leikepöydältä</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -1166,8 +1166,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">&amp;Vastaanotto-osoitteet</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Avaa qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Avaa xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1824,12 +1824,12 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">Lomake</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Viimeiset tapahtumat eivät välttämättä vielä näy, joten lompakkosi saldo voi olla virheellinen. Tieto korjautuu, kunhan lompakkosi synkronointi qogecoin-verkon kanssa on päättynyt. Tiedot näkyvät alla.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Viimeiset tapahtumat eivät välttämättä vielä näy, joten lompakkosi saldo voi olla virheellinen. Tieto korjautuu, kunhan lompakkosi synkronointi xogecoin-verkon kanssa on päättynyt. Tiedot näkyvät alla.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Verkko ei tule hyväksymään sellaisten qogecoinien käyttämistä, jotka liittyvät vielä näkymättömissä oleviin siirtoihin.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Verkko ei tule hyväksymään sellaisten xogecoinien käyttämistä, jotka liittyvät vielä näkymättömissä oleviin siirtoihin.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1879,8 +1879,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Avaa qogecoin URI</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Avaa xogecoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2085,11 +2085,11 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>&amp;Unit to show amounts in:</source>
-        <translation type="unfinished">Yksikkö jona qogecoin-määrät näytetään</translation>
+        <translation type="unfinished">Yksikkö jona xogecoin-määrät näytetään</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation type="unfinished">Valitse mitä yksikköä käytetään ensisijaisesti qogecoin-määrien näyttämiseen.</translation>
+        <translation type="unfinished">Valitse mitä yksikköä käytetään ensisijaisesti xogecoin-määrien näyttämiseen.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -2326,7 +2326,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>PSBT copied to clipboard.</source>
-        <translation type="unfinished">PSBT (osittain allekirjoitettu qogecoin-siirto) kopioitiin leikepöydälle.</translation>
+        <translation type="unfinished">PSBT (osittain allekirjoitettu xogecoin-siirto) kopioitiin leikepöydälle.</translation>
     </message>
     <message>
         <source>Save Transaction Data</source>
@@ -2339,7 +2339,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
     </message>
     <message>
         <source>PSBT saved to disk.</source>
-        <translation type="unfinished">PSBT (osittain tallennettu qogecoin-siirto) tallennettiin levylle.</translation>
+        <translation type="unfinished">PSBT (osittain tallennettu xogecoin-siirto) tallennettiin levylle.</translation>
     </message>
     <message>
         <source> * Sends %1 to %2</source>
@@ -2397,7 +2397,7 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">Maksupyyntövirhe</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">Qogecoinia ei voi käynnistää: klikkaa-maksaaksesi -käsittelijän virhe</translation>
     </message>
     <message>
@@ -2405,8 +2405,8 @@ Allekirjoitus on mahdollista vain 'legacy'-tyyppisillä osoitteilla.</translatio
         <translation type="unfinished">URI käsittely</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' ei ole kelvollinen URI. Käytä 'qogecoin:' sen sijaan.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' ei ole kelvollinen URI. Käytä 'xogecoin:' sen sijaan.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3142,8 +3142,8 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
         <translation type="unfinished"> Piilota siirtomaksuasetukset</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Mikäli lohkoissa ei ole tilaa kaikille siirtotapahtumille, voi louhijat sekä välittävät solmut pakottaa vähimmäispalkkion. Tämän vähimmäispalkkion maksaminen on täysin OK, mutta huomaa, että se saattaa johtaa siihen, ettei siirto vahvistu koskaan, jos qogecoin-siirtoja on enemmän kuin mitä verkko pystyy käsittelemään.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Mikäli lohkoissa ei ole tilaa kaikille siirtotapahtumille, voi louhijat sekä välittävät solmut pakottaa vähimmäispalkkion. Tämän vähimmäispalkkion maksaminen on täysin OK, mutta huomaa, että se saattaa johtaa siihen, ettei siirto vahvistu koskaan, jos xogecoin-siirtoja on enemmän kuin mitä verkko pystyy käsittelemään.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3224,7 +3224,7 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
     </message>
     <message>
         <source>Creates a Partially Signed Qogecoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Luo osittain allekirjoitetun qogecoin-siirtotapahtuman (PSBT) käytettäväksi mm. offline %1 lompakko tai PSBT-yhteensopiva hardware-lompakko.</translation>
+        <translation type="unfinished">Luo osittain allekirjoitetun xogecoin-siirtotapahtuman (PSBT) käytettäväksi mm. offline %1 lompakko tai PSBT-yhteensopiva hardware-lompakko.</translation>
     </message>
     <message>
         <source> from wallet '%1'</source>
@@ -3394,8 +3394,8 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
         <translation type="unfinished">Lähetettävä summa valitussa yksikössä</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Kulu vähennetään lähetettävästä määrästä. Saaja vastaanottaa vähemmän qogecoineja kuin merkitset Määrä-kenttään. Jos saajia on monia, kulu jaetaan tasan.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Kulu vähennetään lähetettävästä määrästä. Saaja vastaanottaa vähemmän xogecoineja kuin merkitset Määrä-kenttään. Jos saajia on monia, kulu jaetaan tasan.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3422,8 +3422,8 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
         <translation type="unfinished">Aseta nimi tälle osoitteelle lisätäksesi sen käytettyjen osoitteiden listalle.</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Viesti joka liitettiin qogecoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Qogecoin-verkkoon.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Viesti joka liitettiin xogecoin: URI:iin tallennetaan rahansiirtoon viitteeksi. Tätä viestiä ei lähetetä Qogecoin-verkkoon.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3456,8 +3456,8 @@ Jos saat tämän virheen, pyydä kauppiasta antamaan BIP21-yhteensopiva URI.</tr
         <translation type="unfinished">&amp;Allekirjoita viesti</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Voit allekirjoittaa viestit / sopimukset omalla osoitteellasi todistaaksesi että voit vastaanottaa siihen lähetetyt qogecoinit. Varo allekirjoittamasta mitään epämääräistä, sillä phishing-hyökkääjät voivat huijata sinua luovuttamaan henkilöllisyytesi allekirjoituksella. Allekirjoita ainoastaan täysin yksityiskohtainen selvitys siitä, mihin olet sitoutumassa.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Voit allekirjoittaa viestit / sopimukset omalla osoitteellasi todistaaksesi että voit vastaanottaa siihen lähetetyt xogecoinit. Varo allekirjoittamasta mitään epämääräistä, sillä phishing-hyökkääjät voivat huijata sinua luovuttamaan henkilöllisyytesi allekirjoituksella. Allekirjoita ainoastaan täysin yksityiskohtainen selvitys siitä, mihin olet sitoutumassa.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

@@ -1,13 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Qogecoin
 Upstream-Contact: Satoshi Nakamoto <satoshin@gmx.com>
- irc://#qogecoin-core-dev@libera.chat
-Source: https://github.com/qogecoin/qogecoin
+ irc://#xogecoin-core-dev@libera.chat
+Source: https://github.com/xogecoin/xogecoin
 
 Files: *
 Copyright: 2009-2022, Qogecoin Core Developers
 License: Expat
-Comment: The Bitcoin and Qogecoin Core Authors encompasses the current developers listed on qogecoin.org,
+Comment: The Bitcoin and Qogecoin Core Authors encompasses the current developers listed on xogecoin.org,
          as well as the numerous contributors to the project.
 
 Files: debian/*
@@ -75,12 +75,12 @@ Copyright: Stephen Hutchings, Jonas Schnelli
 License: Expat
 Comment: Modifications of Stephen Hutchings' Typicons
 
-Files: src/qt/res/icons/qogecoin.*
-       share/pixmaps/qogecoin*
-       src/qt/res/src/qogecoin.svg
+Files: src/qt/res/icons/xogecoin.*
+       share/pixmaps/xogecoin*
+       src/qt/res/src/xogecoin.svg
 Copyright: Bitboy, Jonas Schnelli
 License: public-domain
-Comment: Site: https://qogecointalk.org/?topic=1756.0
+Comment: Site: https://xogecointalk.org/?topic=1756.0
 
 Files: src/qt/res/icons/proxy.png
        src/qt/res/src/proxy.svg

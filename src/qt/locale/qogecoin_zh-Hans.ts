@@ -155,7 +155,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">确认钱包加密</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">注意:如果你加密了钱包又忘记了密码，你将会丢失所有的比特币！</translation>
     </message>
     <message>

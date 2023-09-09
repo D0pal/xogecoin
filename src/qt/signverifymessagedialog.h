@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_SIGNVERIFYMESSAGEDIALOG_H
-#define QOGECOIN_QT_SIGNVERIFYMESSAGEDIALOG_H
+#ifndef XOGECOIN_QT_SIGNVERIFYMESSAGEDIALOG_H
+#define XOGECOIN_QT_SIGNVERIFYMESSAGEDIALOG_H
 
 #include <QDialog>
 
@@ -51,4 +51,4 @@ private Q_SLOTS:
     void on_clearButton_VM_clicked();
 };
 
-#endif // QOGECOIN_QT_SIGNVERIFYMESSAGEDIALOG_H
+#endif // XOGECOIN_QT_SIGNVERIFYMESSAGEDIALOG_H

@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.qogecoinfoundation.Qogecoin-Qt";
+        return @"org.xogecoinfoundation.Qogecoin-Qt";
     } else {
         return [self __bundleIdentifier];
     }

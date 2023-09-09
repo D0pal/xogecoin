@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_SETTINGS_H
-#define QOGECOIN_UTIL_SETTINGS_H
+#ifndef XOGECOIN_UTIL_SETTINGS_H
+#define XOGECOIN_UTIL_SETTINGS_H
 
 #include <fs.h>
 
@@ -23,7 +23,7 @@ namespace util {
 //!       get_int64(), get_bool(), isNum(), isBool(), isFalse(), isTrue() and
 //!       isNull() methods can be substituted if there's a need to move away
 //!       from UniValue. (An implementation with boost::variant was posted at
-//!       https://github.com/qogecoin/qogecoin/pull/15934/files#r337691812)
+//!       https://github.com/xogecoin/xogecoin/pull/15934/files#r337691812)
 using SettingsValue = UniValue;
 
 //! Stored settings. This struct combines settings from the command line, a
@@ -105,4 +105,4 @@ auto FindKey(Map&& map, Key&& key) -> decltype(&map.at(key))
 
 } // namespace util
 
-#endif // QOGECOIN_UTIL_SETTINGS_H
+#endif // XOGECOIN_UTIL_SETTINGS_H

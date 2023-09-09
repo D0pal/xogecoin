@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SHUTDOWN_H
-#define QOGECOIN_SHUTDOWN_H
+#ifndef XOGECOIN_SHUTDOWN_H
+#define XOGECOIN_SHUTDOWN_H
 
 #include <util/translation.h> // For bilingual_str
 
@@ -32,4 +32,4 @@ bool ShutdownRequested();
  */
 void WaitForShutdown();
 
-#endif // QOGECOIN_SHUTDOWN_H
+#endif // XOGECOIN_SHUTDOWN_H

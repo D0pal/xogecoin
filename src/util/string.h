@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_STRING_H
-#define QOGECOIN_UTIL_STRING_H
+#ifndef XOGECOIN_UTIL_STRING_H
+#define XOGECOIN_UTIL_STRING_H
 
 #include <attributes.h>
 #include <util/spanparsing.h>
@@ -122,4 +122,4 @@ template <typename T1, size_t PREFIX_LEN>
            std::equal(std::begin(prefix), std::end(prefix), std::begin(obj));
 }
 
-#endif // QOGECOIN_UTIL_STRING_H
+#endif // XOGECOIN_UTIL_STRING_H

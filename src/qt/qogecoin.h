@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_QOGECOIN_H
-#define QOGECOIN_QT_QOGECOIN_H
+#ifndef XOGECOIN_QT_XOGECOIN_H
+#define XOGECOIN_QT_XOGECOIN_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <interfaces/node.h>
@@ -116,4 +116,4 @@ private:
 
 int GuiMain(int argc, char* argv[]);
 
-#endif // QOGECOIN_QT_QOGECOIN_H
+#endif // XOGECOIN_QT_XOGECOIN_H

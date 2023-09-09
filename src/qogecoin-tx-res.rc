@@ -15,13 +15,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Qogecoin"
-            VALUE "FileDescription",    "qogecoin-tx (CLI Qogecoin transaction editor utility)"
+            VALUE "FileDescription",    "xogecoin-tx (CLI Qogecoin transaction editor utility)"
             VALUE "FileVersion",        PACKAGE_VERSION
-            VALUE "InternalName",       "qogecoin-tx"
+            VALUE "InternalName",       "xogecoin-tx"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "qogecoin-tx.exe"
-            VALUE "ProductName",        "qogecoin-tx"
+            VALUE "OriginalFilename",   "xogecoin-tx.exe"
+            VALUE "ProductName",        "xogecoin-tx"
             VALUE "ProductVersion",     PACKAGE_VERSION
         END
     END

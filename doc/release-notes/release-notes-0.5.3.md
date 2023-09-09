@@ -1,14 +1,14 @@
 Qogecoin version 0.5.3 is now available for download at:
-http://sourceforge.net/projects/qogecoin/files/Qogecoin/qogecoin-0.5.3/
+http://sourceforge.net/projects/xogecoin/files/Qogecoin/xogecoin-0.5.3/
 
 This is a bugfix-only release based on 0.5.1.
 It also includes a few protocol updates.
 
 Please report bugs using the issue tracker at github:
-https://github.com/qogecoin/qogecoin/issues
+https://github.com/xogecoin/xogecoin/issues
 
 Stable source code is hosted at Gitorious:
-http://gitorious.org/qogecoin/qogecoind-stable/archive-tarball/v0.5.3#.tar.gz
+http://gitorious.org/xogecoin/xogecoind-stable/archive-tarball/v0.5.3#.tar.gz
 
 PROTOCOL UPDATES
 
@@ -27,13 +27,13 @@ Skip splash screen when -min is used, and fix Minimize to Tray function.
 Do not blank "label" in Qogecoin-Qt "Send" tab, if the user has already entered something.
 Correct various labels and messages.
 Various memory leaks and potential null pointer deferences have been fixed.
-Handle invalid Qogecoin URIs using "qogecoin://" instead of "qogecoin:".
+Handle invalid Qogecoin URIs using "xogecoin://" instead of "xogecoin:".
 Several shutdown issues have been fixed.
 Revert to "global progress indication", as starting from zero every time was considered too confusing for many users.
 Check that keys stored in the wallet are valid at startup, and if not, report corruption.
 Enable accessible widgets on Windows, so that people with screen readers such as NVDA can make sense of it.
 Various build fixes.
-If no password is specified to qogecoind, recommend a secure password.
+If no password is specified to xogecoind, recommend a secure password.
 Automatically focus and scroll to new "Send coins" entries in Qogecoin-Qt.
 Show a message box for --help on Windows, for Qogecoin-Qt.
 Add missing "About Qt" menu option to show built-in Qt About dialog.

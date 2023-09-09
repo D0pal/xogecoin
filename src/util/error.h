@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_ERROR_H
-#define QOGECOIN_UTIL_ERROR_H
+#ifndef XOGECOIN_UTIL_ERROR_H
+#define XOGECOIN_UTIL_ERROR_H
 
 /**
  * util/error.h is a common place for definitions of simple error types and
@@ -42,4 +42,4 @@ bilingual_str AmountHighWarn(const std::string& optname);
 
 bilingual_str AmountErrMsg(const std::string& optname, const std::string& strValue);
 
-#endif // QOGECOIN_UTIL_ERROR_H
+#endif // XOGECOIN_UTIL_ERROR_H

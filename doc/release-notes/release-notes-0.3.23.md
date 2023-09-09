@@ -1,7 +1,7 @@
-Win32, Linux, MacOSX and source releases for qogecoin v0.3.23 have been uploaded to
-https://sourceforge.net/projects/qogecoin/files/Qogecoin/qogecoin-0.3.23/
+Win32, Linux, MacOSX and source releases for xogecoin v0.3.23 have been uploaded to
+https://sourceforge.net/projects/xogecoin/files/Qogecoin/xogecoin-0.3.23/
 
-This is another quick bugfix release, trying to deal with the influx of new qogecoin users.
+This is another quick bugfix release, trying to deal with the influx of new xogecoin users.
 
 Main items of note:
 

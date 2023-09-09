@@ -3,12 +3,12 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <qt/paymentserver.h>
 
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 #include <qt/guiutil.h>
 #include <qt/optionsmodel.h>
 
@@ -36,8 +36,8 @@
 #include <QStringList>
 #include <QUrlQuery>
 
-const int QOGECOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
-const QString QOGECOIN_IPC_PREFIX("qogecoin:");
+const int XOGECOIN_IPC_CONNECT_TIMEOUT = 1000; // milliseconds
+const QString XOGECOIN_IPC_PREFIX("xogecoin:");
 
 //
 // Create a name that is unique for:
@@ -80,7 +80,7 @@ void PaymentServer::ipcParseCommandLine(int argc, char* argv[])
         QString arg(argv[i]);
         if (arg.startsWith("-")) continue;
 
-        if (arg.startsWith(QOGECOIN_IPC_PREFIX, Qt::CaseInsensitive)) // qogecoin: URI
+        if (arg.startsWith(XOGECOIN_IPC_PREFIX, Qt::CaseInsensitive)) // xogecoin: URI
         {
             savedPaymentRequests.insert(arg);
         }
@@ -100,7 +100,7 @@ bool PaymentServer::ipcSendCommandLine()
     {
         QLocalSocket* socket = new QLocalSocket();
         socket->connectToServer(ipcServerName(), QIODevice::WriteOnly);
-        if (!socket->waitForConnected(QOGECOIN_IPC_CONNECT_TIMEOUT))
+        if (!socket->waitForConnected(XOGECOIN_IPC_CONNECT_TIMEOUT))
         {
             delete socket;
             socket = nullptr;
@@ -115,7 +115,7 @@ bool PaymentServer::ipcSendCommandLine()
 
         socket->write(block);
         socket->flush();
-        socket->waitForBytesWritten(QOGECOIN_IPC_CONNECT_TIMEOUT);
+        socket->waitForBytesWritten(XOGECOIN_IPC_CONNECT_TIMEOUT);
         socket->disconnectFromServer();
 
         delete socket;
@@ -133,7 +133,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
     optionsModel(nullptr)
 {
     // Install global event filter to catch QFileOpenEvents
-    // on Mac: sent when you click qogecoin: links
+    // on Mac: sent when you click xogecoin: links
     // other OSes: helpful when dealing with payment request files
     if (parent)
         parent->installEventFilter(this);
@@ -150,7 +150,7 @@ PaymentServer::PaymentServer(QObject* parent, bool startLocalServer) :
         if (!uriServer->listen(name)) {
             // constructor is called early in init, so don't use "Q_EMIT message()" here
             QMessageBox::critical(nullptr, tr("Payment request error"),
-                tr("Cannot start qogecoin: click-to-pay handler"));
+                tr("Cannot start xogecoin: click-to-pay handler"));
         }
         else {
             connect(uriServer, &QLocalServer::newConnection, this, &PaymentServer::handleURIConnection);
@@ -163,7 +163,7 @@ PaymentServer::~PaymentServer()
 }
 
 //
-// OSX-specific way of handling qogecoin: URIs
+// OSX-specific way of handling xogecoin: URIs
 //
 bool PaymentServer::eventFilter(QObject *object, QEvent *event)
 {
@@ -198,12 +198,12 @@ void PaymentServer::handleURIOrFile(const QString& s)
         return;
     }
 
-    if (s.startsWith("qogecoin://", Qt::CaseInsensitive))
+    if (s.startsWith("xogecoin://", Qt::CaseInsensitive))
     {
-        Q_EMIT message(tr("URI handling"), tr("'qogecoin://' is not a valid URI. Use 'qogecoin:' instead."),
+        Q_EMIT message(tr("URI handling"), tr("'xogecoin://' is not a valid URI. Use 'xogecoin:' instead."),
             CClientUIInterface::MSG_ERROR);
     }
-    else if (s.startsWith(QOGECOIN_IPC_PREFIX, Qt::CaseInsensitive)) // qogecoin: URI
+    else if (s.startsWith(XOGECOIN_IPC_PREFIX, Qt::CaseInsensitive)) // xogecoin: URI
     {
         QUrlQuery uri((QUrl(s)));
         // normal URI

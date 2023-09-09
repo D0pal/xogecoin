@@ -1,11 +1,11 @@
 Sample configuration files for:
 ```
-systemd: qogecoind.service
-Upstart: qogecoind.conf
-OpenRC:  qogecoind.openrc
-         qogecoind.openrcconf
-CentOS:  qogecoind.init
-macOS:   org.qogecoin.qogecoind.plist
+systemd: xogecoind.service
+Upstart: xogecoind.conf
+OpenRC:  xogecoind.openrc
+         xogecoind.openrcconf
+CentOS:  xogecoind.init
+macOS:   org.xogecoin.xogecoind.plist
 ```
 have been made available to assist packagers in creating node packages here.
 

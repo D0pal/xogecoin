@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SYNC_H
-#define QOGECOIN_SYNC_H
+#ifndef XOGECOIN_SYNC_H
+#define XOGECOIN_SYNC_H
 
 #ifdef DEBUG_LOCKCONTENTION
 #include <logging.h>
@@ -370,4 +370,4 @@ public:
     }
 };
 
-#endif // QOGECOIN_SYNC_H
+#endif // XOGECOIN_SYNC_H

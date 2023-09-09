@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CRYPTO_SHA512_H
-#define QOGECOIN_CRYPTO_SHA512_H
+#ifndef XOGECOIN_CRYPTO_SHA512_H
+#define XOGECOIN_CRYPTO_SHA512_H
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -26,4 +26,4 @@ public:
     uint64_t Size() const { return bytes; }
 };
 
-#endif // QOGECOIN_CRYPTO_SHA512_H
+#endif // XOGECOIN_CRYPTO_SHA512_H

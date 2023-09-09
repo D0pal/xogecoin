@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SERIALIZE_H
-#define QOGECOIN_SERIALIZE_H
+#ifndef XOGECOIN_SERIALIZE_H
+#define XOGECOIN_SERIALIZE_H
 
 #include <compat/endian.h>
 
@@ -1096,4 +1096,4 @@ size_t GetSerializeSizeMany(int nVersion, const T&... t)
     return sc.size();
 }
 
-#endif // QOGECOIN_SERIALIZE_H
+#endif // XOGECOIN_SERIALIZE_H

@@ -1,17 +1,17 @@
 Qogecoin Core version *0.15.2* is now available from:
 
-  <https://qogecoincore.org/bin/qogecoin-core-0.15.2/>
+  <https://xogecoincore.org/bin/xogecoin-core-0.15.2/>
 
 This is a new minor version release, including various bugfixes and
 performance improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/qogecoin/qogecoin/issues>
+  <https://github.com/xogecoin/xogecoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://qogecoincore.org/en/list/announcements/join/>
+  <https://xogecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -19,7 +19,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the 
 installer (on Windows) or just copy over `/Applications/Qogecoin-Qt` (on Mac)
-or `qogecoind`/`qogecoin-qt` (on Linux).
+or `xogecoind`/`xogecoin-qt` (on Linux).
 
 The first time you run version 0.15.0 or higher, your chainstate database will
 be converted to a new format, which will take anywhere from a few minutes to
@@ -87,9 +87,9 @@ the vulnerable versions to 0.15.2 or 0.16.3 as soon as possible.
 - #11289 `42ea47d` Add wallet backup text to import*, add* and dumpwallet RPCs (MeshCollider)
 - #11590 `6372a75` [Wallet] always show help-line of wallet encryption calls (Jonas Schnelli)
 
-### qogecoin-tx
+### xogecoin-tx
 
-- #11554 `a69cc07` Sanity-check script sizes in qogecoin-tx (TheBlueMatt)
+- #11554 `a69cc07` Sanity-check script sizes in xogecoin-tx (TheBlueMatt)
 
 ### Tests
 - #11277 `3a6cdd4` Add test for multiwallet batch RPC calls (Russell Yanofsky)

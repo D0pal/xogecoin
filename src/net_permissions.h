@@ -8,8 +8,8 @@
 #include <type_traits>
 #include <vector>
 
-#ifndef QOGECOIN_NET_PERMISSIONS_H
-#define QOGECOIN_NET_PERMISSIONS_H
+#ifndef XOGECOIN_NET_PERMISSIONS_H
+#define XOGECOIN_NET_PERMISSIONS_H
 
 struct bilingual_str;
 
@@ -86,4 +86,4 @@ public:
     CSubNet m_subnet;
 };
 
-#endif // QOGECOIN_NET_PERMISSIONS_H
+#endif // XOGECOIN_NET_PERMISSIONS_H

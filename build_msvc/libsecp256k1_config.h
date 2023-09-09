@@ -4,8 +4,8 @@
  * file COPYING or http://www.opensource.org/licenses/mit-license.php.*
  **********************************************************************/
 
-#ifndef QOGECOIN_LIBSECP256K1_CONFIG_H
-#define QOGECOIN_LIBSECP256K1_CONFIG_H
+#ifndef XOGECOIN_LIBSECP256K1_CONFIG_H
+#define XOGECOIN_LIBSECP256K1_CONFIG_H
 
 #undef USE_ASM_X86_64
 #undef USE_ENDOMORPHISM
@@ -29,4 +29,4 @@
 #define ECMULT_GEN_PREC_BITS 4
 #define ECMULT_WINDOW_SIZE 15
 
-#endif // QOGECOIN_LIBSECP256K1_CONFIG_H
+#endif // XOGECOIN_LIBSECP256K1_CONFIG_H

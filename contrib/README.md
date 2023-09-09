@@ -3,7 +3,7 @@ Repository Tools
 
 ### [Developer tools](/contrib/devtools) ###
 Specific tools for developers working on this repository.
-Additional tools, including the `github-merge.py` script, are available in the [maintainer-tools](https://github.com/qogecoin-core/qogecoin-maintainer-tools) repository.
+Additional tools, including the `github-merge.py` script, are available in the [maintainer-tools](https://github.com/xogecoin-core/xogecoin-maintainer-tools) repository.
 
 ### [Verify-Commits](/contrib/verify-commits) ###
 Tool to verify that every merge commit was signed by a developer using the `github-merge.py` script.
@@ -13,7 +13,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ### [Qos](/contrib/qos) ###
 
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Qogecoin network. This means one can have an always-on qogecoind instance running, and another local qogecoind/qogecoin-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Qogecoin network. This means one can have an always-on xogecoind instance running, and another local xogecoind/xogecoin-qt instance which connects to this node and receives blocks from it.
 
 ### [Seeds](/contrib/seeds) ###
 Utility to generate the pnSeed[] array that is compiled into the client.
@@ -24,7 +24,7 @@ Build Tools and Keys
 ### Packaging ###
 The [Debian](/contrib/debian) subfolder contains the copyright file.
 
-All other packaging related files can be found in the [qogecoin-core/packaging](https://github.com/qogecoin-core/packaging) repository.
+All other packaging related files can be found in the [xogecoin-core/packaging](https://github.com/xogecoin-core/packaging) repository.
 
 ### [Builder keys](/contrib/builder-keys)
 PGP keys used for signing Qogecoin Core [release](/doc/release-process.md) results.
@@ -39,4 +39,4 @@ Test and Verify Tools
 Utilities to generate test vectors for the data-driven Qogecoin tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
-This script attempts to download and verify the signature file SHA256SUMS.asc from qogecoin.org.
+This script attempts to download and verify the signature file SHA256SUMS.asc from xogecoin.org.

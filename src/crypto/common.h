@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CRYPTO_COMMON_H
-#define QOGECOIN_CRYPTO_COMMON_H
+#ifndef XOGECOIN_CRYPTO_COMMON_H
+#define XOGECOIN_CRYPTO_COMMON_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <stdint.h>
@@ -107,4 +107,4 @@ uint64_t static inline CountBits(uint64_t x)
     return ret;
 }
 
-#endif // QOGECOIN_CRYPTO_COMMON_H
+#endif // XOGECOIN_CRYPTO_COMMON_H

@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <qt/sendcoinsentry.h>
@@ -38,9 +38,9 @@ SendCoinsEntry::SendCoinsEntry(const PlatformStyle *_platformStyle, QWidget *par
     if (platformStyle->getUseExtraSpacing())
         ui->payToLayout->setSpacing(4);
 
-    // normal qogecoin address field
+    // normal xogecoin address field
     GUIUtil::setupAddressWidget(ui->payTo, this);
-    // just a label for displaying qogecoin address(es)
+    // just a label for displaying xogecoin address(es)
     ui->payTo_is->setFont(GUIUtil::fixedPitchFont());
 
     // Connect signals

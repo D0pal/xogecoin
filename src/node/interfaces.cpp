@@ -47,7 +47,7 @@
 #include <warnings.h>
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <any>

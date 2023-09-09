@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_GUICONSTANTS_H
-#define QOGECOIN_QT_GUICONSTANTS_H
+#ifndef XOGECOIN_QT_GUICONSTANTS_H
+#define XOGECOIN_QT_GUICONSTANTS_H
 
 #include <chrono>
 #include <cstdint>
@@ -59,4 +59,4 @@ static constexpr uint64_t GB_BYTES{1000000000};
 // Default prune target displayed in GUI.
 static constexpr int DEFAULT_PRUNE_TARGET_GB{2};
 
-#endif // QOGECOIN_QT_GUICONSTANTS_H
+#endif // XOGECOIN_QT_GUICONSTANTS_H

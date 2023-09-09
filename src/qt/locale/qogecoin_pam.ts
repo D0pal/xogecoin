@@ -120,8 +120,8 @@
         <translation type="unfinished">Kumpirman ya ing wallet encryption</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG QOGECOINS&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Kapabaluan: Istung in-encrypt me ing kekang wallet at meala ya ing passphrase na, ma-&lt;b&gt;ALA NO NGAN RING KEKANG XOGECOINS&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -212,7 +212,7 @@
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Corrupted block database detected</source>
         <translation type="unfinished">Mekapansin lang me-corrupt a block database</translation>

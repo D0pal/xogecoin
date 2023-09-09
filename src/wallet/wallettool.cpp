@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <wallet/wallettool.h>
@@ -20,7 +20,7 @@ namespace wallet {
 namespace WalletTool {
 
 // The standard wallet deleter function blocks on the validation interface
-// queue, which doesn't exist for the qogecoin-wallet. Define our own
+// queue, which doesn't exist for the xogecoin-wallet. Define our own
 // deleter here.
 static void WalletToolReleaseWallet(CWallet* wallet)
 {

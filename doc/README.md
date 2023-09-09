@@ -5,7 +5,7 @@ Setup
 ---------------------
 Qogecoin Core is the original Qogecoin client and it builds the backbone of the network. It downloads and, by default, stores the entire history of Qogecoin transactions, which requires a few hundred gigabytes of disk space. Depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
-To download Qogecoin Core, visit [qogecoincore.org](https://qogecoincore.org/en/download/).
+To download Qogecoin Core, visit [xogecoincore.org](https://xogecoincore.org/en/download/).
 
 Running
 ---------------------
@@ -15,12 +15,12 @@ The following are some helpful notes on how to run Qogecoin Core on your native 
 
 Unpack the files into a directory and run:
 
-- `bin/qogecoin-qt` (GUI) or
-- `bin/qogecoind` (headless)
+- `bin/xogecoin-qt` (GUI) or
+- `bin/xogecoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run qogecoin-qt.exe.
+Unpack the files into a directory, and then run xogecoin-qt.exe.
 
 ### macOS
 
@@ -28,11 +28,11 @@ Drag Qogecoin Core to your applications folder, and then run Qogecoin Core.
 
 ### Need Help?
 
-* See the documentation at the [Qogecoin Wiki](https://en.qogecoin.it/wiki/Main_Page)
+* See the documentation at the [Qogecoin Wiki](https://en.xogecoin.it/wiki/Main_Page)
 for help and more information.
-* Ask for help on [Qogecoin StackExchange](https://qogecoin.stackexchange.com).
-* Ask for help on #qogecoin on Libera Chat. If you don't have an IRC client, you can use [web.libera.chat](https://web.libera.chat/#qogecoin).
-* Ask for help on the [QogecoinTalk](https://qogecointalk.org/) forums, in the [Technical Support board](https://qogecointalk.org/index.php?board=4.0).
+* Ask for help on [Qogecoin StackExchange](https://xogecoin.stackexchange.com).
+* Ask for help on #xogecoin on Libera Chat. If you don't have an IRC client, you can use [web.libera.chat](https://web.libera.chat/#xogecoin).
+* Ask for help on the [QogecoinTalk](https://xogecointalk.org/) forums, in the [Technical Support board](https://xogecointalk.org/index.php?board=4.0).
 
 Building
 ---------------------
@@ -55,7 +55,7 @@ The Qogecoin repo's [root README](/README.md) contains relevant information on t
 - [Productivity Notes](productivity.md)
 - [Release Notes](release-notes.md)
 - [Release Process](release-process.md)
-- [Source Code Documentation (External Link)](https://doxygen.qogecoincore.org/)
+- [Source Code Documentation (External Link)](https://doxygen.xogecoincore.org/)
 - [Translation Process](translation_process.md)
 - [Translation Strings Policy](translation_strings_policy.md)
 - [JSON-RPC Interface](JSON-RPC-interface.md)
@@ -66,13 +66,13 @@ The Qogecoin repo's [root README](/README.md) contains relevant information on t
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [QogecoinTalk](https://qogecointalk.org/) forums, in the [Development & Technical Discussion board](https://qogecointalk.org/index.php?board=6.0).
-* Discuss project-specific development on #qogecoin-core-dev on Libera Chat. If you don't have an IRC client, you can use [web.libera.chat](https://web.libera.chat/#qogecoin-core-dev).
+* Discuss on the [QogecoinTalk](https://xogecointalk.org/) forums, in the [Development & Technical Discussion board](https://xogecointalk.org/index.php?board=6.0).
+* Discuss project-specific development on #xogecoin-core-dev on Libera Chat. If you don't have an IRC client, you can use [web.libera.chat](https://web.libera.chat/#xogecoin-core-dev).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)
 - [Assumeutxo design](assumeutxo.md)
-- [qogecoin.conf Configuration File](qogecoin-conf.md)
+- [xogecoin.conf Configuration File](xogecoin-conf.md)
 - [CJDNS Support](cjdns.md)
 - [Files](files.md)
 - [Fuzz-testing](fuzzing.md)

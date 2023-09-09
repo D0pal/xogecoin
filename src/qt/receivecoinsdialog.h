@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_RECEIVECOINSDIALOG_H
-#define QOGECOIN_QT_RECEIVECOINSDIALOG_H
+#ifndef XOGECOIN_QT_RECEIVECOINSDIALOG_H
+#define XOGECOIN_QT_RECEIVECOINSDIALOG_H
 
 #include <qt/guiutil.h>
 
@@ -26,7 +26,7 @@ QT_BEGIN_NAMESPACE
 class QModelIndex;
 QT_END_NAMESPACE
 
-/** Dialog for requesting payment of qogecoins */
+/** Dialog for requesting payment of xogecoins */
 class ReceiveCoinsDialog : public QDialog
 {
     Q_OBJECT
@@ -76,4 +76,4 @@ private Q_SLOTS:
     void copyAmount();
 };
 
-#endif // QOGECOIN_QT_RECEIVECOINSDIALOG_H
+#endif // XOGECOIN_QT_RECEIVECOINSDIALOG_H

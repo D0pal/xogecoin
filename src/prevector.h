@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_PREVECTOR_H
-#define QOGECOIN_PREVECTOR_H
+#ifndef XOGECOIN_PREVECTOR_H
+#define XOGECOIN_PREVECTOR_H
 
 #include <assert.h>
 #include <stdlib.h>
@@ -534,4 +534,4 @@ public:
     }
 };
 
-#endif // QOGECOIN_PREVECTOR_H
+#endif // XOGECOIN_PREVECTOR_H

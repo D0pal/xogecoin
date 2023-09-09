@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_PLATFORMSTYLE_H
-#define QOGECOIN_QT_PLATFORMSTYLE_H
+#ifndef XOGECOIN_QT_PLATFORMSTYLE_H
+#define XOGECOIN_QT_PLATFORMSTYLE_H
 
 #include <QIcon>
 #include <QPixmap>
@@ -45,5 +45,5 @@ private:
     bool useExtraSpacing;
 };
 
-#endif // QOGECOIN_QT_PLATFORMSTYLE_H
+#endif // XOGECOIN_QT_PLATFORMSTYLE_H
 

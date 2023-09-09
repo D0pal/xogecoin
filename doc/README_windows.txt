@@ -11,13 +11,13 @@ with each other, with the help of a P2P network to check for double-spending.
 
 Setup
 -----
-Unpack the files into a directory and run qogecoin-qt.exe.
+Unpack the files into a directory and run xogecoin-qt.exe.
 
 Qogecoin Core is the original Qogecoin client and it builds the backbone of the network.
 However, it downloads and stores the entire history of Qogecoin transactions;
 depending on the speed of your computer and network connection, the synchronization
 process can take anywhere from a few hours to a day or more.
 
-See the qogecoin wiki at:
-  https://en.qogecoin.it/wiki/Main_Page
+See the xogecoin wiki at:
+  https://en.xogecoin.it/wiki/Main_Page
 for more help and information.

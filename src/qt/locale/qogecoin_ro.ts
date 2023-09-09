@@ -160,8 +160,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">Confirmaţi criptarea portofelului</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Atenţie: Dacă va criptati portofelul si ulterior pierdeti parola, &lt;b&gt;VEŢI PIERDE TOTI QOGECOINII&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Atenţie: Dacă va criptati portofelul si ulterior pierdeti parola, &lt;b&gt;VEŢI PIERDE TOTI XOGECOINII&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -181,8 +181,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
  </translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Reţineti: criptarea portofelului dvs. nu vă poate proteja în totalitate qogecoin-urile împotriva furtului de malware care vă infectează computerul.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Reţineti: criptarea portofelului dvs. nu vă poate proteja în totalitate xogecoin-urile împotriva furtului de malware care vă infectează computerul.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -361,7 +361,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Dezvoltatorii %s</translation>
@@ -879,8 +879,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">Conectarea cu colaboratorii...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Cereţi plăţi (generează coduri QR şi qogecoin-uri: URls)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Cereţi plăţi (generează coduri QR şi xogecoin-uri: URls)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -959,8 +959,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">&amp;Adresele de primire</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Deschidere qogecoin: o adresa URI sau o cerere de plată</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Deschidere xogecoin: o adresa URI sau o cerere de plată</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1523,12 +1523,12 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
 <context>
     <name>ModalOverlay</name>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished">Tranzactiile recente pot sa nu fie inca vizibile, de aceea balanta portofelului poate fi incorecta. Aceasta informatie va fi corecta de indata ce portofelul va fi complet sincronizat cu reteaua Qogecoin, asa cum este detaliat mai jos.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Incercarea de a cheltui qogecoini care sunt afectati de tranzactii ce inca nu sunt afisate nu va fi acceptata de retea.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Incercarea de a cheltui xogecoini care sunt afectati de tranzactii ce inca nu sunt afisate nu va fi acceptata de retea.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1562,7 +1562,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished">DeschidețI Qogecoin URI</translation>
     </message>
     <message>
@@ -1723,7 +1723,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation type="unfinished">Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de qogecoin.</translation>
+        <translation type="unfinished">Alegeţi subdiviziunea folosită la afişarea interfeţei şi la trimiterea de xogecoin.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1785,7 +1785,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
     </message>
     <message>
         <source>The supplied proxy address is invalid.</source>
-        <translation type="unfinished">Adresa qogecoin pe care aţi specificat-o nu este validă.</translation>
+        <translation type="unfinished">Adresa xogecoin pe care aţi specificat-o nu este validă.</translation>
     </message>
 </context>
 <context>
@@ -1889,7 +1889,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">Eroare la cererea de plată</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">Qogecoin nu poate porni: click-to-pay handler</translation>
     </message>
     <message>
@@ -1897,8 +1897,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">Gestionare URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' nu este un URI valid. Folositi 'qogecoin:' in loc.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' nu este un URI valid. Folositi 'xogecoin:' in loc.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -2589,7 +2589,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
     </message>
     <message>
         <source>Warning: Invalid Qogecoin address</source>
-        <translation type="unfinished">Atenţie: Adresa qogecoin nevalidă!</translation>
+        <translation type="unfinished">Atenţie: Adresa xogecoin nevalidă!</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2628,7 +2628,7 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
     </message>
     <message>
         <source>The Qogecoin address to send the payment to</source>
-        <translation type="unfinished">Adresa qogecoin către care se face plata</translation>
+        <translation type="unfinished">Adresa xogecoin către care se face plata</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2639,8 +2639,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">Înlătură această intrare</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Taxa va fi scazuta in suma trimisa. Destinatarul va primi mai putini qogecoin decat ati specificat in campul sumei trimise. Daca au fost selectati mai multi destinatari, taxa se va imparti in mod egal.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Taxa va fi scazuta in suma trimisa. Destinatarul va primi mai putini xogecoin decat ati specificat in campul sumei trimise. Daca au fost selectati mai multi destinatari, taxa se va imparti in mod egal.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2667,8 +2667,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">Introduceţi eticheta pentru ca această adresa să fie introdusă în lista de adrese folosite</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">un mesaj a fost ataşat la qogecoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">un mesaj a fost ataşat la xogecoin: URI care va fi stocat cu tranzacţia pentru referinţa dvs. Notă: Acest mesaj nu va fi trimis către reţeaua xogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2693,8 +2693,8 @@ Semnarea este posibilă numai cu adrese de tip "legacy".</translation>
         <translation type="unfinished">&amp;Semnează mesaj</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Puteţi semna mesaje/contracte cu adresele dvs. pentru a demostra ca puteti primi qogecoini trimisi la ele. Aveţi grijă să nu semnaţi nimic vag sau aleator, deoarece atacurile de tip phishing vă pot păcăli să le transferaţi identitatea. Semnaţi numai declaraţiile detaliate cu care sînteti de acord.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Puteţi semna mesaje/contracte cu adresele dvs. pentru a demostra ca puteti primi xogecoini trimisi la ele. Aveţi grijă să nu semnaţi nimic vag sau aleator, deoarece atacurile de tip phishing vă pot păcăli să le transferaţi identitatea. Semnaţi numai declaraţiile detaliate cu care sînteti de acord.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

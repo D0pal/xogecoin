@@ -153,8 +153,8 @@
         <translation type="unfinished">Confirmar encriptación da carteira</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Aviso: Si encriptas a túa carteira e perdes a túa frase contrasinal, &lt;b&gt;PERDERÁS TODOS OS TEUS QOGECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Aviso: Si encriptas a túa carteira e perdes a túa frase contrasinal, &lt;b&gt;PERDERÁS TODOS OS TEUS XOGECOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -173,8 +173,8 @@
         <translation type="unfinished">Introduce a frase contrasinal anterior mais a nova frase contrasinal para a carteira.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recorda que encriptar a tua carteira non protexe completamente que os teus qogecoins poidan ser roubados por malware que afecte ó teu computador.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recorda que encriptar a tua carteira non protexe completamente que os teus xogecoins poidan ser roubados por malware que afecte ó teu computador.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -393,8 +393,8 @@
         <translation type="unfinished">Barra de ferramentas das pestanas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Solicita pagamentos (xera un código QR e qogecoin : URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Solicita pagamentos (xera un código QR e xogecoin : URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -456,7 +456,7 @@
         <translation type="unfinished">&amp;Enderezos de recepción</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished">Abre una URI de Qogecoin</translation>
     </message>
     <message>

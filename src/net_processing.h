@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NET_PROCESSING_H
-#define QOGECOIN_NET_PROCESSING_H
+#ifndef XOGECOIN_NET_PROCESSING_H
+#define XOGECOIN_NET_PROCESSING_H
 
 #include <net.h>
 #include <validationinterface.h>
@@ -89,4 +89,4 @@ public:
                                 const std::chrono::microseconds time_received, const std::atomic<bool>& interruptMsgProc) = 0;
 };
 
-#endif // QOGECOIN_NET_PROCESSING_H
+#endif // XOGECOIN_NET_PROCESSING_H

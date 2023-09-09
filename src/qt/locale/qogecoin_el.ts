@@ -164,8 +164,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Επιβεβαίωσε κρυπτογράφηση πορτοφολιού</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Προσόχη! Εάν κρυπτογραφήσεις το πορτοφόλι σου και χάσεις τη φράση αποκατάστασης, θα &lt;b&gt; ΧΑΣΕΙΣ ΟΛΑ ΣΟΥ ΤΑ QOGECOIN &lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Προσόχη! Εάν κρυπτογραφήσεις το πορτοφόλι σου και χάσεις τη φράση αποκατάστασης, θα &lt;b&gt; ΧΑΣΕΙΣ ΟΛΑ ΣΟΥ ΤΑ XOGECOIN &lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Πληκτρολόγησε τον παλιό κωδικό πρόσβασής σου και τον νέο κωδικό πρόσβασής σου για το πορτοφόλι</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Θυμίσου ότι το να κρυπτογραφείς το πορτοφόλι σου δεν μπορεί να προστατέψει πλήρως τα qogecoins σου από κλοπή από  κακόβουλο λογισμικό που έχει μολύνει τον υπολογιστή σου</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Θυμίσου ότι το να κρυπτογραφείς το πορτοφόλι σου δεν μπορεί να προστατέψει πλήρως τα xogecoins σου από κλοπή από  κακόβουλο λογισμικό που έχει μολύνει τον υπολογιστή σου</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -383,7 +383,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">Το αρχείο ρυθμίσεων δεν μπόρεσε να διαβαστεί</translation>
@@ -397,8 +397,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Οι προγραμματιστές %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">%s κατεστραμμένο. Δοκιμάστε να το επισκευάσετε με το εργαλείο πορτοφολιού qogecoin-wallet, ή επαναφέρετε κάποιο αντίγραφο ασφαλείας.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">%s κατεστραμμένο. Δοκιμάστε να το επισκευάσετε με το εργαλείο πορτοφολιού xogecoin-wallet, ή επαναφέρετε κάποιο αντίγραφο ασφαλείας.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -425,8 +425,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Σφάλμα: Η καταγραφή του φορμά του αρχείου dump είναι εσφαλμένη. Ελήφθη: «%s», αναμενόταν: «φορμά».</translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Σφάλμα: Η έκδοση του αρχείου dump δεν υποστηρίζεται. Αυτή η έκδοση του qogecoin-wallet υποστηρίζει αρχεία dump μόνο της έκδοσης 1. Δόθηκε αρχείο dump έκδοσης %s.</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Σφάλμα: Η έκδοση του αρχείου dump δεν υποστηρίζεται. Αυτή η έκδοση του xogecoin-wallet υποστηρίζει αρχεία dump μόνο της έκδοσης 1. Δόθηκε αρχείο dump έκδοσης %s.</translation>
     </message>
     <message>
         <source>Error: Listening for incoming connections failed (listen returned error %s)</source>
@@ -934,7 +934,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Send coins to a Qogecoin address</source>
-        <translation type="unfinished">Στείλε νομίσματα σε μια διεύθυνση qogecoin</translation>
+        <translation type="unfinished">Στείλε νομίσματα σε μια διεύθυνση xogecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -1049,8 +1049,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Σύνδεση στους χρήστες...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις qogecoin: )</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Αίτηση πληρωμών (δημιουργεί QR codes και διευθύνσεις xogecoin: )</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1132,8 +1132,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Λήψη διευθύνσεων</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Ανοίξτε ένα qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Ανοίξτε ένα xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1785,12 +1785,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Φόρμα</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished">Οι πρόσφατες συναλλαγές ενδέχεται να μην είναι ακόμα ορατές και επομένως η ισορροπία του πορτοφολιού σας μπορεί να είναι εσφαλμένη. Αυτές οι πληροφορίες θα είναι σωστές όταν ολοκληρωθεί το συγχρονισμό του πορτοφολιού σας με το δίκτυο Qogecoin, όπως περιγράφεται παρακάτω.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Η προσπάθεια να δαπανήσετε qogecoins που επηρεάζονται από τις μη εμφανιζόμενες ακόμη συναλλαγές δεν θα γίνει αποδεκτή από το δίκτυο.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Η προσπάθεια να δαπανήσετε xogecoins που επηρεάζονται από τις μη εμφανιζόμενες ακόμη συναλλαγές δεν θα γίνει αποδεκτή από το δίκτυο.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1840,8 +1840,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Ανοίξτε το qogecoin URI</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Ανοίξτε το xogecoin URI</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2326,16 +2326,16 @@ ID Συναλλαγής: %1</translation>
         <translation type="unfinished">Σφάλμα αίτησης πληρωμής</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Δεν είναι δυνατή η εκκίνηση του qogecoin: χειριστής click-to-pay</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Δεν είναι δυνατή η εκκίνηση του xogecoin: χειριστής click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">χειρισμός URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">Το 'qogecoin://' δεν είναι έγκυρο URI. Αντ' αυτού χρησιμοποιήστε το 'qogecoin:'.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">Το 'xogecoin://' δεν είναι έγκυρο URI. Αντ' αυτού χρησιμοποιήστε το 'xogecoin:'.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -3042,8 +3042,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Σημείωση: Εφόσον η χρέωση υπολογίζεται ανά byte, ένας ρυθμός χρέωσης των «100 satoshis ανά kvB» για μέγεθος συναλλαγής 500 ψηφιακών bytes (το μισό του 1 kvB) θα απέφερε χρέωση μόλις 50 satoshis.</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Όταν υπάρχει λιγότερος όγκος συναλλαγών από το χώρο στα μπλοκ, οι ανθρακωρύχοι καθώς και οι κόμβοι αναμετάδοσης μπορούν να επιβάλουν ένα ελάχιστο τέλος. Η πληρωμή μόνο αυτού του ελάχιστου τέλους είναι μια χαρά, αλλά γνωρίζετε ότι αυτό μπορεί να οδηγήσει σε μια συναλλαγή που δεν επιβεβαιώνει ποτέ τη στιγμή που υπάρχει μεγαλύτερη ζήτηση για συναλλαγές qogecoin από ό, τι μπορεί να επεξεργαστεί το δίκτυο.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Όταν υπάρχει λιγότερος όγκος συναλλαγών από το χώρο στα μπλοκ, οι ανθρακωρύχοι καθώς και οι κόμβοι αναμετάδοσης μπορούν να επιβάλουν ένα ελάχιστο τέλος. Η πληρωμή μόνο αυτού του ελάχιστου τέλους είναι μια χαρά, αλλά γνωρίζετε ότι αυτό μπορεί να οδηγήσει σε μια συναλλαγή που δεν επιβεβαιώνει ποτέ τη στιγμή που υπάρχει μεγαλύτερη ζήτηση για συναλλαγές xogecoin από ό, τι μπορεί να επεξεργαστεί το δίκτυο.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3294,8 +3294,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Το ποσό που θα αποσταλεί στην επιλεγμένη μονάδα</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Το τέλος θα αφαιρεθεί από το ποσό που αποστέλλεται. Ο παραλήπτης θα λάβει λιγότερα qogecoins από ό,τι εισάγετε στο πεδίο ποσό. Εάν επιλεγούν πολλοί παραλήπτες, το έξοδο διαιρείται εξίσου.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Το τέλος θα αφαιρεθεί από το ποσό που αποστέλλεται. Ο παραλήπτης θα λάβει λιγότερα xogecoins από ό,τι εισάγετε στο πεδίο ποσό. Εάν επιλεγούν πολλοί παραλήπτες, το έξοδο διαιρείται εξίσου.</translation>
     </message>
     <message>
         <source>Use available balance</source>
@@ -3318,8 +3318,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">Εισάγετε μία ετικέτα για αυτή την διεύθυνση για να προστεθεί στη λίστα με τις χρησιμοποιημένες διευθύνσεις</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Ένα μήνυμα που επισυνάφθηκε στο qogecoin: URI το οποίο θα αποθηκευτεί με τη συναλλαγή για αναφορά. Σημείωση: Αυτό το μήνυμα δεν θα σταλεί μέσω του δικτύου Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Ένα μήνυμα που επισυνάφθηκε στο xogecoin: URI το οποίο θα αποθηκευτεί με τη συναλλαγή για αναφορά. Σημείωση: Αυτό το μήνυμα δεν θα σταλεί μέσω του δικτύου Qogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3352,8 +3352,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
         <translation type="unfinished">&amp;Υπογραφή Μηνύματος</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Μπορείτε να υπογράψετε μηνύματα/συμφωνίες με τις διευθύνσεις σας για να αποδείξετε ότι μπορείτε να λάβετε τα qogecoins που τους αποστέλλονται. Προσέξτε να μην υπογράψετε τίποτα ασαφές ή τυχαίο, καθώς οι επιθέσεις ηλεκτρονικού "ψαρέματος" ενδέχεται να σας εξαπατήσουν να υπογράψετε την ταυτότητά σας σε αυτούς. Υπογράψτε μόνο πλήρως λεπτομερείς δηλώσεις που συμφωνείτε.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Μπορείτε να υπογράψετε μηνύματα/συμφωνίες με τις διευθύνσεις σας για να αποδείξετε ότι μπορείτε να λάβετε τα xogecoins που τους αποστέλλονται. Προσέξτε να μην υπογράψετε τίποτα ασαφές ή τυχαίο, καθώς οι επιθέσεις ηλεκτρονικού "ψαρέματος" ενδέχεται να σας εξαπατήσουν να υπογράψετε την ταυτότητά σας σε αυτούς. Υπογράψτε μόνο πλήρως λεπτομερείς δηλώσεις που συμφωνείτε.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

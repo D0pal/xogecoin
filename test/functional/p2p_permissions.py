@@ -154,9 +154,9 @@ class P2PPermissionsTests(QogecoinTestFramework):
                 raise AssertionError("Expected permissions %r is not granted." % p)
 
     def replaceinconfig(self, nodeid, old, new):
-        with open(self.nodes[nodeid].qogecoinconf, encoding="utf8") as f:
+        with open(self.nodes[nodeid].xogecoinconf, encoding="utf8") as f:
             newText = f.read().replace(old, new)
-        with open(self.nodes[nodeid].qogecoinconf, 'w', encoding="utf8") as f:
+        with open(self.nodes[nodeid].xogecoinconf, 'w', encoding="utf8") as f:
             f.write(newText)
 
 

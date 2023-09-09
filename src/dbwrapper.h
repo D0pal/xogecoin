@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_DBWRAPPER_H
-#define QOGECOIN_DBWRAPPER_H
+#ifndef XOGECOIN_DBWRAPPER_H
+#define XOGECOIN_DBWRAPPER_H
 
 #include <clientversion.h>
 #include <fs.h>
@@ -336,4 +336,4 @@ public:
     }
 };
 
-#endif // QOGECOIN_DBWRAPPER_H
+#endif // XOGECOIN_DBWRAPPER_H

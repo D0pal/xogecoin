@@ -22,28 +22,28 @@
     <ProjectReference Include="..\libminisketch\libminisketch.vcxproj">
       <Project>{542007e3-be0d-4b0d-a6b0-aa8813e2558d}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libqogecoinconsensus\libqogecoinconsensus.vcxproj">
+    <ProjectReference Include="..\libxogecoinconsensus\libxogecoinconsensus.vcxproj">
       <Project>{2b384fa8-9ee1-4544-93cb-0d733c25e8ce}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libqogecoin_cli\libqogecoin_cli.vcxproj">
+    <ProjectReference Include="..\libxogecoin_cli\libxogecoin_cli.vcxproj">
       <Project>{0667528c-d734-4009-adf9-c0d6c4a5a5a6}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libqogecoin_common\libqogecoin_common.vcxproj">
+    <ProjectReference Include="..\libxogecoin_common\libxogecoin_common.vcxproj">
       <Project>{7c87e378-df58-482e-aa2f-1bc129bc19ce}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libqogecoin_crypto\libqogecoin_crypto.vcxproj">
+    <ProjectReference Include="..\libxogecoin_crypto\libxogecoin_crypto.vcxproj">
       <Project>{6190199c-6cf4-4dad-bfbd-93fa72a760c1}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libqogecoin_node\libqogecoin_node.vcxproj">
+    <ProjectReference Include="..\libxogecoin_node\libxogecoin_node.vcxproj">
       <Project>{460fee33-1fe1-483f-b3bf-931ff8e969a5}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libqogecoin_util\libqogecoin_util.vcxproj">
+    <ProjectReference Include="..\libxogecoin_util\libxogecoin_util.vcxproj">
       <Project>{b53a5535-ee9d-4c6f-9a26-f79ee3bc3754}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libqogecoin_wallet\libqogecoin_wallet.vcxproj">
+    <ProjectReference Include="..\libxogecoin_wallet\libxogecoin_wallet.vcxproj">
       <Project>{93b86837-b543-48a5-a89b-7c87abb77df2}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\libqogecoin_zmq\libqogecoin_zmq.vcxproj">
+    <ProjectReference Include="..\libxogecoin_zmq\libxogecoin_zmq.vcxproj">
       <Project>{792d487f-f14c-49fc-a9de-3fc150f31c3f}</Project>
     </ProjectReference>
     <ProjectReference Include="..\libtest_util\libtest_util.vcxproj">

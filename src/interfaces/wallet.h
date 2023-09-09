@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_INTERFACES_WALLET_H
-#define QOGECOIN_INTERFACES_WALLET_H
+#ifndef XOGECOIN_INTERFACES_WALLET_H
+#define XOGECOIN_INTERFACES_WALLET_H
 
 #include <consensus/amount.h>
 #include <fs.h>
@@ -430,4 +430,4 @@ std::unique_ptr<WalletLoader> MakeWalletLoader(Chain& chain, ArgsManager& args);
 
 } // namespace interfaces
 
-#endif // QOGECOIN_INTERFACES_WALLET_H
+#endif // XOGECOIN_INTERFACES_WALLET_H

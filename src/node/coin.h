@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NODE_COIN_H
-#define QOGECOIN_NODE_COIN_H
+#ifndef XOGECOIN_NODE_COIN_H
+#define XOGECOIN_NODE_COIN_H
 
 #include <map>
 
@@ -24,4 +24,4 @@ struct NodeContext;
 void FindCoins(const node::NodeContext& node, std::map<COutPoint, Coin>& coins);
 } // namespace node
 
-#endif // QOGECOIN_NODE_COIN_H
+#endif // XOGECOIN_NODE_COIN_H

@@ -1,13 +1,13 @@
 Qogecoin Core version 0.10.2 is now available from:
 
-  <https://qogecoin.org/bin/qogecoin-core-0.10.2/>
+  <https://xogecoin.org/bin/xogecoin-core-0.10.2/>
 
 This is a new minor version release, bringing minor bug fixes and translation 
 updates. It is recommended to upgrade to this version.
 
 Please report bugs using the issue tracker at github:
 
-  <https://github.com/qogecoin/qogecoin/issues>
+  <https://github.com/xogecoin/xogecoin/issues>
 
 Upgrading and downgrading
 =========================
@@ -18,7 +18,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over /Applications/Qogecoin-Qt (on Mac) or
-qogecoind/qogecoin-qt (on Linux).
+xogecoind/xogecoin-qt (on Linux).
 
 Downgrade warning
 ------------------
@@ -47,12 +47,12 @@ Notable changes
 ===============
 
 This fixes a serious problem on Windows with data directories that have non-ASCII
-characters (https://github.com/qogecoin/qogecoin/issues/6078).
+characters (https://github.com/xogecoin/xogecoin/issues/6078).
 
 For other platforms there are no notable changes.
 
 For the notable changes in 0.10, refer to the release notes
-at https://github.com/qogecoin/qogecoin/blob/v0.10.0/doc/release-notes.md
+at https://github.com/xogecoin/xogecoin/blob/v0.10.0/doc/release-notes.md
 
 0.10.2 Change log
 =================
@@ -83,4 +83,4 @@ And all those who contributed additional code review and/or security research:
 - Pieter Wuille
 - vayvanne
 
-As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/qogecoin/).
+As well as everyone that helped translating on [Transifex](https://www.transifex.com/projects/p/xogecoin/).

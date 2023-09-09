@@ -2,12 +2,12 @@
 # Copyright (c) 2019-2021 The Bitcoin and Qogecoin Core Authors
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test qogecoind aborts if can't disconnect a block.
+"""Test xogecoind aborts if can't disconnect a block.
 
 - Start a single node and generate 3 blocks.
 - Delete the undo data.
 - Mine a fork that requires disconnecting the tip.
-- Verify that qogecoind AbortNode's.
+- Verify that xogecoind AbortNode's.
 """
 
 from test_framework.test_framework import QogecoinTestFramework

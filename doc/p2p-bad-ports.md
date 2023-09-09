@@ -103,9 +103,9 @@ incoming connections.
 
 For further information see:
 
-[pull/23306](https://github.com/qogecoin/qogecoin/pull/23306#issuecomment-947516736)
+[pull/23306](https://github.com/xogecoin/xogecoin/pull/23306#issuecomment-947516736)
 
-[pull/23542](https://github.com/qogecoin/qogecoin/pull/23542)
+[pull/23542](https://github.com/xogecoin/xogecoin/pull/23542)
 
 [fetch.spec.whatwg.org](https://fetch.spec.whatwg.org/#port-blocking)
 

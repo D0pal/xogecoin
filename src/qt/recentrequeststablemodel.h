@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_RECENTREQUESTSTABLEMODEL_H
-#define QOGECOIN_QT_RECENTREQUESTSTABLEMODEL_H
+#ifndef XOGECOIN_QT_RECENTREQUESTSTABLEMODEL_H
+#define XOGECOIN_QT_RECENTREQUESTSTABLEMODEL_H
 
 #include <qt/sendcoinsrecipient.h>
 
@@ -46,7 +46,7 @@ private:
     Qt::SortOrder order;
 };
 
-/** Model for list of recently generated payment requests / qogecoin: URIs.
+/** Model for list of recently generated payment requests / xogecoin: URIs.
  * Part of wallet model.
  */
 class RecentRequestsTableModel: public QAbstractTableModel
@@ -98,4 +98,4 @@ private:
     QString getAmountTitle();
 };
 
-#endif // QOGECOIN_QT_RECENTREQUESTSTABLEMODEL_H
+#endif // XOGECOIN_QT_RECENTREQUESTSTABLEMODEL_H

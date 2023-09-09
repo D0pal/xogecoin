@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_ARITH_UINT256_H
-#define QOGECOIN_ARITH_UINT256_H
+#ifndef XOGECOIN_ARITH_UINT256_H
+#define XOGECOIN_ARITH_UINT256_H
 
 #include <cstring>
 #include <limits>
@@ -281,4 +281,4 @@ arith_uint256 UintToArith256(const uint256 &);
 
 extern template class base_uint<256>;
 
-#endif // QOGECOIN_ARITH_UINT256_H
+#endif // XOGECOIN_ARITH_UINT256_H

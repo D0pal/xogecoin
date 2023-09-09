@@ -2,7 +2,7 @@
 
 **Updated for OpenBSD [7.0](https://www.openbsd.org/70.html)**
 
-This guide describes how to build qogecoind, command-line utilities, and GUI on OpenBSD.
+This guide describes how to build xogecoind, command-line utilities, and GUI on OpenBSD.
 
 ## Preparation
 
@@ -20,14 +20,14 @@ See [dependencies.md](dependencies.md) for a complete overview.
 ### 2. Clone Qogecoin Repo
 Clone the Qogecoin Core repository to a directory. All build scripts and commands will run from this directory.
 ``` bash
-git clone https://github.com/qogecoin/qogecoin.git
+git clone https://github.com/xogecoin/xogecoin.git
 ```
 
 ### 3. Install Optional Dependencies
 
 #### Wallet Dependencies
 
-It is not necessary to build wallet functionality to run either `qogecoind` or `qogecoin-qt`.
+It is not necessary to build wallet functionality to run either `xogecoind` or `xogecoin-qt`.
 
 ###### Descriptor Wallet Support
 
@@ -123,7 +123,7 @@ data(kbytes)         1572864
 ```
 
 This is, unfortunately, in some cases not enough to compile some `.cpp` files in the project,
-(see issue [#6658](https://github.com/qogecoin/qogecoin/issues/6658)).
+(see issue [#6658](https://github.com/xogecoin/xogecoin/issues/6658)).
 If your user is in the `staff` group the limit can be raised with:
 ```bash
 ulimit -d 3000000

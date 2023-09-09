@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_DEPLOYMENTSTATUS_H
-#define QOGECOIN_DEPLOYMENTSTATUS_H
+#ifndef XOGECOIN_DEPLOYMENTSTATUS_H
+#define XOGECOIN_DEPLOYMENTSTATUS_H
 
 #include <chain.h>
 #include <versionbits.h>
@@ -52,4 +52,4 @@ inline bool DeploymentEnabled(const Consensus::Params& params, Consensus::Deploy
     return params.vDeployments[dep].nStartTime != Consensus::BIP9Deployment::NEVER_ACTIVE;
 }
 
-#endif // QOGECOIN_DEPLOYMENTSTATUS_H
+#endif // XOGECOIN_DEPLOYMENTSTATUS_H

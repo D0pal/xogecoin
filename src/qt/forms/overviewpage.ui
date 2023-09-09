@@ -79,7 +79,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="../qogecoin.qrc">
+               <iconset resource="../xogecoin.qrc">
                 <normaloff>:/icons/warning</normaloff>
                 <disabledoff>:/icons/warning</disabledoff>:/icons/warning</iconset>
               </property>
@@ -414,7 +414,7 @@
                <string/>
               </property>
               <property name="icon">
-               <iconset resource="../qogecoin.qrc">
+               <iconset resource="../xogecoin.qrc">
                 <normaloff>:/icons/warning</normaloff>
                 <disabledoff>:/icons/warning</disabledoff>:/icons/warning</iconset>
               </property>

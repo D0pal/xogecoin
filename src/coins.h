@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_COINS_H
-#define QOGECOIN_COINS_H
+#ifndef XOGECOIN_COINS_H
+#define XOGECOIN_COINS_H
 
 #include <compressor.h>
 #include <core_memusage.h>
@@ -336,7 +336,7 @@ const Coin& AccessByTxid(const CCoinsViewCache& cache, const uint256& txid);
 /**
  * This is a minimally invasive approach to shutdown on LevelDB read errors from the
  * chainstate, while keeping user interface out of the common library, which is shared
- * between qogecoind, and qogecoin-qt and non-server tools.
+ * between xogecoind, and xogecoin-qt and non-server tools.
  *
  * Writes do not need similar protection, as failure to write is handled by the caller.
 */
@@ -357,4 +357,4 @@ private:
 
 };
 
-#endif // QOGECOIN_COINS_H
+#endif // XOGECOIN_COINS_H

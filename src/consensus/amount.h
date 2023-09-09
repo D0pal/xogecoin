@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CONSENSUS_AMOUNT_H
-#define QOGECOIN_CONSENSUS_AMOUNT_H
+#ifndef XOGECOIN_CONSENSUS_AMOUNT_H
+#define XOGECOIN_CONSENSUS_AMOUNT_H
 
 #include <cstdint>
 
@@ -26,4 +26,4 @@ static constexpr CAmount COIN = 100000000;
 static constexpr CAmount MAX_MONEY = 100000000 * COIN;
 inline bool MoneyRange(const CAmount& nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
-#endif // QOGECOIN_CONSENSUS_AMOUNT_H
+#endif // XOGECOIN_CONSENSUS_AMOUNT_H

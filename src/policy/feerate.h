@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_POLICY_FEERATE_H
-#define QOGECOIN_POLICY_FEERATE_H
+#ifndef XOGECOIN_POLICY_FEERATE_H
+#define XOGECOIN_POLICY_FEERATE_H
 
 #include <consensus/amount.h>
 #include <serialize.h>
@@ -72,4 +72,4 @@ public:
     SERIALIZE_METHODS(CFeeRate, obj) { READWRITE(obj.nSatoshisPerK); }
 };
 
-#endif // QOGECOIN_POLICY_FEERATE_H
+#endif // XOGECOIN_POLICY_FEERATE_H

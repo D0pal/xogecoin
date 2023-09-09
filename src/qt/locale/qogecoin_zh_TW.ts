@@ -155,7 +155,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">確認錢包加密</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">警告: 如果把錢包加密後又忘記密碼，你就會從此&lt;b&gt;失去其中所有的 Qogecoin 了&lt;/b&gt;！</translation>
     </message>
     <message>
@@ -175,7 +175,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">輸入錢包的密碼短語和新密碼短語。</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">請記得, 即使將錢包加密, 也不能完全防止因惡意軟體入侵, 而導致位元幣被偷.</translation>
     </message>
     <message>
@@ -359,7 +359,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
 </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">%s 開發人員</translation>
@@ -857,8 +857,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">分頁工具列</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">要求付款(產生 QR Code 和 qogecoin 付款協議的資源識別碼: URI)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">要求付款(產生 QR Code 和 xogecoin 付款協議的資源識別碼: URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -931,7 +931,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;接收地址</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
+        <source>Open a xogecoin: URI</source>
         <translation type="unfinished">打開一個比特幣：URI</translation>
     </message>
     <message>
@@ -1491,12 +1491,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">表單</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">最近的交易可能還看不到，因此錢包餘額可能不正確。在錢包軟體完成跟 qogecoin 網路的同步後，這裡的資訊就會正確。詳情請見下面。</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">最近的交易可能還看不到，因此錢包餘額可能不正確。在錢包軟體完成跟 xogecoin 網路的同步後，這裡的資訊就會正確。詳情請見下面。</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">使用還沒顯示出來的交易所影響到的 qogecoin 可能會不被網路所接受。</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">使用還沒顯示出來的交易所影響到的 xogecoin 可能會不被網路所接受。</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1530,7 +1530,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
+        <source>Open xogecoin URI</source>
         <translation type="unfinished">打開比特幣URI</translation>
     </message>
     <message>
@@ -1957,16 +1957,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">要求付款時發生錯誤</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">沒辦法啟動 qogecoin 協議的「按就付」處理器</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">沒辦法啟動 xogecoin 協議的「按就付」處理器</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">URI 處理</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">字首為 qogecoin:// 不是有效的 URI，請改用 qogecoin: 開頭。</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">字首為 xogecoin:// 不是有效的 URI，請改用 xogecoin: 開頭。</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -2584,7 +2584,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">隱藏交易手續費設定</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished">当交易量小于可用区块空间时，矿工和中继节点可能会执行最低手续费率限制。按照这个最低费率来支付手续费也是可以的，但请注意，一旦交易需求超出比特币网络能处理的限度，你的交易可能永远也无法确认。</translation>
     </message>
     <message>
@@ -2806,8 +2806,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">以所選單位發送的金額</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">手續費會從要付款出去的金額中扣掉。因此收款人會收到比輸入的金額還要少的 qogecoin。如果有多個收款人的話，手續費會平均分配來扣除。</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">手續費會從要付款出去的金額中扣掉。因此收款人會收到比輸入的金額還要少的 xogecoin。如果有多個收款人的話，手續費會平均分配來扣除。</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2834,7 +2834,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">請輸入這個地址的標籤，來把它加進去已使用過地址清單。</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
         <translation type="unfinished">附加在 Qogecoin 付款協議的資源識別碼(URI)中的訊息，會和交易內容一起存起來，給你自己做參考。注意: 這個訊息不會送到 Qogecoin 網路上。</translation>
     </message>
     <message>
@@ -2868,7 +2868,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">簽署訊息(&amp;S)</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished">您可以使用您的地址簽名訊息/協議，以證明您可以接收發送給他們的比特幣。但是請小心，不要簽名語意含糊不清，或隨機產生的內容，因為釣魚式詐騙可能會用騙你簽名的手法來冒充是你。只有簽名您同意的詳細內容。</translation>
     </message>
     <message>

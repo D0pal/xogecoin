@@ -2,7 +2,7 @@
 # Copyright (c) 2018-2020 The Bitcoin and Qogecoin Core Authors
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
-"""Test qogecoind shutdown."""
+"""Test xogecoind shutdown."""
 
 from test_framework.test_framework import QogecoinTestFramework
 from test_framework.util import assert_equal, get_rpc_proxy

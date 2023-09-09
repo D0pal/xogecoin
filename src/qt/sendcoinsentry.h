@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_SENDCOINSENTRY_H
-#define QOGECOIN_QT_SENDCOINSENTRY_H
+#ifndef XOGECOIN_QT_SENDCOINSENTRY_H
+#define XOGECOIN_QT_SENDCOINSENTRY_H
 
 #include <qt/sendcoinsrecipient.h>
 
@@ -21,7 +21,7 @@ namespace Ui {
 }
 
 /**
- * A single entry in the dialog for sending qogecoins.
+ * A single entry in the dialog for sending xogecoins.
  * Stacked widget, with different UIs for payment requests
  * with a strong payee identity.
  */
@@ -81,4 +81,4 @@ private:
     bool updateLabel(const QString &address);
 };
 
-#endif // QOGECOIN_QT_SENDCOINSENTRY_H
+#endif // XOGECOIN_QT_SENDCOINSENTRY_H

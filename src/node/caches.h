@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NODE_CACHES_H
-#define QOGECOIN_NODE_CACHES_H
+#ifndef XOGECOIN_NODE_CACHES_H
+#define XOGECOIN_NODE_CACHES_H
 
 #include <cstddef>
 #include <cstdint>
@@ -21,4 +21,4 @@ struct CacheSizes {
 CacheSizes CalculateCacheSizes(const ArgsManager& args, size_t n_indexes = 0);
 } // namespace node
 
-#endif // QOGECOIN_NODE_CACHES_H
+#endif // XOGECOIN_NODE_CACHES_H

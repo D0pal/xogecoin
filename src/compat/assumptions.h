@@ -5,8 +5,8 @@
 
 // Compile-time verification of assumptions we make.
 
-#ifndef QOGECOIN_COMPAT_ASSUMPTIONS_H
-#define QOGECOIN_COMPAT_ASSUMPTIONS_H
+#ifndef XOGECOIN_COMPAT_ASSUMPTIONS_H
+#define XOGECOIN_COMPAT_ASSUMPTIONS_H
 
 #include <limits>
 
@@ -54,4 +54,4 @@ static_assert(sizeof(size_t) == sizeof(void*), "Sizes of size_t and void* assume
 // * We are NOT assuming a specific value for std::locale("").name().
 // * We are NOT assuming a specific value for std::numeric_limits<char>::is_signed.
 
-#endif // QOGECOIN_COMPAT_ASSUMPTIONS_H
+#endif // XOGECOIN_COMPAT_ASSUMPTIONS_H

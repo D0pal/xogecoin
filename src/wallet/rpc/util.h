@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_RPC_UTIL_H
-#define QOGECOIN_WALLET_RPC_UTIL_H
+#ifndef XOGECOIN_WALLET_RPC_UTIL_H
+#define XOGECOIN_WALLET_RPC_UTIL_H
 
 #include <any>
 #include <memory>
@@ -43,4 +43,4 @@ std::string LabelFromValue(const UniValue& value);
 void HandleWalletError(const std::shared_ptr<CWallet> wallet, DatabaseStatus& status, bilingual_str& error);
 } //  namespace wallet
 
-#endif // QOGECOIN_WALLET_RPC_UTIL_H
+#endif // XOGECOIN_WALLET_RPC_UTIL_H

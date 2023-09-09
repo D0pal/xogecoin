@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_UTILITYDIALOG_H
-#define QOGECOIN_QT_UTILITYDIALOG_H
+#ifndef XOGECOIN_QT_UTILITYDIALOG_H
+#define XOGECOIN_QT_UTILITYDIALOG_H
 
 #include <QDialog>
 #include <QWidget>
@@ -50,4 +50,4 @@ protected:
     void closeEvent(QCloseEvent *event) override;
 };
 
-#endif // QOGECOIN_QT_UTILITYDIALOG_H
+#endif // XOGECOIN_QT_UTILITYDIALOG_H

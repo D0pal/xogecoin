@@ -164,8 +164,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Confirmar cifrado del monedero</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Advertencia: Si encriptas tu billetera y pierdes tu contraseña, vas a ¡&lt;b&gt;PERDER TODOS TUS QOGECOINS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Advertencia: Si encriptas tu billetera y pierdes tu contraseña, vas a ¡&lt;b&gt;PERDER TODOS TUS XOGECOINS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -184,8 +184,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Ingresa la antigua frase de contraseña y la nueva frase de contraseña para la billetera.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Recuerda que cifrar tu billetera no garantiza total protección de robo de tus qogecoins si tu ordenador es infectado con malware.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Recuerda que cifrar tu billetera no garantiza total protección de robo de tus xogecoins si tu ordenador es infectado con malware.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -330,7 +330,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Los desarrolladores de %s</translation>
@@ -609,7 +609,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
     </message>
     <message>
         <source>Send coins to a Qogecoin address</source>
-        <translation type="unfinished">Enviar monedas a una dirección qogecoin</translation>
+        <translation type="unfinished">Enviar monedas a una dirección xogecoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -684,8 +684,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Pide pagos (genera codigos QR and qogecoin: URls)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Pide pagos (genera codigos QR and xogecoin: URls)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -751,8 +751,8 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">&amp;Direcciones de entrega</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Abrir un qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Abrir un xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1271,12 +1271,12 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Formulario</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de qogecoin, como se detalla abajo.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Las transacciones recientes aún no pueden ser visibles, y por lo tanto el saldo de su monedero podría ser incorrecto. Esta información será correcta cuando su monedero haya terminado de sincronizarse con la red de xogecoin, como se detalla abajo.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">La red no aceptará el intentar gastar qogecoins que están afectados por transacciones aún no mostradas.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">La red no aceptará el intentar gastar xogecoins que están afectados por transacciones aún no mostradas.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1626,7 +1626,7 @@ Firmar solo es posible con direcciones del tipo 'Legacy'.</translation>
         <translation type="unfinished">Error en la solicitud de pago</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
         <translation type="unfinished">No se puede iniciar Qogecoin: controlador de clic para pagar</translation>
     </message>
     <message>

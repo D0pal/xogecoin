@@ -159,8 +159,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">Deimhnigh criptiú sparán</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Rabhadh: Má chriptíonn tú do sparán agus má chailleann tú do pasfhrása, &lt;b&gt;caillfidh tú GACH CEANN DE DO QOGECOIN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Rabhadh: Má chriptíonn tú do sparán agus má chailleann tú do pasfhrása, &lt;b&gt;caillfidh tú GACH CEANN DE DO XOGECOIN&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -179,8 +179,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">Cuir isteach an sean pasfhrása agus an pasfhrása nua don sparán.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Cuimhnigh nach dtugann chriptiú do sparán cosaint go hiomlán do do qogecoins ó bheith goidte ag bogearraí mailíseacha atá ag ionfhabhtú do ríomhaire.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Cuimhnigh nach dtugann chriptiú do sparán cosaint go hiomlán do do xogecoins ó bheith goidte ag bogearraí mailíseacha atá ag ionfhabhtú do ríomhaire.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -355,14 +355,14 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>The %s developers</source>
         <translation type="unfinished">Forbróirí %s</translation>
     </message>
     <message>
-        <source>%s corrupt. Try using the wallet tool qogecoin-wallet to salvage or restoring a backup.</source>
-        <translation type="unfinished">Tá %s truaillithe. Triail an uirlis sparán qogecoin-wallet a úsáid chun tharrtháil nó chun cúltaca a athbhunú.</translation>
+        <source>%s corrupt. Try using the wallet tool xogecoin-wallet to salvage or restoring a backup.</source>
+        <translation type="unfinished">Tá %s truaillithe. Triail an uirlis sparán xogecoin-wallet a úsáid chun tharrtháil nó chun cúltaca a athbhunú.</translation>
     </message>
     <message>
         <source>-maxtxfee is set very high! Fees this large could be paid on a single transaction.</source>
@@ -901,8 +901,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">Barra uirlisí cluaisíní</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Iarr íocaíochtaí (gineann cóid QR agus qogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Iarr íocaíochtaí (gineann cóid QR agus xogecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -977,8 +977,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">S&amp;eoltaí glacadh</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Oscail qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Oscail xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1554,12 +1554,12 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">Foirm</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">B’fhéidir nach mbeidh idirbhearta dheireanacha le feiceáil fós, agus dá bhrí sin d’fhéadfadh go mbeadh iarmhéid do sparán mícheart. Beidh an faisnéis seo ceart nuair a bheidh do sparán críochnaithe ag sioncrónú leis an líonra qogecoin, mar atá luaite thíos.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">B’fhéidir nach mbeidh idirbhearta dheireanacha le feiceáil fós, agus dá bhrí sin d’fhéadfadh go mbeadh iarmhéid do sparán mícheart. Beidh an faisnéis seo ceart nuair a bheidh do sparán críochnaithe ag sioncrónú leis an líonra xogecoin, mar atá luaite thíos.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Ní ghlacfaidh an líonra le hiarrachtí qogecoins a chaitheamh a mbaineann le hidirbhearta nach bhfuil ar taispeáint go fóill.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Ní ghlacfaidh an líonra le hiarrachtí xogecoins a chaitheamh a mbaineann le hidirbhearta nach bhfuil ar taispeáint go fóill.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1593,8 +1593,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Oscail URI qogecoin</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Oscail URI xogecoin</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2040,16 +2040,16 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">Earráid iarratais íocaíocht</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Ní féidir qogecoin a thosú: láimhseálaí cliceáil-chun-íoc</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Ní féidir xogecoin a thosú: láimhseálaí cliceáil-chun-íoc</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Láimhseála URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">Ní URI bailí é 'qogecoin://'. Úsáid 'qogecoin:' ina ionad.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">Ní URI bailí é 'xogecoin://'. Úsáid 'xogecoin:' ina ionad.</translation>
     </message>
     <message>
         <source>URI cannot be parsed! This can be caused by an invalid Qogecoin address or malformed URI parameters.</source>
@@ -2666,8 +2666,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">Folaigh socruithe táillí idirbhirt</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Nuair a bhíonn méid idirbhirt níos lú ná spás sna bloic, féadfaidh mianadóirí chomh maith le nóid athsheachadadh táille íosta a fhorfheidhmiú. Tá sé sách maith an táille íosta seo a íoc, ach bíodh a fhios agat go bhféadfadh idirbheart nach ndeimhnítear riamh a bheith mar thoradh air seo a nuair a bhíonn níos mó éilimh ar idirbhearta qogecoin ná mar is féidir leis an líonra a phróiseáil.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Nuair a bhíonn méid idirbhirt níos lú ná spás sna bloic, féadfaidh mianadóirí chomh maith le nóid athsheachadadh táille íosta a fhorfheidhmiú. Tá sé sách maith an táille íosta seo a íoc, ach bíodh a fhios agat go bhféadfadh idirbheart nach ndeimhnítear riamh a bheith mar thoradh air seo a nuair a bhíonn níos mó éilimh ar idirbhearta xogecoin ná mar is féidir leis an líonra a phróiseáil.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -2895,8 +2895,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">An méid atá le seoladh san aonad roghnaithe</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Bainfear an táille ón méid a sheolfar. Gheobhaidh an faighteoir níos lú qogecoins ná mar a iontrálann tú sa réimse méid. Má roghnaítear faighteoirí iolracha, roinntear an táille go cothrom.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Bainfear an táille ón méid a sheolfar. Gheobhaidh an faighteoir níos lú xogecoins ná mar a iontrálann tú sa réimse méid. Má roghnaítear faighteoirí iolracha, roinntear an táille go cothrom.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2923,8 +2923,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">Iontráil lipéad don seoladh seo chun é a chur le liosta na seoltaí úsáidte</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Teachtaireacht a bhí ceangailte leis an qogecoin: URI a stórálfar leis an idirbheart le haghaidh do thagairt. Nóta: Ní sheolfar an teachtaireacht seo thar líonra Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Teachtaireacht a bhí ceangailte leis an xogecoin: URI a stórálfar leis an idirbheart le haghaidh do thagairt. Nóta: Ní sheolfar an teachtaireacht seo thar líonra Qogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2957,8 +2957,8 @@ Ní féidir síniú ach le seoltaí 'oidhreachta'.</translation>
         <translation type="unfinished">&amp;Sínigh Teachtaireacht</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Féadfaidh tú teachtaireachtaí / comhaontuithe a shíniú le do sheoltaí chun a chruthú gur féidir leat qogecoins a sheoltear chucu a fháil. Bí cúramach gan aon rud doiléir nó randamach a shíniú, mar d’fhéadfadh ionsaithe fioscaireachta iarracht ar d’aitheantas a shíniú chucu. Ná sínigh ach ráitis lán-mhionsonraithe a aontaíonn tú leo.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Féadfaidh tú teachtaireachtaí / comhaontuithe a shíniú le do sheoltaí chun a chruthú gur féidir leat xogecoins a sheoltear chucu a fháil. Bí cúramach gan aon rud doiléir nó randamach a shíniú, mar d’fhéadfadh ionsaithe fioscaireachta iarracht ar d’aitheantas a shíniú chucu. Ná sínigh ach ráitis lán-mhionsonraithe a aontaíonn tú leo.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

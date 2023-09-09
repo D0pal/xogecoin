@@ -4,8 +4,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_PUBKEY_H
-#define QOGECOIN_PUBKEY_H
+#ifndef XOGECOIN_PUBKEY_H
+#define XOGECOIN_PUBKEY_H
 
 #include <hash.h>
 #include <serialize.h>
@@ -344,4 +344,4 @@ typedef struct secp256k1_context_struct secp256k1_context;
  *  by key.cpp. */
 const secp256k1_context* GetVerifyContext();
 
-#endif // QOGECOIN_PUBKEY_H
+#endif // XOGECOIN_PUBKEY_H

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_CONSENSUS_PARAMS_H
-#define QOGECOIN_CONSENSUS_PARAMS_H
+#ifndef XOGECOIN_CONSENSUS_PARAMS_H
+#define XOGECOIN_CONSENSUS_PARAMS_H
 
 #include <uint256.h>
 
@@ -142,4 +142,4 @@ struct Params {
 
 } // namespace Consensus
 
-#endif // QOGECOIN_CONSENSUS_PARAMS_H
+#endif // XOGECOIN_CONSENSUS_PARAMS_H

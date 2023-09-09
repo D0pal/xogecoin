@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NETBASE_H
-#define QOGECOIN_NETBASE_H
+#ifndef XOGECOIN_NETBASE_H
+#define XOGECOIN_NETBASE_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <compat.h>
@@ -254,4 +254,4 @@ bool Socks5(const std::string& strDest, uint16_t port, const ProxyCredentials* a
  */
 bool IsBadPort(uint16_t port);
 
-#endif // QOGECOIN_NETBASE_H
+#endif // XOGECOIN_NETBASE_H

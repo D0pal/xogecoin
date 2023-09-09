@@ -5,8 +5,8 @@
 /**
  * Functionality for communicating with Tor.
  */
-#ifndef QOGECOIN_TORCONTROL_H
-#define QOGECOIN_TORCONTROL_H
+#ifndef XOGECOIN_TORCONTROL_H
+#define XOGECOIN_TORCONTROL_H
 
 #include <fs.h>
 #include <netaddress.h>
@@ -159,4 +159,4 @@ public:
     static void reconnect_cb(evutil_socket_t fd, short what, void *arg);
 };
 
-#endif // QOGECOIN_TORCONTROL_H
+#endif // XOGECOIN_TORCONTROL_H

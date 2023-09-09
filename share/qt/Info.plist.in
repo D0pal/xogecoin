@@ -11,7 +11,7 @@
   </array>
 
   <key>CFBundleIconFile</key>
-  <string>qogecoin.icns</string>
+  <string>xogecoin.icns</string>
 
   <key>CFBundlePackageType</key>
   <string>APPL</string>
@@ -43,7 +43,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.qogecoinfoundation.Qogecoin-Qt</string>
+  <string>org.xogecoinfoundation.Qogecoin-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -51,10 +51,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.qogecoin.QogecoinPayment</string>
+      <string>org.xogecoin.QogecoinPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>qogecoin</string>
+        <string>xogecoin</string>
       </array>
     </dict>
   </array>

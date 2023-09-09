@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UTIL_SPANPARSING_H
-#define QOGECOIN_UTIL_SPANPARSING_H
+#ifndef XOGECOIN_UTIL_SPANPARSING_H
+#define XOGECOIN_UTIL_SPANPARSING_H
 
 #include <span.h>
 
@@ -62,4 +62,4 @@ std::vector<T> Split(const Span<const char>& sp, char sep)
 
 } // namespace spanparsing
 
-#endif // QOGECOIN_UTIL_SPANPARSING_H
+#endif // XOGECOIN_UTIL_SPANPARSING_H

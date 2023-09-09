@@ -72,7 +72,7 @@
     <message>
         <source>These are your Qogecoin addresses for receiving payments. Use the 'Create new receiving address' button in the receive tab to create new addresses.
 Signing is only possible with addresses of the type 'legacy'.</source>
-        <translation type="unfinished">Berikut ini adalah alamat-alamat qogecoinmu untuk menerima pembayaran. Gunakan tombol 'Buat alamat penerima baru' di tab menerima untuk membuat alamat baru. Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
+        <translation type="unfinished">Berikut ini adalah alamat-alamat xogecoinmu untuk menerima pembayaran. Gunakan tombol 'Buat alamat penerima baru' di tab menerima untuk membuat alamat baru. Tanda tangan hanya bisa digunakan dengan tipe alamat 'warisan'</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -159,8 +159,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Konfirmasi pengenkripsian dompet</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
-        <translation type="unfinished">Peringatan: Jika Anda mengenkripsi dompet Anda dan lupa kata sandi Anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA QOGECOIN ANDA&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
+        <translation type="unfinished">Peringatan: Jika Anda mengenkripsi dompet Anda dan lupa kata sandi Anda, Anda akan &lt;b&gt;KEHILANGAN SEMUA XOGECOIN ANDA&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -179,8 +179,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Masukan passphrase lama dan passphrase baru ke dompet</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi qogecoin Anda dari pencurian oleh malware yang menginfeksi komputer Anda.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Mengenkripsi dompet Anda tidak dapat sepenuhnya melindungi xogecoin Anda dari pencurian oleh malware yang menginfeksi komputer Anda.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -386,7 +386,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Settings file could not be read</source>
         <translation type="unfinished">File setting tidak dapat dibaca.</translation>
@@ -432,8 +432,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Kesalahan: Rekaman pengenal dumpfile salah. Mendapat "%s", diharapkan "%s". </translation>
     </message>
     <message>
-        <source>Error: Dumpfile version is not supported. This version of qogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
-        <translation type="unfinished">Kesalahan: Versi Dumpfile tidak didukung. Versi dompet qogecoin ini hanya mendukung dumpfile versi 1. Dumpfile yang didapat adalah versi %s</translation>
+        <source>Error: Dumpfile version is not supported. This version of xogecoin-wallet only supports version 1 dumpfiles. Got dumpfile with version %s</source>
+        <translation type="unfinished">Kesalahan: Versi Dumpfile tidak didukung. Versi dompet xogecoin ini hanya mendukung dumpfile versi 1. Dumpfile yang didapat adalah versi %s</translation>
     </message>
     <message>
         <source>Error: Legacy wallets only support the "legacy", "p2sh-segwit", and "bech32" address types</source>
@@ -1160,8 +1160,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Menghubungkan ke peers...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Permintaan pembayaran (membuat kode QR dan qogecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Permintaan pembayaran (membuat kode QR dan xogecoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -1242,8 +1242,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Address &amp;Penerima</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Buka URI qogecoin:</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Buka URI xogecoin:</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1882,12 +1882,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Formulir</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
         <translation type="unfinished">Transaksi-transaksi terkini mungkin belum terlihat dan oleh karenanya, saldo dompet Anda mungkin tidak tepat. Informasi ini akan akurat ketika dompet Anda tersinkronisasi dengan jaringan Qogecoin, seperti rincian berikut.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Usaha untuk menggunakan qogecoin yang dipengaruhi oleh transaksi yang belum terlihat tidak akan diterima oleh jaringan.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Usaha untuk menggunakan xogecoin yang dipengaruhi oleh transaksi yang belum terlihat tidak akan diterima oleh jaringan.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1937,8 +1937,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Buka URI qogecoin:</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Buka URI xogecoin:</translation>
     </message>
     <message>
         <source>Paste address from clipboard</source>
@@ -2428,16 +2428,16 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Terjadi kesalahan pada permintaan pembayaran</translation>
     </message>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">Tidak bisa memulai qogecoin: handler click-to-pay</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">Tidak bisa memulai xogecoin: handler click-to-pay</translation>
     </message>
     <message>
         <source>URI handling</source>
         <translation type="unfinished">Pengelolaan URI</translation>
     </message>
     <message>
-        <source>'qogecoin://' is not a valid URI. Use 'qogecoin:' instead.</source>
-        <translation type="unfinished">'qogecoin://' bukanlah alamat URI yang valid. Silakan gunakan 'qogecoin:'.</translation>
+        <source>'xogecoin://' is not a valid URI. Use 'xogecoin:' instead.</source>
+        <translation type="unfinished">'xogecoin://' bukanlah alamat URI yang valid. Silakan gunakan 'xogecoin:'.</translation>
     </message>
     <message>
         <source>Cannot process payment request because BIP70 is not supported.
@@ -3189,8 +3189,8 @@ Note:  Since the fee is calculated on a per-byte basis, a fee rate of "100 satos
 Catatan: Karena biaya dihitung berdasarkan per byte, tarif biaya "100 satoshi per kvB" untuk ukuran transaksi 500 byte virtual (setengah dari 1 kvB) pada akhirnya akan menghasilkan biaya hanya 50 satoshi. </translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
-        <translation type="unfinished">Ketika volume transaksi lebih sedikit daripada ruang di blok, penambang serta simpul yang menyiarkanikan dapat memberlakukan biaya minimum. Anda boleh hanya membayar biaya minimum, tetapi perlu diketahui bahwa ini dapat menghasilkan transaksi yang tidak pernah dikonfirmasi setelah ada lebih banyak permintaan untuk transaksi qogecoin daripada yang dapat diproses jaringan.</translation>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
+        <translation type="unfinished">Ketika volume transaksi lebih sedikit daripada ruang di blok, penambang serta simpul yang menyiarkanikan dapat memberlakukan biaya minimum. Anda boleh hanya membayar biaya minimum, tetapi perlu diketahui bahwa ini dapat menghasilkan transaksi yang tidak pernah dikonfirmasi setelah ada lebih banyak permintaan untuk transaksi xogecoin daripada yang dapat diproses jaringan.</translation>
     </message>
     <message>
         <source>A too low fee might result in a never confirming transaction (read the tooltip)</source>
@@ -3280,7 +3280,7 @@ Catatan: Karena biaya dihitung berdasarkan per byte, tarif biaya "100 satoshi pe
     </message>
     <message>
         <source>Creates a Partially Signed Qogecoin Transaction (PSBT) for use with e.g. an offline %1 wallet, or a PSBT-compatible hardware wallet.</source>
-        <translation type="unfinished">Membuat sebagian tertanda transaksi qogecoin (PSBT) untuk digunakan dengan contoh dompet offline %1, atau dompet yang kompatibel dengan PSBT</translation>
+        <translation type="unfinished">Membuat sebagian tertanda transaksi xogecoin (PSBT) untuk digunakan dengan contoh dompet offline %1, atau dompet yang kompatibel dengan PSBT</translation>
     </message>
     <message>
         <source> from wallet '%1'</source>
@@ -3452,8 +3452,8 @@ Catatan: Karena biaya dihitung berdasarkan per byte, tarif biaya "100 satoshi pe
         <translation type="unfinished">Jumlah yang ingin dikirim dalam unit yang dipilih</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less qogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation type="unfinished">Biaya akan diambil dari jumlah yang dikirim. Penerima akan menerima qogecoin lebih sedikit daripada yang di masukkan di bidang jumlah. Jika ada beberapa penerima, biaya dibagi rata.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less xogecoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation type="unfinished">Biaya akan diambil dari jumlah yang dikirim. Penerima akan menerima xogecoin lebih sedikit daripada yang di masukkan di bidang jumlah. Jika ada beberapa penerima, biaya dibagi rata.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -3480,8 +3480,8 @@ Catatan: Karena biaya dihitung berdasarkan per byte, tarif biaya "100 satoshi pe
         <translation type="unfinished">Masukkan label untuk alamat ini untuk dimasukan dalam daftar alamat yang pernah digunakan</translation>
     </message>
     <message>
-        <source>A message that was attached to the qogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
-        <translation type="unfinished">Pesan yang dilampirkan ke qogecoin: URI yang akan disimpan dengan transaksi untuk referensi Anda. Catatan: Pesan ini tidak akan dikirim melalui jaringan Qogecoin.</translation>
+        <source>A message that was attached to the xogecoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Qogecoin network.</source>
+        <translation type="unfinished">Pesan yang dilampirkan ke xogecoin: URI yang akan disimpan dengan transaksi untuk referensi Anda. Catatan: Pesan ini tidak akan dikirim melalui jaringan Qogecoin.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -3514,8 +3514,8 @@ Catatan: Karena biaya dihitung berdasarkan per byte, tarif biaya "100 satoshi pe
         <translation type="unfinished">&amp;Tandakan Pesan</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive qogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation type="unfinished">Anda dapat menandatangani pesan / perjanjian dengan alamat Anda untuk membuktikan bahwa Anda dapat menerima qogecoin yang dikirimkan kepada mereka. Berhati-hatilah untuk tidak menandatangani apa pun yang samar-samar atau acak, karena serangan phishing mungkin mencoba menipu Anda untuk menandatangani identitas Anda kepada mereka. Hanya tandatangani pernyataan terperinci yang Anda setujui.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive xogecoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation type="unfinished">Anda dapat menandatangani pesan / perjanjian dengan alamat Anda untuk membuktikan bahwa Anda dapat menerima xogecoin yang dikirimkan kepada mereka. Berhati-hatilah untuk tidak menandatangani apa pun yang samar-samar atau acak, karena serangan phishing mungkin mencoba menipu Anda untuk menandatangani identitas Anda kepada mereka. Hanya tandatangani pernyataan terperinci yang Anda setujui.</translation>
     </message>
     <message>
         <source>The Qogecoin address to sign the message with</source>

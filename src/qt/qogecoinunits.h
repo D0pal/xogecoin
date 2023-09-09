@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_QOGECOINUNITS_H
-#define QOGECOIN_QT_QOGECOINUNITS_H
+#ifndef XOGECOIN_QT_XOGECOINUNITS_H
+#define XOGECOIN_QT_XOGECOINUNITS_H
 
 #include <consensus/amount.h>
 
@@ -37,7 +37,7 @@ public:
     explicit QogecoinUnits(QObject *parent);
 
     /** Qogecoin units.
-      @note Source: https://en.qogecoin.it/wiki/Units . Please add only sensible ones
+      @note Source: https://en.xogecoin.it/wiki/Units . Please add only sensible ones
      */
     enum class Unit {
         Qoge,
@@ -113,4 +113,4 @@ typedef QogecoinUnits::Unit QogecoinUnit;
 QDataStream& operator<<(QDataStream& out, const QogecoinUnit& unit);
 QDataStream& operator>>(QDataStream& in, QogecoinUnit& unit);
 
-#endif // QOGECOIN_QT_QOGECOINUNITS_H
+#endif // XOGECOIN_QT_XOGECOINUNITS_H

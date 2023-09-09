@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NODE_TRANSACTION_H
-#define QOGECOIN_NODE_TRANSACTION_H
+#ifndef XOGECOIN_NODE_TRANSACTION_H
+#define XOGECOIN_NODE_TRANSACTION_H
 
 #include <attributes.h>
 #include <policy/feerate.h>
@@ -61,4 +61,4 @@ static const CFeeRate DEFAULT_MAX_RAW_TX_FEE_RATE{COIN / 10};
 CTransactionRef GetTransaction(const CBlockIndex* const block_index, const CTxMemPool* const mempool, const uint256& hash, const Consensus::Params& consensusParams, uint256& hashBlock);
 } // namespace node
 
-#endif // QOGECOIN_NODE_TRANSACTION_H
+#endif // XOGECOIN_NODE_TRANSACTION_H

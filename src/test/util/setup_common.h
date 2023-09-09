@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_TEST_UTIL_SETUP_COMMON_H
-#define QOGECOIN_TEST_UTIL_SETUP_COMMON_H
+#ifndef XOGECOIN_TEST_UTIL_SETUP_COMMON_H
+#define XOGECOIN_TEST_UTIL_SETUP_COMMON_H
 
 #include <chainparamsbase.h>
 #include <fs.h>
@@ -235,4 +235,4 @@ private:
     const std::string m_reason;
 };
 
-#endif // QOGECOIN_TEST_UTIL_SETUP_COMMON_H
+#endif // XOGECOIN_TEST_UTIL_SETUP_COMMON_H

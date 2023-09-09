@@ -3,18 +3,18 @@
 
 Qogecoin Core version 0.19.1 is now available from:
 
-  <https://qogecoincore.org/bin/qogecoin-core-0.19.1/>
+  <https://xogecoincore.org/bin/xogecoin-core-0.19.1/>
 
 This minor release includes various bug fixes and performance
 improvements, as well as updated translations.
 
 Please report bugs using the issue tracker at GitHub:
 
-  <https://github.com/qogecoin/qogecoin/issues>
+  <https://github.com/xogecoin/xogecoin/issues>
 
 To receive security and update notifications, please subscribe to:
 
-  <https://qogecoincore.org/en/list/announcements/join/>
+  <https://xogecoincore.org/en/list/announcements/join/>
 
 How to Upgrade
 ==============
@@ -22,7 +22,7 @@ How to Upgrade
 If you are running an older version, shut it down. Wait until it has completely
 shut down (which might take a few minutes for older versions), then run the
 installer (on Windows) or just copy over `/Applications/Qogecoin-Qt` (on Mac)
-or `qogecoind`/`qogecoin-qt` (on Linux).
+or `xogecoind`/`xogecoin-qt` (on Linux).
 
 Upgrading directly from a version of Qogecoin Core that has reached its EOL is
 possible, but it might take some time if the datadir needs to be migrated. Old
@@ -72,7 +72,7 @@ distribution provides binaries for the RISC-V platform.
 
 ### Tests and QA
 - #17416 Appveyor improvement - text file for vcpkg package list (sipsorcery)
-- #17488 fix "qogecoind already running" warnings on macOS (fanquake)
+- #17488 fix "xogecoind already running" warnings on macOS (fanquake)
 - #17980 add missing #include to fix compiler errors (kallewoof)
 
 ### Platform support
@@ -112,4 +112,4 @@ Thanks to everyone who directly contributed to this release:
 - Wladimir J. van der Laan
 
 As well as to everyone that helped with translations on
-[Transifex](https://www.transifex.com/qogecoin/qogecoin/).
+[Transifex](https://www.transifex.com/xogecoin/xogecoin/).

@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_HASH_H
-#define QOGECOIN_HASH_H
+#ifndef XOGECOIN_HASH_H
+#define XOGECOIN_HASH_H
 
 #include <attributes.h>
 #include <crypto/common.h>
@@ -212,4 +212,4 @@ void BIP32Hash(const ChainCode &chainCode, unsigned int nChild, unsigned char he
  */
 CHashWriter TaggedHash(const std::string& tag);
 
-#endif // QOGECOIN_HASH_H
+#endif // XOGECOIN_HASH_H

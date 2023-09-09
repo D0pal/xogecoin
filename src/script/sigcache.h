@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_SCRIPT_SIGCACHE_H
-#define QOGECOIN_SCRIPT_SIGCACHE_H
+#ifndef XOGECOIN_SCRIPT_SIGCACHE_H
+#define XOGECOIN_SCRIPT_SIGCACHE_H
 
 #include <script/interpreter.h>
 #include <span.h>
@@ -35,4 +35,4 @@ public:
 
 void InitSignatureCache();
 
-#endif // QOGECOIN_SCRIPT_SIGCACHE_H
+#endif // XOGECOIN_SCRIPT_SIGCACHE_H

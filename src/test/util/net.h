@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_TEST_UTIL_NET_H
-#define QOGECOIN_TEST_UTIL_NET_H
+#ifndef XOGECOIN_TEST_UTIL_NET_H
+#define XOGECOIN_TEST_UTIL_NET_H
 
 #include <compat.h>
 #include <netaddress.h>
@@ -169,4 +169,4 @@ private:
 
 std::vector<NodeEvictionCandidate> GetRandomNodeEvictionCandidates(int n_candidates, FastRandomContext& random_context);
 
-#endif // QOGECOIN_TEST_UTIL_NET_H
+#endif // XOGECOIN_TEST_UTIL_NET_H

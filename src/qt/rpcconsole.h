@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_RPCCONSOLE_H
-#define QOGECOIN_QT_RPCCONSOLE_H
+#ifndef XOGECOIN_QT_RPCCONSOLE_H
+#define XOGECOIN_QT_RPCCONSOLE_H
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <qt/guiutil.h>
@@ -189,4 +189,4 @@ private Q_SLOTS:
     void updateAlerts(const QString& warnings);
 };
 
-#endif // QOGECOIN_QT_RPCCONSOLE_H
+#endif // XOGECOIN_QT_RPCCONSOLE_H

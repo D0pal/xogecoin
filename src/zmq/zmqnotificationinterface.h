@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H
-#define QOGECOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#ifndef XOGECOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#define XOGECOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H
 
 #include <validationinterface.h>
 #include <list>
@@ -41,4 +41,4 @@ private:
 
 extern CZMQNotificationInterface* g_zmq_notification_interface;
 
-#endif // QOGECOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H
+#endif // XOGECOIN_ZMQ_ZMQNOTIFICATIONINTERFACE_H

@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_POLICY_RBF_H
-#define QOGECOIN_POLICY_RBF_H
+#ifndef XOGECOIN_POLICY_RBF_H
+#define XOGECOIN_POLICY_RBF_H
 
 #include <primitives/transaction.h>
 #include <txmempool.h>
@@ -99,4 +99,4 @@ std::optional<std::string> PaysForRBF(CAmount original_fees,
                                       CFeeRate relay_fee,
                                       const uint256& txid);
 
-#endif // QOGECOIN_POLICY_RBF_H
+#endif // XOGECOIN_POLICY_RBF_H

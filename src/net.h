@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_NET_H
-#define QOGECOIN_NET_H
+#ifndef XOGECOIN_NET_H
+#define XOGECOIN_NET_H
 
 #include <chainparams.h>
 #include <common/bloom.h>
@@ -128,7 +128,7 @@ struct CSerializedNetMsg {
  *
  * If adding or removing types, please update CONNECTION_TYPE_DOC in
  * src/rpc/net.cpp and src/qt/rpcconsole.cpp, as well as the descriptions in
- * src/qt/guiutil.cpp and src/qogecoin-cli.cpp::NetinfoRequestHandler. */
+ * src/qt/guiutil.cpp and src/xogecoin-cli.cpp::NetinfoRequestHandler. */
 enum class ConnectionType {
     /**
      * Inbound connections are those initiated by a peer. This is the only
@@ -426,7 +426,7 @@ public:
      * `shared_ptr` (instead of `unique_ptr`) is used to avoid premature close of
      * the underlying file descriptor by one thread while another thread is
      * poll(2)-ing it for activity.
-     * @see https://github.com/qogecoin/qogecoin/issues/21744 for details.
+     * @see https://github.com/xogecoin/xogecoin/issues/21744 for details.
      */
     std::shared_ptr<Sock> m_sock GUARDED_BY(m_sock_mutex);
 
@@ -1324,4 +1324,4 @@ struct NodeEvictionCandidate
  */
 void ProtectEvictionCandidatesByRatio(std::vector<NodeEvictionCandidate>& vEvictionCandidates);
 
-#endif // QOGECOIN_NET_H
+#endif // XOGECOIN_NET_H

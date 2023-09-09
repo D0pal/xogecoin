@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_BENCH_BENCH_H
-#define QOGECOIN_BENCH_BENCH_H
+#ifndef XOGECOIN_BENCH_BENCH_H
+#define XOGECOIN_BENCH_BENCH_H
 
 #include <fs.h>
 #include <util/macros.h>
@@ -66,4 +66,4 @@ public:
 #define BENCHMARK(n) \
     benchmark::BenchRunner PASTE2(bench_, PASTE2(__LINE__, n))(STRINGIZE(n), n);
 
-#endif // QOGECOIN_BENCH_BENCH_H
+#endif // XOGECOIN_BENCH_BENCH_H

@@ -1,17 +1,17 @@
 # Multiprocess Qogecoin
 
-On unix systems, the `--enable-multiprocess` build option can be passed to `./configure` to build new `qogecoin-node`, `qogecoin-wallet`, and `qogecoin-gui` executables alongside existing `qogecoind` and `qogecoin-qt` executables.
+On unix systems, the `--enable-multiprocess` build option can be passed to `./configure` to build new `xogecoin-node`, `xogecoin-wallet`, and `xogecoin-gui` executables alongside existing `xogecoind` and `xogecoin-qt` executables.
 
-`qogecoin-node` is a drop-in replacement for `qogecoind`, and `qogecoin-gui` is a drop-in replacement for `qogecoin-qt`, and there are no differences in use or external behavior between the new and old executables. But internally (after [#10102](https://github.com/qogecoin/qogecoin/pull/10102)), `qogecoin-gui` will spawn a `qogecoin-node` process to run P2P and RPC code, communicating with it across a socket pair, and `qogecoin-node` will spawn `qogecoin-wallet` to run wallet code, also communicating over a socket pair. This will let node, wallet, and GUI code run in separate address spaces for better isolation, and allow future improvements like being able to start and stop components independently on different machines and environments.
+`xogecoin-node` is a drop-in replacement for `xogecoind`, and `xogecoin-gui` is a drop-in replacement for `xogecoin-qt`, and there are no differences in use or external behavior between the new and old executables. But internally (after [#10102](https://github.com/xogecoin/xogecoin/pull/10102)), `xogecoin-gui` will spawn a `xogecoin-node` process to run P2P and RPC code, communicating with it across a socket pair, and `xogecoin-node` will spawn `xogecoin-wallet` to run wallet code, also communicating over a socket pair. This will let node, wallet, and GUI code run in separate address spaces for better isolation, and allow future improvements like being able to start and stop components independently on different machines and environments.
 
 ## Next steps
 
-Specific next steps after [#10102](https://github.com/qogecoin/qogecoin/pull/10102) will be:
+Specific next steps after [#10102](https://github.com/xogecoin/xogecoin/pull/10102) will be:
 
-- [ ] Adding `-ipcbind` and `-ipcconnect` options to `qogecoin-node`, `qogecoin-wallet`, and `qogecoin-gui` executables so they can listen and connect to TCP ports and unix socket paths. This will allow separate processes to be started and stopped any time and connect to each other.
-- [ ] Adding `-server` and `-rpcbind` options to the `qogecoin-wallet` executable so wallet processes can handle RPC requests directly without going through the node.
+- [ ] Adding `-ipcbind` and `-ipcconnect` options to `xogecoin-node`, `xogecoin-wallet`, and `xogecoin-gui` executables so they can listen and connect to TCP ports and unix socket paths. This will allow separate processes to be started and stopped any time and connect to each other.
+- [ ] Adding `-server` and `-rpcbind` options to the `xogecoin-wallet` executable so wallet processes can handle RPC requests directly without going through the node.
 - [ ] Supporting windows, not just unix systems. The existing socket code is already cross-platform, so the only windows-specific code that needs to be written is code spawning a process and passing a socket descriptor. This can be implemented with `CreateProcess` and `WSADuplicateSocket`. Example: https://memset.wordpress.com/2010/10/13/win32-api-passing-socket-with-ipc-method/.
-- [ ] Adding sandbox features, restricting subprocess access to resources and data. See [https://eklitzke.org/multiprocess-qogecoin](https://eklitzke.org/multiprocess-qogecoin).
+- [ ] Adding sandbox features, restricting subprocess access to resources and data. See [https://eklitzke.org/multiprocess-xogecoin](https://eklitzke.org/multiprocess-xogecoin).
 
 ## Debugging
 
@@ -22,12 +22,12 @@ The `-debug=ipc` command line option can be used to see requests and responses b
 The multiprocess feature requires [Cap'n Proto](https://capnproto.org/) and [libmultiprocess](https://github.com/chaincodelabs/libmultiprocess) as dependencies. A simple way to get starting using it without installing these dependencies manually is to use the [depends system](../depends) with the `MULTIPROCESS=1` [dependency option](../depends#dependency-options) passed to make:
 
 ```
-cd <QOGECOIN_SOURCE_DIRECTORY>
+cd <XOGECOIN_SOURCE_DIRECTORY>
 make -C depends NO_QT=1 MULTIPROCESS=1
 CONFIG_SITE=$PWD/depends/x86_64-pc-linux-gnu/share/config.site ./configure
 make
-src/qogecoin-node -regtest -printtoconsole -debug=ipc
-QOGECOIND=qogecoin-node test/functional/test_runner.py
+src/xogecoin-node -regtest -printtoconsole -debug=ipc
+XOGECOIND=xogecoin-node test/functional/test_runner.py
 ```
 
 The configure script will pick up settings and library locations from the depends directory, so there is no need to pass `--enable-multiprocess` as a separate flag when using the depends system (it's controlled by the `MULTIPROCESS=1` option).

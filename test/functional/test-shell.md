@@ -8,8 +8,8 @@ The `TestShell` submodule extends the `QogecoinTestFramework` functionality to
 external interactive environments for prototyping and educational purposes. Just
 like `QogecoinTestFramework`, the `TestShell` allows the user to:
 
-* Manage regtest qogecoind subprocesses.
-* Access RPC interfaces of the underlying qogecoind instances.
+* Manage regtest xogecoind subprocesses.
+* Access RPC interfaces of the underlying xogecoind instances.
 * Log events to the functional test logging utility.
 
 The `TestShell` can be useful in interactive environments where it is necessary
@@ -20,7 +20,7 @@ user inputs. Such environments include the Python3 command line interpreter or
 ## 1. Requirements
 
 * Python3
-* `qogecoind` built in the same repository as the `TestShell`.
+* `xogecoind` built in the same repository as the `TestShell`.
 
 ## 2. Importing `TestShell` from the Qogecoin Core repository
 
@@ -30,11 +30,11 @@ importing the `TestShell` class from the `test_shell` sub-package.
 
 ```
 >>> import sys
->>> sys.path.insert(0, "/path/to/qogecoin/test/functional")
+>>> sys.path.insert(0, "/path/to/xogecoin/test/functional")
 >>> from test_framework.test_shell import TestShell
 ```
 
-The following `TestShell` methods manage the lifetime of the underlying qogecoind
+The following `TestShell` methods manage the lifetime of the underlying xogecoind
 processes and logging utilities.
 
 * `TestShell.setup()`
@@ -52,7 +52,7 @@ The following sections demonstrate how to initialize, run, and shut down a
 
 ```
 >>> test = TestShell().setup(num_nodes=2, setup_clean_chain=True)
-20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Initializing test directory /path/to/qogecoin_func_test_XXXXXXX
+20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Initializing test directory /path/to/xogecoin_func_test_XXXXXXX
 ```
 The `TestShell` forwards all functional test parameters of the parent
 `QogecoinTestFramework` object. The full set of argument keywords which can be
@@ -61,7 +61,7 @@ used to initialize the `TestShell` can be found in [section
 
 **Note: Running multiple instances of `TestShell` is not allowed.** Running a
 single process also ensures that logging remains consolidated in the same
-temporary folder. If you need more qogecoind nodes than set by default (1),
+temporary folder. If you need more xogecoind nodes than set by default (1),
 simply increase the `num_nodes` parameter during setup.
 
 ```
@@ -75,7 +75,7 @@ Unlike the `QogecoinTestFramework` class, the `TestShell` keeps the underlying
 Qogecoind subprocesses (nodes) and logging utilities running until the user
 explicitly shuts down the `TestShell` object.
 
-During the time between the `setup` and `shutdown` calls, all `qogecoind` node
+During the time between the `setup` and `shutdown` calls, all `xogecoind` node
 processes and `QogecoinTestFramework` convenience methods can be accessed
 interactively.
 
@@ -126,18 +126,18 @@ test-framework**. Modules such as
 [key.py](../test/functional/test_framework/key.py),
 [script.py](../test/functional/test_framework/script.py) and
 [messages.py](../test/functional/test_framework/messages.py) are particularly
-useful in constructing objects which can be passed to the qogecoind nodes managed
+useful in constructing objects which can be passed to the xogecoind nodes managed
 by a running `TestShell` object.
 
 ## 5. Shutting the `TestShell` down
 
-Shutting down the `TestShell` will safely tear down all running qogecoind
+Shutting down the `TestShell` will safely tear down all running xogecoind
 instances and remove all temporary data and logging directories.
 
 ```
 >>> test.shutdown()
 20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Stopping nodes
-20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Cleaning up /path/to/qogecoin_func_test_XXXXXXX on exit
+20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Cleaning up /path/to/xogecoin_func_test_XXXXXXX on exit
 20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Tests successful
 ```
 To prevent the logs from being removed after a shutdown, simply set the
@@ -146,15 +146,15 @@ To prevent the logs from being removed after a shutdown, simply set the
 >>> test.options.nocleanup = True
 >>> test.shutdown()
 20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Stopping nodes
-20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Not cleaning up dir /path/to/qogecoin_func_test_XXXXXXX on exit
+20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Not cleaning up dir /path/to/xogecoin_func_test_XXXXXXX on exit
 20XX-XX-XXTXX:XX:XX.XXXXXXX TestFramework (INFO): Tests successful
 ```
 
-The following utility consolidates logs from the qogecoind nodes and the
+The following utility consolidates logs from the xogecoind nodes and the
 underlying `QogecoinTestFramework`:
 
-* `/path/to/qogecoin/test/functional/combine_logs.py
-  '/path/to/qogecoin_func_test_XXXXXXX'`
+* `/path/to/xogecoin/test/functional/combine_logs.py
+  '/path/to/xogecoin_func_test_XXXXXXX'`
 
 ## 6. Custom `TestShell` parameters
 
@@ -167,20 +167,20 @@ can be called after the TestShell is shut down.
 
 | Test parameter key | Default Value | Description |
 |---|---|---|
-| `bind_to_localhost_only` | `True` | Binds qogecoind RPC services to `127.0.0.1` if set to `True`.|
-| `cachedir` | `"/path/to/qogecoin/test/cache"` | Sets the qogecoind datadir directory. |
-| `chain`  | `"regtest"` | Sets the chain-type for the underlying test qogecoind processes. |
-| `configfile` | `"/path/to/qogecoin/test/config.ini"` | Sets the location of the test framework config file. |
-| `coveragedir` | `None` | Records qogecoind RPC test coverage into this directory if set. |
+| `bind_to_localhost_only` | `True` | Binds xogecoind RPC services to `127.0.0.1` if set to `True`.|
+| `cachedir` | `"/path/to/xogecoin/test/cache"` | Sets the xogecoind datadir directory. |
+| `chain`  | `"regtest"` | Sets the chain-type for the underlying test xogecoind processes. |
+| `configfile` | `"/path/to/xogecoin/test/config.ini"` | Sets the location of the test framework config file. |
+| `coveragedir` | `None` | Records xogecoind RPC test coverage into this directory if set. |
 | `loglevel` | `INFO` | Logs events at this level and higher. Can be set to `DEBUG`, `INFO`, `WARNING`, `ERROR` or `CRITICAL`. |
 | `nocleanup` | `False` | Cleans up temporary test directory if set to `True` during `shutdown`. |
-| `noshutdown` | `False` | Does not stop qogecoind instances after `shutdown` if set to `True`. |
-| `num_nodes` | `1` | Sets the number of initialized qogecoind processes. |
+| `noshutdown` | `False` | Does not stop xogecoind instances after `shutdown` if set to `True`. |
+| `num_nodes` | `1` | Sets the number of initialized xogecoind processes. |
 | `perf` | False | Profiles running nodes with `perf` for the duration of the test if set to `True`. |
-| `rpc_timeout` | `60` | Sets the RPC server timeout for the underlying qogecoind processes. |
+| `rpc_timeout` | `60` | Sets the RPC server timeout for the underlying xogecoind processes. |
 | `setup_clean_chain` | `False` | A 200-block-long chain is initialized from cache by default. Instead, `setup_clean_chain` initializes an empty blockchain if set to `True`. |
 | `randomseed` | Random Integer | `TestShell.options.randomseed` is a member of `TestShell` which can be accessed during a test to seed a random generator. User can override default with a constant value for reproducible test runs. |
-| `supports_cli` | `False` | Whether the qogecoin-cli utility is compiled and available for the test. |
+| `supports_cli` | `False` | Whether the xogecoin-cli utility is compiled and available for the test. |
 | `tmpdir` | `"/var/folders/.../"` | Sets directory for test logs. Will be deleted upon a successful test run unless `nocleanup` is set to `True` |
 | `trace_rpc` | `False` | Logs all RPC calls if set to `True`. |
-| `usecli` | `False` | Uses the qogecoin-cli interface for all qogecoind commands instead of directly calling the RPC server. Requires `supports_cli`. |
+| `usecli` | `False` | Uses the xogecoin-cli interface for all xogecoind commands instead of directly calling the RPC server. Requires `supports_cli`. |

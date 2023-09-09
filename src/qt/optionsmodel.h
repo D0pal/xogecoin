@@ -2,11 +2,11 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_QT_OPTIONSMODEL_H
-#define QOGECOIN_QT_OPTIONSMODEL_H
+#ifndef XOGECOIN_QT_OPTIONSMODEL_H
+#define XOGECOIN_QT_OPTIONSMODEL_H
 
 #include <cstdint>
-#include <qt/qogecoinunits.h>
+#include <qt/xogecoinunits.h>
 #include <qt/guiconstants.h>
 
 #include <QAbstractListModel>
@@ -87,7 +87,7 @@ public:
     bool getShowTrayIcon() const { return m_show_tray_icon; }
     bool getMinimizeToTray() const { return fMinimizeToTray; }
     bool getMinimizeOnClose() const { return fMinimizeOnClose; }
-    QogecoinUnit getDisplayUnit() const { return m_display_qogecoin_unit; }
+    QogecoinUnit getDisplayUnit() const { return m_display_xogecoin_unit; }
     QString getThirdPartyTxUrls() const { return strThirdPartyTxUrls; }
     bool getUseEmbeddedMonospacedFont() const { return m_use_embedded_monospaced_font; }
     bool getCoinControlFeatures() const { return fCoinControlFeatures; }
@@ -113,7 +113,7 @@ private:
     bool fMinimizeToTray;
     bool fMinimizeOnClose;
     QString language;
-    QogecoinUnit m_display_qogecoin_unit;
+    QogecoinUnit m_display_xogecoin_unit;
     QString strThirdPartyTxUrls;
     bool m_use_embedded_monospaced_font;
     bool fCoinControlFeatures;
@@ -134,4 +134,4 @@ Q_SIGNALS:
     void useEmbeddedMonospacedFontChanged(bool);
 };
 
-#endif // QOGECOIN_QT_OPTIONSMODEL_H
+#endif // XOGECOIN_QT_OPTIONSMODEL_H

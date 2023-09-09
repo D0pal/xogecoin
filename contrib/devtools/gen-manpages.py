@@ -8,12 +8,12 @@ import sys
 import tempfile
 
 BINARIES = [
-'src/qogecoind',
-'src/qogecoin-cli',
-'src/qogecoin-tx',
-'src/qogecoin-wallet',
-'src/qogecoin-util',
-'src/qt/qogecoin-qt',
+'src/xogecoind',
+'src/xogecoin-cli',
+'src/xogecoin-tx',
+'src/xogecoin-wallet',
+'src/xogecoin-util',
+'src/qt/xogecoin-qt',
 ]
 
 # Paths to external utilities.

@@ -141,7 +141,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">دەستەواژەی تێپەڕەوی نوێ تێبنووسە بۆ جزدان.1 تکایە دەستەواژەی تێپەڕێک بەکاربێنە لە 2ten یان زیاتر لە هێما هەڕەمەکیەکان2، یان 38 یان زیاتر ووشەکان3.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished">بیرت بێت کە ڕەمزاندنی جزدانەکەت ناتوانێت بەتەواوی بیتکۆبیتەکانت بپارێزێت لە دزرابوون لەلایەن وورنەری تووشکردنی کۆمپیوتەرەکەت.</translation>
     </message>
     <message>
@@ -199,7 +199,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Please check that your computer's date and time are correct! If your clock is wrong, %s will not work properly.</source>
         <translation type="unfinished">تکایە بپشکنە کە بەروار و کاتی کۆمپیوتەرەکەت ڕاستە! ئەگەر کاژێرەکەت هەڵە بوو، %s بە دروستی کار ناکات.</translation>
@@ -447,8 +447,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start qogecoin: click-to-pay handler</source>
-        <translation type="unfinished">ناتوانێت دەست بکات بە qogecoin: کرتە بکە بۆ-پارەدانی کار</translation>
+        <source>Cannot start xogecoin: click-to-pay handler</source>
+        <translation type="unfinished">ناتوانێت دەست بکات بە xogecoin: کرتە بکە بۆ-پارەدانی کار</translation>
     </message>
     </context>
 <context>
@@ -630,7 +630,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">شاردنەوەی ڕێکخستنەکانی باجی مامەڵە</translation>
     </message>
     <message>
-        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for qogecoin transactions than the network can process.</source>
+        <source>When there is less transaction volume than space in the blocks, miners as well as relaying nodes may enforce a minimum fee. Paying only this minimum fee is just fine, but be aware that this can result in a never confirming transaction once there is more demand for xogecoin transactions than the network can process.</source>
         <translation type="unfinished">کاتێک قەبارەی مامەڵە کەمتر بێت لە بۆشایی بلۆکەکان، لەوانەیە کانەکان و گرێکانی گواستنەوە کەمترین کرێ جێبەجێ بکەن. پێدانی تەنیا ئەم کەمترین کرێیە تەنیا باشە، بەڵام ئاگاداربە کە ئەمە دەتوانێت ببێتە هۆی ئەوەی کە هەرگیز مامەڵەیەکی پشتڕاستکردنەوە ئەنجام بدرێت جارێک داواکاری زیاتر هەیە بۆ مامەڵەکانی بیت کۆبیتکۆ لەوەی کە تۆڕەکە دەتوانێت ئەنجامی بدات.</translation>
     </message>
     <message>

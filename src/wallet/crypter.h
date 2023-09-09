@@ -2,8 +2,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_WALLET_CRYPTER_H
-#define QOGECOIN_WALLET_CRYPTER_H
+#ifndef XOGECOIN_WALLET_CRYPTER_H
+#define XOGECOIN_WALLET_CRYPTER_H
 
 #include <serialize.h>
 #include <support/allocators/secure.h>
@@ -108,4 +108,4 @@ bool DecryptSecret(const CKeyingMaterial& vMasterKey, const std::vector<unsigned
 bool DecryptKey(const CKeyingMaterial& vMasterKey, const std::vector<unsigned char>& vchCryptedSecret, const CPubKey& vchPubKey, CKey& key);
 } // namespace wallet
 
-#endif // QOGECOIN_WALLET_CRYPTER_H
+#endif // XOGECOIN_WALLET_CRYPTER_H

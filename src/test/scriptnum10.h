@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_TEST_SCRIPTNUM10_H
-#define QOGECOIN_TEST_SCRIPTNUM10_H
+#ifndef XOGECOIN_TEST_SCRIPTNUM10_H
+#define XOGECOIN_TEST_SCRIPTNUM10_H
 
 #include <assert.h>
 #include <limits>
@@ -179,4 +179,4 @@ private:
 };
 
 
-#endif // QOGECOIN_TEST_SCRIPTNUM10_H
+#endif // XOGECOIN_TEST_SCRIPTNUM10_H

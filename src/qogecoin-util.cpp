@@ -3,7 +3,7 @@
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include <config/qogecoin-config.h>
+#include <config/xogecoin-config.h>
 #endif
 
 #include <arith_uint256.h>
@@ -50,13 +50,13 @@ static int AppInitUtil(ArgsManager& args, int argc, char* argv[])
 
     if (HelpRequested(args) || args.IsArgSet("-version")) {
         // First part of help message is specific to this utility
-        std::string strUsage = PACKAGE_NAME " qogecoin-util utility version " + FormatFullVersion() + "\n";
+        std::string strUsage = PACKAGE_NAME " xogecoin-util utility version " + FormatFullVersion() + "\n";
 
         if (args.IsArgSet("-version")) {
             strUsage += FormatParagraph(LicenseInfo());
         } else {
             strUsage += "\n"
-                "Usage:  qogecoin-util [options] [commands]  Do stuff\n";
+                "Usage:  xogecoin-util [options] [commands]  Do stuff\n";
             strUsage += "\n" + args.GetHelpMessage();
         }
 

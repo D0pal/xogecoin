@@ -3,8 +3,8 @@
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef QOGECOIN_UNDO_H
-#define QOGECOIN_UNDO_H
+#ifndef XOGECOIN_UNDO_H
+#define XOGECOIN_UNDO_H
 
 #include <coins.h>
 #include <compressor.h>
@@ -68,4 +68,4 @@ public:
     SERIALIZE_METHODS(CBlockUndo, obj) { READWRITE(obj.vtxundo); }
 };
 
-#endif // QOGECOIN_UNDO_H
+#endif // XOGECOIN_UNDO_H

@@ -131,7 +131,7 @@ def main():
                     " ".join(test_list_missing_corpus)
                 )
             )
-            logging.info("Please consider adding a fuzz corpus at https://github.com/qogecoin-core/qa-assets")
+            logging.info("Please consider adding a fuzz corpus at https://github.com/xogecoin-core/qa-assets")
 
     try:
         help_output = subprocess.run(

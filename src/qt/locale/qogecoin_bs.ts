@@ -163,7 +163,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Potvrdite šifriranje novčanika</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR QOGECOINS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR XOGECOINS&lt;/b&gt;!</source>
         <translation type="unfinished">Upozorenje: Ako šifrirate novčanik i izgubite lozinku, &lt;b&gt;IZGUBIT ĆETE SVE SVOJE BITKOINE!&lt;/b&gt;</translation>
     </message>
     <message>
@@ -183,8 +183,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Unesite staru i novu lozinku za novčanik.</translation>
     </message>
     <message>
-        <source>Remember that encrypting your wallet cannot fully protect your qogecoins from being stolen by malware infecting your computer.</source>
-        <translation type="unfinished">Imajte na umu da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše qogecoine od krađe zlonamjernim softverom koji zarazi vaš računar.</translation>
+        <source>Remember that encrypting your wallet cannot fully protect your xogecoins from being stolen by malware infecting your computer.</source>
+        <translation type="unfinished">Imajte na umu da šifriranje vašeg novčanika ne može u potpunosti zaštititi vaše xogecoine od krađe zlonamjernim softverom koji zarazi vaš računar.</translation>
     </message>
     <message>
         <source>Wallet to be encrypted</source>
@@ -333,7 +333,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     </context>
 <context>
-    <name>qogecoin-core</name>
+    <name>xogecoin-core</name>
     <message>
         <source>Replaying blocks…</source>
         <translation type="unfinished">Reprodukcija blokova…</translation>
@@ -651,8 +651,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Reindekiraju se blokovi na disku...</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and qogecoin: URIs)</source>
-        <translation type="unfinished">Zatražite uplate (generira QR kodove i qogecoin: URI-je)</translation>
+        <source>Request payments (generates QR codes and xogecoin: URIs)</source>
+        <translation type="unfinished">Zatražite uplate (generira QR kodove i xogecoin: URI-je)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -708,7 +708,7 @@ Signing is only possible with addresses of the type 'legacy'.</source>
     </message>
     <message>
         <source>Load Partially Signed Qogecoin Transaction from clipboard</source>
-        <translation type="unfinished">Učitajte djelomično potpisanu qogecoin transakciju iz međuspremnika</translation>
+        <translation type="unfinished">Učitajte djelomično potpisanu xogecoin transakciju iz međuspremnika</translation>
     </message>
     <message>
         <source>Node window</source>
@@ -727,8 +727,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">&amp;Primanje adresa</translation>
     </message>
     <message>
-        <source>Open a qogecoin: URI</source>
-        <translation type="unfinished">Otvorite qogecoin: URI</translation>
+        <source>Open a xogecoin: URI</source>
+        <translation type="unfinished">Otvorite xogecoin: URI</translation>
     </message>
     <message>
         <source>Open Wallet</source>
@@ -1277,12 +1277,12 @@ Signing is only possible with addresses of the type 'legacy'.</source>
         <translation type="unfinished">Obrazac</translation>
     </message>
     <message>
-        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the qogecoin network, as detailed below.</source>
-        <translation type="unfinished">Nedavne transakcije možda još nisu vidljive, pa stoga stanje na vašem novčaniku može biti pogrešno. Ove će informacije biti točne nakon što se novčanik završi sa sinhronizacijom s qogecoin mrežom, kao što je detaljno opisano u nastavku.</translation>
+        <source>Recent transactions may not yet be visible, and therefore your wallet's balance might be incorrect. This information will be correct once your wallet has finished synchronizing with the xogecoin network, as detailed below.</source>
+        <translation type="unfinished">Nedavne transakcije možda još nisu vidljive, pa stoga stanje na vašem novčaniku može biti pogrešno. Ove će informacije biti točne nakon što se novčanik završi sa sinhronizacijom s xogecoin mrežom, kao što je detaljno opisano u nastavku.</translation>
     </message>
     <message>
-        <source>Attempting to spend qogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
-        <translation type="unfinished">Pokušaj trošenja qogecoina na koje utječu još uvijek ne prikazane transakcije mreža neće prihvatiti.</translation>
+        <source>Attempting to spend xogecoins that are affected by not-yet-displayed transactions will not be accepted by the network.</source>
+        <translation type="unfinished">Pokušaj trošenja xogecoina na koje utječu još uvijek ne prikazane transakcije mreža neće prihvatiti.</translation>
     </message>
     <message>
         <source>Number of blocks left</source>
@@ -1316,8 +1316,8 @@ Signing is only possible with addresses of the type 'legacy'.</source>
 <context>
     <name>OpenURIDialog</name>
     <message>
-        <source>Open qogecoin URI</source>
-        <translation type="unfinished">Otvorite qogecoin URI</translation>
+        <source>Open xogecoin URI</source>
+        <translation type="unfinished">Otvorite xogecoin URI</translation>
     </message>
     </context>
 <context>
